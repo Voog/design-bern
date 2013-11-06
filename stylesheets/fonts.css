@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "AvenirNext";
+    src: url("../assets/avenirnextltpro-regular.eot");
+    src: url("../assets/avenirnextltpro-regular.eot") format("embedded-opentype"),
+         url("../assets/avenirnextltpro-regular.woff") format("woff"),
+         url("../assets/avenirnextltpro-regular.ttf") format("truetype"),
+         url("../assets/avenirnextltpro-regular.svg#AvenirNextLTProRegular") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: "AvenirNext";
+    src: url("../assets/avenirnextltpro-demi.eot");
+    src: url("../assets/avenirnextltpro-demi.eot") format("embedded-opentype"),
+         url("../assets/avenirnextltpro-demi.woff") format("woff"),
+         url("../assets/avenirnextltpro-demi.ttf") format("truetype"),
+         url("../assets/avenirnextltpro-demi.svg#AvenirNextLTProDemi") format("svg");
+ 	font-weight: 600;
+ 	font-style: normal;
+}
