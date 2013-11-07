@@ -153,8 +153,10 @@ a {
 .fp-content {
 	margin: 0 13rem;
 }
-.fp-content h1 {
+.fp-content, .fp-content h1, .fp-content h2, .fp-content h3, .fp-content p, .fp-content ul {
 	color: #fff; color: rgba(255,255,255,1);
+}
+.fp-content h1 {
 	font-weight: 400;
 	line-height: 1.15;
 }
@@ -216,51 +218,43 @@ a {
 	margin: 1.8rem auto;
 	max-width: 42.5rem;
 }
-.content-wrap label {
+.form_field label {
 	color: #1b2124; color: rgba(27,33,36,1);
 	display: block;
 	font-size: 1.4rem;
 	font-weight: 600;
 }
-.input-small {
-	width: 50%;
-}
-.input-medium {
-	width: 75%;
-}
-.input-large {
-	width: 100%;
-}
-.content-wrap input, .content-wrap select, .content-wrap textarea, .content-wrap button {
+.form_field_textfield, .form_field_textarea, .form_submit input {
 	border: none;
 	font-family: inherit;
 	font-size: 100%;
-	margin: 0;
-}
-.content-wrap input, .content-wrap textarea {
 	margin: 0 0 1.7rem 0;
 	-webkit-box-shadow: 0.4rem 0.4rem 0 rgba(0,0,0,0.1); -moz-box-shadow: 0.4rem 0.4rem 0 rgba(0,0,0,0.1); box-shadow: 0.4rem 0.4rem 0 rgba(0,0,0,0.1);
 }
-.content-wrap input[type="submit"] {
+.form_field_textarea {
+	min-height: 6.2rem;
+	overflow: auto;
+	resize: vertical;
+	vertical-align: top;
+}
+.form_field_size_large {
+	width: 100%;
+}
+.form_field_size_medium {
+	width: 50%;
+}
+.form_field_size_small {
+	width: 25%;
+}
+.form_submit input {
 	background: #0066bb; background: rgba(0,102,187,1);
 	color: #fff; color: rgba(255,255,255,1);
 	display: block;
 	font-size: 1.4rem;
 	line-height: 1;
 	padding: 0.8rem 1.1rem;
-}
-.content-wrap input[type="button"], .content-wrap input[type="reset"], .content-wrap input[type="submit"], .content-wrap button {
 	-webkit-appearance: button;
 	cursor: pointer;
-}
-.content-wrap input[disabled], .content-wrap button[disabled] {
-	cursor: default;
-}
-.content-wrap textarea {
-	min-height: 6.2rem;
-	overflow: auto;
-	resize: vertical;
-	vertical-align: top;
 }
 
 /* Footer */
