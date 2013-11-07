@@ -37,6 +37,8 @@ html, body, h1, h2, h3, p, .menu {
 .menu {
 	display: inline-block;
 	list-style: none;
+	max-width: 450px;
+	text-align: center;
 }
 
 /* General */
@@ -68,38 +70,57 @@ a {
 .bold {
 	font-weight: 600;
 }
-.left {
-	float: left;
-}
-.right {
-	float: right;
-}
 
 .page-wrap {
 	max-width: 94rem;
 	margin: 0 auto;
 }
 
-/* Header */
-.site-header {
-	margin: 2.8rem 0 2.2rem;
+img {
+	max-width: 100%;
+	height: auto;
 }
 
-.header-logo { display: inline-block; }
+/* Header */
+.site-header {
+	display: table;
+	margin: 2.7rem 0 2rem;
+	position: relative;	
+	width: 100%;
+}
+.header-inner-left, .header-inner-right {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header-inner-left {
+	text-align: left;
+	max-width: 25rem;
+}
+
+.header-inner-right {
+	text-align: right;
+}
+
+.header-logo {
+	display: inline-block;
+}
 
 /* Menus */
 .menu li, .sub-menu-wrap .filters-label {
-	display: inline-block;
 	font-size: 1.4rem;
+	display: inline-block;
 }
 .main-menu-wrap {
-	float: left;
+	display: inline-block;
+	max-width: 670px;
+	vertical-align: middle;
 }
 .main-menu-wrap .menu li {
-	margin-right: 1.3rem;
+	margin-left: 1.3rem;
 }
-.main-menu-wrap .menu li:last-child {
-	margin-right: 0;
+.main-menu-wrap .menu li:first-child {
+	margin-left: 0;
 }
 .main-menu-wrap .menu li a {
 	color: #1b2124;	color: rgba(27,33,36,0.67);
@@ -230,10 +251,14 @@ a {
 	height: 3.2rem;
 	line-height: 1;
 	margin: 0 0 0 2rem;
+	vertical-align: middle;
 }
 .edys-search, .search-left, .search-right {
 	height: 3rem;
 	line-height: 1;
+}
+.search-left, .search-right {
+	float: left;
 }
 .edys-search-input {
 	border: none;
@@ -253,7 +278,6 @@ a {
 	outline: none;
 }
 .search-submit {
-	background: none;
 	border: none;
 	cursor: pointer;
 	height: 3rem;
@@ -262,10 +286,10 @@ a {
 	width: 3rem;
 }
 .no-svg .search-submit {
-	background:  url("../images/ico-search.png") center no-repeat;
+	background: #fff url("../images/ico-search.png") center no-repeat;
 }
 .svg .search-submit {
-	background: url("../images/ico-search.svg") center no-repeat;
+	background: #fff url("../images/ico-search.svg") center no-repeat;
 }
 
 /* Forms */
