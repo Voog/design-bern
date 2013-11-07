@@ -29,28 +29,41 @@
 		<link rel="stylesheet" href="stylesheets/fonts.css" type="text/css">
 		<link rel="stylesheet" href="stylesheets/main.css" type="text/css">
 		<!--[if lt IE 9]><link rel="stylesheet" href="stylesheets/ie8.css" type="text/css"><![endif]-->
-
 		<script src="javascripts/modernizr.js"></script>
-		<!-- http://modernizr.com/download/ -->
 
 		<title>Avaleht (staatiline)</title>
 	</head>
 	<body>
 		<div class="page-wrap cfx">
 			<header class="site-header cfx">
-				<section class="header-logo cfx">
-					<h2>My new website</h2>
-				</section>
+				<div class="left">
+					<section class="header-logo cfx">
+						<h2>My new website</h2>
+					</section>
+				</div>
 
-				<nav class="main-menu-wrap cfx">
-					<ul class="menu cfx">
-						<li><a href="index.html" class="active">Home</a></li>
-						<li><a href="products.html">Products</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contacts.html">Contacts</a></li>
-						<li><a href="form.html">Form</a></li>
-					</ul>
-				</nav>
+				<div class="right">
+					<nav class="main-menu-wrap cfx">
+						<ul class="menu cfx">
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="products.html">Products</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contacts.html">Contacts</a></li>
+							<li><a href="form.html">Form</a></li>
+						</ul>
+					</nav>
+
+					<div class="search-wrap">
+						<form id="search" class="edys-search" method="post" action="#">
+							<div class="search-left left">
+								<input id="onpage_search" class="edys-search-input" type="text" placeholder="Search" name="">
+							</div>
+							<div class="search-right left">
+								<input class="search-submit" type="submit" value="" name="">
+							</div>
+						</form>
+					</div>
+				</div>
 			</header>
 
 			<section class="content-wrap fp-content-wrap cfx">

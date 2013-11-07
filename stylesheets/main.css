@@ -65,6 +65,15 @@ a {
 .centered {
 	text-align: center;
 }
+.bold {
+	font-weight: 600;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
 
 .page-wrap {
 	max-width: 94rem;
@@ -75,6 +84,7 @@ a {
 .site-header {
 	margin: 2.8rem 0 2.2rem;
 }
+
 .header-logo { display: inline-block; }
 
 /* Menus */
@@ -83,7 +93,7 @@ a {
 	font-size: 1.4rem;
 }
 .main-menu-wrap {
-	float: right;
+	float: left;
 }
 .main-menu-wrap .menu li {
 	margin-right: 1.3rem;
@@ -213,6 +223,51 @@ a {
 	padding: 0.6rem 1rem;
 }
 
+/* Search */
+.search-wrap {
+	border: 1px solid #000000; border: 1px solid rgba(0,0,0,0.1);
+	display: inline-block;
+	height: 3.2rem;
+	line-height: 1;
+	margin: 0 0 0 2rem;
+}
+.edys-search, .search-left, .search-right {
+	height: 3rem;
+	line-height: 1;
+}
+.edys-search-input {
+	border: none;
+	font-family: inherit;
+	font-size: 1.2rem;
+	height: 3rem;
+	line-height: 1;
+	margin: 0;
+	padding: 0.5rem 0 0.4rem 0.7rem;
+	width: 10.8rem;
+}
+.edys-search-input::-webkit-input-placeholder {
+	line-height: 1;
+	padding: 0.2rem 0 0.4rem 0rem;
+}
+.edys-search-input:focus, .search-submit:focus {
+	outline: none;
+}
+.search-submit {
+	background: none;
+	border: none;
+	cursor: pointer;
+	height: 3rem;
+	padding: 0;
+	vertical-align: middle;
+	width: 3rem;
+}
+.no-svg .search-submit {
+	background:  url("../images/ico-search.png") center no-repeat;
+}
+.svg .search-submit {
+	background: url("../images/ico-search.svg") center no-repeat;
+}
+
 /* Forms */
 .content-wrap form {
 	margin: 1.8rem auto;
@@ -266,7 +321,7 @@ a {
 }
 
 /* Retina */
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+@media all and (-webkit-min-device-pixel-ratio: 2) {
 	.content-wrap {
 		background: url("../photos/front-page-content@2x.jpg") center top no-repeat;
 		background-size: cover;
