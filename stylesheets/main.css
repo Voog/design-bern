@@ -231,6 +231,9 @@ img {
 .post-title {
 	margin: 0 0 1.4rem 0;
 }
+.post-title a {
+	color: inherit;
+}
 .excerpt-content {
 	margin: 0 0 1.2rem 0;
 }
