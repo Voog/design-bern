@@ -5,8 +5,15 @@
 		});
 	};
 
+	var handleMobileMenuClick = function() {
+		$(".mobile-menu-btn").click(function() {
+			$(".mobile-menu-wrap .menu").slideToggle("fast");
+		});
+	};
+
 	var init = function() {
 		handleLangMenuClick();
+		handleMobileMenuClick();
 	};
 
 	init();
