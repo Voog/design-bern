@@ -46,16 +46,16 @@
 
 				<div class="header-inner-right">
 					<nav class="main-menu-wrap cfx">
-						<ul class="menu cfx">
+						<ul class="menu menu-horizontal cfx">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="products.html">Products</a></li>
 							<li><a href="blog.html" class="active">Blog</a></li>
-							<li><a href="contacts.html">Contacts</a></li>
+							<li><a href="contacts.html" >Contacts</a></li>
 							<li><a href="form.html">Form</a></li>
 						</ul>
 					</nav>
 
-					<div class="search-wrap">
+					<section class="search-wrap">
 						<form id="search" class="edys-search" method="post" action="#">
 							<div class="search-left">
 								<input id="onpage_search" class="edys-search-input" type="text" placeholder="Search" name="">
@@ -64,14 +64,25 @@
 								<input class="search-submit" type="submit" value="" name="">
 							</div>
 						</form>
-					</div>
+					</section>
+
+					<section class="lang-menu-wrap">
+						<button class="lang-btn"></button>
+						<div class="lang-menu-popover">
+							<ul class="menu">
+								<li><a href="#" class="lang-us">In English</a></li>
+								<li><a href="#" class="lang-de">Auf Deutsch</a></li>
+								<li><a href="#" class="lang-et">Eesti keeles</a></li>
+							</ul>
+						</div>
+					</section>
 				</div>
 			</header>
 
 			<nav class="sub-menu-wrap">
 				<div class="sub-menu-inner">
 					<div class="filters-label">Filter posts</div>
-					<ul class="menu">
+					<ul class="menu menu-horizontal">
 						<li><a href="#">All posts</a></li>
 						<li><a href="#">Money</a></li>
 						<li><a href="#">Design</a></li>
@@ -107,6 +118,7 @@
 		</div>
 
 		<script src="javascripts/jquery-1.10.2.min.js"></script>
+		<script src="javascripts/main.js"></script>
 		<script src="javascripts/retina-1.1.0.min.js"></script>
 	</body>
 	</html>

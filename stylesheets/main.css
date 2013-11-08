@@ -32,13 +32,8 @@ html, body, h1, h2, h3, p, .menu {
 }
 .cfx:after {
 	content: "";
-	display: table;clear: both;
-}
-.menu {
-	display: inline-block;
-	list-style: none;
-	max-width: 450px;
-	text-align: center;
+	display: table;
+	clear: both;
 }
 
 /* General */
@@ -107,9 +102,16 @@ img {
 }
 
 /* Menus */
+.menu {
+	list-style: none;
+	max-width: 450px;
+	text-align: center;
+}
+.menu-horizontal, .menu-horizontal li, .filters-label {
+	display: inline-block;
+}
 .menu li, .sub-menu-wrap .filters-label {
 	font-size: 1.4rem;
-	display: inline-block;
 }
 .main-menu-wrap {
 	display: inline-block;
@@ -130,6 +132,7 @@ img {
 .main-menu-wrap .menu li .active {
 	color: #838586; color: rgba(131,133,134,0.67);
 }
+
 .sub-menu-inner {
 	border-bottom: 0.1rem solid #696b6c; border-bottom: 0.1rem solid rgba(105,107,108,0.2);
 	margin: 0 3rem;
@@ -143,6 +146,70 @@ img {
 	color: #1b2124;	color: rgba(27,33,36,1);	
 }
 
+.lang-menu-wrap {
+	display: inline-block;
+	margin-left: 1.3rem;
+	position: relative;
+}
+.lang-btn {
+	background: #fff url("../images/tmp/flag-us.png") center no-repeat;
+	background-size: cover;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	vertical-align: middle;
+	width: 2rem;
+	height: 1.3rem;
+}
+.lang-btn:focus {
+	outline: none;
+}
+.lang-menu-popover {
+	background: #fff; background: rgba(255,255,255,1);
+	min-width: 12rem;
+	text-align: left;
+	padding: 0.6rem 0;
+	position: absolute;
+	left: -8.9rem;
+	top: 3.1rem;
+	-webkit-box-shadow: 0 0 0.1rem rgba(0,0,0,0.3); -moz-box-shadow: 0 0 0.1rem rgba(0,0,0,0.3); box-shadow: 0 0 0.1rem rgba(0,0,0,0.3);
+}
+.lang-menu-popover .menu {
+	text-align: right;
+}
+.lang-menu-popover .menu li {
+	font-size: 1.2rem;
+}
+.lang-menu-popover .menu li a {
+	color: #1b2124; color: rgba(27,33,36,0.67);
+	display: block;
+	line-height: 1;
+	padding: 0.5rem 4rem 0.3rem 1.3rem;
+	position: relative;
+}
+.lang-menu-popover .menu li a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 1.1rem;
+	top: 0.3rem;
+	width: 2rem;
+	height: 1.3rem;
+}
+.lang-menu-popover .menu li a:hover {
+	background: #ccc;
+}
+.lang-us:after {
+	background: url("../images/tmp/flag-us.png") right center no-repeat;
+	background-size: contain;
+}
+.lang-de:after {
+	background: url("../images/tmp/flag-de.svg") right center no-repeat;
+}
+.lang-et:after {
+	background: url("../images/tmp/flag-et.svg") right center no-repeat;
+}
+
 /* Content area */
 .content-wrap {
 	padding: 4.6rem 5rem;
@@ -151,7 +218,7 @@ img {
 	padding: 0;
 }
 .content-wrap p {
-	margin: 0 0 3.8rem 0;
+	margin-bottom: 3.8rem;
 }
 .content-wrap p:last-child {
 	margin: 0;
@@ -207,7 +274,7 @@ img {
 
 /* Blog posts */
 .post-wrap {
-	margin: 0 0 4.6rem 0;
+	margin-bottom: 4.6rem;
 	padding: 0 3rem;
 }
 .post-wrap:last-child {
@@ -229,13 +296,13 @@ img {
 	color: #1b2124; color: rgba(27,33,36,0.5);
 }
 .post-title {
-	margin: 0 0 1.4rem 0;
+	margin-bottom: 1.4rem;
 }
 .post-title a {
 	color: inherit;
 }
 .excerpt-content {
-	margin: 0 0 1.2rem 0;
+	margin-bottom: 1.2rem;
 }
 
 .link-btn {
@@ -253,7 +320,7 @@ img {
 	display: inline-block;
 	height: 3.2rem;
 	line-height: 1;
-	margin: 0 0 0 2rem;
+	margin-left: 2rem;
 	vertical-align: middle;
 }
 .edys-search, .search-left, .search-right {
@@ -310,7 +377,7 @@ img {
 	border: none;
 	font-family: inherit;
 	font-size: 100%;
-	margin: 0 0 1.7rem 0;
+	margin-bottom: 1.7rem;
 	-webkit-box-shadow: 0.4rem 0.4rem 0 rgba(0,0,0,0.1); -moz-box-shadow: 0.4rem 0.4rem 0 rgba(0,0,0,0.1); box-shadow: 0.4rem 0.4rem 0 rgba(0,0,0,0.1);
 }
 .form_field_textarea {
