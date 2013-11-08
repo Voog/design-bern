@@ -217,13 +217,14 @@ img {
 .pad-0 {
 	padding: 0;
 }
-.content-wrap p {
+.content-wrap p, .content-wrap img {
 	margin-bottom: 3.8rem;
 }
 .content-wrap p:last-child {
 	margin: 0;
 }
 .content-wrap ul {
+	list-style: none;
 	margin: 1.4rem 0 3.3rem 0;
 }
 .content-inner-half {
@@ -419,6 +420,18 @@ img {
 	line-height: 1.5;
 	margin: 3.3rem 5rem;
 	text-align: center;
+}
+.footer-content {
+	margin-bottom: 1.3rem;
+}
+.edicy-link {
+	border: 1px solid #000000; border: 1px solid rgba(0,0,0,0.1);
+	color: #1b2124; color: rgba(27,33,36,0.75);
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1;
+	padding: 0.7rem 0.9rem;
 }
 
 /* Retina */
