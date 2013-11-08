@@ -263,13 +263,20 @@ img {
 	background: #eeeeee; background: rgba(238,238,238,1);
 }
 
-.img-gallery {
+.edys-gallery-area {
 	margin: 2.1rem 0 3rem;
 }
-.img-gallery img {
+.edys-gallery-area a {
+	float: left;
 	width: 14rem;
 	height: auto;
-	float: left;
+}
+.edys-gallery-area img {
+	width: 14rem;
+	height: auto;
+}
+.edys-gallery a {
+	padding-right: 0 !important;
 }
 
 /* Blog posts */
