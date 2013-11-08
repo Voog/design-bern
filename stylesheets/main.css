@@ -134,13 +134,22 @@ img {
 }
 
 .sub-menu-inner {
-	border-bottom: 0.1rem solid #696b6c; border-bottom: 0.1rem solid rgba(105,107,108,0.2);
+	border-bottom: 1px solid #696b6c; border-bottom: 1px solid rgba(105,107,108,0.2);
 	margin: 0 3rem;
 	padding: 1.2rem 3rem 1.4rem;
 }
-.sub-menu-wrap .menu li a, .sub-menu-wrap .filters-label {
+.sub-menu-wrap .filters-label, .sub-menu-wrap .menu li a {
 	color: #9c9e9e; color: rgba(156,158,158,1);
-	width: 12.2rem;
+}
+.sub-menu-wrap .filters-label {
+	margin-left: 2.4rem;
+	width: 9.8rem;
+}
+.sub-menu-wrap .menu li a {
+	margin-left: 1.3rem;
+}
+.sub-menu-wrap .menu li:first-child a {
+	margin-left: 0;
 }
 .sub-menu-wrap .menu li .active {
 	color: #1b2124;	color: rgba(27,33,36,1);	
@@ -172,7 +181,7 @@ img {
 	position: absolute;
 	left: -8.9rem;
 	top: 3.1rem;
-	-webkit-box-shadow: 0 0 0.1rem rgba(0,0,0,0.3); -moz-box-shadow: 0 0 0.1rem rgba(0,0,0,0.3); box-shadow: 0 0 0.1rem rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.3); -moz-box-shadow: 0 0 1px rgba(0,0,0,0.3); box-shadow: 0 0 1px rgba(0,0,0,0.3);
 }
 .lang-menu-popover .menu {
 	text-align: right;
@@ -214,7 +223,7 @@ img {
 .content-wrap {
 	padding: 4.6rem 5rem;
 }
-.pad-0 {
+.content-wrap.pad-0 {
 	padding: 0;
 }
 .content-wrap p, .content-wrap img {
@@ -227,30 +236,42 @@ img {
 	list-style: none;
 	margin: 1.4rem 0 3.3rem 0;
 }
+.content-wrap ul li {
+	position: relative;
+}
+.content-wrap ul li:before {
+	content: '•';
+	display: block;
+	position: absolute;
+	left: -2.2rem;
+	top: 0.2rem;
+	color: #696b6c; color: rgba(105,107,108,1);
+	font-size: 2rem;
+}
 .content-inner-half {
 	float: left;
 	width: 50%;
 }
-.pad-46-5-0 {
-	padding: 4.6rem 5rem 0;
+.pad-46-5 {
+	padding: 4.6rem 5rem;
 }
+/* This stuff is temporary. Image will be replaced with Google maps*/
 .tmp-map {
 	display: block;
+	float: right;
+	margin-bottom: 0 !important;
 }
 
 .fp-content-wrap {
 	background: url("../photos/front-page-content.jpg") center top no-repeat;
 	background-size: cover;
 	display: table;
-	padding: 10.15rem 5rem;
+	padding: 10.15rem 18rem;
 	width: 100%;
 }
 .fp-content-align-middle {
 	display: table-cell;
 	vertical-align: middle;
-}
-.fp-content {
-	margin: 0 13rem;
 }
 .fp-content, .fp-content h1, .fp-content h2, .fp-content h3, .fp-content p, .fp-content ul {
 	color: #fff; color: rgba(255,255,255,1);
@@ -264,17 +285,20 @@ img {
 	background: #eeeeee; background: rgba(238,238,238,1);
 }
 
+/* Gallery */
 .edys-gallery-area {
 	margin: 2.1rem 0 3rem;
 }
 .edys-gallery-area a {
 	float: left;
-	width: 14rem;
 	height: auto;
+	width: 14rem;
 }
 .edys-gallery-area img {
-	width: 14rem;
+	margin: 0;
+	display: block;
 	height: auto;
+	width: 100%;
 }
 .edys-gallery a {
 	padding-right: 0 !important;
@@ -432,6 +456,98 @@ img {
 	font-weight: 600;
 	line-height: 1;
 	padding: 0.7rem 0.9rem;
+}
+
+/* Tablet view */
+@media screen and (max-width: 980px) {
+	/* General */
+	.page-wrap {
+		max-width: 100%;
+	}
+
+	/* Header */
+	.header-inner-left {
+		padding-left: 3rem;
+	}
+	.header-inner-right {
+		padding-right: 3rem;
+	}
+
+	/* Content wrap */
+	.pad-46-5 {
+		padding: 4.6rem 3rem;
+	}
+
+	/* Footer */
+	.site-footer {
+		margin: 3.3rem 3rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	/* Content area */
+	.fp-content-wrap {
+		padding: 10.15rem 3rem;
+	}
+}
+
+/* Mobile view */
+@media screen and (max-width: 740px) {
+	/* General */
+	html {
+		font-size: 54.5%;
+	}
+	/* Menus */
+	.sub-menu-wrap .filters-label {
+		margin-left: 0;
+	}
+	.sub-menu-inner {
+		padding: 1.2rem 0 1.4rem;
+	}
+	/* Content area */
+	.fp-content-wrap {
+		padding: 10.15rem 3rem;
+	}
+	.content-wrap {
+		padding: 2.6rem 3rem;
+	}
+
+	/* Blog posts */
+	.post-wrap {
+		padding: 0;
+	}
+	.post-inner-right {
+		max-width: 100%;
+	}
+
+	/* Forms */
+	.form_field_textfield, .form_field_textarea, .form_field_size_medium, .form_field_size_small {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/* Content area */
+	.content-inner-half {
+		float: none;
+		padding: 4.6rem 3rem;
+		width: auto;
+	}
+	.content-inner-half:last-child {
+		padding: 0 3rem 3rem;
+	}
+	.tmp-map {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	/* Gallery */
+	.edys-gallery-area a {
+		width: 50%;
+	}
 }
 
 /* Retina */
