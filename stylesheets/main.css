@@ -184,7 +184,7 @@ img {
 	padding: 4.6rem 5rem;
 }
 .content-wrap.pad-0 { padding: 0; }
-.content-wrap p, .content-wrap img { margin-bottom: 3.8rem; }
+.content-wrap p, .content-wrap img, .content-wrap object, .content-wrap iframe { margin-bottom: 3.8rem; }
 .content-wrap p:last-child { margin: 0; }
 .content-wrap ul {
 	list-style: none;
@@ -200,11 +200,17 @@ img {
 	color: #696b6c; color: rgba(105,107,108,1);
 	font-size: 2rem;
 }
+.content-wrap iframe, .content-wrap object {
+	max-width: 100%;
+}
 .content-inner-half {
 	float: left;
 	width: 50%;
 }
-.content-inner-half iframe { display: block; }
+.content-inner-half iframe {
+	display: block;
+	margin: 0;
+}
 .pad-46-5 {	padding: 4.6rem 5rem; }
 
 .fp-content-wrap {
@@ -264,18 +270,11 @@ img {
 	max-width: 67.3rem;
 	vertical-align: top;
 }
-.post-date {
-	color: #1b2124; color: rgba(27,33,36,0.5);
-}
-.post-title {
-	margin-bottom: 1.4rem;
-}
-.post-title a {
-	color: inherit;
-}
-.excerpt-content {
-	margin-bottom: 1.2rem;
-}
+.post-date { color: #1b2124; color: rgba(27,33,36,0.5); }
+.post-title { margin-bottom: 1.4rem; }
+.post-title a { color: inherit; }
+.excerpt-content { margin-bottom: 1.2rem; }
+.post-excerpt-content { margin-bottom: 3.8rem; }
 
 .link-btn {
 	background: #abacad; background: rgba(105,107,108,0.5);
