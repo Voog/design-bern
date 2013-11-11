@@ -19,10 +19,21 @@
 		});
 	};
 
+	var handlePopoverMenuHide = function() {
+		$(document).mouseup(function (e) {
+			var langMenu = $(".lang-menu-popover");
+
+			if (!langMenu.is(e.target) && langMenu.has(e.target).length === 0) {
+				langMenu.fadeOut("fast");
+			}
+		});
+	};
+
 	var init = function() {
 		handleLangMenuClick();
 		handleMobileMenuClick();
 		handleWindowResize();
+		handlePopoverMenuHide();
 	};
 
 	init();

@@ -40,7 +40,10 @@ html, body, h1, h2, h3, p, .menu {
 html { font-size: 62.5%; }
 body {
 	color: #696b6c;	color: rgba(105,107,108,1);
-	font: 400 2.4rem/1.3 "AvenirNext", sans-serif;
+	font-family: "AvenirNext", sans-serif;
+	font-size:  2.4rem;
+	font-weight: 400;
+	line-height: 1.3;
 }
 
 h1, h2, h3 { color: #1b2124; color: rgba(27,33,36,1); }
@@ -310,6 +313,9 @@ img {
 	padding: 0.5rem 0 0.4rem 0.7rem;
 	width: 10.8rem;
 }
+.edys-search-input::-ms-clear {
+	display: none;
+}
 .edys-search-input::-webkit-input-placeholder {
 	line-height: 1;
 	padding: 0.2rem 0 0.4rem 0;
@@ -481,5 +487,12 @@ img {
 	.fp-content-wrap {
 		background: url("../photos/front-page-content-bg@2x.jpg") center top no-repeat;
 		background-size: cover;
+	}
+}
+
+/* IE 9/10/11/ hacks */
+@media screen and (min-width:0\0) {
+	.lang-menu-popover {
+		border: 1px solid #e1e1e1;
 	}
 }
