@@ -526,6 +526,9 @@ img {
 	.mobile-menu-wrap .menu li .active {
 		color: #838586; color: rgba(131,133,134,0.67);
 	}
+	.mobile-sub-menu li {
+		padding-left: 2rem;
+	}
 
 	/* Content area */
 	.fp-content-wrap {
