@@ -179,7 +179,10 @@ img {
 .lang-et:after { background: url("../images/tmp/flag-et.svg") right center no-repeat; }
 
 /* Content area */
-.content-wrap { padding: 4.6rem 5rem; }
+.content-wrap {
+	min-height: 14rem;
+	padding: 4.6rem 5rem;
+}
 .content-wrap.pad-0 { padding: 0; }
 .content-wrap p, .content-wrap img { margin-bottom: 3.8rem; }
 .content-wrap p:last-child { margin: 0; }
@@ -201,13 +204,8 @@ img {
 	float: left;
 	width: 50%;
 }
+.content-inner-half iframe { display: block; }
 .pad-46-5 {	padding: 4.6rem 5rem; }
-/* This stuff is temporary. Image will be replaced with Google maps*/
-.tmp-map {
-	display: block;
-	float: right;
-	margin-bottom: 0 !important;
-}
 
 .fp-content-wrap {
 	background: url("../photos/front-page-content-bg.jpg") center top no-repeat;
@@ -470,6 +468,9 @@ img {
 		width: auto;
 	}
 	.content-inner-half:last-child { padding: 0 3rem 3rem; }
+	.content-inner-half iframe {
+		display: block !important;
+	}
 	.tmp-map {
 		float: none;
 		display: block;
