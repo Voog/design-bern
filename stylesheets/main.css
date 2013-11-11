@@ -106,11 +106,10 @@ img {
 	display: none;
 }
 .mobile-menu-wrap .menu {
-	display: block;
+	display: none;
 }
 .menu {
 	list-style: none;
-	max-width: 450px;
 	text-align: center;
 }
 .menu-horizontal, .menu-horizontal li, .filters-label {
@@ -173,8 +172,8 @@ img {
 	cursor: pointer;
 	padding: 0;
 	vertical-align: middle;
-	width: 2rem;
-	height: 1.3rem;
+	width: 20px;
+	height: 13px;
 }
 .lang-btn:focus {
 	outline: none;
@@ -208,8 +207,8 @@ img {
 	position: absolute;
 	right: 1.1rem;
 	top: 0.3rem;
-	width: 2rem;
-	height: 1.3rem;
+	width: 20px;
+	height: 13px;
 }
 .lang-menu-popover .menu li a:hover {
 	background: #ccc;
@@ -496,13 +495,23 @@ img {
 		display: none;
 	}
 	.mobile-menu-btn-wrap {
+		cursor: pointer;
 		display: inline-block;
+		margin-left: 1rem;
+		vertical-align: middle;
+		width: 25px;
+	}
+	.mobile-menu-stripe {
+		background: #000; background: rgba(0,0,0,1);
+		height: 4px;
+		margin: 4px 0;
+		width: 100%;
+
 	}
 	.mobile-menu-wrap .menu li {
 		border-bottom: 1px solid #696b6c; border-bottom: 1px solid rgba(105,107,108,0.2);
 		display: block;
 		font-size: 2rem;
-		padding: 1rem 0;
 		text-align: left;
 	}
 	.mobile-menu-wrap .menu li:first-child {
@@ -512,7 +521,7 @@ img {
 		color: #1b2124;	color: rgba(27,33,36,0.67);
 		display: block;
 		font-weight: 600;
-		padding: 0 3rem;
+		padding: 1rem 3rem;
 	}
 	.mobile-menu-wrap .menu li .active {
 		color: #838586; color: rgba(131,133,134,0.67);
@@ -576,7 +585,7 @@ img {
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 431px) {
 	/* Gallery */
 	.edys-gallery-area a {
 		width: 50%;

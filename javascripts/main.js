@@ -6,7 +6,7 @@
 	};
 
 	var handleMobileMenuClick = function() {
-		$(".mobile-menu-btn").click(function() {
+		$(".mobile-menu-btn-wrap").click(function() {
 			$(".mobile-menu-wrap .menu").slideToggle("fast");
 		});
 	};
