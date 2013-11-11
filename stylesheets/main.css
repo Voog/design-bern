@@ -102,14 +102,14 @@ img {
 .main-menu-wrap .menu li { margin-left: 1.3rem; }
 .main-menu-wrap .menu li:first-child { margin-left: 0; }
 .main-menu-wrap .menu li a {
-	color: #1b2124;	color: rgba(27,33,36,0.67);
+	color: #838586;	color: rgba(27,33,36,0.67);
 	display: inline-block;
 	font-weight: 600;
 }
-.main-menu-wrap .menu li .active { color: #838586; color: rgba(131,133,134,0.67); }
+.main-menu-wrap .menu li .active { color: #b2b3b3; color: rgba(131,133,134,0.67); }
 
 .sub-menu-inner {
-	border-bottom: 1px solid #696b6c; border-bottom: 1px solid rgba(105,107,108,0.2);
+	border-bottom: 1px solid #d3d4d4; border-bottom: 1px solid rgba(105,107,108,0.2);
 	margin: 0 3rem;
 	padding: 1.2rem 3rem 1.4rem;
 }
@@ -152,7 +152,7 @@ img {
 .lang-menu-popover .menu { text-align: right; }
 .lang-menu-popover .menu li {	font-size: 1.2rem; }
 .lang-menu-popover .menu li a {
-	color: #1b2124; color: rgba(27,33,36,0.67);
+	color: #b2b3b3; color: rgba(27,33,36,0.67);
 	display: block;
 	line-height: 1;
 	padding: 0.5rem 4rem 0.3rem 1.3rem;
@@ -167,7 +167,7 @@ img {
 	width: 20px;
 	height: 13px;
 }
-.lang-menu-popover .menu li a:hover {	background: #ccc; }
+.lang-menu-popover .menu li a:hover {	background: #ccc; background: rgba(204,204,204,1); }
 .lang-us:after {
 	background: url("../images/tmp/flag-us.png") right center no-repeat;
 	background-size: contain;
@@ -211,7 +211,6 @@ img {
 	background-size: cover;
 	display: table;
 	padding: 10.15rem 18rem;
-	width: 100%;
 }
 .fp-content-align-middle {
 	display: table-cell;
@@ -261,7 +260,7 @@ img {
 }
 .post-inner-right {
 	display: inline-block;
-	max-width: 67.4rem;
+	max-width: 67.3rem;
 	vertical-align: top;
 }
 .post-date {
@@ -278,7 +277,7 @@ img {
 }
 
 .link-btn {
-	background: #696b6c; background: rgba(105,107,108,0.5);
+	background: #abacad; background: rgba(105,107,108,0.5);
 	color: #fff; color: rgba(255,255,255,1);
 	display: inline-block;
 	font-size: 1.4rem;
@@ -288,7 +287,7 @@ img {
 
 /* Search */
 .search-wrap {
-	border: 1px solid #000000; border: 1px solid rgba(0,0,0,0.1);
+	border: 1px solid #e1e1e1; border: 1px solid rgba(0,0,0,0.1);
 	display: inline-block;
 	height: 3.2rem;
 	line-height: 1;
@@ -301,6 +300,7 @@ img {
 }
 .search-left, .search-right {	float: left; }
 .edys-search-input {
+	background: none;
 	border: none;
 	font-family: inherit;
 	font-size: 1.2rem;
@@ -312,7 +312,7 @@ img {
 }
 .edys-search-input::-webkit-input-placeholder {
 	line-height: 1;
-	padding: 0.2rem 0 0.4rem 0rem;
+	padding: 0.2rem 0 0.4rem 0;
 }
 .edys-search-input:focus, .search-submit:focus { outline: none; }
 .search-submit {
@@ -375,8 +375,8 @@ img {
 }
 .footer-content {	margin-bottom: 1.3rem; }
 .edicy-link {
-	border: 1px solid #000000; border: 1px solid rgba(0,0,0,0.1);
-	color: #1b2124; color: rgba(27,33,36,0.75);
+	border: 1px solid #e5e5e5; border: 1px solid rgba(0,0,0,0.1);
+	color: #707273; color: rgba(27,33,36,0.75);
 	display: inline-block;
 	font-size: 1rem;
 	font-weight: 600;
@@ -430,7 +430,7 @@ img {
 		font-weight: 600;
 		padding: 1rem 3rem;
 	}
-	.mobile-menu-wrap .menu li .active { color: #838586; color: rgba(131,133,134,0.67); }
+	.mobile-menu-wrap .menu li .active { color: #b2b3b3; color: rgba(131,133,134,0.67); }
 	.mobile-sub-menu li { padding-left: 2rem; }
 
 	/* Content area */
