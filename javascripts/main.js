@@ -1,7 +1,7 @@
 ;(function($) {
 	var handleLangMenuClick = function() {
-		$(".lang-btn").click(function() {
-			console.log("test");
+		$(".lang-btn").click(function(event) {
+			event.stopPropagation();
 			$(".lang-menu-popover").toggleClass("visible");
 			if ($(".lang-menu-popover").hasClass("visible")) {
 				$(".lang-menu-popover").fadeIn("fast");
@@ -26,11 +26,9 @@
 	};
 
 	var handlePopoverMenuHide = function() {
-		$(document).mouseup(function (e) {
-			var langMenu = $(".lang-menu-popover");
-
-			if (!langMenu.is(e.target) && langMenu.has(e.target).length === 0) {
-				langMenu.fadeOut("fast").removeClass("visible");
+		$('html').click(function() {
+			if ($(".lang-menu-popover").hasClass("visible")) {
+				$(".lang-menu-popover").removeClass("visible").fadeOut("fast");
 			}
 		});
 	};
