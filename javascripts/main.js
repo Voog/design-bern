@@ -1,7 +1,13 @@
 ;(function($) {
 	var handleLangMenuClick = function() {
 		$(".lang-btn").click(function() {
-			$(".lang-menu-popover").fadeToggle("fast");
+			console.log("test");
+			$(".lang-menu-popover").toggleClass("visible");
+			if ($(".lang-menu-popover").hasClass("visible")) {
+				$(".lang-menu-popover").fadeIn("fast");
+			} else {
+				$(".lang-menu-popover").fadeOut("fast");
+			}
 		});
 	};
 
@@ -24,7 +30,7 @@
 			var langMenu = $(".lang-menu-popover");
 
 			if (!langMenu.is(e.target) && langMenu.has(e.target).length === 0) {
-				langMenu.fadeOut("fast");
+				langMenu.fadeOut("fast").removeClass("visible");
 			}
 		});
 	};

@@ -53,6 +53,7 @@ a {
 	color: #0066bb; color: rgba(0,102,187,1);
 	text-decoration: none;
 }
+a img {	border: none; }
 
 .centered {	text-align: center; }
 .bold {	font-weight: 600; }
@@ -91,17 +92,15 @@ img {
 /* Menus */
 .mobile-menu-btn-wrap, .lang-menu-popover {	display: none; }
 .mobile-menu-wrap .menu {	display: none; }
-.menu {
-	list-style: none;
-	text-align: center;
-}
+.menu {	list-style: none; }
 .menu-horizontal, .menu-horizontal li, .filters-label {	display: inline-block; }
 .menu li, .sub-menu-wrap .filters-label {	font-size: 1.4rem; }
 .main-menu-wrap {
 	display: inline-block;
-	max-width: 670px;
+	max-width: 49rem;
 	vertical-align: middle;
 }
+.main-menu-wrap .menu {	text-align: right; }
 .main-menu-wrap .menu li { margin-left: 1.3rem; }
 .main-menu-wrap .menu li:first-child { margin-left: 0; }
 .main-menu-wrap .menu li a {
@@ -116,14 +115,21 @@ img {
 	margin: 0 3rem;
 	padding: 1.2rem 3rem 1.4rem;
 }
+.sub-menu-wrap .filters-wrap { margin-left: 2.4rem; }
 .sub-menu-wrap .filters-label, .sub-menu-wrap .menu li a { color: #9c9e9e; color: rgba(156,158,158,1); }
 .sub-menu-wrap .filters-label {
-	margin-left: 2.4rem;
+	margin-top: 0.8rem;
+	vertical-align: top;
 	width: 9.8rem;
 }
-.sub-menu-wrap .menu li a { margin-left: 1.3rem; }
-.sub-menu-wrap .menu li:first-child a { margin-left: 0; }
+.sub-menu-wrap .menu {
+	max-width: 69.2rem;
+	text-align: center;
+}
+.sub-menu-wrap .menu li { margin-right: 1.3rem; }
+.sub-menu-wrap .menu li:last-child { margin-right: 0; }
 .sub-menu-wrap .menu li .active {	color: #1b2124;	color: rgba(27,33,36,1); }
+.sub-menu-wrap .tag-menu { text-align: left; }
 
 .lang-menu-wrap {
 	display: inline-block;
@@ -405,7 +411,7 @@ img {
 
 @media screen and (max-width: 900px) {
 	/* Menus */
-	.main-menu-wrap, .search-wrap { display: none; }
+	.main-menu-wrap, .search-wrap, .sub-nav { display: none; }
 	.mobile-menu-btn-wrap {
 		cursor: pointer;
 		display: inline-block;
@@ -445,8 +451,8 @@ img {
 	/* General */
 	html { font-size: 54.5%; }
 	/* Menus */
-	.sub-menu-wrap .filters-label { margin-left: 0; }
 	.sub-menu-inner { padding: 1.2rem 0 1.4rem; }
+	.sub-menu-wrap .filters-wrap { margin-left: 0; }
 	/* Content area */
 	.fp-content-wrap { padding: 10.15rem 3rem; }
 	.content-wrap { padding: 2.6rem 3rem; }

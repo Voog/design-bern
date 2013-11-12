@@ -12,21 +12,23 @@ h2 { font-size: 24px; }
 
 /* Menus */
 .menu li, .sub-menu-wrap .filters-label {	font-size: 14px; }
-.main-menu-wrap {	max-width: 670px; }
+.main-menu-wrap {	max-width: 490px; }
 .main-menu-wrap .menu li { margin-left: 13px; }
 
+.sub-menu-wrap .filters-label { margin-top: 8px; }
 .sub-menu-inner {
 	margin: 0 30px;
 	padding: 12px 30px 14px;
 }
-.sub-menu-wrap .filters-label {
-	margin-left: 24px;
-	width: 98px;
-}
-.sub-menu-wrap .menu li a { margin-left: 13px; }
+.sub-menu-wrap .filters-wrap { margin-left: 24px; }
+.sub-menu-wrap .filters-label {	margin-top: 8px; }
+.sub-menu-wrap .menu { max-width: 691px; }
+.sub-menu-wrap .tag-menu { margin-left: 24px; }
+.sub-menu-wrap .menu li a { margin-right: 13px; }
 
 .lang-menu-wrap {	margin-left: 13px; }
 .lang-menu-popover {
+	border: 1px solid #e1e1e1;
 	min-width: 121px;
 	padding: 6px 0;
 	right: -12px;
