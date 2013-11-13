@@ -9,7 +9,7 @@ pre { padding: 10px; }
 .page-wrap { max-width: 940px; }
 
 /* Header */
-.site-header { margin: 27px 0 20px; }
+.site-header { margin: 27px 0 17px; }
 .header-inner-left { max-width: 250px; }
 
 /* Menus */
@@ -17,13 +17,13 @@ pre { padding: 10px; }
 .main-menu-wrap {	max-width: 490px; }
 .main-menu-wrap .menu li { margin-left: 13px; }
 
-.sub-menu-wrap .filters-label { margin-top: 8px; }
+.sub-menu-wrap .filters-label { margin-top: 11px; }
 .sub-menu-inner {
 	margin: 0 30px;
 	padding: 12px 30px 14px;
 }
 .sub-menu-wrap .filters-wrap { margin-left: 24px; }
-.sub-menu-wrap .filters-label {	margin-top: 8px; }
+.sub-menu-wrap .filters-label {	margin-top: 11px; }
 .sub-menu-wrap .menu { max-width: 691px; }
 .sub-menu-wrap .tag-menu { margin-left: 24px; }
 .sub-menu-wrap .menu li a { margin-right: 13px; }
@@ -51,8 +51,11 @@ pre { padding: 10px; }
 	min-height: 140px;
 	padding: 46px 50px;
 }
+.content-wrap h1, .content-wrap h2, .content-wrap h3, .content-wrap h4, .content-wrap h5, .content-wrap h6 {
+	margin-bottom: 27px;
+}
 .content-wrap p, .content-wrap img { margin-bottom: 38px; }
-.content-wrap ul { margin: 14px 0 33px 0; }
+.content-wrap ul { margin: 0 0 33px 0; }
 .content-wrap ul li:before {
 	left: -22px;
 	top: 2px;
@@ -103,8 +106,7 @@ pre { padding: 10px; }
 .edys-search, .search-left, .search-right {	height: 30px; }
 .edys-search-input {
 	font-size: 12px;
-	height: 30px;
-	padding: 5px 0 4px 7px;
+	padding: 11px 0 5px 7px;
 	width: 108px;
 }
 .edys-search-input::-webkit-input-placeholder {	padding: 2px 0 4px 0; }

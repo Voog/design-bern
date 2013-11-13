@@ -77,7 +77,7 @@ img {
 /* Header */
 .site-header {
 	display: table;
-	margin: 2.7rem 0 2rem;
+	margin: 2.7rem 0 1.7rem;
 	position: relative;	
 	width: 100%;
 }
@@ -108,7 +108,11 @@ img {
 	vertical-align: middle;
 }
 .main-menu-wrap .menu {	text-align: right; }
-.main-menu-wrap .menu li { margin-left: 1.3rem; }
+.main-menu-wrap .menu li {
+	line-height: 1;
+	margin-left: 1.3rem;
+	vertical-align: middle;
+}
 .main-menu-wrap .menu li:first-child { margin-left: 0; }
 .main-menu-wrap .menu li a {
 	color: #838586;	color: rgba(27,33,36,0.67);
@@ -125,7 +129,7 @@ img {
 .sub-menu-wrap .filters-wrap { margin-left: 2.4rem; }
 .sub-menu-wrap .filters-label, .sub-menu-wrap .menu li a { color: #9c9e9e; color: rgba(156,158,158,1); }
 .sub-menu-wrap .filters-label {
-	margin-top: 0.8rem;
+	margin-top: 1.1rem;
 	vertical-align: top;
 	width: 9.8rem;
 }
@@ -140,8 +144,10 @@ img {
 
 .lang-menu-wrap {
 	display: inline-block;
+	margin-bottom: 0.3rem;
 	margin-left: 1.3rem;
 	position: relative;
+	vertical-align: middle;
 }
 .lang-btn {
 	background: #fff url("../images/tmp/flag-us.png") center no-repeat;
@@ -198,16 +204,13 @@ img {
 }
 .content-wrap.pad-0 { padding: 0; }
 .content-wrap h1, .content-wrap h2, .content-wrap h3, .content-wrap h4, .content-wrap h5, .content-wrap h6 {
-	margin-bottom: 1rem;
-}
-.content-wrap h1, .content-wrap h2, .content-wrap h3, .content-wrap h4, .content-wrap h5, .content-wrap h6 {
-	margin-bottom: 1rem;
+	margin-bottom: 2.7rem;
 }
 .content-wrap p, .content-wrap img, .content-wrap object, .content-wrap iframe { margin-bottom: 3.8rem; }
 .content-wrap p:last-child { margin: 0; }
 .content-wrap ul {
 	list-style: none;
-	margin: 1.4rem 0 3.3rem 0;
+	margin: 0 0 3.3rem 0;
 }
 .content-wrap ul li {	position: relative; }
 .content-wrap ul li:before {
@@ -312,6 +315,7 @@ img {
 	height: 3.2rem;
 	line-height: 1;
 	margin-left: 2rem;
+	margin-top: 0.3rem;
 	vertical-align: middle;
 }
 .edys-search, .search-left, .search-right {
@@ -327,7 +331,8 @@ img {
 	height: 3rem;
 	line-height: 1;
 	margin: 0;
-	padding: 0.5rem 0 0.4rem 0.7rem;
+	padding: 0.4rem 0 0.4rem 0.7rem;
+	vertical-align: middle;
 	width: 10.8rem;
 }
 .edys-search-input::-ms-clear {
@@ -339,11 +344,12 @@ img {
 }
 .edys-search-input:focus, .search-submit:focus { outline: none; }
 .search-submit {
+	background: none;
 	border: none;
 	cursor: pointer;
 	height: 3rem;
 	padding: 0;
-	vertical-align: middle;
+	vertical-align: top;
 	width: 3rem;
 }
 .no-svg .search-submit { background: #fff url("../images/ico-search.png") center no-repeat; }
