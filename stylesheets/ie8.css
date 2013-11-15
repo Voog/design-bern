@@ -174,16 +174,29 @@ pre {
 	color: #1b2124; 
 	font-size: 14px;
 }
+.form_field label.form_field_label {
+	height: 18px;
+	padding-left: 20px;
+}
 .form_field_textfield, .form_field_textarea, .form_submit input {
-	font-size: 100%;
+	font-size: 14px;
 	margin-bottom: 17px;
+	padding: 10px;
 }
 .form_field_textarea { min-height: 62px; }
+.form_field_select {
+	background: rgba(255,255,255,1);
+	padding: 10px 0 10px 10px;
+}
+.no-svg .form_field_select { background: #fff url("../images/arrow-down.png") no-repeat right 1rem center; }
 .form_submit input {
 	background: #0066bb;
-	color: #fff; 
+	color: #fff;
 	font-size: 14px;
 	padding: 8px 11px;
+}
+.checkbox_label.checked, .radio_label.checked {
+	background-position: 0 -19px;
 }
 
 /* Footer */

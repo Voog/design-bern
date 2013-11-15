@@ -26,10 +26,23 @@
 	};
 
 	var handlePopoverMenuHide = function() {
-		$('html').click(function() {
+		$("html").click(function() {
 			if ($(".lang-menu-popover").hasClass("visible")) {
 				$(".lang-menu-popover").removeClass("visible").fadeOut("fast");
 			}
+		});
+	};
+
+	var handleCheckboxClick = function() {
+		$(".form_field_label").click(function() {
+			$(this).toggleClass("checked");
+		});
+	};
+
+	var handleRadioClick = function() {
+		$(".radio_label").click(function() {
+			$(".radio_label").removeClass("checked");
+			$(this).addClass("checked");
 		});
 	};
 
@@ -38,6 +51,8 @@
 		handleMobileMenuClick();
 		handleWindowResize();
 		handlePopoverMenuHide();
+		handleCheckboxClick();
+		handleRadioClick();
 	};
 
 	init();
