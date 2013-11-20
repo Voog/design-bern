@@ -235,10 +235,14 @@ pre {
 	padding: 10px;
 }
 .form_field_textarea { min-height: 62px; }
+.form_field_checkbox, .form_field_radio {
+	height: 17px;
+	left: -3px;
+	top: 6px;
+	width: 17px;
+}
 .form_field_select {
 	background: #fff;
-/*	height: 35px;
-	padding: 0 0 0 10px;*/
 	padding: 10px;
 }
 .no-svg .form_field_select { background: #fff url("../images/arrow-down.png") no-repeat right 1rem center; }
