@@ -13,14 +13,14 @@
 
 	var handleMobileMenuClick = function() {
 		$(".mobile-menu-btn-wrap").click(function() {
-			$(".mobile-menu-wrap .menu").slideToggle("fast");
+			$(".mobile-menu-wrap").slideToggle("fast");
 		});
 	};
 
 	var handleWindowResize = function() {
 		$(window).resize(function() {
 			if ($(window).width() > 900) {
-				$(".mobile-menu-wrap .menu").hide();
+				$(".mobile-menu-wrap").hide();
 			}
 		});
 	};
