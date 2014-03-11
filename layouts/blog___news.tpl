@@ -1,41 +1,48 @@
 <!DOCTYPE html>
-<html lang="{% for language in site.languages %}{% if language.selected? %}{{ language.code }}{% endif %}{% endfor %}">
+<html lang="{{ page.language_code }}">
   <head>
     {% include "html-head" %}
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ site.name }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
     {{ blog.rss_link }}
   </head>
-  <body>
-    <div class="page-wrap cfx">
-    
+  
+  <body class="blog-page">
+    <div class="container">
       {% include "header" %}
-      {% include "tags-blog-listing" %}
-
-      <section class="content-wrap cp-content-wrap cfx">
-        {% addbutton %}
-        {% for article in articles %}
-          <article class="excerpt-wrap">
-            <div class="excerpt-inner-left">
-              <time datetime="{{ article.created_at | date : "%Y-%m-%d" }}" class="excerpt-date">{{ article.created_at | date : "%b %d, %Y" }}</time>
-            </div>
-            <div class="excerpt-inner-right">
-              <h2 class="excerpt-post-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
-              <div class="excerpt-content">{{ article.excerpt }}</div>
-              <a href="{{ article.url }}" class="link-btn">Read more</a>
-            </div>
-          </article>
-        {% endfor %}
-      </section>
+      {% include "tags-blog" %}
+      
+      <main class="content cfx" role="main">
+        <div class="content-inner">
+          {% addbutton %}
+          {% for article in articles %}
+            <article class="post">
+              <div class="post-left">
+                <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | date : "%b %d, %Y" }}</time>
+              </div>
+              <div class="post-right">
+                <h2 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
+                <div class="post-excerpt content-formatted cfx">{{ article.excerpt }}</div>
+                <a href="{{ article.url }}" class="post-link">Read more</a>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </main>
       
       {% include "footer" %}
     </div>
-
+  
     {% include "javascripts" %}
+    <script>site.initBlogPage();</script>
     <script>
       $(document).ready(function() {
         currentUrl = window.location.href;
         blogUrl = "{{ site.url }}/{{ page.path }}";
         if (currentUrl === blogUrl) {
-          $(".blog-main a").addClass("active");
+          $(".blog-main").addClass("active");
         };
       });
     </script>

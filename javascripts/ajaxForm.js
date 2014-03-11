@@ -28,7 +28,7 @@
         
         handleSubmit: function(event) {
             event.preventDefault();
-            $('.form_submit input').replaceWith('<div class="feedback-loading"><span></span><span></span><span></span></div>');
+            $('.form_submit').replaceWith('<div class="feedback-loading"><span></span><span></span><span></span></div>');
             var params = {
                     method: 'post',
                     url: window.location,
@@ -56,7 +56,7 @@
                 this.showErrors($resultForm);
                 $('.form_field_required').addClass("form_field_with_errors");
                 $mainError = $resultForm.find('.form_error').clone().text();
-                $('.feedback-loading').parent().replaceWith('<div class="feedback-error"><span>' + $mainError + '</span><button class="close-btn"></button></div>');
+                $('.feedback-loading').replaceWith('<div class="feedback-error"><span>' + $mainError + '</span><button class="close-btn"></button></div>');
                 $('.form_field_error').css('display','inline');
                 $('.close-btn').click(function(event) {
                     event.preventDefault();
@@ -66,7 +66,7 @@
                 this.formSubmited($resultForm);
                 $('.form_field_required').removeClass("form_field_with_errors");
                 $sentFeedback = $resultForm.find('.form_notice').clone().text();
-                $('.feedback-loading').parent().replaceWith('<div class="feedback-success"><span>' + $sentFeedback +'</span><button class="close-btn"></button></div>');
+                $('.feedback-loading').replaceWith('<div class="feedback-success"><span>' + $sentFeedback +'</span><button class="close-btn"></button></div>');
                 $('.close-btn').click(function(event) {
                     event.preventDefault();
                     $(this).parent().replaceWith('<div class="form_submit"><input name="commit" type="submit" value="' + $sendButtonText +'"></div>');

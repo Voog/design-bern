@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="{% for language in site.languages %}{% if language.selected? %}{{ language.code }}{% endif %}{% endfor %}">
+<html lang="{{ page.language_code }}">
   <head>
     {% include "html-head" %}
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="{{ site.name }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
   </head>
-  <body>
-    <div class="page-wrap cfx">
+  
+  <body class="common-page">
+    <div class="container">
       {% include "header" %}
       {% include "sub-menu" %}
-
-      <section class="content-wrap cp-content-wrap cfx">
-        {% contentblock name="cp-title" %}
-          <h1 style="text-align: center;">Sisesta lehekülje pealkiri</h1>
-        {% endcontentblock %}
-      </section>
+      
+      <main class="content" role="main">
+        <div class="content-inner">
+          <section class="content-formatted cfx">
+            {% content %}
+          </section>
+        </div>
+      </main>
+      
       {% include "footer" %}
     </div>
-
+  
     {% include "javascripts" %}
+    <script>site.initCommonPage();</script>
+    <script src="{{ javascripts_path }}/autogrow.js"></script>
+    <script src="{{ javascripts_path }}/ajaxForm.js"></script>
+    <script>
+      $('.form_field_textarea').autogrow();
+      $(".content-formatted form").edicyAjaxForm();
+    </script>
   </body>
 </html>

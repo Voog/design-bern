@@ -8,15 +8,20 @@
     <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
   </head>
   
-  <body class="front-page">
+  <body class="common-page">
     <div class="container">
       {% include "header" %}
+      <!--{% include "sub-menu" %}--> <!-- TODO: Screws up the layout if no sub menu element present -->
       
-      <main class="content" role="main">
-        <div class="bg-color" style="background-color: #06b; background-color: rgba(0, 102, 187, 0.5);"></div>
-        <div class="content-inner" style="background-image: url('{{ photos_path }}/front-page-background.jpg');">
+      <main class="content cfx" role="main">
+        <div class="content-left">
           <section class="content-formatted cfx">
             {% content %}
+          </section>
+        </div>
+        <div class="content-right">
+          <section class="content-formatted cfx">
+            {% content name="content_right_test" %}
           </section>
         </div>
       </main>

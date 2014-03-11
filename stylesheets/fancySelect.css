@@ -1,0 +1,112 @@
+.fancy-select {
+  position: relative;
+}
+
+.fancy-select.disabled {
+  opacity: 0.5;
+}
+
+.fancy-select div.trigger {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 5px 24px 4px 9px;
+  text-overflow: ellipsis;
+  color: #4b5468;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 0 #d6d6d6;
+     -moz-box-shadow: 4px 4px 0 #d6d6d6;
+          box-shadow: 4px 4px 0 #d6d6d6;
+}
+
+.fancy-select .trigger:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 9px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #1b2124;
+}
+
+.fancy-select .trigger.open {
+  background: #d9d9d9;
+}
+
+.fancy-select .trigger.open:after {
+  border-top-color: #7a8498;
+}
+
+.trigger.form_field_select {
+  max-width: 280px;
+}
+.trigger.form_field_size_medium {
+  max-width: 420px;
+}
+.trigger.form_field_size_large {
+  max-width: 560px;
+}
+
+.fancy-select ul.options {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 50;
+  overflow: auto;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #d9d9d9;
+  
+}
+
+.fancy-select .options.open {
+  visibility: visible;
+  opacity: 1;
+  top: 40px;
+  -webkit-box-shadow: 4px 4px 0 #7f7f7f;
+          box-shadow: 4px 4px 0 rgba(127, 127, 127, 1);
+}
+
+.fancy-select .options.overflowing {
+  top: auto;
+  bottom: 40px;
+}
+
+.fancy-select .options.overflowing.open {
+  top: auto;
+  bottom: 50px;
+}
+
+.fancy-select .options li {
+  padding: 8px 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.fancy-select .options li.selected {
+  color: rgba(255,255,255,0.75);
+  background: #9d9b9b;
+}
+
+.fancy-select .options li.hover {
+  background: #d0cfcf;
+}
+
+@media screen and (max-width: 420px) {
+ .fancy-select .trigger,
+ .fancy-select .options {
+   width: 100%;
+   max-width: 100%;
+ }
+}

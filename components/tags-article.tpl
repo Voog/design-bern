@@ -1,19 +1,21 @@
-<nav class="sub-menu-wrap">
-  <div class="sub-menu-inner">
-    <div class="filters-wrap">
-      {% if article.tags? %}
-        <div class="filters-label">Filter posts</div>
-      {% endif %}
-      {% if editmode %}
+<section class="content-topbar">
+  <nav class="tags sub-menu">
+    <div class="tags-left">
+      <span class="tags-title">Filter posts</span>
+    </div>
+    {% if editmode %}
+      <div class="tags-right">
         {% editable article.tags %}
-      {% else %}
-        <ul class="menu menu-horizontal tag-menu">
+      </div>
+    {% else %}
+      <nav class="tags-right">
+        <ul class="menu">
           <li><a href="/{{ site.blogs.first.page.path }}">{% case page.language_code %}{% when 'et' %}Kõik teemad{% else %}All topics{% endcase %}</a></li>
           {% for tag in article.tags %}
             <li><a href="/{{ site.blogs.first.page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a></li>
           {% endfor %}
         </ul>
-      {% endif %}
-    </div>
-  </div>
-</nav>
+      </nav>
+    {% endif %}
+  </nav>
+</section>
