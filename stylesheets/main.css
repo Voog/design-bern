@@ -1,17 +1,17 @@
 /* FONTS */
 @font-face {
-  font-family: 'Avenir Next Heavy';
-  src: url("../assets/avenirnext-heavy.eot?");
-  src: url("../assets/avenirnext-heavy.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-heavy.woff") format("woff"), url("../assets/avenirnext-heavy.ttf") format("truetype"), url("../assets/avenirnext-heavy.svg#avernirnext-heavy") format("svg");
+  font-family: 'Avenir Next';
+  src: url("../assets/avenirnext-roman.eot?");
+  src: url("../assets/avenirnext-roman.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-roman.woff") format("woff"), url("../assets/avenirnext-roman.ttf") format("truetype"), url("../assets/avenirnext-roman.svg#avernirnext-roman") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir Next Roman';
-  src: url("../assets/avenirnext-roman.eot?");
-  src: url("../assets/avenirnext-roman.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-roman.woff") format("woff"), url("../assets/avenirnext-roman.ttf") format("truetype"), url("../assets/avenirnext-roman.svg#avernirnext-roman") format("svg");
-  font-weight: normal;
+  font-family: 'Avenir Next';
+  src: url("../assets/avenirnext-heavy.eot?");
+  src: url("../assets/avenirnext-heavy.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-heavy.woff") format("woff"), url("../assets/avenirnext-heavy.ttf") format("truetype"), url("../assets/avenirnext-heavy.svg#avernirnext-heavy") format("svg");
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -25,7 +25,7 @@
 body {
   margin: 0 auto;
   padding: 0;
-  font-family: "Avenir Next Roman", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 1.5;
@@ -49,16 +49,19 @@ body {
 .content-formatted h4,
 .content-formatted h5,
 .content-formatted h6 {
-  font-family: 'Avenir Next Heavy';
+  font-family: 'Avenir Next';
   font-weight: normal;
 }
-.content-formatted h1 {
+.content-formatted h1,
+.content-formatted h2,
+.content-formatted p {
   margin: 32px 0 0;
+}
+.content-formatted h1 {
   text-align: center;
   font-size: 36px;
 }
 .content-formatted h2 {
-  margin: 32px 0 0;
   font-size: 24px;
 }
 .content-formatted h3,
@@ -67,12 +70,6 @@ body {
 .content-formatted h6 {
   margin: 23px 0 0;
   font-size: 20px;
-}
-.content-formatted p {
-  margin: 32px 0 0;
-}
-.content-formatted b, .content-formatted strong {
-  font-family: "Avenir Next Heavy";
 }
 .content-formatted a {
   color: #0066bb;
@@ -148,10 +145,10 @@ body {
   border-bottom: 1px solid rgba(105, 107, 108, 0.2);
 }
 .sub-menu li {
-  margin-left: 12px;
+  margin-right: 12px;
 }
-.sub-menu li:first-child {
-  margin-left: 0;
+.sub-menu li:last-child {
+  margin-right: 0;
 }
 .sub-menu li a {
   color: #9c9e9e;
@@ -440,7 +437,7 @@ body {
 .header-title {
   display: inline-block;
   max-width: 340px;
-  font-family: "Avenir Next Heavy";
+  font-family: "Avenir Next";
   font-size: 24px;
 }
 .header-title,
@@ -593,7 +590,7 @@ body {
 
 .post-title {
   margin: 0;
-  font-family: "Avenir Next Heavy";
+  font-family: "Avenir Next";
   font-weight: normal;
   font-size: 24px;
   color: #1b2124;
@@ -686,6 +683,7 @@ body {
   border-right: 1px dashed #9c9e9e;
 }
 .content-formatted table {
+  font-size: 16px;
   border-collapse: collapse;
 }
 .content-formatted table td {
@@ -770,24 +768,26 @@ body {
 }
 
 .form_field {
-  margin-top: 19px;
+  margin-top: 20px;
   font-size: 14px;
   color: #1b2124;
 }
 .form_field label {
   display: block;
-  font-family: "Avenir Next Heavy";
+  font-family: "Avenir Next";
+  font-weight: bold;
   line-height: 1.3;
 }
 
 .form_field_textfield,
 .form_field_textarea,
-.form_field_select,
 .form_field_file,
+.form_field_select,
 .form_submit input {
   font-family: inherit;
   font-size: 14px;
   -webkit-appearance: none;
+  -moz-appearance: none;
   -webkit-border-radius: 0;
 }
 
@@ -800,6 +800,7 @@ body {
 
 .form_field_textfield,
 .form_field_textarea,
+.form_field_select,
 .form_submit input {
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
@@ -811,15 +812,31 @@ body {
   max-width: 280px;
   margin: 0;
   padding: 8px 8px 5px;
+  background-color: white;
   border: none;
-  outline: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  outline: none;
 }
 
 .form_field_textarea {
   min-height: 98px;
+}
+
+.form_field_select {
+  padding: 8px 17px 6px 9px;
+  background-repeat: no-repeat;
+  background-position: right 7px top 13px;
+  border: none;
+}
+
+.no-svg .form_field_select {
+  background-image: url("../images/arrow-down.png");
+}
+
+.svg .form_field_select {
+  background-image: url("../assets/arrow-down.svg");
 }
 
 .form_field_size_medium {
@@ -843,6 +860,10 @@ body {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0;
+}
+.form_submit input:hover {
+  background-color: #0066bb;
+  background-color: rgba(0, 102, 187, 0.8);
 }
 
 .form_field_error {
@@ -1050,7 +1071,7 @@ body {
 .voog-reference a {
   display: inline-block;
   padding: 7px 9px;
-  font-family: "Avenir Next Heavy";
+  font-family: "Avenir Next";
   font-size: 10px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.75);
@@ -1162,7 +1183,7 @@ body {
     color: rgba(27, 33, 36, 0.67);
   }
   .main-menu li.active a {
-    font-family: "Avenir Next Heavy";
+    font-family: "Avenir Next";
     background-color: #c7e5ff;
   }
   .main-menu li.active a:hover {
@@ -1221,6 +1242,26 @@ body {
 }
 /* MOBILE VIEW */
 @media screen and (max-width: 480px) {
+  /* GENERAL */
+  .content-formatted h1,
+  .content-formatted h2,
+  .content-formatted p {
+    margin: 28px 0 0;
+  }
+  .content-formatted h1 {
+    font-size: 32px;
+  }
+  .content-formatted h2 {
+    font-size: 20px;
+  }
+  .content-formatted h3,
+  .content-formatted h4,
+  .content-formatted h5,
+  .content-formatted h6 {
+    margin: 19px 0 0;
+    font-size: 16px;
+  }
+
   /* MENUS */
   .main-menu.expanded {
     top: 0;
@@ -1240,12 +1281,22 @@ body {
   .header-right {
     padding: 0;
   }
+
+  /* FRONT PAGE */
+  .front-page .content .content-formatted {
+    font-size: 32px;
+  }
+
+  /* BLOG & BLOG ARTICLE */
+  .post-right {
+    display: block;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 420px) {
   /* FORMS */
   .form_field_textfield,
   .form_field_textarea,
-  .form_field_select,
   .form_submit input {
     width: 100%;
     max-width: 100%;
