@@ -1,26 +1,16 @@
 /* FONTS */
 @font-face {
   font-family: 'Avenir Next';
-<<<<<<< HEAD
   src: url("http://bern-v2.kraftal.com/assets/avenirnext-roman.eot?");
   src: url("http://bern-v2.kraftal.com/assets/avenirnext-roman.eot?#iefix") format("embedded-opentype"), url("http://bern-v2.kraftal.com/assets/avenirnext-roman.woff") format("woff"), url("http://bern-v2.kraftal.com/assets/avenirnext-roman.ttf") format("truetype"), url("http://bern-v2.kraftal.com/assets/avenirnext-roman.svg#avernirnext-roman") format("svg");
-=======
-  src: url("../assets/avenirnext-roman.eot?");
-  src: url("../assets/avenirnext-roman.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-roman.woff") format("woff"), url("../assets/avenirnext-roman.ttf") format("truetype"), url("../assets/avenirnext-roman.svg#avernirnext-roman") format("svg");
->>>>>>> FETCH_HEAD
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Avenir Next';
-<<<<<<< HEAD
   src: url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.eot?");
   src: url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.eot?#iefix") format("embedded-opentype"), url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.woff") format("woff"), url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.ttf") format("truetype"), url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.svg#avernirnext-heavy") format("svg");
-=======
-  src: url("../assets/avenirnext-heavy.eot?");
-  src: url("../assets/avenirnext-heavy.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-heavy.woff") format("woff"), url("../assets/avenirnext-heavy.ttf") format("truetype"), url("../assets/avenirnext-heavy.svg#avernirnext-heavy") format("svg");
->>>>>>> FETCH_HEAD
   font-weight: bold;
   font-style: normal;
 }
@@ -77,12 +67,8 @@ body {
 .content-formatted h1,
 .content-formatted h2,
 .content-formatted p {
-<<<<<<< HEAD
   margin-top: 32px;
   margin-bottom: 0;
-=======
-  margin: 32px 0 0;
->>>>>>> FETCH_HEAD
 }
 .content-formatted h1 {
   text-align: center;
@@ -874,30 +860,17 @@ body {
 
 .form_field_select {
   padding: 8px 17px 6px 9px;
-<<<<<<< HEAD
   background-position: right 7px top 13px;
   background-repeat: no-repeat;
-=======
-  background-repeat: no-repeat;
-  background-position: right 7px top 13px;
->>>>>>> FETCH_HEAD
   border: none;
 }
 
 .no-svg .form_field_select {
-<<<<<<< HEAD
   background-image: url("http://bern-v2.kraftal.com/images/arrow-down.png");
 }
 
 .svg .form_field_select {
   background-image: url("http://bern-v2.kraftal.com/assets/arrow-down.svg");
-=======
-  background-image: url("../images/arrow-down.png");
-}
-
-.svg .form_field_select {
-  background-image: url("../assets/arrow-down.svg");
->>>>>>> FETCH_HEAD
 }
 
 .form_field_size_medium {
