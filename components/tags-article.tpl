@@ -1,5 +1,5 @@
 <section class="content-topbar">
-  <nav class="tags sub-menu">
+  <div class="tags sub-menu">
     <div class="tags-left">
       <span class="tags-title">Filter posts</span>
     </div>
@@ -17,5 +17,5 @@
         </ul>
       </nav>
     {% endif %}
-  </nav>
+  </div>
 </section>

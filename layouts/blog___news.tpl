@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.language_code }}">
+<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
   <head>
     {% include "html-head" %}
     <meta property="og:url" content="{{ site.url }}">
@@ -8,13 +8,13 @@
     <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
     {{ blog.rss_link }}
   </head>
-  
+
   <body class="blog-page">
     <div class="container">
       {% include "header" %}
       {% include "tags-blog" %}
-      
-      <main class="content cfx" role="main">
+
+      <main class="content" role="main">
         <div class="content-inner">
           {% addbutton %}
           {% for article in articles %}
@@ -24,20 +24,21 @@
               </div>
               <div class="post-right">
                 <h2 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
-                <div class="post-excerpt content-formatted cfx">{{ article.excerpt }}</div>
+                <div class="post-excerpt content-formatted">{{ article.excerpt }}</div>
                 <a href="{{ article.url }}" class="post-link">Read more</a>
               </div>
             </article>
           {% endfor %}
         </div>
       </main>
-      
+
       {% include "footer" %}
     </div>
-  
+
     {% include "javascripts" %}
-    <script>site.initBlogPage();</script>
     <script>
+      site.initBlogPage();
+
       $(document).ready(function() {
         currentUrl = window.location.href;
         blogUrl = "{{ site.url }}/{{ page.path }}";

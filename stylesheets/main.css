@@ -1,35 +1,37 @@
 /* FONTS */
 @font-face {
-  font-family: 'Avenir Next Heavy';
-  src: url("../assets/avenirnext-heavy.eot?");
-  src: url("../assets/avenirnext-heavy.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-heavy.woff") format("woff"), url("../assets/avenirnext-heavy.ttf") format("truetype"), url("../assets/avenirnext-heavy.svg#avernirnext-heavy") format("svg");
+  font-family: 'Avenir Next';
+  src: url("http://bern-v2.kraftal.com/assets/avenirnext-roman.eot?");
+  src: url("http://bern-v2.kraftal.com/assets/avenirnext-roman.eot?#iefix") format("embedded-opentype"), url("http://bern-v2.kraftal.com/assets/avenirnext-roman.woff") format("woff"), url("http://bern-v2.kraftal.com/assets/avenirnext-roman.ttf") format("truetype"), url("http://bern-v2.kraftal.com/assets/avenirnext-roman.svg#avernirnext-roman") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Avenir Next Roman';
-  src: url("../assets/avenirnext-roman.eot?");
-  src: url("../assets/avenirnext-roman.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-roman.woff") format("woff"), url("../assets/avenirnext-roman.ttf") format("truetype"), url("../assets/avenirnext-roman.svg#avernirnext-roman") format("svg");
-  font-weight: normal;
+  font-family: 'Avenir Next';
+  src: url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.eot?");
+  src: url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.eot?#iefix") format("embedded-opentype"), url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.woff") format("woff"), url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.ttf") format("truetype"), url("http://bern-v2.kraftal.com/assets/avenirnext-heavy.svg#avernirnext-heavy") format("svg");
+  font-weight: bold;
   font-style: normal;
 }
 
 /* GENERAL */
-.cfx:after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  font-family: "Avenir Next Roman", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 1.5;
   color: #696b6c;
+}
+
+.stretch, .front-page .content .bg-color {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .container {
@@ -43,36 +45,45 @@ body {
   border: none;
 }
 
+.content-formatted {
+  *zoom: 1;
+}
+.content-formatted:before, .content-formatted:after {
+  content: " ";
+  display: table;
+}
+.content-formatted:after {
+  clear: both;
+}
 .content-formatted h1,
 .content-formatted h2,
 .content-formatted h3,
 .content-formatted h4,
 .content-formatted h5,
 .content-formatted h6 {
-  font-family: 'Avenir Next Heavy';
+  font-family: 'Avenir Next';
   font-weight: normal;
 }
+.content-formatted h1,
+.content-formatted h2,
+.content-formatted p {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
 .content-formatted h1 {
-  margin: 32px 0 0;
   text-align: center;
   font-size: 36px;
 }
 .content-formatted h2 {
-  margin: 32px 0 0;
   font-size: 24px;
 }
 .content-formatted h3,
 .content-formatted h4,
 .content-formatted h5,
 .content-formatted h6 {
-  margin: 23px 0 0;
+  margin-top: 23px;
+  margin-bottom: 0;
   font-size: 20px;
-}
-.content-formatted p {
-  margin: 32px 0 0;
-}
-.content-formatted b, .content-formatted strong {
-  font-family: "Avenir Next Heavy";
 }
 .content-formatted a {
   color: #0066bb;
@@ -80,6 +91,10 @@ body {
 .content-formatted a:hover {
   color: #0066bb;
   color: rgba(0, 102, 187, 0.8);
+}
+.content-formatted img,
+.content-formatted pre {
+  margin-top: 20px;
 }
 .content-formatted img {
   max-width: 100%;
@@ -101,7 +116,7 @@ body {
 .content-formatted img:first-child,
 .content-formatted pre:first-child,
 .content-formatted table:first-child {
-  margin: 0;
+  margin-top: 0;
 }
 
 /* MENUS */
@@ -110,8 +125,9 @@ body {
 }
 
 .menu {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 .menu li {
@@ -148,10 +164,10 @@ body {
   border-bottom: 1px solid rgba(105, 107, 108, 0.2);
 }
 .sub-menu li {
-  margin-left: 12px;
+  margin-right: 12px;
 }
-.sub-menu li:first-child {
-  margin-left: 0;
+.sub-menu li:last-child {
+  margin-right: 0;
 }
 .sub-menu li a {
   color: #9c9e9e;
@@ -163,10 +179,10 @@ body {
   text-align: center;
 }
 
-.lang-menu-toggle {
+.lang-menu-btn {
+  position: relative;
   display: inline-block;
   vertical-align: top;
-  position: relative;
   width: 20px;
   height: 13px;
   margin-top: 6px;
@@ -176,19 +192,19 @@ body {
   outline: none;
   cursor: pointer;
 }
-.lang-menu-toggle:after {
+.lang-menu-btn:after {
   top: 0;
   left: 0;
 }
 
-.lang-menu-toggle:after,
+.lang-menu-btn:after,
 .lang-menu li a.lang-flag:after {
-  display: block;
   position: absolute;
+  display: block;
   width: 20px;
   height: 13px;
   content: '';
-  background-image: url("../images/flag-sprite.png");
+  background-image: url("http://bern-v2.kraftal.com/images/flag-sprite.png");
   background-repeat: no-repeat;
 }
 
@@ -196,21 +212,21 @@ body {
   display: none;
 }
 .lang-menu-popover.expanded {
-  display: block;
   position: absolute;
   top: 25px;
   right: -12px;
+  display: block;
   padding: 6px 0;
   min-width: 121px;
   background: #fff;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
   z-index: 1;
 }
 
 .lang-menu {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   padding-left: 13px;
   line-height: 1.1;
 }
@@ -220,8 +236,8 @@ body {
   font-size: 12px;
 }
 .lang-menu li a {
-  display: block;
   position: relative;
+  display: block;
   padding: 5px 40px 3px 13px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.67);
@@ -414,8 +430,8 @@ body {
 
 /* HEADER */
 .header {
-  display: table;
   position: relative;
+  display: table;
   width: 100%;
   padding: 24px 0 21px;
   -webkit-box-sizing: border-box;
@@ -439,8 +455,9 @@ body {
 
 .header-title {
   display: inline-block;
+  vertical-align: middle;
   max-width: 340px;
-  font-family: "Avenir Next Heavy";
+  font-family: "Avenir Next";
   font-size: 24px;
 }
 .header-title,
@@ -481,8 +498,8 @@ body {
 
 /* FRONT PAGE */
 .front-page .content {
-  display: table;
   position: relative;
+  display: table;
   padding: 0;
   width: 100%;
   height: 525px;
@@ -490,11 +507,6 @@ body {
   background-size: cover;
 }
 .front-page .content .bg-color {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 0;
 }
 .front-page .content .content-formatted {
@@ -519,6 +531,16 @@ body {
 }
 
 /* COMMON PAGE */
+.common-page .content {
+  *zoom: 1;
+}
+.common-page .content:before, .common-page .content:after {
+  content: " ";
+  display: table;
+}
+.common-page .content:after {
+  clear: both;
+}
 .common-page .content-formatted h1,
 .common-page .content-formatted h2,
 .common-page .content-formatted h3,
@@ -544,21 +566,6 @@ body {
 }
 
 .tags-title {
-  font-size: 14px;
-  color: #1b2124;
-  color: rgba(27, 33, 36, 0.5);
-}
-
-.blog-page .tags-left {
-  width: 104px;
-}
-.blog-page .post {
-  margin-top: 39px;
-}
-.blog-page .post:first-child {
-  margin-top: 0;
-}
-.blog-page .post-date {
   font-size: 14px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.5);
@@ -593,7 +600,7 @@ body {
 
 .post-title {
   margin: 0;
-  font-family: "Avenir Next Heavy";
+  font-family: "Avenir Next";
   font-weight: normal;
   font-size: 24px;
   color: #1b2124;
@@ -608,6 +615,21 @@ body {
 
 .post-excerpt {
   margin-top: 8px;
+}
+
+.blog-page .tags-left {
+  width: 104px;
+}
+.blog-page .post {
+  margin-top: 39px;
+}
+.blog-page .post:first-child {
+  margin-top: 0;
+}
+.blog-page .post-date {
+  font-size: 14px;
+  color: #1b2124;
+  color: rgba(27, 33, 36, 0.5);
 }
 
 .post-page .tags-left {
@@ -651,7 +673,7 @@ body {
   margin-bottom: 40px;
 }
 .edys-gallery:hover .edys-gallery-image {
-  opacity: 0.6;
+  opacity: .6;
 }
 .edys-gallery .edys-gallery-image {
   display: block;
@@ -686,6 +708,7 @@ body {
   border-right: 1px dashed #9c9e9e;
 }
 .content-formatted table {
+  font-size: 16px;
   border-collapse: collapse;
 }
 .content-formatted table td {
@@ -703,6 +726,14 @@ body {
   line-height: 1;
   border: 1px solid black;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  *zoom: 1;
+}
+.search:before, .search:after {
+  content: " ";
+  display: table;
+}
+.search:after {
+  clear: both;
 }
 
 .edys-search,
@@ -743,6 +774,7 @@ body {
 }
 
 .search-submit {
+  display: inline-block;
   vertical-align: top;
   width: 34px;
   height: 34px;
@@ -752,42 +784,44 @@ body {
   cursor: pointer;
 }
 .search-submit:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .no-svg .search-submit {
-  background: white url("../images/ico-search.png") center no-repeat;
+  background: white url("http://bern-v2.kraftal.com/images/ico-search.png") center no-repeat;
 }
 
 .svg .search-submit {
-  background: white url("../assets/ico-search.svg") center no-repeat;
+  background: white url("http://bern-v2.kraftal.com/assets/ico-search.svg") center no-repeat;
 }
 
 /* FORMS */
 .content-formatted form {
-  max-width: 560px;
-  margin-top: 19px;
+  max-width: 100%;
+  margin-top: 20px;
 }
 
 .form_field {
-  margin-top: 19px;
+  margin-top: 20px;
   font-size: 14px;
   color: #1b2124;
 }
 .form_field label {
   display: block;
-  font-family: "Avenir Next Heavy";
+  font-family: "Avenir Next";
+  font-weight: bold;
   line-height: 1.3;
 }
 
 .form_field_textfield,
 .form_field_textarea,
-.form_field_select,
 .form_field_file,
+.form_field_select,
 .form_submit input {
   font-family: inherit;
   font-size: 14px;
   -webkit-appearance: none;
+  -moz-appearance: none;
   -webkit-border-radius: 0;
 }
 
@@ -795,11 +829,12 @@ body {
 .form_field_textarea,
 .form_field_select,
 .form_field_file {
-  width: 100%;
+  max-width: 100%;
 }
 
 .form_field_textfield,
 .form_field_textarea,
+.form_field_select,
 .form_submit input {
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
@@ -808,26 +843,42 @@ body {
 .form_field_textfield,
 .form_field_textarea,
 .form_field_select {
-  max-width: 280px;
+  min-width: 280px;
   margin: 0;
   padding: 8px 8px 5px;
+  background-color: white;
   border: none;
-  outline: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  outline: none;
 }
 
 .form_field_textarea {
   min-height: 98px;
 }
 
+.form_field_select {
+  padding: 8px 17px 6px 9px;
+  background-position: right 7px top 13px;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.no-svg .form_field_select {
+  background-image: url("http://bern-v2.kraftal.com/images/arrow-down.png");
+}
+
+.svg .form_field_select {
+  background-image: url("http://bern-v2.kraftal.com/assets/arrow-down.svg");
+}
+
 .form_field_size_medium {
-  max-width: 420px;
+  min-width: 420px;
 }
 
 .form_field_size_large {
-  max-width: 560px;
+  min-width: 560px;
 }
 
 .form_submit input {
@@ -843,6 +894,10 @@ body {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border-radius: 0;
+}
+.form_submit input:hover {
+  background-color: #0066bb;
+  background-color: rgba(0, 102, 187, 0.8);
 }
 
 .form_field_error {
@@ -863,8 +918,8 @@ body {
   margin: 18px 0 0;
   color: white;
   line-height: 1;
-  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 4px 4px 0 black;
+  box-shadow: 4px 4px 0 black;
 }
 
 .feedback-error, .feedback-success {
@@ -986,15 +1041,15 @@ body {
 }
 
 .svg .close-btn {
-  background: url("../assets/ico-close.svg") center center no-repeat;
+  background: url("http://bern-v2.kraftal.com/assets/ico-close.svg") center center no-repeat;
 }
 
 .no-svg .close-btn {
-  background: url("../images/ico-close.png") center center no-repeat;
+  background: url("http://bern-v2.kraftal.com/images/ico-close.png") center center no-repeat;
 }
 
 .close-btn:hover {
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .close-btn:focus {
@@ -1025,16 +1080,12 @@ body {
   margin-bottom: 31px;
   padding-left: 24px;
 }
-.comment p {
-  margin-bottom: 25px;
-}
 
 .comment-form .form_field_textfield,
 .comment-form .form_field_textarea {
   background-color: #eeeeee;
 }
 
-/* IMAGE DROP AREA */
 /* FOOTER */
 .footer {
   padding: 30px 20px;
@@ -1050,7 +1101,7 @@ body {
 .voog-reference a {
   display: inline-block;
   padding: 7px 9px;
-  font-family: "Avenir Next Heavy";
+  font-family: "Avenir Next";
   font-size: 10px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.75);
@@ -1062,7 +1113,7 @@ body {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.75);
   border: 1px solid black;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.75);
 }
 
 /* TABLET VIEW */
@@ -1101,10 +1152,10 @@ body {
 
   /* MENUS */
   .menu-btn {
-    display: inline-block;
     position: absolute;
     top: 8px;
     right: 20px;
+    display: inline-block;
     margin: 0;
     padding: 0;
     background: none;
@@ -1122,6 +1173,7 @@ body {
   }
 
   .menu-stripe {
+    display: block;
     width: 25px;
     height: 4px;
     margin: 4px 0;
@@ -1137,11 +1189,11 @@ body {
     display: none;
   }
   .main-menu.expanded {
-    display: block;
     position: absolute;
     top: 60px;
     right: 20px;
     z-index: 2;
+    display: block;
     min-width: 350px;
     text-align: left;
     background-color: white;
@@ -1162,7 +1214,7 @@ body {
     color: rgba(27, 33, 36, 0.67);
   }
   .main-menu li.active a {
-    font-family: "Avenir Next Heavy";
+    font-family: "Avenir Next";
     background-color: #c7e5ff;
   }
   .main-menu li.active a:hover {
@@ -1221,6 +1273,26 @@ body {
 }
 /* MOBILE VIEW */
 @media screen and (max-width: 480px) {
+  /* GENERAL */
+  .content-formatted h1,
+  .content-formatted h2,
+  .content-formatted p {
+    margin: 28px 0 0;
+  }
+  .content-formatted h1 {
+    font-size: 32px;
+  }
+  .content-formatted h2 {
+    font-size: 20px;
+  }
+  .content-formatted h3,
+  .content-formatted h4,
+  .content-formatted h5,
+  .content-formatted h6 {
+    margin: 19px 0 0;
+    font-size: 16px;
+  }
+
   /* MENUS */
   .main-menu.expanded {
     top: 0;
@@ -1240,12 +1312,22 @@ body {
   .header-right {
     padding: 0;
   }
+
+  /* FRONT PAGE */
+  .front-page .content .content-formatted {
+    font-size: 32px;
+  }
+
+  /* BLOG & BLOG ARTICLE */
+  .post-right {
+    display: block;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 420px) {
   /* FORMS */
   .form_field_textfield,
   .form_field_textarea,
-  .form_field_select,
   .form_submit input {
     width: 100%;
     max-width: 100%;
