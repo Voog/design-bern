@@ -1,10 +1,7 @@
 <script src="{{ javascripts_path }}/jquery.js?1"></script>
 <script src="{{ javascripts_path }}/main.js?1"></script>
 <script src="{{ javascripts_path }}/retina.js?1"></script>
-<script src="{{ javascripts_path }}/fancySelect.js?1"></script>
 <script src="{{ javascripts_path }}/overthrow.js?1"></script>
-
-{% unless editmode %}<script>$('.form_field_select').fancySelect();</script>{% endunless %}
 
 {% if site.search.enabled %}
   <script src="http://static.edicy.com/assets/site_search/3.0/site_search.js?2"></script>
