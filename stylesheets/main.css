@@ -954,50 +954,101 @@ body {
 .content-formatted form {
   max-width: 100%;
   margin-top: 20px;
+  @-webkit-keyframes feedback-loading {
+    0% {
+      background: transparent;
+    }
+
+    50% {
+      background: white;
+    }
+
+    100% {
+      background: transparent;
+    }
 }
 
-.form_field {
+  @-moz-keyframes feedback-loading {
+    0% {
+      background: transparent;
+    }
+
+    50% {
+      background: white;
+    }
+
+    100% {
+      background: transparent;
+    }
+}
+
+  @-o-keyframes feedback-loading {
+    0% {
+      background: transparent;
+    }
+
+    50% {
+      background: white;
+    }
+
+    100% {
+      background: transparent;
+    }
+}
+
+  @keyframes feedback-loading {
+    0% {
+      background: transparent;
+    }
+
+    50% {
+      background: white;
+    }
+
+    100% {
+      background: transparent;
+    }
+}
+
+}
+.content-formatted form .form_field {
   margin-top: 20px;
   font-size: 14px;
   color: #1b2124;
 }
-.form_field label {
+.content-formatted form .form_field label {
   display: block;
   font-family: "Avenir Next";
   font-weight: bold;
   line-height: 1.3;
 }
-
-.form_field_textfield,
-.form_field_textarea,
-.form_field_file,
-.form_field_select,
-.form_submit input {
+.content-formatted form .form_field_textfield,
+.content-formatted form .form_field_textarea,
+.content-formatted form .form_field_select,
+.content-formatted form .form_field_file,
+.content-formatted form .form_submit input {
   font-family: inherit;
   font-size: 14px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-border-radius: 0;
 }
-
-.form_field_textfield,
-.form_field_textarea,
-.form_field_select,
-.form_field_file {
+.content-formatted form .form_field_textfield,
+.content-formatted form .form_field_textarea,
+.content-formatted form .form_field_select,
+.content-formatted form .form_field_file {
   max-width: 100%;
 }
-
-.form_field_textfield,
-.form_field_textarea,
-.form_field_select,
-.form_submit input {
+.content-formatted form .form_field_textfield,
+.content-formatted form .form_field_textarea,
+.content-formatted form .form_field_select,
+.content-formatted form .form_submit input {
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
-
-.form_field_textfield,
-.form_field_textarea,
-.form_field_select {
+.content-formatted form .form_field_textfield,
+.content-formatted form .form_field_textarea,
+.content-formatted form .form_field_select {
   min-width: 280px;
   margin: 0;
   padding: 8px 8px 5px;
@@ -1008,35 +1059,28 @@ body {
   box-sizing: border-box;
   outline: none;
 }
-
-.form_field_textarea {
+.content-formatted form .form_field_textarea {
   min-height: 98px;
 }
-
-.form_field_select {
+.content-formatted form .form_field_select {
   padding: 8px 17px 6px 9px;
   background-position: right 7px top 13px;
   background-repeat: no-repeat;
   border: none;
 }
-
-.no-svg .form_field_select {
+.content-formatted form .no-svg .form_field_select {
   background-image: url("http://bern-v2.kraftal.com/images/arrow-down.png");
 }
-
-.svg .form_field_select {
+.content-formatted form .svg .form_field_select {
   background-image: url("http://bern-v2.kraftal.com/assets/arrow-down.svg");
 }
-
-.form_field_size_medium {
+.content-formatted form .form_field_size_medium {
   min-width: 420px;
 }
-
-.form_field_size_large {
+.content-formatted form .form_field_size_large {
   min-width: 560px;
 }
-
-.form_submit input {
+.content-formatted form .form_submit input {
   display: block;
   margin: 18px 0 0;
   padding: 8px 11px;
@@ -1050,24 +1094,21 @@ body {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.form_submit input:hover {
+.content-formatted form .form_submit input:hover {
   background-color: #0066bb;
   background-color: rgba(0, 102, 187, 0.8);
 }
-
-.form_field_error {
+.content-formatted form .form_field_error {
   color: #cc0000;
 }
-
-.form_field_with_errors .form_field_textfield,
-.form_field_with_errors .form_field_textarea {
+.content-formatted form .form_field_with_errors .form_field_textfield,
+.content-formatted form .form_field_with_errors .form_field_textarea {
   -webkit-box-shadow: 4px 4px 0 #cc0000;
   box-shadow: 4px 4px 0 #cc0000;
 }
-
-.feedback-loading,
-.feedback-error,
-.feedback-success {
+.content-formatted form .feedback-loading,
+.content-formatted form .feedback-error,
+.content-formatted form .feedback-success {
   display: inline-block;
   vertical-align: top;
   margin: 18px 0 0;
@@ -1076,21 +1117,19 @@ body {
   -webkit-box-shadow: 4px 4px 0 black;
   box-shadow: 4px 4px 0 black;
 }
-
-.feedback-error, .feedback-success {
+.content-formatted form .feedback-error,
+.content-formatted form .feedback-success {
   padding: 3px 12px 0;
   font-size: 14px;
 }
-
-.feedback-loading {
+.content-formatted form .feedback-loading {
   width: 60px;
   text-align: center;
   font-size: 30px;
   background-color: #1b2124;
   background-color: rgba(27, 33, 36, 0.5);
 }
-
-.feedback-loading span {
+.content-formatted form .feedback-loading span {
   display: inline-block;
   vertical-align: middle;
   width: 7.5px;
@@ -1102,88 +1141,26 @@ body {
   -moz-animation: feedback-loading 0.8s linear infinite;
   animation: feedback-loading 0.8s linear infinite;
 }
-
-.feedback-loading span:nth-child(2) {
+.content-formatted form .feedback-loading span:nth-child(2) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
-
-.feedback-loading span:nth-child(3) {
+.content-formatted form .feedback-loading span:nth-child(3) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
-
-.feedback-loading span:last-child {
+.content-formatted form .feedback-loading span:last-child {
   margin-right: 0;
 }
-
-@-webkit-keyframes feedback-loading {
-  0% {
-    background: transparent;
-  }
-
-  50% {
-    background: white;
-  }
-
-  100% {
-    background: transparent;
-  }
-}
-
-@-moz-keyframes feedback-loading {
-  0% {
-    background: transparent;
-  }
-
-  50% {
-    background: white;
-  }
-
-  100% {
-    background: transparent;
-  }
-}
-
-@-o-keyframes feedback-loading {
-  0% {
-    background: transparent;
-  }
-
-  50% {
-    background: white;
-  }
-
-  100% {
-    background: transparent;
-  }
-}
-
-@keyframes feedback-loading {
-  0% {
-    background: transparent;
-  }
-
-  50% {
-    background: white;
-  }
-
-  100% {
-    background: transparent;
-  }
-}
-
-.feedback-error {
+.content-formatted form .feedback-error {
   background-color: #cc0000;
 }
-
-.feedback-success {
+.content-formatted form .feedback-success {
   background-color: #60a740;
 }
-
-.close-btn {
+.content-formatted form .close-btn {
   vertical-align: middle;
   width: 20px;
   height: 20px;
@@ -1194,24 +1171,19 @@ body {
   border-radius: 100%;
   cursor: pointer;
 }
-
-.svg .close-btn {
-  background: url("http://bern-v2.kraftal.com/assets/ico-close.svg") center center no-repeat;
-}
-
-.no-svg .close-btn {
-  background: url("http://bern-v2.kraftal.com/images/ico-close.png") center center no-repeat;
-}
-
-.close-btn:hover {
+.content-formatted form .close-btn:hover {
   opacity: .8;
 }
-
-.close-btn:focus {
+.content-formatted form .close-btn:focus {
   outline: none;
 }
-
-.form_error {
+.no-svg .content-formatted form .close-btn {
+  background: url("http://bern-v2.kraftal.com/images/ico-close.png") center center no-repeat;
+}
+.svg .content-formatted form .close-btn {
+  background: url("http://bern-v2.kraftal.com/assets/ico-close.svg") center center no-repeat;
+}
+.content-formatted form .form_error {
   display: none;
 }
 
