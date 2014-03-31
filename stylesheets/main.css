@@ -93,14 +93,17 @@ body {
   color: rgba(0, 102, 187, 0.8);
 }
 .content-formatted img,
-.content-formatted pre {
+.content-formatted pre,
+.content-formatted code {
   margin-top: 20px;
 }
 .content-formatted img {
   max-width: 100%;
   height: auto;
 }
-.content-formatted pre {
+.content-formatted pre,
+.content-formatted code {
+  display: block;
   overflow: auto;
   padding: 10px;
   font-size: 14px;
@@ -115,6 +118,7 @@ body {
 .content-formatted p:first-child,
 .content-formatted img:first-child,
 .content-formatted pre:first-child,
+.content-formatted code:first-child,
 .content-formatted table:first-child {
   margin-top: 0;
 }
@@ -696,6 +700,9 @@ body {
 }
 
 /* TABLES */
+.content-formatted table {
+  width: 100%;
+}
 .content-formatted .table-container {
   margin-top: 20px;
 }
@@ -721,8 +728,8 @@ body {
 .search {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 20px;
-  height: 34px;
+  margin-left: 10px;
+  height: 30px;
   line-height: 1;
   border: 1px solid black;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -739,7 +746,7 @@ body {
 .edys-search,
 .search-left,
 .search-right {
-  height: 34px;
+  height: 30px;
   line-height: 1;
 }
 
@@ -751,7 +758,7 @@ body {
 .edys-search-input {
   vertical-align: middle;
   width: 108px;
-  height: 32px;
+  height: 28px;
   margin: 0;
   padding: 2px 0 0 7px;
   font-family: inherit;
@@ -776,8 +783,8 @@ body {
 .search-submit {
   display: inline-block;
   vertical-align: top;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   background: none;
   border: none;
@@ -788,11 +795,11 @@ body {
 }
 
 .no-svg .search-submit {
-  background: white url("http://bern-v2.kraftal.com/images/ico-search.png") center no-repeat;
+  background: white url("http://../images/ico-search.png") center no-repeat;
 }
 
 .svg .search-submit {
-  background: white url("http://bern-v2.kraftal.com/assets/ico-search.svg") center no-repeat;
+  background: white url("http://../assets/ico-search.svg") center no-repeat;
 }
 
 /* FORMS */
