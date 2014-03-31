@@ -712,44 +712,39 @@ body {
 }
 
 /* BLOG & BLOG ARTICLE */
-.tags-left,
-.tags-right {
+.tags .tags-left,
+.tags .tags-right {
   display: inline-block;
   vertical-align: middle;
 }
-
-.tags-left {
+.tags .tags-left {
   text-align: right;
 }
 @media screen and (max-width: 940px) {
-  .tags-left {
+  .tags .tags-left {
     width: 84px;
   }
 }
-
-.tags-right {
+.tags .tags-right {
   margin-left: 21px;
 }
-
-.tags-title {
+.tags .tags-title {
   font-size: 14px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.5);
 }
 
-.post-left,
-.post-right {
+.post .post-left,
+.post .post-right {
   display: inline-block;
   vertical-align: top;
 }
-
-.post-right {
+.post .post-right {
   width: -webkit-calc(100% - 113px);
   width: calc(100% - 113px);
   margin-left: 21px;
 }
-
-.post-link {
+.post .post-link {
   display: inline-block;
   margin-top: 1px;
   padding: 6px 10px;
@@ -759,31 +754,29 @@ body {
   background-color: #1b2124;
   background-color: rgba(27, 33, 36, 0.5);
 }
-.post-link:hover {
+.post .post-link:hover {
   background-color: #1b2124;
   background-color: rgba(27, 33, 36, 0.8);
 }
-
-.post-title {
+.post .post-title {
   margin: 0;
   font-family: "Avenir Next";
   font-weight: normal;
   font-size: 24px;
   color: #1b2124;
 }
-.post-title a {
+.post .post-title a {
   color: #1b2124;
 }
-.post-title a:hover {
+.post .post-title a:hover {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.8);
 }
-
-.post-excerpt {
+.post .post-excerpt {
   margin-top: 8px;
 }
 
-.blog-page .tags-left {
+.blog-page .tags .tags-left {
   width: 104px;
 }
 .blog-page .post {
@@ -792,37 +785,37 @@ body {
 .blog-page .post:first-child {
   margin-top: 0;
 }
-.blog-page .post-date {
+.blog-page .post .post-date {
   font-size: 14px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.5);
 }
 
-.post-page .tags-left {
+.post-page .tags .tags-left {
   width: 91px;
 }
-.post-page .post-header {
+.post-page .post .post-header {
   text-align: center;
 }
-.post-page .post-title {
+.post-page .post .post-header .post-title {
   font-size: 36px;
   line-height: 1;
 }
-.post-page .post-title input {
+.post-page .post .post-header .post-title input {
   text-align: center;
 }
-.post-page .post-header-inner {
+.post-page .post .post-header .post-header-inner {
   margin-top: 4px;
   color: #1b2124;
 }
-.post-page .post-content {
+.post-page .post .post-content {
   margin-top: 29px;
 }
-.post-page .post-body {
+.post-page .post .post-content .post-body {
   margin-top: 28px;
 }
-.post-page .post-excerpt .fci-editor,
-.post-page .post-body .fci-editor {
+.post-page .post .post-content .post-excerpt .fci-editor,
+.post-page .post .post-content .post-body .fci-editor {
   min-height: 38px;
 }
 
