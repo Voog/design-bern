@@ -665,7 +665,14 @@ body {
 .front-page .content .bg-color {
   z-index: 0;
 }
-.front-page .content .content-formatted {
+.front-page .content .content-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 33px 0 50px;
+  background-position: center;
+  background-size: cover;
+}
+.front-page .content .content-inner .content-formatted {
   position: relative;
   z-index: 1;
   max-width: 560px;
@@ -675,15 +682,8 @@ body {
   color: white;
   line-height: 1.1;
 }
-.front-page .content .content-formatted .fci-editor {
+.front-page .content .content-inner .content-formatted .fci-editor {
   min-height: 41px;
-}
-.front-page .content-inner {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 33px 0 50px;
-  background-position: center;
-  background-size: cover;
 }
 
 /* COMMON PAGE */
