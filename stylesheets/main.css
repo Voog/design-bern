@@ -602,26 +602,23 @@ body {
   color: #1b2124;
 }
 
-/* TOPBAR */
-/* SIDEBAR */
 /* CONTENT */
 .content-topbar {
   min-height: 18px;
   background-color: #eeeeee;
 }
 
-.content-inner {
+.content .content-inner {
   padding: 33px 50px 50px;
   background-color: #eeeeee;
 }
 @media screen and (max-width: 940px) {
-  .content-inner {
+  .content .content-inner {
     padding: 33px 20px 50px;
   }
 }
-
-.content-left,
-.content-right {
+.content .content-left,
+.content .content-right {
   float: left;
   width: 50%;
   -webkit-box-sizing: border-box;
@@ -629,30 +626,28 @@ body {
   box-sizing: border-box;
 }
 @media screen and (max-width: 760px) {
-  .content-left,
-  .content-right {
+  .content .content-left,
+  .content .content-right {
     display: block;
     width: auto;
     float: none;
   }
 }
-.content-left iframe,
-.content-right iframe {
+.content .content-left iframe,
+.content .content-right iframe {
   display: block;
   height: 525px;
 }
-
-.content-left {
+.content .content-left {
   padding: 33px 20px 50px 50px;
 }
 @media screen and (max-width: 760px) {
-  .content-left {
+  .content .content-left {
     padding: 33px 20px 0;
   }
 }
-
 @media screen and (max-width: 760px) {
-  .content-right {
+  .content .content-right {
     padding: 33px 20px 50px;
   }
 }
