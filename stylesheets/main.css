@@ -821,31 +821,28 @@ body {
 .edys-gallery-area:first-child {
   margin-top: 0;
 }
-
-.edys-gallery {
+.edys-gallery-area .edys-gallery {
   overflow: hidden;
   margin-bottom: 40px;
 }
-.edys-gallery:hover .edys-gallery-image {
+.edys-gallery-area .edys-gallery:hover .edys-gallery-item .edys-gallery-image {
   opacity: .6;
 }
-.edys-gallery .edys-gallery-image {
+.edys-gallery-area .edys-gallery .edys-gallery-item {
+  display: block;
+  float: left;
+  padding-right: 0 !important;
+}
+.edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image {
   display: block;
   width: 140px;
   max-width: 140px;
   margin-bottom: 0;
 }
-.edys-gallery .edys-gallery-image:hover {
+.edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image:hover {
   opacity: 1;
 }
-
-.edys-gallery-item {
-  display: block;
-  float: left;
-  padding-right: 0 !important;
-}
-
-.content-formatted .edys-gallery-item:hover {
+.edys-gallery-area .edys-gallery .edys-gallery-item:hover {
   opacity: 1;
 }
 
