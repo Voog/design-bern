@@ -2,3 +2,14 @@
 .front-page .content .bg-color {
   -ms-filter: "alpha(opacity=50)";
 }
+
+.search {
+  border: 1px solid #e5e5e5;
+}
+.search .search-left {
+  line-height: 1.5;
+}
+
+.footer .voog-reference a {
+  border: 1px solid #e5e5e5;
+}
