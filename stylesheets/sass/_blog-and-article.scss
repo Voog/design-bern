@@ -29,6 +29,10 @@
   .post-right {
     @include calc(width, "100% - 113px");
     margin-left: 21px;
+    @include query($mobile-1) {
+      display: block;
+      margin-left: 0;
+    }
   }
 
   .post-link {

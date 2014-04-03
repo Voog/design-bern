@@ -60,6 +60,15 @@ body {
 .content-formatted h3,
 .content-formatted h4,
 .content-formatted h5,
+.content-formatted h6,
+.content-formatted p {
+  margin-bottom: 0;
+}
+.content-formatted h1,
+.content-formatted h2,
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
 .content-formatted h6 {
   font-family: 'Avenir Next';
   font-weight: normal;
@@ -68,22 +77,46 @@ body {
 .content-formatted h2,
 .content-formatted p {
   margin-top: 32px;
-  margin-bottom: 0;
+}
+@media screen and (max-width: 480px) {
+  .content-formatted h1,
+  .content-formatted h2,
+  .content-formatted p {
+    margin-top: 28px;
+  }
 }
 .content-formatted h1 {
   text-align: center;
   font-size: 36px;
 }
+@media screen and (max-width: 480px) {
+  .content-formatted h1 {
+    font-size: 32px;
+  }
+}
 .content-formatted h2 {
   font-size: 24px;
+}
+@media screen and (max-width: 480px) {
+  .content-formatted h2 {
+    font-size: 20px;
+  }
 }
 .content-formatted h3,
 .content-formatted h4,
 .content-formatted h5,
 .content-formatted h6 {
   margin-top: 23px;
-  margin-bottom: 0;
   font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .content-formatted h3,
+  .content-formatted h4,
+  .content-formatted h5,
+  .content-formatted h6 {
+    margin-top: 19px;
+    font-size: 16px;
+  }
 }
 .content-formatted a {
   color: #0066bb;
@@ -190,6 +223,13 @@ body {
     min-width: 350px;
     text-align: left;
     background-color: white;
+  }
+}
+@media screen and (max-width: 840px) and (max-width: 480px) {
+  .main-menu.expanded {
+    top: 0;
+    left: 0;
+    right: 0;
   }
 }
 .main-menu li {
@@ -547,6 +587,11 @@ body {
     display: block;
   }
 }
+@media screen and (max-width: 480px) {
+  .header {
+    padding-bottom: 0;
+  }
+}
 
 .header-left,
 .header-right {
@@ -569,9 +614,19 @@ body {
 .header-left {
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .header-left {
+    padding: 0 20px 20px;
+  }
+}
 
 .header-right {
   text-align: right;
+}
+@media screen and (max-width: 480px) {
+  .header-right {
+    padding: 0;
+  }
 }
 
 .header-title {
@@ -669,6 +724,11 @@ body {
 .front-page .content .content-inner .content-formatted .fci-editor {
   min-height: 41px;
 }
+@media screen and (max-width: 480px) {
+  .front-page .content .content-inner .content-formatted {
+    font-size: 32px;
+  }
+}
 
 /* COMMON PAGE */
 .common-page .content {
@@ -722,6 +782,12 @@ body {
   width: -webkit-calc(100% - 113px);
   width: calc(100% - 113px);
   margin-left: 21px;
+}
+@media screen and (max-width: 480px) {
+  .post .post-right {
+    display: block;
+    margin-left: 0;
+  }
 }
 .post .post-link {
   display: inline-block;
@@ -1039,6 +1105,12 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
+}
+.content-formatted form .form_field_textfield,
+.content-formatted form .form_field_textarea,
+.content-formatted form .form_submit input {
+  width: 100%;
+  max-width: 100%;
 }
 .content-formatted form .form_field_textarea {
   min-height: 98px;

@@ -8,6 +8,9 @@
   @include query($tablet-2) {
     display: block;
   }
+  @include query($mobile-1) {
+    padding-bottom: 0;
+  }
 }
 .header-left,
 .header-right {
@@ -22,9 +25,15 @@
 }
 .header-left {
   position: relative;
+  @include query($mobile-1) {
+    padding: 0 20px 20px;
+  }
 }
 .header-right {
   text-align: right;
+  @include query($mobile-1) {
+    padding: 0;
+  }
 }
 
 .header-title {

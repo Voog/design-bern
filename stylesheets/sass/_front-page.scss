@@ -32,6 +32,9 @@
         .fci-editor {
           min-height: 41px;
         }
+        @include query($mobile-1) {
+          font-size: 32px;
+        }
       }
     }
   }

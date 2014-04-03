@@ -49,6 +49,12 @@
       @include box-sizing(border-box);
       outline: none;
     }
+    .form_field_textfield,
+    .form_field_textarea,
+    .form_submit input {
+      width: 100%;
+      max-width: 100%;
+    }
     .form_field_textarea {
       min-height: 98px;
     }

@@ -61,6 +61,11 @@
       min-width: 350px;
       text-align: left;
       @include bg($white);
+      @include query($mobile-1) {
+        top: 0;
+        left: 0;
+        right: 0;
+      }
     }
   }
   li {
@@ -82,9 +87,9 @@
         padding: 7px 25px 3px;
         &:hover,
         &.active {
-            font-family: "Avenir Next";
-            @include color($link-active-mobile-color,.67);
-            @include bg($link-active-mobile-bg);
+          font-family: "Avenir Next";
+          @include color($link-active-mobile-color,.67);
+          @include bg($link-active-mobile-bg);
         }
       }
     }
