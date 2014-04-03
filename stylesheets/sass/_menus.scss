@@ -156,12 +156,12 @@
   @include query($tablet-2) {
     display: none;
   }
+
   li {
     display: list-item;
     text-align: right;
     font-size: 12px;
-  }
-  li {
+
     a {
       position: relative;
       display: block;
