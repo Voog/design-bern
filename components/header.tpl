@@ -1,15 +1,14 @@
 <header class="header">
   <section class="header-left">
     <div class="header-title">{% unless editmode %}<a href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
-  </section>
-
-  <section class="header-right">
     <button class="menu-btn js-menu-btn">
       <span class="menu-stripe"></span>
       <span class="menu-stripe"></span>
       <span class="menu-stripe"></span>
     </button>
+  </section>
 
+  <section class="header-right">
     <nav class="main-menu js-main-menu">
       {% include "nav-menu" %}
       {% if editmode or site.has_many_languages? %}
