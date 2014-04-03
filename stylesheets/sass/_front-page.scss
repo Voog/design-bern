@@ -10,9 +10,10 @@
     background-size: cover;
 
     .bg-color {
-      @extend .stretch;
+      @include stretch;
       z-index: 0;
     }
+
     .content-inner {
       display: table-cell;
       vertical-align: middle;
@@ -29,11 +30,13 @@
         font-size: 36px;
         @include color($white);
         line-height: 1.1;
-        .fci-editor {
-          min-height: 41px;
-        }
         @include query($mobile-1) {
           font-size: 32px;
+          padding: 20px;
+        }
+
+        .fci-editor {
+          min-height: 41px;
         }
       }
     }

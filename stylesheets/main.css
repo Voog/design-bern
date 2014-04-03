@@ -26,7 +26,7 @@ body {
   color: #696b6c;
 }
 
-.stretch, .front-page .content .bg-color {
+.stretch {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -702,6 +702,11 @@ body {
   background-size: cover;
 }
 .front-page .content .bg-color {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 0;
 }
 .front-page .content .content-inner {
@@ -721,13 +726,14 @@ body {
   color: white;
   line-height: 1.1;
 }
-.front-page .content .content-inner .content-formatted .fci-editor {
-  min-height: 41px;
-}
 @media screen and (max-width: 480px) {
   .front-page .content .content-inner .content-formatted {
     font-size: 32px;
+    padding: 20px;
   }
+}
+.front-page .content .content-inner .content-formatted .fci-editor {
+  min-height: 41px;
 }
 
 /* COMMON PAGE */
