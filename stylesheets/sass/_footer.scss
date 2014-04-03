@@ -1,0 +1,23 @@
+/* FOOTER */
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  @include color($secondary-color,.75);
+  .voog-reference {
+    margin-top: 15px;
+    a {
+      display: inline-block;
+      padding: 7px 9px;
+      font-family: "Avenir Next";
+      font-size: 10px;
+      @include color($secondary-color,.75);
+      line-height: 1;
+      @include border(all,1px,solid,$black,.1);
+      &:hover {
+        @include color($secondary-color,.75);
+        @include border(all,1px,solid,$black,.75);
+      }
+    }
+  }
+}

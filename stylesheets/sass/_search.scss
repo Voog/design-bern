@@ -1,0 +1,70 @@
+/* SEARCH */
+.search {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  height: 30px;
+  line-height: 1;
+  @include border(all,1px,solid,$black,.1);
+  @include clearfix;
+  @include query($tablet-2) {
+    display: none;
+  }
+
+  .edys-search,
+  .search-left,
+  .search-right {
+    height: 30px;
+    line-height: 1;
+  }
+  .search-left,
+  .search-right {
+    float: left;
+  }
+  .edys-search-input {
+    vertical-align: middle;
+    width: 108px;
+    height: 28px;
+    margin: 0;
+    padding: 2px 0 0 7px;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1;
+    background: none;
+    border: none;
+    &::-ms-clear {
+      display: none;
+    }
+    &::-webkit-input-placeholder {
+      padding: 2px 0 4px 0;
+      line-height: 1;
+    }
+  }
+  .edys-search-input:focus,
+  .search-submit:focus {
+    outline: none;
+  }
+  .search-submit {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      opacity: .6;
+    }
+  }
+  .no-svg {
+    .search-submit {
+      background: $white url("http://../images/ico-search.png") center no-repeat;
+    }
+  }
+  .svg {
+    .search-submit {
+      background: white url("http://../assets/ico-search.svg") center no-repeat;
+    }
+  }
+}

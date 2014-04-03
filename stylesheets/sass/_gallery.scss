@@ -1,0 +1,35 @@
+/* GALLERY */
+.edys-gallery-area {
+  margin-top: 19px;
+  &:first-child {
+    margin-top: 0;
+  }
+  .edys-gallery {
+    overflow: hidden;
+    margin-bottom: 40px;
+    &:hover {
+      .edys-gallery-item {
+        .edys-gallery-image {
+          opacity: .6;
+        }
+      }
+    }
+    .edys-gallery-item {
+      display: block;
+      float: left;
+      padding-right: 0 !important;
+      .edys-gallery-image {
+        display: block;
+        width: 140px;
+        max-width: 140px;
+        margin-bottom: 0;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

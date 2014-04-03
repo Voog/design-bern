@@ -1050,10 +1050,10 @@ body {
   border: none;
 }
 .content-formatted form .no-svg .form_field_select {
-  background-image: url("http://bern-v2.kraftal.com/images/arrow-down.png");
+  background-image: url("../images/arrow-down.png");
 }
 .content-formatted form .svg .form_field_select {
-  background-image: url("http://bern-v2.kraftal.com/assets/arrow-down.svg");
+  background-image: url("../assets/arrow-down.svg");
 }
 .content-formatted form .form_field_size_medium {
   min-width: 420px;
@@ -1159,10 +1159,10 @@ body {
   outline: none;
 }
 .no-svg .content-formatted form .close-btn {
-  background: url("http://bern-v2.kraftal.com/images/ico-close.png") center center no-repeat;
+  background: url("../images/ico-close.png") center center no-repeat;
 }
 .svg .content-formatted form .close-btn {
-  background: url("http://bern-v2.kraftal.com/assets/ico-close.svg") center center no-repeat;
+  background: url("../assets/ico-close.svg") center center no-repeat;
 }
 .content-formatted form .form_error {
   display: none;

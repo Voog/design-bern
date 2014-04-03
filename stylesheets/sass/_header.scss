@@ -1,0 +1,40 @@
+/* HEADER */
+.header {
+  position: relative;
+  display: table;
+  width: 100%;
+  padding: 24px 0 21px;
+  @include box-sizing(border-box);
+  @include query($tablet-2) {
+    display: block;
+  }
+}
+.header-left,
+.header-right {
+  display: table-cell;
+  vertical-align: middle;
+  @include query($tablet-1) {
+    padding: 0 20px;
+  }
+  @include query($tablet-2) {
+    display: block;
+  }
+}
+.header-left {
+  position: relative;
+}
+.header-right {
+  text-align: right;
+}
+
+.header-title {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 340px;
+  font-family: "Avenir Next";
+  font-size: 24px;
+  &,
+  a {
+    @include color($secondary-color);
+  }
+}

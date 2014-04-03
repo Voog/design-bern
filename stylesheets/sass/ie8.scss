@@ -1,0 +1,53 @@
+@import 'bourbon/bourbon';
+@import '_mixins';
+
+// MENUS
+
+// GENERAL
+
+// HEADER
+
+// TOPBAR
+
+// SIDEBAR
+
+// CONTENT
+
+/* FRONT PAGE */
+.front-page {
+  .content {
+    .bg-color {
+      -ms-filter: "alpha(opacity=50)";
+    }
+  }
+}
+
+// COMMON PAGE
+
+// BLOG & ARTICLE
+
+// GALLERY
+
+// TABLES
+
+// SEARCH
+.search {
+  @include border(all,1px,solid,#e5e5e5);
+  .search-left {
+    line-height: 1.5;
+  }
+}
+
+// FORMS
+
+// COMMENTS
+
+// FOOTER
+
+.footer {
+  .voog-reference {
+    a {
+      @include border(all,1px,solid,#e5e5e5);
+    }
+  }
+}

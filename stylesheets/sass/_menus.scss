@@ -1,0 +1,360 @@
+/* MENUS */
+.menu-btn {
+  display: none;
+  @include query($tablet-2) {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &.open {
+      .menu-stripe {
+        @include bg($secondary-color,.47);
+      }
+    }
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+    .menu-stripe {
+      display: block;
+      width: 25px;
+      height: 4px;
+      margin: 4px 0;
+      @include bg($secondary-color,.67);
+      border-radius: 5px;
+      &:first-child,
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: inline;
+    font-size: 14px;
+  }
+}
+
+.main-menu {
+  display: inline-block;
+  vertical-align: middle;
+  @include query($tablet-2) {
+    display: none;
+    &.expanded {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      z-index: 2;
+      display: block;
+      min-width: 350px;
+      text-align: left;
+      @include bg($white);
+    }
+  }
+  li {
+    margin-left: 5px;
+    &:first-child {
+      margin-left: 0;
+    }
+    @include query($tablet-2) {
+      display: block;
+      margin: 0;
+      font-size: 20px;
+      @include border(bottom,1px,solid,$primary-color,.2);
+    }
+    a {
+      // TODO: Hover is broken
+      @include color($secondary-color,.67);
+      @include query($tablet-2) {
+        display: block;
+        padding: 7px 25px 3px;
+        &:hover,
+        &.active {
+            font-family: "Avenir Next";
+            @include color($link-active-mobile-color,.67);
+            @include bg($link-active-mobile-bg);
+        }
+      }
+    }
+  }
+  .mobile-lang-menu {
+    display: none;
+    @include query($tablet-2) {
+      display: block;
+      padding-left: 0;
+      li {
+        text-align: left;
+        &:first-child {
+          border-top: none;
+        }
+        &.active a:hover {
+          @include bg($link-active-mobile-bg);
+        }
+        a {
+          padding: 14px 30px 11px 53px;
+          font-size: 14px;
+          &:after {
+            top: 13.5px;
+            left: 25px;
+          }
+          &:hover {
+            @include bg($white);
+          }
+        }
+      }
+    }
+  }
+}
+
+.sub-menu {
+  margin: 0 30px;
+  @include query($tablet-1) {
+    margin: 0 200px;
+  }
+  padding: 7px 0;
+  @include border(bottom,1px,solid,$primary-color,.2);
+  li {
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      @include color($third-color);
+    }
+    a:hover,
+    &.active a {
+      @include color($secondary-color);
+    }
+  }
+  .nav-menu {
+    text-align: center;
+  }
+}
+
+.lang-menu {
+  position: relative;
+  display: inline-block;
+  padding-left: 13px;
+  line-height: 1.1;
+  @include query($tablet-2) {
+    display: none;
+  }
+  li {
+    display: list-item;
+    text-align: right;
+    font-size: 12px;
+  }
+  li {
+    a {
+      position: relative;
+      display: block;
+      padding: 5px 40px 3px 13px;
+      @include color($secondary-color,.67);
+      &:hover,
+      &.active {
+        @include bg($link-active-color);
+      }
+      &:after {
+        top: 4px;
+        right: 11px;
+      }
+    }
+    &.add-lang-btn {
+      margin-top: 5px;
+      margin-right: 10px;
+      text-align: right;
+    }
+    &.edy-menu-langadd {
+      margin-left: 5px;
+    }
+  }
+}
+
+.lang-menu-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 13px;
+  margin-top: 6px;
+  font-size: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    // TODO: Hover effect
+  }
+  &:after {
+    top: 0;
+    left: 0;
+  }
+}
+.lang-menu-btn:after,
+.lang-menu li a.lang-flag:after{
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 13px;
+  content: '';
+  background-image: url('../images/flag-sprite.png');
+  background-repeat: no-repeat;
+}
+
+.lang-menu-popover {
+  display: none;
+  &.expanded {
+    position: absolute;
+    top: 25px;
+    right: -12px;
+    display: block;
+    padding: 6px 0;
+    min-width: 121px;
+    background: #fff;
+    @include box-shadow(0, 0, 1px, rgba($black,.3));
+    z-index: 1;
+  }
+}
+
+.sq:after {
+  background-position: 0 0; // Albanian
+}
+.hy:after {
+  background-position: -20px 0; // Armenia
+}
+.bn:after {
+  background-position: -40px 0; // Bangladesh
+}
+.pt:after {
+  background-position: -60px 0; // Brazil
+}
+.bg:after {
+  background-position: -80px 0; // Bulgaria
+}
+.zh:after {
+  background-position: -100px 0; // China
+}
+.hr:after {
+  background-position: -120px 0; // Croatia
+}
+.da:after {
+  background-position: -140px 0; // Denmark
+}
+.cs:after {
+  background-position: -160px 0; // Czech  Republic
+}
+.et:after {
+  background-position: -180px 0; // Estonia
+}
+
+.fi:after {
+  background-position: 0 -14px; // Finland
+}
+.fr:after {
+  background-position: -20px -14px; // France
+}
+.ka:after {
+  background-position: -40px -14px; // Georgia
+}
+.de:after {
+  background-position: -60px -14px; // Germany
+}
+.el:after {
+  background-position: -80px -14px; // Grecee
+}
+.hu:after {
+  background-position: -100px -14px; // Hungary
+}
+.is:after {
+  background-position: -120px -14px; // Iceland
+}
+.hi:after {
+  background-position: -140px -14px; // India
+}
+.id:after {
+  background-position: -160px -14px; // Indonesia
+}
+.fa:after {
+  background-position: -280px -14px; // Iran
+}
+
+.he:after {
+  background-position: 0 -27px; // Israel
+}
+.it:after {
+  background-position: -20px -27px; // Italy
+}
+.ja:after {
+  background-position: -40px -27px; // Japan
+}
+.ko:after {
+  background-position: -60px -27px; // Korea, South
+}
+.lv:after {
+  background-position: -80px -27px; // Latvia
+}
+.lt:after {
+  background-position: -100px -27px; // Lithuania
+}
+.ms:after {
+  background-position: -120px -27px; // Malaysia
+}
+.nl:after {
+  background-position: -140px -27px; // Netherlands
+}
+.no:after {
+  background-position: -160px -27px; // Norway
+}
+.ur:after {
+  background-position: -280px -27px; // Pakistan
+}
+
+.fil:after {
+  background-position: 0 -41px; // hilipines
+}
+.pl:after {
+  background-position: -20px -41px; // Poland
+}
+.ro:after {
+  background-position: -40px -41px; // Romania
+}
+.ru:after {
+  background-position: -60px -41px; // Russia
+}
+.ar:after {
+  background-position: -80px -41px; // Saudi  Arabia
+}
+.lt:after {
+  background-position: -100px -41px; // Slovakia
+}
+.sk:after {
+  background-position: -120px -41px; // Slovenia
+}
+.es:after {
+  background-position: -140px -41px; // Spain
+}
+.sv:after {
+  background-position: -160px -41px; // Sweden
+}
+.tr:after {
+  background-position: -180px -41px; // Turkey
+}
+
+.uk:after {
+  background-position: 0px -54px; // Ukraine
+}
+.en:after {
+  background-position: -20px -54px; // USA
+}

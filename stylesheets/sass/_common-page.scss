@@ -1,0 +1,17 @@
+/* COMMON PAGE */
+.common-page {
+  .content {
+    @include clearfix;
+  }
+
+  .content-formatted {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include color($secondary-color);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/* FRONT PAGE */
+.front-page {
+  .content {
+    position: relative;
+    display: table;
+    padding: 0;
+    width: 100%;
+    height: 525px;
+    @include bg($primary-bg);
+    background-size: cover;
+
+    .bg-color {
+      @extend .stretch;
+      z-index: 0;
+    }
+    .content-inner {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 33px 0 50px;
+      background-position: center;
+      background-size: cover;
+
+      .content-formatted {
+        position: relative;
+        z-index: 1;
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 40px;
+        font-size: 36px;
+        @include color($white);
+        line-height: 1.1;
+        .fci-editor {
+          min-height: 41px;
+        }
+      }
+    }
+  }
+}
