@@ -70,6 +70,7 @@ body {
 .content-formatted h4,
 .content-formatted h5,
 .content-formatted h6 {
+  word-wrap: break-word;
   font-family: 'Avenir Next';
   font-weight: normal;
 }
@@ -251,6 +252,10 @@ body {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.67);
 }
+.main-menu li a.active, .main-menu li a:hover {
+  color: #838586;
+  color: rgba(131, 133, 134, 0.67);
+}
 @media screen and (max-width: 840px) {
   .main-menu li a {
     display: block;
@@ -258,8 +263,6 @@ body {
   }
   .main-menu li a:hover, .main-menu li a.active {
     font-family: "Avenir Next";
-    color: #838586;
-    color: rgba(131, 133, 134, 0.67);
     background-color: #c7e5ff;
   }
 }
@@ -643,6 +646,10 @@ body {
 .header-title,
 .header-title a {
   color: #1b2124;
+}
+.header-title a:hover {
+  color: #1b2124;
+  color: rgba(27, 33, 36, 0.8);
 }
 
 /* CONTENT */

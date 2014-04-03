@@ -44,4 +44,7 @@
   a {
     @include color($secondary-color);
   }
+  a:hover {
+    @include color($secondary-color,.8);
+  }
 }

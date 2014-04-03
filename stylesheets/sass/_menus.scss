@@ -80,15 +80,17 @@
       @include border(bottom,1px,solid,$primary-color,.2);
     }
     a {
-      // TODO: Hover is broken
       @include color($secondary-color,.67);
+      &.active,
+      &:hover {
+        @include color($link-active-mobile-color,.67);
+      }
       @include query($tablet-2) {
         display: block;
         padding: 7px 25px 3px;
         &:hover,
         &.active {
           font-family: "Avenir Next";
-          @include color($link-active-mobile-color,.67);
           @include bg($link-active-mobile-bg);
         }
       }
