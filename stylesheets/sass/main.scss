@@ -1,5 +1,6 @@
 @import 'bourbon/bourbon';
 @import '_mixins';
+@import '_mixins-flexbox';
 @import '_variables';
 @import '_fonts';
 @import '_general';
@@ -17,4 +18,3 @@
 @import '_forms';
 @import '_comments';
 @import '_footer';
-// @import '_mobile';

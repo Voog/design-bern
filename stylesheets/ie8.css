@@ -1,3 +1,13 @@
+.header {
+  display: table;
+  width: 100%;
+}
+.header .header-left,
+.header .header-right {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* FRONT PAGE */
 .front-page .content .bg-color {
   -ms-filter: "alpha(opacity=50)";

@@ -1,8 +1,7 @@
 /* HEADER */
 .header {
+  @include flexbox;
   position: relative;
-  display: table;
-  width: 100%;
   padding: 24px 0 21px;
   @include box-sizing(border-box);
   @include query($tablet-2) {
@@ -14,8 +13,6 @@
 }
 .header-left,
 .header-right {
-  display: table-cell;
-  vertical-align: middle;
   @include query($tablet-1) {
     padding: 0 20px;
   }
@@ -30,6 +27,7 @@
   }
 }
 .header-right {
+  @include flex;
   text-align: right;
   @include query($mobile-1) {
     padding: 0;

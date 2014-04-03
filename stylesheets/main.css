@@ -574,9 +574,12 @@ body {
 
 /* HEADER */
 .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  display: table;
-  width: 100%;
   padding: 24px 0 21px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -593,11 +596,6 @@ body {
   }
 }
 
-.header-left,
-.header-right {
-  display: table-cell;
-  vertical-align: middle;
-}
 @media screen and (max-width: 940px) {
   .header-left,
   .header-right {
@@ -621,6 +619,12 @@ body {
 }
 
 .header-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   text-align: right;
 }
 @media screen and (max-width: 480px) {
