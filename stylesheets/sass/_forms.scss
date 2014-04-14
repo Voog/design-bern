@@ -41,19 +41,16 @@
     .form_field_textfield,
     .form_field_textarea,
     .form_field_select {
-      min-width: 280px;
+      width: 280px;
+      @include query($mobile-2) {
+        width: 100%;
+      }
       margin: 0;
       padding: 8px 8px 5px;
       @include bg($white);
       border: none;
       @include box-sizing(border-box);
       outline: none;
-    }
-    .form_field_textfield,
-    .form_field_textarea,
-    .form_submit input {
-      width: 100%;
-      max-width: 100%;
     }
     .form_field_textarea {
       min-height: 98px;
@@ -77,10 +74,13 @@
     }
 
     .form_field_size_medium {
-      min-width: 420px;
+      width: 420px;
+      @include query($mobile-2) {
+        width: 100%;
+      }
     }
     .form_field_size_large {
-      min-width: 560px;
+      width: 580px;
     }
 
     .form_submit {
@@ -99,6 +99,9 @@
         border-radius: 0;
         &:hover {
           @include bg($blue,.8);
+        }
+        @include query($mobile-2) {
+          width: 100%;
         }
       }
     }

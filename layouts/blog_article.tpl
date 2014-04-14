@@ -17,7 +17,7 @@
         <div class="content-inner">
           <article class="post">
             <header class="post-header">
-              <h2 class="post-title">{% editable article.title %}</h2>
+              <h1 class="post-title">{% editable article.title %}</h1>
               <div class="post-header-inner">
                 <span class="post-author">{{ article.author.name | capitalize }}</span>
                 <span class="separator">-</span>

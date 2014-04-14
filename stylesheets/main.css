@@ -17,6 +17,7 @@
 
 /* GENERAL */
 body {
+  display: none;
   margin: 0;
   padding: 0;
   font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -743,6 +744,9 @@ body {
     padding: 20px;
   }
 }
+.front-page .content .content-inner .content-formatted h3 {
+  text-align: center;
+}
 .front-page .content .content-inner .content-formatted .fci-editor {
   min-height: 41px;
 }
@@ -898,12 +902,13 @@ body {
 .edys-gallery-area .edys-gallery .edys-gallery-item {
   display: block;
   float: left;
+  width: 140px;
   padding-right: 0 !important;
 }
 .edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image {
   display: block;
-  width: 140px;
-  max-width: 140px;
+  width: 100%;
+  height: auto;
   margin-bottom: 0;
 }
 .edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image:hover {
@@ -911,6 +916,11 @@ body {
 }
 .edys-gallery-area .edys-gallery .edys-gallery-item:hover {
   opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  .edys-gallery-area .edys-gallery .edys-gallery-item {
+    width: 33.3%;
+  }
 }
 
 /* TABLES */
@@ -1113,7 +1123,7 @@ body {
 .content-formatted form .form_field_textfield,
 .content-formatted form .form_field_textarea,
 .content-formatted form .form_field_select {
-  min-width: 280px;
+  width: 280px;
   margin: 0;
   padding: 8px 8px 5px;
   background-color: white;
@@ -1123,11 +1133,12 @@ body {
   box-sizing: border-box;
   outline: none;
 }
-.content-formatted form .form_field_textfield,
-.content-formatted form .form_field_textarea,
-.content-formatted form .form_submit input {
-  width: 100%;
-  max-width: 100%;
+@media screen and (max-width: 420px) {
+  .content-formatted form .form_field_textfield,
+  .content-formatted form .form_field_textarea,
+  .content-formatted form .form_field_select {
+    width: 100%;
+  }
 }
 .content-formatted form .form_field_textarea {
   min-height: 98px;
@@ -1145,10 +1156,15 @@ body {
   background-image: url("../assets/arrow-down.svg");
 }
 .content-formatted form .form_field_size_medium {
-  min-width: 420px;
+  width: 420px;
+}
+@media screen and (max-width: 420px) {
+  .content-formatted form .form_field_size_medium {
+    width: 100%;
+  }
 }
 .content-formatted form .form_field_size_large {
-  min-width: 560px;
+  width: 580px;
 }
 .content-formatted form .form_submit input {
   display: block;
@@ -1167,6 +1183,11 @@ body {
 .content-formatted form .form_submit input:hover {
   background-color: #0066bb;
   background-color: rgba(0, 102, 187, 0.8);
+}
+@media screen and (max-width: 420px) {
+  .content-formatted form .form_submit input {
+    width: 100%;
+  }
 }
 .content-formatted form .form_field_error {
   color: #cc0000;

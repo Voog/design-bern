@@ -14,9 +14,9 @@
     };
 
     var handlePopoverMenuHide = function() {
-        $("html").click(function() {
-            if ($(".js-lang-menu-popover").hasClass("expanded")) {
-                $(".js-lang-menu-popover").removeClass("expanded");
+        $('html').click(function() {
+            if ($('.js-lang-menu-popover').hasClass('expanded')) {
+                $('.js-lang-menu-popover').removeClass('expanded');
             }
         });
     };
@@ -30,13 +30,13 @@
     var focusCommentsWithErrors = function() {
       $(document).ready(function() {
         if ($('.comment-form').hasClass('form_with_errors') === true) {
-          $("html, body").scrollTop($('.comment-form').offset().top);
+          $('html, body').scrollTop($('.comment-form').offset().top);
         }
       });
     };
 
     var wrapTables = function() {
-        $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
+        $('.content-formatted table').wrap('<div class='table-container overthrow'></div>');
     };
 
     var checkScrollBar = function() {
