@@ -17,7 +17,6 @@
 
 /* GENERAL */
 body {
-  display: none;
   margin: 0;
   padding: 0;
   font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1025,9 +1024,7 @@ body {
 }
 
 /* FORMS */
-.content-formatted form {
-  max-width: 100%;
-  margin-top: 20px;
+.content-formatted {
   @-webkit-keyframes feedback-loading {
     0% {
       background: transparent;
@@ -1085,44 +1082,50 @@ body {
 }
 
 }
-.content-formatted form .form_field {
+.content-formatted form {
+  max-width: 100%;
+  margin-top: 20px;
+}
+.content-formatted .form_field,
+.content-formatted .edy-fe-label {
   margin-top: 20px;
   font-size: 14px;
   color: #1b2124;
 }
-.content-formatted form .form_field label {
+.content-formatted .form_field label,
+.content-formatted .edy-fe-label {
   display: block;
   font-family: "Avenir Next";
   font-weight: bold;
   line-height: 1.3;
 }
-.content-formatted form .form_field_textfield,
-.content-formatted form .form_field_textarea,
-.content-formatted form .form_field_select,
-.content-formatted form .form_field_file,
-.content-formatted form .form_submit input {
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_textarea,
+.content-formatted .form_field_select,
+.content-formatted .form_field_file,
+.content-formatted .form_submit input {
   font-family: inherit;
   font-size: 14px;
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-border-radius: 0;
 }
-.content-formatted form .form_field_textfield,
-.content-formatted form .form_field_textarea,
-.content-formatted form .form_field_select,
-.content-formatted form .form_field_file {
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_textarea,
+.content-formatted .form_field_select,
+.content-formatted .form_field_file {
   max-width: 100%;
 }
-.content-formatted form .form_field_textfield,
-.content-formatted form .form_field_textarea,
-.content-formatted form .form_field_select,
-.content-formatted form .form_submit input {
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_textarea,
+.content-formatted .form_field_select,
+.content-formatted .form_submit input {
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
-.content-formatted form .form_field_textfield,
-.content-formatted form .form_field_textarea,
-.content-formatted form .form_field_select {
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_textarea,
+.content-formatted .form_field_select {
   width: 280px;
   margin: 0;
   padding: 8px 8px 5px;
@@ -1134,39 +1137,39 @@ body {
   outline: none;
 }
 @media screen and (max-width: 420px) {
-  .content-formatted form .form_field_textfield,
-  .content-formatted form .form_field_textarea,
-  .content-formatted form .form_field_select {
+  .content-formatted .form_field_textfield,
+  .content-formatted .form_field_textarea,
+  .content-formatted .form_field_select {
     width: 100%;
   }
 }
-.content-formatted form .form_field_textarea {
+.content-formatted .form_field_textarea {
   min-height: 98px;
 }
-.content-formatted form .form_field_select {
+.content-formatted .form_field_select {
   padding: 8px 17px 6px 9px;
   background-position: right 7px top 13px;
   background-repeat: no-repeat;
   border: none;
 }
-.content-formatted form .no-svg .form_field_select {
+.no-svg .content-formatted .form_field_select {
   background-image: url("../images/arrow-down.png");
 }
-.content-formatted form .svg .form_field_select {
-  background-image: url("../assets/arrow-down.svg");
+.svg .content-formatted .form_field_select {
+  background-image: url("../images/arrow-down.png");
 }
-.content-formatted form .form_field_size_medium {
+.content-formatted .form_field_size_medium {
   width: 420px;
 }
 @media screen and (max-width: 420px) {
-  .content-formatted form .form_field_size_medium {
+  .content-formatted .form_field_size_medium {
     width: 100%;
   }
 }
-.content-formatted form .form_field_size_large {
+.content-formatted .form_field_size_large {
   width: 580px;
 }
-.content-formatted form .form_submit input {
+.content-formatted .form_submit input {
   display: block;
   margin: 18px 0 0;
   padding: 8px 11px;
@@ -1180,26 +1183,26 @@ body {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.content-formatted form .form_submit input:hover {
+.content-formatted .form_submit input:hover {
   background-color: #0066bb;
   background-color: rgba(0, 102, 187, 0.8);
 }
 @media screen and (max-width: 420px) {
-  .content-formatted form .form_submit input {
+  .content-formatted .form_submit input {
     width: 100%;
   }
 }
-.content-formatted form .form_field_error {
+.content-formatted .form_field_error {
   color: #cc0000;
 }
-.content-formatted form .form_field_with_errors .form_field_textfield,
-.content-formatted form .form_field_with_errors .form_field_textarea {
+.content-formatted .form_field_with_errors .form_field_textfield,
+.content-formatted .form_field_with_errors .form_field_textarea {
   -webkit-box-shadow: 4px 4px 0 #cc0000;
   box-shadow: 4px 4px 0 #cc0000;
 }
-.content-formatted form .feedback-loading,
-.content-formatted form .feedback-error,
-.content-formatted form .feedback-success {
+.content-formatted .feedback-loading,
+.content-formatted .feedback-error,
+.content-formatted .feedback-success {
   display: inline-block;
   vertical-align: top;
   margin: 18px 0 0;
@@ -1208,19 +1211,19 @@ body {
   -webkit-box-shadow: 4px 4px 0 black;
   box-shadow: 4px 4px 0 black;
 }
-.content-formatted form .feedback-error,
-.content-formatted form .feedback-success {
+.content-formatted .feedback-error,
+.content-formatted .feedback-success {
   padding: 3px 12px 0;
   font-size: 14px;
 }
-.content-formatted form .feedback-loading {
+.content-formatted .feedback-loading {
   width: 60px;
   text-align: center;
   font-size: 30px;
   background-color: #1b2124;
   background-color: rgba(27, 33, 36, 0.5);
 }
-.content-formatted form .feedback-loading span {
+.content-formatted .feedback-loading span {
   display: inline-block;
   vertical-align: middle;
   width: 7.5px;
@@ -1232,26 +1235,26 @@ body {
   -moz-animation: feedback-loading 0.8s linear infinite;
   animation: feedback-loading 0.8s linear infinite;
 }
-.content-formatted form .feedback-loading span:nth-child(2) {
+.content-formatted .feedback-loading span:nth-child(2) {
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
-.content-formatted form .feedback-loading span:nth-child(3) {
+.content-formatted .feedback-loading span:nth-child(3) {
   -webkit-animation-delay: 0.4s;
   -moz-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
-.content-formatted form .feedback-loading span:last-child {
+.content-formatted .feedback-loading span:last-child {
   margin-right: 0;
 }
-.content-formatted form .feedback-error {
+.content-formatted .feedback-error {
   background-color: #cc0000;
 }
-.content-formatted form .feedback-success {
+.content-formatted .feedback-success {
   background-color: #60a740;
 }
-.content-formatted form .close-btn {
+.content-formatted .close-btn {
   vertical-align: middle;
   width: 20px;
   height: 20px;
@@ -1262,19 +1265,19 @@ body {
   border-radius: 100%;
   cursor: pointer;
 }
-.content-formatted form .close-btn:hover {
+.content-formatted .close-btn:hover {
   opacity: .8;
 }
-.content-formatted form .close-btn:focus {
+.content-formatted .close-btn:focus {
   outline: none;
 }
-.no-svg .content-formatted form .close-btn {
+.no-svg .content-formatted .close-btn {
   background: url("../images/ico-close.png") center center no-repeat;
 }
-.svg .content-formatted form .close-btn {
+.svg .content-formatted .close-btn {
   background: url("../assets/ico-close.svg") center center no-repeat;
 }
-.content-formatted form .form_error {
+.content-formatted .form_error {
   display: none;
 }
 

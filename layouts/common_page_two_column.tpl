@@ -37,5 +37,6 @@
       $('.form_field_textarea').autogrow();
       $(".content-formatted form").edicyAjaxForm();
     </script>
+    <!-- TODO: Add body background picker -->
   </body>
 </html>

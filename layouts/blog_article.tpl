@@ -17,7 +17,7 @@
         <div class="content-inner">
           <article class="post">
             <header class="post-header">
-              <h1 class="post-title">{% editable article.title %}</h1>
+              <h2 class="post-title">{% editable article.title %}</h2>
               <div class="post-header-inner">
                 <span class="post-author">{{ article.author.name | capitalize }}</span>
                 <span class="separator">-</span>
@@ -52,5 +52,6 @@
     <script>
       $('.form_field_textarea').autogrow();
     </script>
+    <!-- TODO: Add body background picker -->
   </body>
 </html>
