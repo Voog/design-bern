@@ -57,14 +57,14 @@
       opacity: .6;
     }
   }
-  .no-svg {
+  .no-svg & {
     .search-submit {
-      background: $white url("http://../images/ico-search.png") center no-repeat;
+      background: $white url("../images/ico-search.png") center no-repeat;
     }
   }
-  .svg {
+  .svg & {
     .search-submit {
-      background: white url("http://../assets/ico-search.svg") center no-repeat;
+      background: white url("../assets/ico-search.svg") center no-repeat;
     }
   }
 }
