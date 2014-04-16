@@ -68,34 +68,40 @@
       }
     }
   }
-  li {
-    margin-left: 5px;
-    &:first-child {
-      margin-left: 0;
-    }
-    @include query($tablet-2) {
-      display: block;
-      margin: 0;
-      font-size: 20px;
-      @include border(bottom,1px,solid,$primary-color,.2);
-    }
-    a {
-      @include color($secondary-color,.67);
-      &.active,
-      &:hover {
-        @include color($link-active-mobile-color,.67);
+  ul {
+    line-height: 1.4;
+
+    li {
+      margin-left: 15px;
+      &:first-child {
+        margin-left: 0;
       }
       @include query($tablet-2) {
         display: block;
-        padding: 7px 25px 3px;
-        &:hover,
-        &.active {
-          font-family: "Avenir Next";
-          @include bg($link-active-mobile-bg);
+        margin: 0;
+        font-size: 20px;
+        @include border(bottom,1px,solid,$primary-color,.2);
+      }
+
+      a {
+        @include color($secondary-color,.67);
+        &.active,
+        &:hover {
+          @include color($link-active-mobile-color,.67);
+        }
+        @include query($tablet-2) {
+          display: block;
+          padding: 7px 25px 3px;
+          &:hover,
+          &.active {
+            font-family: "Avenir Next";
+            @include bg($link-active-mobile-bg);
+          }
         }
       }
     }
   }
+
   .mobile-lang-menu {
     display: none;
     @include query($tablet-2) {
@@ -153,7 +159,6 @@
 .lang-menu {
   position: relative;
   display: inline-block;
-  padding-left: 13px;
   line-height: 1.1;
   @include query($tablet-2) {
     display: none;
@@ -173,6 +178,7 @@
       &.active {
         @include bg($link-active-color);
       }
+      &:before,
       &:after {
         top: 4px;
         right: 11px;
@@ -195,7 +201,8 @@
   vertical-align: top;
   width: 20px;
   height: 13px;
-  margin-top: 6px;
+  margin-top: 7px;
+  margin-left: 12px;
   font-size: 0;
   background: none;
   border: none;
@@ -204,21 +211,34 @@
   &:hover {
     // TODO: Hover effect
   }
+  &:before,
   &:after {
     top: 0;
     left: 0;
   }
 }
-.lang-menu-btn:after,
-.lang-menu li a.lang-flag:after{
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 13.4px;
-  content: '';
-  background-image: url('../images/ico-flags.png');
-  background-size: 200px;
-  background-repeat: no-repeat;
+.lang-menu-btn,
+.lang-menu li a.lang-flag {
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 13.5px;
+    content: '';
+  }
+}
+.lang-menu-btn,
+.lang-menu li a.lang-flag {
+  &:before {
+    @include bg($black);
+  }
+  &:after {
+    opacity: 0.95;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-image: url('../images/ico-flags.png');
+  }
 }
 
 .lang-menu-popover {
@@ -330,39 +350,39 @@
 }
 
 .fil:after {
-  background-position: 0 -41px; // hilipines
+  background-position: 0 -40px; // hilipines
 }
 .pl:after {
-  background-position: -20px -41px; // Poland
+  background-position: -20px -40px; // Poland
 }
 .ro:after {
-  background-position: -40px -41px; // Romania
+  background-position: -40px -40px; // Romania
 }
 .ru:after {
-  background-position: -60px -41px; // Russia
+  background-position: -60px -40px; // Russia
 }
 .ar:after {
-  background-position: -80px -41px; // Saudi  Arabia
+  background-position: -80px -40px; // Saudi  Arabia
 }
 .lt:after {
-  background-position: -100px -41px; // Slovakia
+  background-position: -100px -40px; // Slovakia
 }
 .sk:after {
-  background-position: -120px -41px; // Slovenia
+  background-position: -120px -40px; // Slovenia
 }
 .es:after {
-  background-position: -140px -41px; // Spain
+  background-position: -140px -40px; // Spain
 }
 .sv:after {
-  background-position: -160px -41px; // Sweden
+  background-position: -160px -40px; // Sweden
 }
 .tr:after {
-  background-position: -180px -41px; // Turkey
+  background-position: -180px -40px; // Turkey
 }
 
 .uk:after {
-  background-position: 0px -54px; // Ukraine
+  background-position: 0px -53px; // Ukraine
 }
 .en:after {
-  background-position: -20px -54px; // USA
+  background-position: -20px -53px; // USA
 }

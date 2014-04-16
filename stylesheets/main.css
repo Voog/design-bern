@@ -233,14 +233,17 @@ body {
     right: 0;
   }
 }
-.main-menu li {
-  margin-left: 5px;
+.main-menu ul {
+  line-height: 1.4;
 }
-.main-menu li:first-child {
+.main-menu ul li {
+  margin-left: 15px;
+}
+.main-menu ul li:first-child {
   margin-left: 0;
 }
 @media screen and (max-width: 840px) {
-  .main-menu li {
+  .main-menu ul li {
     display: block;
     margin: 0;
     font-size: 20px;
@@ -248,20 +251,20 @@ body {
     border-bottom: 1px solid rgba(105, 107, 108, 0.2);
   }
 }
-.main-menu li a {
+.main-menu ul li a {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.67);
 }
-.main-menu li a.active, .main-menu li a:hover {
+.main-menu ul li a.active, .main-menu ul li a:hover {
   color: #838586;
   color: rgba(131, 133, 134, 0.67);
 }
 @media screen and (max-width: 840px) {
-  .main-menu li a {
+  .main-menu ul li a {
     display: block;
     padding: 7px 25px 3px;
   }
-  .main-menu li a:hover, .main-menu li a.active {
+  .main-menu ul li a:hover, .main-menu ul li a.active {
     font-family: "Avenir Next";
     background-color: #c7e5ff;
   }
@@ -326,7 +329,6 @@ body {
 .lang-menu {
   position: relative;
   display: inline-block;
-  padding-left: 13px;
   line-height: 1.1;
 }
 @media screen and (max-width: 840px) {
@@ -349,7 +351,7 @@ body {
 .lang-menu li a:hover, .lang-menu li a.active {
   background-color: #cccccc;
 }
-.lang-menu li a:after {
+.lang-menu li a:before, .lang-menu li a:after {
   top: 4px;
   right: 11px;
 }
@@ -368,28 +370,39 @@ body {
   vertical-align: top;
   width: 20px;
   height: 13px;
-  margin-top: 6px;
+  margin-top: 7px;
+  margin-left: 12px;
   font-size: 0;
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
 }
-.lang-menu-btn:after {
+.lang-menu-btn:before, .lang-menu-btn:after {
   top: 0;
   left: 0;
 }
 
-.lang-menu-btn:after,
+.lang-menu-btn:before, .lang-menu-btn:after,
+.lang-menu li a.lang-flag:before,
 .lang-menu li a.lang-flag:after {
   position: absolute;
   display: block;
   width: 20px;
-  height: 13.4px;
+  height: 13.5px;
   content: '';
-  background-image: url("../images/ico-flags.png");
+}
+
+.lang-menu-btn:before,
+.lang-menu li a.lang-flag:before {
+  background-color: black;
+}
+.lang-menu-btn:after,
+.lang-menu li a.lang-flag:after {
+  opacity: 0.95;
   background-size: 200px;
   background-repeat: no-repeat;
+  background-image: url("../images/ico-flags.png");
 }
 
 .lang-menu-popover {
@@ -529,51 +542,51 @@ body {
 }
 
 .fil:after {
-  background-position: 0 -41px;
+  background-position: 0 -40px;
 }
 
 .pl:after {
-  background-position: -20px -41px;
+  background-position: -20px -40px;
 }
 
 .ro:after {
-  background-position: -40px -41px;
+  background-position: -40px -40px;
 }
 
 .ru:after {
-  background-position: -60px -41px;
+  background-position: -60px -40px;
 }
 
 .ar:after {
-  background-position: -80px -41px;
+  background-position: -80px -40px;
 }
 
 .lt:after {
-  background-position: -100px -41px;
+  background-position: -100px -40px;
 }
 
 .sk:after {
-  background-position: -120px -41px;
+  background-position: -120px -40px;
 }
 
 .es:after {
-  background-position: -140px -41px;
+  background-position: -140px -40px;
 }
 
 .sv:after {
-  background-position: -160px -41px;
+  background-position: -160px -40px;
 }
 
 .tr:after {
-  background-position: -180px -41px;
+  background-position: -180px -40px;
 }
 
 .uk:after {
-  background-position: 0px -54px;
+  background-position: 0px -53px;
 }
 
 .en:after {
-  background-position: -20px -54px;
+  background-position: -20px -53px;
 }
 
 /* HEADER */
@@ -584,7 +597,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 24px 0 21px;
+  padding: 24px 0 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -969,7 +982,8 @@ body {
 .search {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 10px;
+  margin-top: 2px;
+  margin-left: 15px;
   height: 30px;
   line-height: 1;
   border: 1px solid black;
@@ -1000,7 +1014,7 @@ body {
 }
 .search .edys-search-input {
   vertical-align: middle;
-  width: 108px;
+  width: 101px;
   height: 28px;
   margin: 0;
   padding: 2px 0 0 7px;
