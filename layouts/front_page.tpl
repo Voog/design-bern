@@ -11,15 +11,15 @@
 </head>
 
 <body class="front-page">
-  <a class="js-body-bg-settings" data-bg-image="{{ page.data.background_image }}" data-bg-color="{{ page.data.background_color }}"></a>
+  <a class="js-bgpicker-body-settings" data-bg-image="{{ page.data.background_image }}" data-bg-color="{{ page.data.background_color }}"></a>
   <div class="container">
 
     {% include "header" %}
-
     <main class="content" role="main">
-      <a class="js-cover-bg-settings" data-bg-image="{{ page.data.cover_image }}" data-bg-color="{{ page.data.cover_color }}"></a>
-      <div class="bg-color js-cover-color" style="background-color: {{ page.data.cover_color }}; opacity: 0.5;"></div><!-- TODO: Opacity?? -->
-      <div class="content-inner js-cover-image" style="background-image: url('{{ page.data.cover_image }}');">
+      <a class="js-bgpicker-cover-settings" data-bg-image="{{ page.data.cover_image }}" data-bg-color="{{ page.data.cover_color }}"></a>
+      <div class="background-image js-bgpicker-cover-image" {% if page.data.cover_image %}style="background-image: url('{{ page.data.cover_image }}');"{% endif %}></div>
+      <div class="background-color js-bgpicker-cover-color" {% if page.data.cover_color %}style="background-color: {{ page.data.cover_color }};{% if page.data.cover_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
+      <div class="content-inner">
         <section class="content-formatted">
           {% content %}
         </section>
