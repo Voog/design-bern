@@ -242,6 +242,10 @@ body {
 .main-menu ul li:first-child {
   margin-left: 0;
 }
+.main-menu ul li.add-page-btn {
+  display: inline-block;
+  vertical-align: bottom;
+}
 @media screen and (max-width: 840px) {
   .main-menu ul li {
     display: block;
@@ -333,7 +337,7 @@ body {
 .lang-menu {
   position: relative;
   display: inline-block;
-  line-height: 1.1;
+  line-height: 1;
 }
 @media screen and (max-width: 840px) {
   .lang-menu {
@@ -356,8 +360,8 @@ body {
   background-color: #cccccc;
 }
 .lang-menu li a:before, .lang-menu li a:after {
-  top: 4px;
-  right: 11px;
+  top: 3px;
+  right: 12px;
 }
 .lang-menu li.add-lang-btn {
   margin-top: 5px;
@@ -414,14 +418,15 @@ body {
 }
 .lang-menu-popover.expanded {
   position: absolute;
-  top: 25px;
+  top: 26px;
   right: -12px;
   display: block;
   padding: 6px 0;
   min-width: 121px;
   background: #fff;
-  -webkit-box-shadow: 0 0 1px black;
-  box-shadow: 0 0 1px black;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
   z-index: 1;
 }
 
@@ -765,7 +770,7 @@ body {
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  max-width: 560px;
+  max-width: 572px;
   margin: 0 auto;
   padding: 40px;
   font-size: 36px;
@@ -1156,8 +1161,9 @@ body {
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select,
 .content-formatted .form_submit input {
-  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 4px 4px 0 black 0.1;
+  -moz-box-shadow: 4px 4px 0 black 0.1;
+  box-shadow: 4px 4px 0 black 0.1;
 }
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
@@ -1233,8 +1239,9 @@ body {
 }
 .content-formatted .form_field_with_errors .form_field_textfield,
 .content-formatted .form_field_with_errors .form_field_textarea {
-  -webkit-box-shadow: 4px 4px 0 #cc0000;
-  box-shadow: 4px 4px 0 #cc0000;
+  -webkit-box-shadow: 4px 4px 0 #cc0000 ;
+  -moz-box-shadow: 4px 4px 0 #cc0000 ;
+  box-shadow: 4px 4px 0 #cc0000 ;
 }
 .content-formatted .feedback-loading,
 .content-formatted .feedback-error,
@@ -1244,8 +1251,9 @@ body {
   margin: 18px 0 0;
   color: white;
   line-height: 1;
-  -webkit-box-shadow: 4px 4px 0 black;
-  box-shadow: 4px 4px 0 black;
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
+  -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
 }
 .content-formatted .feedback-error,
 .content-formatted .feedback-success {

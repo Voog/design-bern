@@ -5,14 +5,20 @@
 }
 
 // BOXES
-@mixin box-shadow($top, $left, $blur, $color, $opacity: 1, $inset: false) {
-  @if $inset {
-    -webkit-box-shadow: inset $top $left $blur rgba($color, $opacity);
-    box-shadow: inset $top $left $blur rgba($color, $opacity);
-  } @else {
-    -webkit-box-shadow: $top $left $blur rgba($color, $opacity);
-    box-shadow: $top $left $blur rgba($color, $opacity);
-  }
+// @mixin box-shadow($top, $left, $blur, $color, $opacity: 1, $inset: false) {
+//   @if $inset {
+//     -webkit-box-shadow: inset $top $left $blur rgba($color, $opacity);
+//     box-shadow: inset $top $left $blur rgba($color, $opacity);
+//   } @else {
+//     -webkit-box-shadow: $top $left $blur rgba($color, $opacity);
+//     box-shadow: $top $left $blur rgba($color, $opacity);
+//   }
+// }
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
 }
 
 // COLORS

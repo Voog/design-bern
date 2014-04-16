@@ -76,6 +76,10 @@
       &:first-child {
         margin-left: 0;
       }
+      &.add-page-btn {
+        display: inline-block;
+        vertical-align: bottom;
+      }
       @include query($tablet-2) {
         display: block;
         margin: 0;
@@ -162,7 +166,7 @@
 .lang-menu {
   position: relative;
   display: inline-block;
-  line-height: 1.1;
+  line-height: 1;
   @include query($tablet-2) {
     display: none;
   }
@@ -183,8 +187,8 @@
       }
       &:before,
       &:after {
-        top: 4px;
-        right: 11px;
+        top: 3px;
+        right: 12px;
       }
     }
     &.add-lang-btn {
@@ -248,13 +252,14 @@
   display: none;
   &.expanded {
     position: absolute;
-    top: 25px;
+    top: 26px;
     right: -12px;
     display: block;
     padding: 6px 0;
     min-width: 121px;
     background: #fff;
-    @include box-shadow(0, 0, 1px, rgba($black,.3));
+    // @include box-shadow(0, 0, 5px, rgba($black, 0.3));
+    @include box-shadow(0, 0, 5px, rgba($black, 0.3));
     z-index: 1;
   }
 }
