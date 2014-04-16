@@ -125,8 +125,9 @@
         a {
           padding: 14px 30px 11px 53px;
           font-size: 14px;
+          &:before,
           &:after {
-            top: 13.5px;
+            top: 16.5px;
             left: 25px;
           }
           &:hover {
