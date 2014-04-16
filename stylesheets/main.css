@@ -119,10 +119,10 @@ body {
     font-size: 16px;
   }
 }
-.content-formatted > a {
+.content-formatted a {
   color: #0066bb;
 }
-.content-formatted > a:hover {
+.content-formatted a:hover {
   color: #0066bb;
   color: rgba(0, 102, 187, 0.8);
 }

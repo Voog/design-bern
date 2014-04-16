@@ -86,8 +86,7 @@ body {
     }
   }
 
-  // TODO: Remove the ">" when Edicy close button CSS is fixed
-  > a {
+  a {
     @include color($blue,1);
     &:hover {
       @include color($blue,.8);
