@@ -19,7 +19,7 @@
             $('.js-bgpicker-cover-color').css({'background-color' : col});
             $('.js-bgpicker-cover-image').css({'background-image' : img});
 
-            if (data.image === null) {
+            if (data.image === null || data.image === '') {
               $('.js-bgpicker-cover-color').css({'opacity' : 1});
             } else {
               $('.js-bgpicker-cover-color').css({'opacity' : 0.5});
