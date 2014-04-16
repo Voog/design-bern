@@ -259,6 +259,10 @@ body {
   color: #838586;
   color: rgba(131, 133, 134, 0.67);
 }
+.main-menu ul li a.untranslated {
+  color: #cc0000;
+  color: rgba(204, 0, 0, 0.8);
+}
 @media screen and (max-width: 840px) {
   .main-menu ul li a {
     display: block;
