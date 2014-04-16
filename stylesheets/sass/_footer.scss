@@ -7,6 +7,9 @@
   @include query($tablet-4) {
     font-size: 12px;
   }
+  @include query($mobile-1) {
+    padding: 20px;
+  }
 
   .voog-reference {
     margin-top: 15px;

@@ -8,7 +8,7 @@
     display: block;
   }
   @include query($mobile-1) {
-    padding-bottom: 0;
+    padding: 8px 15px 4px;
   }
 }
 .header-left,
@@ -19,19 +19,16 @@
   @include query($tablet-2) {
     display: block;
   }
+  @include query($mobile-1) {
+    padding: 0;
+  }
 }
 .header-left {
   position: relative;
-  @include query($mobile-1) {
-    padding: 0 20px 20px;
-  }
 }
 .header-right {
   @include flex;
   text-align: right;
-  @include query($mobile-1) {
-    padding: 0;
-  }
 }
 
 .header-title {

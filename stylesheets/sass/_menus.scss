@@ -4,7 +4,7 @@
   @include query($tablet-2) {
     position: absolute;
     top: 8px;
-    right: 20px;
+    right: 15px;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@
     }
     .menu-stripe {
       display: block;
-      width: 25px;
+      width: 23px;
       height: 4px;
       margin: 4px 0;
       @include bg($secondary-color, 0.67);
@@ -33,6 +33,10 @@
         margin: 0;
       }
     }
+  }
+  @include query($mobile-1) {
+    top: 7px;
+    right: 0;
   }
 }
 
