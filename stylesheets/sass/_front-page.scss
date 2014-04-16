@@ -24,6 +24,9 @@
       min-height: 525px;
       background-position: center;
       background-size: cover;
+      @include query($tablet-4) {
+        min-height: 220px;
+      }
 
       .content-formatted {
         position: relative;
@@ -35,9 +38,11 @@
         font-size: 36px;
         @include color($white);
         line-height: 1.1;
-        @include query($mobile-1) {
-          font-size: 32px;
+        @include query($tablet-4) {
           padding: 20px;
+        }
+        @include query($mobile-1) {
+          font-size: 24px;
         }
 
         h3 {

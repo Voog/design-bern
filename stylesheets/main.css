@@ -766,6 +766,11 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 600px) {
+  .front-page .content .content-inner {
+    min-height: 220px;
+  }
+}
 .front-page .content .content-inner .content-formatted {
   position: relative;
   z-index: 1;
@@ -782,10 +787,14 @@ body {
   color: white;
   line-height: 1.1;
 }
+@media screen and (max-width: 600px) {
+  .front-page .content .content-inner .content-formatted {
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 480px) {
   .front-page .content .content-inner .content-formatted {
-    font-size: 32px;
-    padding: 20px;
+    font-size: 24px;
   }
 }
 .front-page .content .content-inner .content-formatted h3 {
@@ -1360,6 +1369,11 @@ body {
   font-size: 14px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.75);
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 12px;
+  }
 }
 .footer .voog-reference {
   margin-top: 15px;
