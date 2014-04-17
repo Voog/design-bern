@@ -156,6 +156,9 @@ body {
 .content-formatted table:first-child {
   margin-top: 0;
 }
+.content-formatted .edy-texteditor-view {
+  min-height: 36px;
+}
 
 /* MENUS */
 .menu-btn {
@@ -165,7 +168,7 @@ body {
   .menu-btn {
     position: absolute;
     top: 8px;
-    right: 15px;
+    right: 20px;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -193,6 +196,11 @@ body {
   }
   .menu-btn .menu-stripe:first-child, .menu-btn .menu-stripe:last-child {
     margin: 0;
+  }
+}
+@media screen and (max-width: 840px) and (max-width: 480px) {
+  .menu-btn {
+    right: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -223,24 +231,43 @@ body {
   }
   .main-menu.expanded {
     position: absolute;
-    top: 60px;
+    top: 4px;
     right: 20px;
     z-index: 2;
     display: block;
     min-width: 350px;
     text-align: left;
     background-color: white;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
   }
 }
 @media screen and (max-width: 840px) and (max-width: 480px) {
   .main-menu.expanded {
-    top: 0;
-    left: 0;
-    right: 0;
+    left: -15px;
+    right: -15px;
+    min-width: 0;
+    border-top: 1px solid #696b6c;
+    border-top: 1px solid rgba(105, 107, 108, 0.2);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 }
 .main-menu ul {
   line-height: 1.4;
+}
+@media screen and (max-width: 840px) {
+  .main-menu ul.nav-menu li a.active, .main-menu ul.nav-menu li a.active:hover {
+    color: #838586;
+    background-color: #c7e5ff;
+  }
+  .main-menu ul.nav-menu li a:hover {
+    color: #838586;
+    background-color: #c7e5ff;
+    background-color: rgba(199, 229, 255, 0.5);
+  }
 }
 .main-menu ul li {
   margin-left: 15px;
@@ -251,6 +278,7 @@ body {
 .main-menu ul li.add-page-btn {
   display: inline-block;
   vertical-align: bottom;
+  margin-left: 0;
 }
 @media screen and (max-width: 840px) {
   .main-menu ul li {
@@ -265,22 +293,22 @@ body {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.67);
 }
-.main-menu ul li a.active, .main-menu ul li a:hover {
-  color: #838586;
-  color: rgba(131, 133, 134, 0.67);
-}
 .main-menu ul li a.untranslated {
   color: #cc0000;
   color: rgba(204, 0, 0, 0.8);
 }
+.main-menu ul li a.active, .main-menu ul li a.active:hover {
+  color: #838586;
+  color: rgba(131, 133, 134, 0.67);
+}
+.main-menu ul li a:hover {
+  color: #838586;
+  color: rgba(131, 133, 134, 0.4);
+}
 @media screen and (max-width: 840px) {
   .main-menu ul li a {
     display: block;
-    padding: 7px 25px 3px;
-  }
-  .main-menu ul li a:hover, .main-menu ul li a.active {
-    font-family: "Avenir Next";
-    background-color: #c7e5ff;
+    padding: 8px 25px 4px;
   }
 }
 .main-menu .mobile-lang-menu {
@@ -301,15 +329,25 @@ body {
     background-color: #c7e5ff;
   }
   .main-menu .mobile-lang-menu li a {
-    padding: 14px 30px 11px 53px;
+    padding: 12px 30px 8px 53px;
     font-size: 14px;
   }
   .main-menu .mobile-lang-menu li a:before, .main-menu .mobile-lang-menu li a:after {
-    top: 16.5px;
+    top: 13.5px;
     left: 25px;
   }
-  .main-menu .mobile-lang-menu li a:hover {
-    background-color: white;
+  .main-menu .mobile-lang-menu li a.active, .main-menu .mobile-lang-menu li a.active:hover {
+    font-weight: bold;
+  }
+  .main-menu .mobile-lang-menu li a.active {
+    color: #838586;
+    background: none;
+  }
+  .main-menu .mobile-lang-menu li a.active:hover, .main-menu .mobile-lang-menu li a:hover {
+    color: #838586;
+    color: rgba(131, 133, 134, 0.4);
+    background-color: #cccccc;
+    background-color: rgba(204, 204, 204, 0.5);
   }
 }
 
@@ -327,55 +365,22 @@ body {
 .sub-menu li {
   margin-right: 12px;
 }
+.sub-menu li.add-page-btn {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 0;
+}
 .sub-menu li:last-child {
   margin-right: 0;
 }
 .sub-menu li a {
   color: #9c9e9e;
 }
-.sub-menu li a:hover, .sub-menu li.active a {
+.sub-menu li a.active, .sub-menu li a:hover {
   color: #1b2124;
 }
 .sub-menu .nav-menu {
   text-align: center;
-}
-
-.lang-menu {
-  position: relative;
-  display: inline-block;
-  line-height: 1;
-}
-@media screen and (max-width: 840px) {
-  .lang-menu {
-    display: none;
-  }
-}
-.lang-menu li {
-  display: list-item;
-  text-align: right;
-  font-size: 12px;
-}
-.lang-menu li a {
-  position: relative;
-  display: block;
-  padding: 5px 40px 3px 13px;
-  color: #1b2124;
-  color: rgba(27, 33, 36, 0.67);
-}
-.lang-menu li a:hover, .lang-menu li a.active {
-  background-color: #cccccc;
-}
-.lang-menu li a:before, .lang-menu li a:after {
-  top: 3px;
-  right: 12px;
-}
-.lang-menu li.add-lang-btn {
-  margin-top: 5px;
-  margin-right: 10px;
-  text-align: right;
-}
-.lang-menu li.edy-menu-langadd {
-  margin-left: 5px;
 }
 
 .lang-menu-btn {
@@ -434,6 +439,48 @@ body {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) ;
   z-index: 1;
+}
+
+.lang-menu {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+@media screen and (max-width: 840px) {
+  .lang-menu {
+    display: none;
+  }
+}
+.lang-menu li {
+  display: list-item;
+  text-align: right;
+  font-size: 12px;
+}
+.lang-menu li a {
+  position: relative;
+  display: block;
+  padding: 5px 40px 3px 13px;
+  color: #1b2124;
+  color: rgba(27, 33, 36, 0.67);
+}
+.lang-menu li a.active, .lang-menu li a.active:hover {
+  background-color: #cccccc;
+}
+.lang-menu li a:hover {
+  background-color: #cccccc;
+  background-color: rgba(204, 204, 204, 0.5);
+}
+.lang-menu li a:before, .lang-menu li a:after {
+  top: 3px;
+  right: 12px;
+}
+.lang-menu li.add-lang-btn {
+  margin-top: 5px;
+  margin-right: 10px;
+  text-align: right;
+}
+.lang-menu li.edy-menu-langadd {
+  margin-left: 5px;
 }
 
 .sq:after {
@@ -613,9 +660,6 @@ body {
   display: flex;
   position: relative;
   padding: 24px 0 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 @media screen and (max-width: 840px) {
   .header {
@@ -652,6 +696,7 @@ body {
 }
 
 .header-right {
+  position: relative;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -moz-box-flex: 1;

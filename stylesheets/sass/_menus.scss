@@ -4,7 +4,7 @@
   @include query($tablet-2) {
     position: absolute;
     top: 8px;
-    right: 15px;
+    right: 20px;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -20,6 +20,9 @@
     &::-moz-focus-inner {
       padding: 0;
       border: 0;
+    }
+    @include query($mobile-1) {
+      right: 20px;
     }
     .menu-stripe {
       display: block;
@@ -58,22 +61,42 @@
     display: none;
     &.expanded {
       position: absolute;
-      top: 60px;
+      top: 4px;
       right: 20px;
       z-index: 2;
       display: block;
       min-width: 350px;
       text-align: left;
       @include bg($white);
+      @include box-shadow(0, 0, 5px, rgba($black, 0.3));
       @include query($mobile-1) {
-        top: 0;
-        left: 0;
-        right: 0;
+        left: -15px;
+        right: -15px;
+        min-width: 0;
+        @include border(top,1px,solid,$primary-color, 0.2);
+        @include no-box-shadow;
       }
     }
   }
   ul {
     line-height: 1.4;
+    @include query($tablet-2) {
+      &.nav-menu {
+        li {
+          a {
+            &.active,
+            &.active:hover {
+              @include color($link-color);
+              @include bg($link-active-mobile-bg);
+            }
+            &:hover {
+              @include color($link-color);
+              @include bg($link-active-mobile-bg, 0.5);
+            }
+          }
+        }
+      }
+    }
 
     li {
       margin-left: 15px;
@@ -83,6 +106,7 @@
       &.add-page-btn {
         display: inline-block;
         vertical-align: bottom;
+        margin-left: 0;
       }
       @include query($tablet-2) {
         display: block;
@@ -93,21 +117,19 @@
 
       a {
         @include color($secondary-color, 0.67);
-        &.active,
-        &:hover {
-          @include color($link-active-mobile-color, 0.67);
-        }
         &.untranslated {
           @include color($red, 0.8);
         }
+        &.active,
+        &.active:hover {
+          @include color($link-color, 0.67);
+        }
+        &:hover {
+          @include color($link-color, 0.4);
+        }
         @include query($tablet-2) {
           display: block;
-          padding: 7px 25px 3px;
-          &:hover,
-          &.active {
-            font-family: "Avenir Next";
-            @include bg($link-active-mobile-bg);
-          }
+          padding: 8px 25px 4px;
         }
       }
     }
@@ -127,15 +149,25 @@
           @include bg($link-active-mobile-bg);
         }
         a {
-          padding: 14px 30px 11px 53px;
+          padding: 12px 30px 8px 53px;
           font-size: 14px;
           &:before,
           &:after {
-            top: 16.5px;
+            top: 13.5px;
             left: 25px;
           }
+          &.active,
+          &.active:hover {
+            font-weight: bold;
+          }
+          &.active {
+            @include color($link-color);
+            background: none;
+          }
+          &.active:hover,
           &:hover {
-            @include bg($white);
+            @include color($link-color, 0.4);
+            @include bg($link-active-color, 0.5);
           }
         }
       }
@@ -150,60 +182,29 @@
   }
   padding: 7px 0;
   @include border(bottom,1px,solid,$primary-color, 0.2);
+
   li {
     margin-right: 12px;
+    &.add-page-btn {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-left: 0;
+    }
     &:last-child {
       margin-right: 0;
     }
+
     a {
       @include color($third-color);
-    }
-    a:hover,
-    &.active a {
-      @include color($secondary-color);
+      &.active,
+      &:hover {
+        @include color($secondary-color);
+      }
     }
   }
+
   .nav-menu {
     text-align: center;
-  }
-}
-
-.lang-menu {
-  position: relative;
-  display: inline-block;
-  line-height: 1;
-  @include query($tablet-2) {
-    display: none;
-  }
-
-  li {
-    display: list-item;
-    text-align: right;
-    font-size: 12px;
-
-    a {
-      position: relative;
-      display: block;
-      padding: 5px 40px 3px 13px;
-      @include color($secondary-color, 0.67);
-      &:hover,
-      &.active {
-        @include bg($link-active-color);
-      }
-      &:before,
-      &:after {
-        top: 3px;
-        right: 12px;
-      }
-    }
-    &.add-lang-btn {
-      margin-top: 5px;
-      margin-right: 10px;
-      text-align: right;
-    }
-    &.edy-menu-langadd {
-      margin-left: 5px;
-    }
   }
 }
 
@@ -263,9 +264,50 @@
     padding: 6px 0;
     min-width: 121px;
     background: #fff;
-    // @include box-shadow(0, 0, 5px, rgba($black, 0.3));
     @include box-shadow(0, 0, 5px, rgba($black, 0.3));
     z-index: 1;
+  }
+}
+
+.lang-menu {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  @include query($tablet-2) {
+    display: none;
+  }
+
+  li {
+    display: list-item;
+    text-align: right;
+    font-size: 12px;
+
+    a {
+      position: relative;
+      display: block;
+      padding: 5px 40px 3px 13px;
+      @include color($secondary-color, 0.67);
+      &.active,
+      &.active:hover {
+        @include bg($link-active-color);
+      }
+      &:hover {
+        @include bg($link-active-color, 0.5); 
+      }
+      &:before,
+      &:after {
+        top: 3px;
+        right: 12px;
+      }
+    }
+    &.add-lang-btn {
+      margin-top: 5px;
+      margin-right: 10px;
+      text-align: right;
+    }
+    &.edy-menu-langadd {
+      margin-left: 5px;
+    }
   }
 }
 

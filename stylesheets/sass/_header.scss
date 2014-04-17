@@ -3,7 +3,6 @@
   @include flexbox;
   position: relative;
   padding: 24px 0 20px;
-  @include box-sizing(border-box);
   @include query($tablet-2) {
     display: block;
   }
@@ -27,6 +26,7 @@
   position: relative;
 }
 .header-right {
+  position: relative;
   @include flex;
   text-align: right;
 }
