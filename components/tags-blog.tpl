@@ -6,15 +6,15 @@
       </div>
       <div class="tags-right">
         <ul class="menu">
-          <li class="blog-main"><a href="/{{ site.blogs.first.page.path }}">{% case page.language_code %}{% when 'et' %}Kõik teemad{% else %}All topics{% endcase %}</a></li>
+          <li><a class="js-all-tags" href="/{{ site.blogs.first.page.path }}">{% case page.language_code %}{% when 'et' %}Kõik teemad{% else %}All topics{% endcase %}</a></li>
           {% for tag in site.language_tags %}
             {% assign activestr = " " %}
             {% for tmptag in tags %}
               {% if tmptag.name == tag.name %}
-                {% assign activestr = "class='active'" %}
+                {% assign activestr = 'class="active"' %}
               {% endif %}
             {% endfor %}
-            <li {{ activestr }}><a href="/{{ site.blogs.first.page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a></li>
+            <li><a {{ activestr }} href="/{{ site.blogs.first.page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a></li>
           {% endfor %}
         </ul>
       </div>

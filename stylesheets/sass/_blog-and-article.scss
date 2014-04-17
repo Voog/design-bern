@@ -74,6 +74,9 @@
       @include query($tablet-1) {
         margin-right: 0;
       }
+      @include query($mobile-1) {
+        width: 84px  
+      }
     }
   }
 

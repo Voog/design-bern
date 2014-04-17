@@ -953,6 +953,11 @@ body {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .blog-page .tags .tags-left {
+    width: 84px;
+  }
+}
 .blog-page .post {
   display: -webkit-box;
   display: -webkit-flex;
