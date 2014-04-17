@@ -881,7 +881,6 @@ body {
 }
 .tags .tags-left {
   text-align: right;
-  margin-right: 21px;
 }
 @media screen and (max-width: 940px) {
   .tags .tags-left {
@@ -941,6 +940,10 @@ body {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.8);
 }
+.post .post-excerpt,
+.post .post-body {
+  line-height: 1.3;
+}
 .post .post-excerpt {
   margin-top: 12px;
 }
@@ -979,16 +982,13 @@ body {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.5);
 }
-.blog-page .post .post-excerpt {
-  line-height: 1.3;
-}
 
 .post-page .tags .tags-left {
   width: 91px;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 480px) {
   .post-page .tags .tags-left {
-    width: 71px;
+    width: 84px;
   }
 }
 .post-page .post .post-header {
@@ -1420,6 +1420,11 @@ body {
 /* COMMENTS */
 .comments {
   padding: 28px 50px;
+}
+@media screen and (max-width: 940px) {
+  .comments {
+    padding: 28px 20px;
+  }
 }
 .comments .comment-title {
   margin-bottom: 22px;

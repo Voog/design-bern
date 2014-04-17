@@ -1,6 +1,7 @@
 ;(function($) {
     var toggleMainMenu = function() {
-        $('.js-menu-btn').click(function() {
+        $('.js-menu-btn').click(function(event) {
+            event.stopPropagation();
             $(this).toggleClass('open');
             $('.js-main-menu').toggleClass('expanded');
         });
@@ -17,6 +18,9 @@
         $('html').click(function() {
             if ($('.js-lang-menu-popover').hasClass('expanded')) {
                 $('.js-lang-menu-popover').removeClass('expanded');
+            }
+            if ($('.js-main-menu').hasClass('expanded')) {
+                $('.js-main-menu').removeClass('expanded');
             }
         });
     };
