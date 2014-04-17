@@ -5,15 +5,15 @@
     display: inline-block;
     vertical-align: middle;
   }
+
   .tags-left {
     text-align: right;
+    margin-right: 21px;
     @include query($tablet-1) {
-      width: 84px;
+      text-align: left;
     }
   }
-  .tags-right {
-    margin-left: 21px;
-  }
+
   .tags-title {
     font-size: 14px;
     @include color($secondary-color,.5);
@@ -21,14 +21,19 @@
 }
 
 .post {
-  .post-left,
-  .post-right {
+  @include flexbox;
+  @include query($mobile-1) {
+    display: block;
+  }
+
+  .post-left {
     display: inline-block;
     vertical-align: top;
   }
+
   .post-right {
-    @include calc(width, "100% - 113px");
-    margin-left: 21px;
+    @include flex;
+    margin-left: 26px;
     @include query($mobile-1) {
       display: block;
       margin-left: 0;
@@ -37,7 +42,7 @@
 
   .post-link {
     display: inline-block;
-    margin-top: 1px;
+    margin-top: 12px;
     padding: 6px 10px;
     font-size: 14px;
     @include color($white);
@@ -47,6 +52,7 @@
       @include bg($secondary-color,.8);
     }
   }
+
   .post-title {
     margin: 0;
     font-family: "Avenir Next";
@@ -60,8 +66,9 @@
       }
     }
   }
+
   .post-excerpt {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 }
 
@@ -69,6 +76,9 @@
   .tags {
     .tags-left {
       width: 104px;
+      @include query($tablet-1) {
+        margin-right: 0;
+      }
     }
   }
 
@@ -81,6 +91,9 @@
       font-size: 14px;
       @include color($secondary-color,.5);
     }
+    .post-excerpt {
+      line-height: 1.3;
+    }
   }
 }
 
@@ -88,6 +101,9 @@
   .tags {
     .tags-left {
       width: 91px;
+      @include query($tablet-1) {
+        width: 71px;
+      }
     }
   }
 

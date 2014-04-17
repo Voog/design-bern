@@ -177,11 +177,11 @@
 
 .sub-menu {
   margin: 0 30px;
-  @include query($tablet-1) {
-    margin: 0 200px;
-  }
   padding: 7px 0;
   @include border(bottom,1px,solid,$primary-color, 0.2);
+  @include query($tablet-1) {
+    margin: 0 20px;
+  }
 
   li {
     margin-right: 12px;
