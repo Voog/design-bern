@@ -21,11 +21,6 @@
 }
 
 .post {
-  @include flexbox;
-  @include query($mobile-1) {
-    display: block;
-  }
-
   .post-left {
     display: inline-block;
     vertical-align: top;
@@ -83,9 +78,13 @@
   }
 
   .post {
+    @include flexbox;
     margin-top: 39px;
     &:first-child {
       margin-top: 0;
+    }
+    @include query($mobile-1) {
+      display: block;
     }
     .post-date {
       font-size: 14px;

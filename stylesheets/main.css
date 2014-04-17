@@ -894,18 +894,6 @@ body {
   color: rgba(27, 33, 36, 0.5);
 }
 
-.post {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media screen and (max-width: 480px) {
-  .post {
-    display: block;
-  }
-}
 .post .post-left {
   display: inline-block;
   vertical-align: top;
@@ -966,10 +954,20 @@ body {
   }
 }
 .blog-page .post {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 39px;
 }
 .blog-page .post:first-child {
   margin-top: 0;
+}
+@media screen and (max-width: 480px) {
+  .blog-page .post {
+    display: block;
+  }
 }
 .blog-page .post .post-date {
   font-size: 14px;
