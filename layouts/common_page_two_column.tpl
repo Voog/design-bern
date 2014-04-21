@@ -13,7 +13,7 @@
       {% include "header" %}
       <!--{% include "sub-menu" %}--> <!-- TODO: Screws up the layout if no sub menu element present -->
 
-      <main class="content" role="main">
+      <main class="content two-columns" role="main">
         <div class="content-left">
           <section class="content-formatted">
             {% content %}
@@ -21,7 +21,7 @@
         </div>
         <div class="content-right">
           <section class="content-formatted">
-            {% content name="content_right_test" %}
+            {% content name="content_right" %}
           </section>
         </div>
       </main>
