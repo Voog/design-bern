@@ -20,6 +20,14 @@ body {
   }
 }
 
+// TODO: Is there a better way to add margin to editable content areas?
+.edy-content-element {
+  margin-top: 20px !important;
+  &:first-child {
+    margin-top: 0 !important;
+  }
+}
+
 .stretch {
   position: absolute;
   top: 0;

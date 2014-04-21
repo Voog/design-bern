@@ -15,6 +15,7 @@
     @include border(right,1px,dashed,$third-color);
   }
   table {
+    margin-top: 20px;
     font-size: 16px;
     border-collapse: collapse;
     td {
