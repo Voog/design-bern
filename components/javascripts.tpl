@@ -1,7 +1,7 @@
-<script src="{{ javascripts_path }}/jquery.js?5"></script>
-<script src="{{ javascripts_path }}/main.js?5"></script>
-<script src="{{ javascripts_path }}/retina.js?5"></script>
-<script src="{{ javascripts_path }}/overthrow.js?5"></script>
+<script src="{{ javascripts_path }}/jquery.js?15"></script>
+<script src="{{ javascripts_path }}/main.js?15"></script>
+<script src="{{ javascripts_path }}/retina.js?15"></script>
+<script src="{{ javascripts_path }}/overthrow.js?15"></script>
 
 {% if site.search.enabled %}
   <script src="http://static.edicy.com/assets/site_search/3.0/site_search.js?2"></script>
