@@ -5,6 +5,14 @@
 }
 
 .content {
+  &.two-columns {
+    @include bg($secondary-bg);
+    & .content-formatted {
+      h1 {
+        text-align: left;
+      }
+    }
+  }
   .content-inner {
     padding: 33px 50px 50px;
     @include bg($secondary-bg);
@@ -30,7 +38,7 @@
   }
 
   .content-left {
-    padding: 33px 20px 50px 50px;
+    padding: 43px 20px 50px 50px;
     @include query($tablet-3) {
       padding: 33px 20px 0;
     }

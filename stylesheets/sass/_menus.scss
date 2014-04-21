@@ -24,6 +24,7 @@
     @include query($mobile-1) {
       right: 20px;
     }
+
     .menu-stripe {
       display: block;
       width: 23px;
@@ -48,6 +49,7 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+
   li {
     display: inline;
     font-size: 14px;
@@ -78,21 +80,20 @@
       }
     }
   }
-  ul {
+
+  .nav-menu {
     line-height: 1.4;
     @include query($tablet-2) {
-      &.nav-menu {
-        li {
-          a {
-            &.active,
-            &.active:hover {
-              @include color($link-color);
-              @include bg($link-active-mobile-bg);
-            }
-            &:hover {
-              @include color($link-color);
-              @include bg($link-active-mobile-bg, 0.5);
-            }
+      li {
+        a {
+          &.active,
+          &.active:hover {
+            @include color($link-color);
+            @include bg($link-active-mobile-bg);
+          }
+          &:hover {
+            @include color($link-color);
+            @include bg($link-active-mobile-bg, 0.5);
           }
         }
       }
@@ -292,7 +293,7 @@
         @include bg($link-active-color);
       }
       &:hover {
-        @include bg($link-active-color, 0.5); 
+        @include bg($link-active-color, 0.5);
       }
       &:before,
       &:after {

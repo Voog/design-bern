@@ -1,5 +1,6 @@
 /* SEARCH */
 .search {
+  @include clearfix;
   display: inline-block;
   vertical-align: middle;
   margin-top: 2px;
@@ -7,7 +8,6 @@
   height: 30px;
   line-height: 1;
   @include border(all,1px,solid,$black,.1);
-  @include clearfix;
   @include query($tablet-2) {
     display: none;
   }

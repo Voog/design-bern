@@ -1,18 +1,18 @@
 /* FONTS */
 @font-face {
-  font-family: 'Avenir Next';
-  src: url("../assets/avenirnext-roman.eot?");
-  src: url("../assets/avenirnext-roman.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-roman.woff") format("woff"), url("../assets/avenirnext-roman.ttf") format("truetype"), url("../assets/avenirnext-roman.svg#avernirnext-roman") format("svg");
+  font-family: "Avenir Next";
   font-weight: normal;
   font-style: normal;
+  src: url("../assets/avenirnext-roman.eot");
+  src: url("../assets/avenirnext-roman.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-roman.woff") format("woff"), url("../assets/avenirnext-roman.ttf") format("truetype"), url("../assets/avenirnext-roman.svg#Avenir Next") format("svg");
 }
 
 @font-face {
-  font-family: 'Avenir Next';
-  src: url("../assets/avenirnext-heavy.eot?");
-  src: url("../assets/avenirnext-heavy.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-heavy.woff") format("woff"), url("../assets/avenirnext-heavy.ttf") format("truetype"), url("../assets/avenirnext-heavy.svg#avernirnext-heavy") format("svg");
+  font-family: "Avenir Next";
   font-weight: bold;
   font-style: normal;
+  src: url("../assets/avenirnext-heavy.eot");
+  src: url("../assets/avenirnext-heavy.eot?#iefix") format("embedded-opentype"), url("../assets/avenirnext-heavy.woff") format("woff"), url("../assets/avenirnext-heavy.ttf") format("truetype"), url("../assets/avenirnext-heavy.svg#Avenir Next") format("svg");
 }
 
 /* GENERAL */
@@ -24,6 +24,14 @@ body {
   font-size: 24px;
   line-height: 1.5;
   color: #696b6c;
+}
+
+.clearfix:before, .content-formatted:before, .common-page .content:before, .clearfix:after, .content-formatted:after, .common-page .content:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after, .content-formatted:after, .common-page .content:after {
+  clear: both;
 }
 
 .stretch {
@@ -45,16 +53,6 @@ body {
   border: none;
 }
 
-.content-formatted {
-  *zoom: 1;
-}
-.content-formatted:before, .content-formatted:after {
-  content: " ";
-  display: table;
-}
-.content-formatted:after {
-  clear: both;
-}
 .content-formatted h1,
 .content-formatted h2,
 .content-formatted h3,
@@ -160,6 +158,27 @@ body {
   min-height: 36px;
 }
 
+.voog-reference {
+  margin-top: 15px;
+}
+.voog-reference a {
+  display: inline-block;
+  padding: 7px 9px;
+  font-family: "Avenir Next";
+  font-size: 10px;
+  color: #1b2124;
+  color: rgba(27, 33, 36, 0.75);
+  line-height: 1;
+  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.voog-reference a:hover {
+  color: #1b2124;
+  color: rgba(27, 33, 36, 0.75);
+  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+}
+
 /* MENUS */
 .menu-btn {
   display: none;
@@ -255,33 +274,33 @@ body {
     box-shadow: none;
   }
 }
-.main-menu ul {
+.main-menu .nav-menu {
   line-height: 1.4;
 }
 @media screen and (max-width: 840px) {
-  .main-menu ul.nav-menu li a.active, .main-menu ul.nav-menu li a.active:hover {
+  .main-menu .nav-menu li a.active, .main-menu .nav-menu li a.active:hover {
     color: #838586;
     background-color: #c7e5ff;
   }
-  .main-menu ul.nav-menu li a:hover {
+  .main-menu .nav-menu li a:hover {
     color: #838586;
     background-color: #c7e5ff;
     background-color: rgba(199, 229, 255, 0.5);
   }
 }
-.main-menu ul li {
+.main-menu .nav-menu li {
   margin-left: 15px;
 }
-.main-menu ul li:first-child {
+.main-menu .nav-menu li:first-child {
   margin-left: 0;
 }
-.main-menu ul li.add-page-btn {
+.main-menu .nav-menu li.add-page-btn {
   display: inline-block;
   vertical-align: bottom;
   margin-left: 0;
 }
 @media screen and (max-width: 840px) {
-  .main-menu ul li {
+  .main-menu .nav-menu li {
     display: block;
     margin: 0;
     font-size: 20px;
@@ -289,24 +308,24 @@ body {
     border-bottom: 1px solid rgba(105, 107, 108, 0.2);
   }
 }
-.main-menu ul li a {
+.main-menu .nav-menu li a {
   color: #1b2124;
   color: rgba(27, 33, 36, 0.67);
 }
-.main-menu ul li a.untranslated {
+.main-menu .nav-menu li a.untranslated {
   color: #cc0000;
   color: rgba(204, 0, 0, 0.8);
 }
-.main-menu ul li a.active, .main-menu ul li a.active:hover {
+.main-menu .nav-menu li a.active, .main-menu .nav-menu li a.active:hover {
   color: #838586;
   color: rgba(131, 133, 134, 0.67);
 }
-.main-menu ul li a:hover {
+.main-menu .nav-menu li a:hover {
   color: #838586;
   color: rgba(131, 133, 134, 0.4);
 }
 @media screen and (max-width: 840px) {
-  .main-menu ul li a {
+  .main-menu .nav-menu li a {
     display: block;
     padding: 8px 25px 4px;
   }
@@ -728,6 +747,12 @@ body {
   background-color: #eeeeee;
 }
 
+.content.two-columns {
+  background-color: #eeeeee;
+}
+.content.two-columns .content-formatted h1 {
+  text-align: left;
+}
 .content .content-inner {
   padding: 33px 50px 50px;
   background-color: #eeeeee;
@@ -759,7 +784,7 @@ body {
   height: 525px;
 }
 .content .content-left {
-  padding: 33px 20px 50px 50px;
+  padding: 43px 20px 50px 50px;
 }
 @media screen and (max-width: 760px) {
   .content .content-left {
@@ -854,16 +879,6 @@ body {
 }
 
 /* COMMON PAGE */
-.common-page .content {
-  *zoom: 1;
-}
-.common-page .content:before, .common-page .content:after {
-  content: " ";
-  display: table;
-}
-.common-page .content:after {
-  clear: both;
-}
 .common-page .content-formatted h1,
 .common-page .content-formatted h2,
 .common-page .content-formatted h3,
@@ -1081,6 +1096,7 @@ body {
 
 /* SEARCH */
 .search {
+  *zoom: 1;
   display: inline-block;
   vertical-align: middle;
   margin-top: 2px;
@@ -1089,7 +1105,6 @@ body {
   line-height: 1;
   border: 1px solid black;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  *zoom: 1;
 }
 .search:before, .search:after {
   content: " ";
@@ -1460,26 +1475,6 @@ body {
 }
 @media screen and (max-width: 480px) {
   .footer {
-    padding: 20px;
+    padding: 20px 15px;
   }
-}
-.footer .voog-reference {
-  margin-top: 15px;
-}
-.footer .voog-reference a {
-  display: inline-block;
-  padding: 7px 9px;
-  font-family: "Avenir Next";
-  font-size: 10px;
-  color: #1b2124;
-  color: rgba(27, 33, 36, 0.75);
-  line-height: 1;
-  border: 1px solid black;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.footer .voog-reference a:hover {
-  color: #1b2124;
-  color: rgba(27, 33, 36, 0.75);
-  border: 1px solid black;
-  border: 1px solid rgba(0, 0, 0, 0.75);
 }
