@@ -43,16 +43,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/bgpicker-body.tpl",
+      "file": "components/bgpicker.tpl",
       "layout_name": "",
-      "title": "bgpicker-body"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/bgpicker-cover.tpl",
-      "layout_name": "",
-      "title": "bgpicker-cover"
+      "title": "bgpicker"
     },
     {
       "content_type": "component",
@@ -215,12 +208,6 @@
       "file": "images/.DS_Store",
       "kind": "images",
       "filename": ".DS_Store"
-    },
-    {
-      "content_type": "image/bak",
-      "file": "images/flag-sprite.png.bak",
-      "kind": "images",
-      "filename": "flag-sprite.png.bak"
     },
     {
       "content_type": "image/png",
