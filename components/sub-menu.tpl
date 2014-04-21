@@ -1,6 +1,6 @@
-<section class="content-topbar">
-  {% for item in site.visible_menuitems %}
-    {% if item.selected? and item.children? or editmode %}
+{% for item in site.visible_menuitems %}
+  {% if item.selected? and item.children? or editmode %}
+    <section class="content-topbar">
       <nav class="sub-menu">
         <ul class="menu nav-menu">
           {% if editmode or item.children? %}
@@ -12,6 +12,6 @@
           {% if editmode %}<li class="add-page-btn">{% menuadd parent="item" %}</li>{% endif %}
         </ul>
       </nav>
-    {% endif %}
-  {% endfor %}
-</section>
+    </section>
+  {% endif %}
+{% endfor %}

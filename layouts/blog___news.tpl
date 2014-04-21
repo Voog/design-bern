@@ -12,6 +12,7 @@
   <body class="blog-page">
     <div class="container">
       {% include "header" %}
+      {% include "sub-menu" %}
       {% include "tags-blog" %}
 
       <main class="content" role="main">
