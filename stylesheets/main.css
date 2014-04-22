@@ -255,7 +255,7 @@ body {
     position: absolute;
     top: 4px;
     right: 20px;
-    z-index: 2;
+    z-index: 10;
     display: block;
     min-width: 350px;
     text-align: left;
@@ -280,17 +280,6 @@ body {
 .main-menu .nav-menu {
   line-height: 1.4;
 }
-@media screen and (max-width: 840px) {
-  .main-menu .nav-menu li a.active, .main-menu .nav-menu li a.active:hover {
-    color: #838586;
-    background-color: #c7e5ff;
-  }
-  .main-menu .nav-menu li a:hover {
-    color: #838586;
-    background-color: #c7e5ff;
-    background-color: rgba(199, 229, 255, 0.5);
-  }
-}
 .main-menu .nav-menu li {
   margin-left: 15px;
 }
@@ -300,13 +289,13 @@ body {
 .main-menu .nav-menu li.add-page-btn {
   display: inline-block;
   vertical-align: bottom;
-  margin-top: 10px;
   margin-left: 0;
-  padding-left: 25px;
 }
 @media screen and (max-width: 940px) {
   .main-menu .nav-menu li.add-page-btn {
     display: block;
+    padding-top: 10px;
+    padding-left: 25px;
   }
 }
 @media screen and (max-width: 840px) {
@@ -316,6 +305,15 @@ body {
     font-size: 20px;
     border-bottom: 1px solid #696b6c;
     border-bottom: 1px solid rgba(105, 107, 108, 0.2);
+  }
+  .main-menu .nav-menu li li a.active, .main-menu .nav-menu li li a.active:hover {
+    color: #838586;
+    background-color: #c7e5ff;
+  }
+  .main-menu .nav-menu li li a:hover {
+    color: #838586;
+    background-color: #c7e5ff;
+    background-color: rgba(199, 229, 255, 0.5);
   }
 }
 .main-menu .nav-menu li a {
@@ -350,6 +348,8 @@ body {
   }
   .main-menu .mobile-lang-menu li {
     text-align: left;
+    border-top: 1px solid #696b6c;
+    border-top: 1px solid rgba(105, 107, 108, 0.2);
   }
   .main-menu .mobile-lang-menu li:first-child {
     border-top: none;
@@ -358,7 +358,7 @@ body {
     background-color: #c7e5ff;
   }
   .main-menu .mobile-lang-menu li a {
-    padding: 12px 30px 8px 53px;
+    padding: 14px 30px 11px 53px;
     font-size: 14px;
   }
   .main-menu .mobile-lang-menu li a:before, .main-menu .mobile-lang-menu li a:after {
@@ -377,6 +377,12 @@ body {
     color: rgba(131, 133, 134, 0.4);
     background-color: #cccccc;
     background-color: rgba(204, 204, 204, 0.5);
+  }
+  .main-menu .mobile-lang-menu li.add-lang-btn {
+    display: block;
+    padding: 10px 25px;
+    text-align: left;
+    line-height: 0.5;
   }
 }
 
@@ -502,11 +508,6 @@ body {
 .lang-menu li a:before, .lang-menu li a:after {
   top: 3px;
   right: 12px;
-}
-.lang-menu li.add-lang-btn {
-  margin-top: 5px;
-  margin-right: 10px;
-  text-align: right;
 }
 .lang-menu li.edy-menu-langadd {
   margin-left: 5px;

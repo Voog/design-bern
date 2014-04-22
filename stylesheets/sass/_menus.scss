@@ -65,7 +65,7 @@
       position: absolute;
       top: 4px;
       right: 20px;
-      z-index: 2;
+      z-index: 10;
       display: block;
       min-width: 350px;
       text-align: left;
@@ -83,21 +83,6 @@
 
   .nav-menu {
     line-height: 1.4;
-    @include query($tablet-2) {
-      li {
-        a {
-          &.active,
-          &.active:hover {
-            @include color($link-color);
-            @include bg($link-active-mobile-bg);
-          }
-          &:hover {
-            @include color($link-color);
-            @include bg($link-active-mobile-bg, 0.5);
-          }
-        }
-      }
-    }
 
     li {
       margin-left: 15px;
@@ -107,18 +92,34 @@
       &.add-page-btn {
         display: inline-block;
         vertical-align: bottom;
-        margin-top: 10px;
+
         margin-left: 0;
-        padding-left: 25px;
         @include query($tablet-1) {
           display: block;
+          padding-top: 10px;
+          padding-left: 25px;
         }
       }
+
       @include query($tablet-2) {
         display: block;
         margin: 0;
         font-size: 20px;
         @include border(bottom,1px,solid,$primary-color, 0.2);
+
+        li {
+          a {
+            &.active,
+            &.active:hover {
+              @include color($link-color);
+              @include bg($link-active-mobile-bg);
+            }
+            &:hover {
+              @include color($link-color);
+              @include bg($link-active-mobile-bg, 0.5);
+            }
+          }
+        }
       }
 
       a {
@@ -148,14 +149,16 @@
       padding-left: 0;
       li {
         text-align: left;
+        @include border(top, 1px, solid, $primary-color, 0.2);
         &:first-child {
           border-top: none;
         }
         &.active a:hover {
           @include bg($link-active-mobile-bg);
         }
+
         a {
-          padding: 12px 30px 8px 53px;
+          padding: 14px 30px 11px 53px;
           font-size: 14px;
           &:before,
           &:after {
@@ -175,6 +178,12 @@
             @include color($link-color, 0.4);
             @include bg($link-active-color, 0.5);
           }
+        }
+        &.add-lang-btn {
+          display: block;
+          padding: 10px 25px;
+          text-align: left;
+          line-height: 0.5;
         }
       }
     }
@@ -305,11 +314,6 @@
         top: 3px;
         right: 12px;
       }
-    }
-    &.add-lang-btn {
-      margin-top: 5px;
-      margin-right: 10px;
-      text-align: right;
     }
     &.edy-menu-langadd {
       margin-left: 5px;
