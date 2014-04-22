@@ -1301,8 +1301,9 @@ body {
   min-height: 98px;
 }
 .content-formatted .form_field_select {
+  height: 30px;
   padding: 8px 17px 6px 9px;
-  background-position: right 7px top 13px;
+  background-position: 97.5% 13px;
   background-repeat: no-repeat;
   border: none;
 }
