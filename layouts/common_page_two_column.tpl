@@ -37,7 +37,6 @@
   {% include "javascripts" %}
   <script>site.initCommonPage();</script>
   <script src="{{ javascripts_path }}/autogrow.js"></script>
-  <script src="{{ javascripts_path }}/ajaxForm.js"></script>
   <script>$('.form_field_textarea').autogrow();</script>
   {% include "bgpicker" %}
 </body>

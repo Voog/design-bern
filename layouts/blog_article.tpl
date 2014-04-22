@@ -52,9 +52,7 @@
   </div>
 
   {% include "javascripts" %}
-  <script>site.initArticlePage();</script>
-  <script src="{{ javascripts_path }}/autogrow.js"></script>
-
   {% include "bgpicker" %}
+  <script>site.initArticlePage();</script>
 </body>
 </html>
