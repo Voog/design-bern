@@ -32,7 +32,6 @@
   </div>
 
   {% include "javascripts" %}
-  <script src="{{ javascripts_path }}/autogrow.js"></script>
   {% include "bgpicker" %}
 </body>
 </html>

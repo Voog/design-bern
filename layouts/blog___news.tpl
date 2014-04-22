@@ -46,8 +46,6 @@
   {% include "javascripts" %}
   {% include "bgpicker" %}
   <script>
-    site.initBlogPage();
-
     $(document).ready(function() {
       currentUrl = window.location.href;
       blogUrl = "{{ site.url }}/{{ page.path }}";
@@ -55,6 +53,8 @@
         $(".js-all-tags").addClass("active");
       };
     });
+
+    site.initBlogPage();
   </script>
 </body>
 </html>
