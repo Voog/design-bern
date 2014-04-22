@@ -5,34 +5,21 @@
     margin-top: 0;
   }
   .edys-gallery {
-    overflow: hidden;
-    margin-bottom: 40px;
     &:hover {
       .edys-gallery-item {
         .edys-gallery-image {
-          opacity: .6;
+          opacity: 0.6;
         }
       }
     }
     .edys-gallery-item {
-      display: block;
-      float: left;
-      width: 140px;
-      padding-right: 0 !important;
       .edys-gallery-image {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin-bottom: 0;
         &:hover {
           opacity: 1;
         }
       }
       &:hover {
         opacity: 1;
-      }
-      @include query($tablet-4) {
-        width: 33.3%;
       }
     }
   }

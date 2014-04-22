@@ -7,9 +7,16 @@
   }
 
   .tags-left {
+    margin-right: 20px;
     text-align: right;
     @include query($tablet-1) {
       text-align: left;
+    }
+  }
+  .tags-right {
+    width: 85%;
+    @include query($tablet-2) {
+      width: 100%;
     }
   }
 
