@@ -9,8 +9,22 @@
 }
 
 /* FRONT PAGE */
-.front-page .content .bg-color {
+.front-page .content .background-color {
   -ms-filter: "alpha(opacity=50)";
+}
+.front-page .content .content-inner {
+  display: table;
+  margin: 0 auto;
+}
+.front-page .content .content-inner .content-formatted {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.post .post-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 722px;
 }
 
 .search {
@@ -18,6 +32,11 @@
 }
 .search .search-left {
   line-height: 1.5;
+}
+
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_select {
+  height: 34px;
 }
 
 .footer .voog-reference a {

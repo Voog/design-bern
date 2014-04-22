@@ -25,8 +25,17 @@
 /* FRONT PAGE */
 .front-page {
   .content {
-    .bg-color {
+    .background-color {
       -ms-filter: "alpha(opacity=50)";
+    }
+    .content-inner {
+      display: table;
+      margin: 0 auto;
+
+      .content-formatted {
+        display: table-cell;
+        vertical-align: middle;
+      }
     }
   }
 }
@@ -34,6 +43,13 @@
 // COMMON PAGE
 
 // BLOG & ARTICLE
+.post {
+  .post-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 722px;
+  }
+}
 
 // GALLERY
 
@@ -48,6 +64,12 @@
 }
 
 // FORMS
+.content-formatted {
+  .form_field_textfield,
+  .form_field_select {
+    height: 34px;
+  }
+}
 
 // COMMENTS
 
