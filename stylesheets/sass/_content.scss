@@ -5,6 +5,8 @@
 }
 
 .content {
+  display: block;
+
   &.two-columns {
     @include clearfix;
     @include bg($secondary-bg);
@@ -33,6 +35,7 @@
       width: auto;
       float: none;
     }
+
     iframe {
       display: block;
       height: 525px;
