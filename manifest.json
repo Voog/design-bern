@@ -271,15 +271,15 @@
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/ie8.css",
+      "file": "stylesheets/ie10.css",
       "kind": "stylesheets",
-      "filename": "ie8.css"
+      "filename": "ie10.css"
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/ie9.css",
+      "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
-      "filename": "ie9.css"
+      "filename": "ie8.css"
     },
     {
       "content_type": "text/css",
