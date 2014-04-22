@@ -300,7 +300,14 @@ body {
 .main-menu .nav-menu li.add-page-btn {
   display: inline-block;
   vertical-align: bottom;
+  margin-top: 10px;
   margin-left: 0;
+  padding-left: 25px;
+}
+@media screen and (max-width: 940px) {
+  .main-menu .nav-menu li.add-page-btn {
+    display: block;
+  }
 }
 @media screen and (max-width: 840px) {
   .main-menu .nav-menu li {

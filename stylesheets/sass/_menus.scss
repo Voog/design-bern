@@ -107,7 +107,12 @@
       &.add-page-btn {
         display: inline-block;
         vertical-align: bottom;
+        margin-top: 10px;
         margin-left: 0;
+        padding-left: 25px;
+        @include query($tablet-1) {
+          display: block;
+        }
       }
       @include query($tablet-2) {
         display: block;
