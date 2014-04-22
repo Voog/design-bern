@@ -153,10 +153,6 @@ body {
 .content-formatted code {
   margin-top: 20px;
 }
-.content-formatted img {
-  max-width: 100%;
-  height: auto;
-}
 .content-formatted pre,
 .content-formatted code {
   display: block;
