@@ -166,20 +166,3 @@ body {
     min-height: 36px;
   }
 }
-
-.voog-reference {
-  margin-top: 15px;
-  a {
-    display: inline-block;
-    padding: 7px 9px;
-    font-family: "Avenir Next";
-    font-size: 10px;
-    @include color($secondary-color, 0.75);
-    line-height: 1;
-    @include border(all,1px,solid,$black, 0.1);
-    &:hover {
-      @include color($secondary-color, 0.75);
-      @include border(all,1px,solid,$black, 0.75);
-    }
-  }
-}

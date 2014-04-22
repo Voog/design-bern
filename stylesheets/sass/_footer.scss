@@ -4,10 +4,31 @@
   text-align: center;
   font-size: 14px;
   @include color($secondary-color, 0.75);
+  @include query($tablet-1) {
+    @include bg($white);
+  }
   @include query($tablet-4) {
     font-size: 12px;
   }
   @include query($mobile-1) {
     padding: 20px 15px;
+  }
+
+  .voog-reference {
+    margin-top: 15px;
+    a {
+      display: inline-block;
+      padding: 7px 9px;
+      font-family: "Avenir Next";
+      font-size: 10px;
+      @include color($secondary-color, 0.75);
+      line-height: 1;
+      @include bg($white);
+      @include border(all,1px,solid,$black, 0.1);
+      &:hover {
+        @include color($secondary-color, 0.75);
+        @include border(all,1px,solid,$black, 0.75);
+      }
+    }
   }
 }
