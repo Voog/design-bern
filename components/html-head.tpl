@@ -15,6 +15,7 @@
 
 {% stylesheet_link "main.css?17" %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.css?17" %}<![endif]-->
+<!--[if lt IE 10]>{% stylesheet_link "ie9.css?17" %}<![endif]-->
 
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
 

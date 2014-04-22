@@ -1,0 +1,14 @@
+/* FRONT PAGE */
+.front-page .content-inner {
+  display: table;
+  margin: 0 auto;
+}
+.front-page .content-inner .content-formatted {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_select {
+  height: 34px;
+}

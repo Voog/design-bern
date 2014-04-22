@@ -1,0 +1,49 @@
+@import 'bourbon/bourbon';
+@import '_mixins';
+
+// MENUS
+
+// GENERAL
+
+// HEADER
+
+// TOPBAR
+
+// SIDEBAR
+
+// CONTENT
+
+/* FRONT PAGE */
+.front-page {
+  .content-inner {
+    display: table;
+    margin: 0 auto;
+
+    .content-formatted {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+// COMMON PAGE
+
+// BLOG & ARTICLE
+
+// GALLERY
+
+// TABLES
+
+// SEARCH
+
+// FORMS
+.content-formatted {
+  .form_field_textfield,
+  .form_field_select {
+    height: 34px;
+  }
+}
+
+// COMMENTS
+
+// FOOTER

@@ -25,13 +25,10 @@ body {
   line-height: 1.5;
   color: #696b6c;
 }
-
-.clearfix:before, .content-formatted:before, .common-page .content:before, .clearfix:after, .content-formatted:after, .common-page .content:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after, .content-formatted:after, .common-page .content:after {
-  clear: both;
+@media screen and (max-width: 840px) {
+  body {
+    background-image: none !important;
+  }
 }
 
 .absolute {
@@ -77,6 +74,16 @@ body {
   border: none;
 }
 
+.content-formatted {
+  *zoom: 1;
+}
+.content-formatted:before, .content-formatted:after {
+  content: " ";
+  display: table;
+}
+.content-formatted:after {
+  clear: both;
+}
 .content-formatted h1,
 .content-formatted h2,
 .content-formatted h3,
@@ -687,11 +694,6 @@ body {
   position: relative;
   padding: 24px 0 20px;
 }
-@media screen and (max-width: 940px) {
-  .header {
-    background-color: white;
-  }
-}
 @media screen and (max-width: 840px) {
   .header {
     display: block;
@@ -760,7 +762,15 @@ body {
 }
 
 .content.two-columns {
+  *zoom: 1;
   background-color: #eeeeee;
+}
+.content.two-columns:before, .content.two-columns:after {
+  content: " ";
+  display: table;
+}
+.content.two-columns:after {
+  clear: both;
 }
 .content.two-columns .content-formatted h1 {
   text-align: left;
@@ -892,6 +902,16 @@ body {
 }
 
 /* COMMON PAGE */
+.common-page .content {
+  *zoom: 1;
+}
+.common-page .content:before, .common-page .content:after {
+  content: " ";
+  display: table;
+}
+.common-page .content:after {
+  clear: both;
+}
 .common-page .content-formatted h1,
 .common-page .content-formatted h2,
 .common-page .content-formatted h3,
@@ -1477,11 +1497,6 @@ body {
   font-size: 14px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.75);
-}
-@media screen and (max-width: 940px) {
-  .footer {
-    background-color: white;
-  }
 }
 @media screen and (max-width: 600px) {
   .footer {
