@@ -31,6 +31,5 @@
 
   {% include "javascripts" %}
   {% include "bgpicker" %}
-  <script>site.initCommonPage();</script>
 </body>
 </html>
