@@ -1,7 +1,7 @@
 /* COMMON PAGE */
 .common-page {
   .content {
-    @extend .clearfix;
+    @include clearfix;
   }
 
   .content-formatted {

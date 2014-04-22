@@ -6,6 +6,7 @@
 
 .content {
   &.two-columns {
+    @include clearfix;
     @include bg($secondary-bg);
     & .content-formatted {
       h1 {
