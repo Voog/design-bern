@@ -235,12 +235,6 @@
     },
     {
       "content_type": "text/javascript",
-      "file": "javascripts/ajaxForm.js",
-      "kind": "javascripts",
-      "filename": "ajaxForm.js"
-    },
-    {
-      "content_type": "text/javascript",
       "file": "javascripts/autogrow.js",
       "kind": "javascripts",
       "filename": "autogrow.js"
@@ -280,6 +274,12 @@
       "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
       "filename": "ie8.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/ie9.css",
+      "kind": "stylesheets",
+      "filename": "ie9.css"
     },
     {
       "content_type": "text/css",
