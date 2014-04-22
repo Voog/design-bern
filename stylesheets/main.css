@@ -160,6 +160,10 @@ body {
 .content-formatted code {
   margin-top: 20px;
 }
+.content-formatted img {
+  max-width: 100%;
+  height: auto;
+}
 .content-formatted pre,
 .content-formatted code {
   display: block;
@@ -761,6 +765,9 @@ body {
   background-color: #eeeeee;
 }
 
+.content {
+  display: block;
+}
 .content.two-columns {
   *zoom: 1;
   background-color: #eeeeee;
