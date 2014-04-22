@@ -10,13 +10,8 @@
     margin-right: 20px;
     text-align: right;
     @include query($tablet-1) {
+      margin-right: 0;
       text-align: left;
-    }
-  }
-  .tags-right {
-    width: 85%;
-    @include query($tablet-2) {
-      width: 100%;
     }
   }
 
@@ -113,6 +108,15 @@
       width: 91px;
       @include query($mobile-1) {
         width: 84px;
+      }
+    }
+
+    .editmode & {
+      .tags-right {
+        width: 85%;
+        @include query($tablet-2) {
+          width: 100%;
+        }
       }
     }
   }

@@ -913,15 +913,8 @@ body {
 }
 @media screen and (max-width: 940px) {
   .tags .tags-left {
+    margin-right: 0;
     text-align: left;
-  }
-}
-.tags .tags-right {
-  width: 85%;
-}
-@media screen and (max-width: 840px) {
-  .tags .tags-right {
-    width: 100%;
   }
 }
 .tags .tags-title {
@@ -1026,6 +1019,14 @@ body {
 @media screen and (max-width: 480px) {
   .post-page .tags .tags-left {
     width: 84px;
+  }
+}
+.editmode .post-page .tags .tags-right {
+  width: 85%;
+}
+@media screen and (max-width: 840px) {
+  .editmode .post-page .tags .tags-right {
+    width: 100%;
   }
 }
 .post-page .post .post-header {
