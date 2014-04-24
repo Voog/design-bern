@@ -13,7 +13,7 @@
           color: true,
           preview: function(data) {
             var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : '',
-            col = (data.color && data.color !== '') ? data.color : '';
+                col = (data.color && data.color !== '') ? data.color : '';
 
             $('.js-bgpicker-cover-color').css({'background-color' : col});
             $('.js-bgpicker-cover-image').css({'background-image' : img});
