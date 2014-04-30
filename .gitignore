@@ -1,12 +1,12 @@
 
-sftp-config.json
-
-html/*
-
-*.html
+.DS_Store
 
 .edicy
 
-.DS_Store
-
 .sass-cache
+
+*.html
+
+*.css
+
+sftp-config.json
