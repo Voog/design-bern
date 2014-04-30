@@ -43,9 +43,9 @@
   <script>
     $(document).ready(function() {
       currentUrl = window.location.href;
-      blogUrl = "{{ site.url }}/{{ page.path }}";
+      blogUrl = '{{ site.url }}{{ page.path }}';
       if (currentUrl === blogUrl) {
-        $(".js-all-tags").addClass("active");
+        $('.js-tags-all').addClass('active');
       };
     });
 

@@ -1,27 +1,4 @@
 /* BLOG & BLOG ARTICLE */
-.tags {
-  .tags-left,
-  .tags-right {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .tags-left {
-    margin-right: 20px;
-    text-align: right;
-
-    @include query($tablet-1) {
-      margin-right: 0;
-      text-align: left;
-    }
-  }
-
-  .tags-title {
-    font-size: 14px;
-    @include color($secondary-color, 0.5);
-  }
-}
-
 .post {
   .post-left {
     display: inline-block;
