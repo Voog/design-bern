@@ -9,6 +9,7 @@
   .tags-left {
     margin-right: 20px;
     text-align: right;
+
     @include query($tablet-1) {
       margin-right: 0;
       text-align: left;
@@ -17,7 +18,7 @@
 
   .tags-title {
     font-size: 14px;
-    @include color($secondary-color,.5);
+    @include color($secondary-color, 0.5);
   }
 }
 
@@ -30,6 +31,7 @@
   .post-right {
     @include flex;
     margin-left: 26px;
+
     @include query($mobile-1) {
       display: block;
       margin-left: 0;
@@ -41,11 +43,12 @@
     margin-top: 12px;
     padding: 6px 10px;
     font-size: 14px;
-    @include color($white);
     line-height: 1;
-    @include bg($secondary-color,.5);
+    @include color($white);
+    @include bg($secondary-color, 0.5);
+
     &:hover {
-      @include bg($secondary-color,.8);
+      @include bg($secondary-color, 0.8);
     }
   }
 
@@ -55,10 +58,12 @@
     font-weight: normal;
     font-size: 24px;
     @include color($secondary-color);
+
     a {
       @include color($secondary-color);
+
       &:hover {
-        @include color($secondary-color,.8);
+        @include color($secondary-color, 0.8);
       }
     }
   }
@@ -77,9 +82,11 @@
   .tags {
     .tags-left {
       width: 104px;
+
       @include query($tablet-1) {
         margin-right: 0;
       }
+
       @include query($mobile-1) {
         width: 84px;
       }
@@ -89,15 +96,18 @@
   .post {
     @include flexbox;
     margin-top: 39px;
+
     &:first-child {
       margin-top: 0;
     }
+
     @include query($mobile-1) {
       display: block;
     }
+
     .post-date {
       font-size: 14px;
-      @include color($secondary-color,.5);
+      @include color($secondary-color, 0.5);
     }
   }
 }
@@ -106,6 +116,7 @@
   .tags {
     .tags-left {
       width: 91px;
+
       @include query($mobile-1) {
         width: 84px;
       }
@@ -114,6 +125,7 @@
     .editmode & {
       .tags-right {
         width: 85%;
+
         @include query($tablet-2) {
           width: 100%;
         }
@@ -124,9 +136,11 @@
   .post {
     .post-header {
       text-align: center;
+
       .post-title {
         font-size: 36px;
         line-height: 1;
+
         input {
           text-align: center;
         }
@@ -139,9 +153,11 @@
 
     .post-content {
       margin-top: 29px;
+
       .post-body {
         margin-top: 28px;
       }
+
       .post-excerpt,
       .post-body {
         .fci-editor {

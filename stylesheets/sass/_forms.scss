@@ -15,7 +15,6 @@
   .form_field label,
   .edy-fe-label {
     display: block;
-    font-family: "Avenir Next";
     font-weight: bold;
     line-height: 1.3;
   }
@@ -27,22 +26,23 @@
   .form_submit input {
     font-family: inherit;
     font-size: 14px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -webkit-border-radius: 0;
+    @include inputiosreset;
   }
+
   .form_field_textfield,
   .form_field_textarea,
   .form_field_select,
   .form_field_file {
     max-width: 100%;
   }
+
   .form_field_textfield,
   .form_field_textarea,
   .form_field_select,
   .form_submit input {
-    @include box-shadow(4px,4px,0,$black,.1);
+    @include box-shadow(4px,4px,0,$black, 0.1);
   }
+
   .form_field_textfield,
   .form_field_textarea,
   .form_field_select {
@@ -57,11 +57,12 @@
     @include box-sizing(border-box);
     outline: none;
   }
+
   .form_field_textarea {
     min-height: 98px;
   }
+
   .form_field_select {
-    -moz-appearance: none;
     height: 30px;
     padding: 8px 9px 6px 9px;
     text-indent: 0.01px;
@@ -84,10 +85,12 @@
 
   .form_field_size_medium {
     width: 420px;
+
     @include query($mobile-2) {
       width: 100%;
     }
   }
+
   .form_field_size_large {
     width: 580px;
   }
@@ -101,14 +104,14 @@
       @include color($white);
       line-height: 1;
       @include bg($blue);
-      cursor: pointer;
       border: none;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
-      border-radius: 0;
+      cursor: pointer;
+      @include inputiosreset;
+
       &:hover {
-        @include bg($blue,.8);
+        @include bg($blue, 0.8);
       }
+
       @include query($mobile-2) {
         width: 100%;
       }
@@ -121,7 +124,7 @@
   .form_field_with_errors {
     .form_field_textfield,
     .form_field_textarea {
-      @include box-shadow(4px, 4px, 0, rgba($red,1));
+      @include box-shadow(4px, 4px, 0, rgba($red, 1));
     }
   }
 
@@ -133,19 +136,22 @@
     margin: 18px 0 0;
     @include color($white);
     line-height: 1;
-    @include box-shadow(4px, 4px, 0, rgba($black,.1));
+    @include box-shadow(4px, 4px, 0, rgba($black, 0.1));
   }
+
   .feedback-error,
   .feedback-success {
     padding: 3px 12px 0;
     font-size: 14px;
   }
+
   .feedback-loading {
     width: 60px;
     text-align: center;
     font-size: 30px;
-    @include bg($secondary-color,.5);
+    @include bg($secondary-color, 0.5);
   }
+
   .feedback-loading {
     span {
       display: inline-block;
@@ -155,30 +161,46 @@
       margin: 0 3px 5px 0;
       background: transparent;
       border-radius: 50%;
-      @include animation(feedback-loading .8s linear infinite);
+      @include animation(feedback-loading 0.8s linear infinite);
     }
   }
+
   .feedback-loading {
     span:nth-child(2) {
       @include animation-delay(.2s);
     }
   }
+
   .feedback-loading {
     span:nth-child(3) {
       @include animation-delay(.4s);
     }
   }
+
   .feedback-loading {
     span:last-child {
       margin-right: 0;
     }
   }
+
   @include keyframes(feedback-loading) {
-    0% { background: transparent; } 50% { background: $white; } 100% { background: transparent; }
+    0% {
+      background: transparent;
+    }
+
+    50% {
+      background: $white;
+    }
+
+    100% {
+      background: transparent;
+    }
   }
+
   .feedback-error {
     @include bg($red);
   }
+
   .feedback-success {
     @include bg($green);
   }
@@ -192,15 +214,19 @@
     @include border(all,1px,solid,$white,.3);
     border-radius: 100%;
     cursor: pointer;
+
     &:hover {
       opacity: .8;
     }
+
     &:focus {
       outline: none;
     }
+
     .no-svg & {
       background: url("../images/ico-close.png") center center no-repeat;
     }
+
     .svg & {
       background: url("../assets/ico-close.svg") center center no-repeat;
     }

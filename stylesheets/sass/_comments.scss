@@ -1,6 +1,7 @@
 /* COMMENTS */
 .comments {
   padding: 28px 50px;
+
   @include query($tablet-1) {
     padding: 28px 20px;
   }
@@ -12,12 +13,11 @@
   }
 
   .comment {
-    @include border(left,5px,solid,$grey-4,.4);
-    border-width: 5px;
-    @include color($primary-color);
-    font-size: 18px;
     margin-bottom: 31px;
     padding-left: 24px;
+    font-size: 18px;
+    @include color($primary-color);
+    @include border(left,5px,solid,$grey-4, 0.4);
   }
 
   .comment-form {

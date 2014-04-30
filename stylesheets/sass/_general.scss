@@ -7,6 +7,7 @@ body {
   font-size: 24px;
   line-height: 1.5;
   @include color($primary-color);
+
   @include query($tablet-2) {
     background-image: none !important;
   }
@@ -15,9 +16,11 @@ body {
 .absolute {
   position: absolute;
 }
+
 .fixed {
   position: fixed;
 }
+
 .stretch {
   position: absolute;
   top: 0;
@@ -35,11 +38,10 @@ body {
   z-index: -1;
 }
 
-
-
 // TODO: Is there a better way to add margin to editable content areas?
 .edy-content-element {
   margin-top: 20px !important;
+
   &:first-child {
     margin-top: 0 !important;
   }
@@ -48,8 +50,10 @@ body {
 .container {
   max-width: 940px;
   margin: 0 auto;
+
   a {
     text-decoration: none;
+
     img {
       border: none;
     }
@@ -83,6 +87,7 @@ body {
   h2,
   p {
     margin-top: 32px;
+
     @include query($mobile-1) {
       margin-top: 28px;
     }
@@ -91,22 +96,27 @@ body {
   h1 {
     text-align: center;
     font-size: 36px;
+
     @include query($mobile-1) {
       font-size: 32px;
     }
   }
+
   h2 {
     font-size: 24px;
+
     @include query($mobile-1) {
       font-size: 20px;
     }
   }
+
   h3,
   h4,
   h5,
   h6 {
     margin-top: 23px;
     font-size: 20px;
+
     @include query($mobile-1) {
       margin-top: 19px;
       font-size: 16px;
@@ -116,6 +126,7 @@ body {
 
   a {
     @include color($blue,1);
+
     &:hover {
       @include color($blue,.8);
     }
@@ -126,10 +137,12 @@ body {
   code {
     margin-top: 20px;
   }
+
   img {
     max-width: 100%;
     height: auto;
   }
+
   pre,
   code {
     display: block;
@@ -154,6 +167,7 @@ body {
       margin-top: 0;
     }
   }
+
   .edy-texteditor-view {
     min-height: 36px;
   }

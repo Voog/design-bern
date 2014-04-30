@@ -1,6 +1,7 @@
 /* MENUS */
 .menu-btn {
   display: none;
+
   @include query($tablet-2) {
     position: absolute;
     top: 8px;
@@ -12,32 +13,37 @@
     border: none;
     outline: none;
     cursor: pointer;
+
     &.open {
       .menu-stripe {
         @include bg($secondary-color, 0.47);
       }
     }
+
     &::-moz-focus-inner {
       padding: 0;
       border: 0;
     }
-    @include query($mobile-1) {
-      right: 20px;
-    }
+  }
 
-    .menu-stripe {
-      display: block;
-      width: 23px;
-      height: 4px;
-      margin: 4px 0;
-      @include bg($secondary-color, 0.67);
-      border-radius: 5px;
-      &:first-child,
-      &:last-child {
-        margin: 0;
-      }
+  @include query($mobile-1) {
+    right: 20px;
+  }
+
+  .menu-stripe {
+    display: block;
+    width: 23px;
+    height: 4px;
+    margin: 4px 0;
+    @include bg($secondary-color, 0.67);
+    border-radius: 5px;
+
+    &:first-child,
+    &:last-child {
+      margin: 0;
     }
   }
+
   @include query($mobile-1) {
     top: 7px;
     right: 0;
@@ -59,6 +65,7 @@
 .main-menu {
   display: inline-block;
   vertical-align: middle;
+
   @include query($tablet-2) {
     display: none;
 
@@ -117,6 +124,7 @@
               @include color($grey-1);
               @include bg($blue-2);
             }
+
             &:hover {
               @include color($grey-1);
               @include bg($blue-2, 0.5);
@@ -127,16 +135,20 @@
 
       a {
         @include color($secondary-color, 0.67);
+
         &.untranslated {
           @include color($red, 0.8);
         }
+
         &.active,
         &.active:hover {
           @include color($grey-1, 0.67);
         }
+
         &:hover {
           @include color($grey-1, 0.4);
         }
+
         @include query($tablet-2) {
           display: block;
           padding: 8px 25px 4px;
@@ -147,15 +159,19 @@
 
   .mobile-lang-menu {
     display: none;
+
     @include query($tablet-2) {
       display: block;
       padding-left: 0;
+
       li {
         text-align: left;
         @include border(top, 1px, solid, $primary-color, 0.2);
+
         &:first-child {
           border-top: none;
         }
+
         &.active a:hover {
           @include bg($blue-2);
         }
@@ -163,25 +179,30 @@
         a {
           padding: 14px 30px 11px 53px;
           font-size: 14px;
+
           &:before,
           &:after {
             top: 13.5px;
             left: 25px;
           }
+
           &.active,
           &.active:hover {
             font-weight: bold;
           }
+
           &.active {
             @include color($grey-1);
             background: none;
           }
+
           &.active:hover,
           &:hover {
             @include color($grey-1, 0.4);
             @include bg($grey-2, 0.5);
           }
         }
+
         &.add-lang-btn {
           display: block;
           padding: 10px 25px;
@@ -197,23 +218,27 @@
   margin: 0 30px;
   padding: 7px 0;
   @include border(bottom,1px,solid,$primary-color, 0.2);
+
   @include query($tablet-1) {
     margin: 0 20px;
   }
 
   li {
     margin-right: 12px;
+
     &.add-page-btn {
       display: inline-block;
       vertical-align: bottom;
       margin-left: 0;
     }
+
     &:last-child {
       margin-right: 0;
     }
 
     a {
       @include color($third-color);
+
       &.active,
       &:hover {
         @include color($secondary-color);
@@ -239,15 +264,18 @@
   border: none;
   outline: none;
   cursor: pointer;
+
   &:hover {
     // TODO: Hover effect
   }
+
   &:before,
   &:after {
     top: 0;
     left: 0;
   }
 }
+
 .lang-menu-btn,
 .lang-menu li a.lang-flag {
   &:before,
@@ -259,6 +287,7 @@
     content: '';
   }
 }
+
 .lang-menu-btn,
 .lang-menu li a.lang-flag {
 
@@ -308,19 +337,23 @@
       display: block;
       padding: 5px 40px 3px 13px;
       @include color($secondary-color, 0.67);
+
       &.active,
       &.active:hover {
         @include bg($grey-2);
       }
+
       &:hover {
         @include bg($grey-2, 0.5);
       }
+
       &:before,
       &:after {
         top: 3px;
         right: 12px;
       }
     }
+
     &.edy-menu-langadd {
       margin-left: 5px;
     }

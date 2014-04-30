@@ -9,6 +9,7 @@
   line-height: 1;
   @include bg($white);
   @include border(all, 1px, solid, $black, 0.1);
+
   @include query($tablet-2) {
     display: none;
   }
@@ -19,6 +20,7 @@
     height: 30px;
     line-height: 1;
   }
+
   .search-left,
   .search-right {
     float: left;
@@ -35,9 +37,12 @@
     line-height: 1;
     background: none;
     border: none;
+
+    // Removes the clear input button in IE11
     &::-ms-clear {
       display: none;
     }
+
     &::-webkit-input-placeholder {
       padding: 2px 0 4px 0;
       line-height: 1;

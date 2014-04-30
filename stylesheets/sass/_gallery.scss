@@ -1,9 +1,11 @@
 /* GALLERY */
 .edys-gallery-area {
   margin-top: 20px;
+
   &:first-child {
     margin-top: 0;
   }
+
   .edys-gallery {
     &:hover {
       .edys-gallery-item {
@@ -12,12 +14,14 @@
         }
       }
     }
+
     .edys-gallery-item {
       .edys-gallery-image {
         &:hover {
           opacity: 1;
         }
       }
+
       &:hover {
         opacity: 1;
       }

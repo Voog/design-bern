@@ -3,28 +3,35 @@
   @include flexbox;
   position: relative;
   padding: 24px 0 20px;
+
   @include query($tablet-2) {
     display: block;
   }
+
   @include query($mobile-1) {
     padding: 8px 15px 4px;
   }
 }
+
 .header-left,
 .header-right {
   @include query($tablet-1) {
     padding: 0 20px;
   }
+
   @include query($tablet-2) {
     display: block;
   }
+
   @include query($mobile-1) {
     padding: 0;
   }
 }
+
 .header-left {
   position: relative;
 }
+
 .header-right {
   position: relative;
   @include flex;
@@ -37,10 +44,12 @@
   max-width: 270px;
   font-family: "Avenir Next";
   font-size: 24px;
+
   &,
   a {
     @include color($secondary-color);
   }
+
   a:hover {
     @include color($secondary-color,.8);
   }
