@@ -94,8 +94,15 @@
   }
 
   .post {
-    @include flexbox;
     margin-top: 39px;
+
+    .no-flex-box & {
+      display: table;
+      vertical-align: top;
+    }
+    .flexbox & {
+      @include flexbox;
+    }
 
     &:first-child {
       margin-top: 0;
