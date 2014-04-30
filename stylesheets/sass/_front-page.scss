@@ -14,25 +14,32 @@
     .background-image {
       background-position: center;
       background-size: cover;
+      background-image: url('../photos/front-page-background.jpg');
+    }
+
+    .background-color {
+      opacity: 0.5;
+      @include bg($blue);
     }
 
     .content-inner {
-      @include flexbox;
-      @include justify-content(center);
-      @include  align-items(center);
+      display: table;
+      width: 100%;
+      max-width: 585px;
+      margin: 0 auto;
       padding: 0;
-      min-height: 525px;
-      background-position: center;
-      background-size: cover;
+      height: 525px;
+      background: none;
+
       @include query($mobile-1) {
         min-height: 295px;
       }
 
       .content-body {
+        display: table-cell;
+        vertical-align: middle;
         position: relative;
         z-index: 1;
-        @include flex;
-        max-width: 572px;
         margin: 0 auto;
         padding: 40px;
         font-size: 36px;
