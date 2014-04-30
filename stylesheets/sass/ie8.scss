@@ -2,19 +2,16 @@
 @import '_mixins';
 
 // MENUS
+.menu-lang-btn,
+.menu-lang li a.ico-lang {
+  &:after {
+    background-image: url('../images/ico-flags-small.png');
+  }
+}
 
 // GENERAL
 
 // HEADER
-.header {
-  display: table;
-  width: 100%;
-  .header-left,
-  .header-right {
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
 
 // TOPBAR
 
