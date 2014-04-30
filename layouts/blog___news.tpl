@@ -7,8 +7,6 @@
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fbimage }}"><!-- TODO: Add image location data tag -->
 
-  <link rel="stylesheet" href="/assets/admin/tools/0.1.0/edicy-tools.css">
-
   {{ blog.rss_link }}
 </head>
 
