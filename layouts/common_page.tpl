@@ -18,7 +18,7 @@
 
     <main class="content" role="main">
       <div class="content-inner">
-        <section class="content-formatted">
+        <section class="content-body content-formatted">
           {% content %}
         </section>
       </div>
