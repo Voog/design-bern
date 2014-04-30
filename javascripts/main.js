@@ -2,21 +2,21 @@
   var toggleMainMenu = function() {
     $('.js-menu-btn').click(function() {
       $(this).toggleClass('open');
-      $('.js-main-menu').toggleClass('expanded');
+      $('.js-menu-main').toggleClass('expanded');
     });
   };
 
   var toggleLangMenu = function() {
-    $('.js-lang-menu-btn').click(function(event) {
+    $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
-      $('.js-lang-menu-popover').toggleClass('expanded');
+      $('.js-menu-lang-popover').toggleClass('expanded');
     });
   };
 
   var handlePopoverMenuHide = function() {
     $('html').click(function() {
-      if ($('.js-lang-menu-popover').hasClass('expanded')) {
-        $('.js-lang-menu-popover').removeClass('expanded');
+      if ($('.js-menu-lang-popover').hasClass('expanded')) {
+        $('.js-menu-lang-popover').removeClass('expanded');
       }
     });
   };

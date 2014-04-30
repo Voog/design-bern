@@ -50,6 +50,11 @@
   }
 }
 
+%edit-btn {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
 .menu {
   margin-top: 0;
   margin-bottom: 0;
@@ -62,7 +67,7 @@
   }
 }
 
-.main-menu {
+.menu-main {
   display: inline-block;
   vertical-align: middle;
 
@@ -76,6 +81,7 @@
       z-index: 10;
       display: block;
       min-width: 350px;
+      margin-bottom: 50px;
       text-align: left;
       @include bg($white);
       @include box-shadow(0, 0, 5px, rgba($black, 0.3));
@@ -90,7 +96,7 @@
     }
   }
 
-  .nav-menu {
+  .menu {
     line-height: 1.4;
 
     li {
@@ -99,11 +105,9 @@
         margin-left: 0;
       }
 
-      &.add-page-btn {
-        display: inline-block;
-        vertical-align: bottom;
+      &.edit-btn {
+        @extend %edit-btn;
 
-        margin-left: 0;
         @include query($tablet-1) {
           display: block;
           padding-top: 10px;
@@ -157,7 +161,7 @@
     }
   }
 
-  .mobile-lang-menu {
+  .menu-lang {
     display: none;
 
     @include query($tablet-2) {
@@ -166,7 +170,6 @@
 
       li {
         text-align: left;
-        @include border(top, 1px, solid, $primary-color, 0.2);
 
         &:first-child {
           border-top: none;
@@ -203,7 +206,7 @@
           }
         }
 
-        &.add-lang-btn {
+        &.edit-btn {
           display: block;
           padding: 10px 25px;
           text-align: left;
@@ -214,7 +217,7 @@
   }
 }
 
-.sub-menu {
+.menu-sub {
   margin: 0 30px;
   padding: 7px 0;
   @include border(bottom,1px,solid,$primary-color, 0.2);
@@ -226,9 +229,8 @@
   li {
     margin-right: 12px;
 
-    &.add-page-btn {
-      display: inline-block;
-      vertical-align: bottom;
+    &.edit-btn {
+      @extend %edit-btn;
       margin-left: 0;
     }
 
@@ -246,12 +248,12 @@
     }
   }
 
-  .nav-menu {
+  .menu {
     text-align: center;
   }
 }
 
-.lang-menu-btn {
+.menu-lang-btn {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -276,8 +278,8 @@
   }
 }
 
-.lang-menu-btn,
-.lang-menu li a.lang-flag {
+.menu-lang-btn,
+.menu-lang li a.ico-lang {
   &:before,
   &:after {
     position: absolute;
@@ -288,9 +290,8 @@
   }
 }
 
-.lang-menu-btn,
-.lang-menu li a.lang-flag {
-
+.menu-lang-btn,
+.menu-lang li a.ico-lang {
   &:before {
     @include bg($black);
   }
@@ -303,7 +304,7 @@
   }
 }
 
-.lang-menu-popover {
+.menu-lang-popover {
   display: none;
 
   &.expanded {
@@ -319,7 +320,7 @@
   }
 }
 
-.lang-menu {
+.menu-lang {
   position: relative;
   display: inline-block;
   line-height: 1;
@@ -331,6 +332,13 @@
     display: list-item;
     text-align: right;
     font-size: 12px;
+
+    &.edit-btn {
+      a {
+        margin-top: 5px;
+        margin-right: 10px;
+      }
+    }
 
     a {
       position: relative;

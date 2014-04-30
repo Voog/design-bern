@@ -1,6 +1,6 @@
 <section class="content-topbar">
   {% if site.has_language_tags? %}
-    <nav class="tags sub-menu">
+    <nav class="tags menu-sub">
       <div class="tags-left">
         <span class="tags-title">Filter posts</span>
       </div>

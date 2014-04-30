@@ -16,7 +16,7 @@
 
   <div class="container">
     {% include "header" %}
-    {% include "sub-menu" %}
+    {% include "menu-level-2" %}
     {% include "tags-blog" %}
 
     <main class="content" role="main">

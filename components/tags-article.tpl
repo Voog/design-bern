@@ -1,5 +1,5 @@
 <section class="content-topbar">
-  <div class="tags sub-menu">
+  <div class="tags menu-sub">
     <div class="tags-left">
       <span class="tags-title">Filter posts</span>
     </div>

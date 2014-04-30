@@ -14,7 +14,7 @@
 
   <div class="container">
     {% include "header" %}
-    {% include "sub-menu" %}
+    {% include "menu-level-2" %}
 
     <main class="content two-columns" role="main">
       <div class="content-left">
