@@ -27,6 +27,14 @@ body {
   bottom: 0;
 }
 
+.bgpicker-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .background-image,
 .background-color {
   @extend %stretch;
