@@ -22,7 +22,7 @@
           <header class="post-header">
             <h2 class="post-title">{% editable article.title %}</h2>
             <div class="post-header-inner">
-              <span class="post-author">{{ article.author.name | capitalize }}</span>
+              <span class="post-author">{{ article.author.name }}</span>
               <span class="separator">-</span>
               <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | date : "%B %d, %Y" }}</time>
             </div>
@@ -37,7 +37,7 @@
     </main>
 
     <section class="comments content-formatted">
-      {% case article.comments_count %}{% when 0 %}{% else %}<h2 class="comment-title">{{"comments_for_count" | lc}}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span></h2>{% endcase %}
+      {% case article.comments_count %}{% when 0 %}{% else %}<h2 class="comments-title">{{ "comments_for_count" | lc }}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span></h2>{% endcase %}
 
       {% for comment in article.comments reversed %}
         <div class="comment">{{ comment.body }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})</div>
