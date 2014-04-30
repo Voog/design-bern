@@ -11,11 +11,11 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="{{ images_path }}/{{ page.data.touchicon }}"> <!-- TODO: Add image location data tag -->
 
-<script src="{{ javascripts_path }}/modernizr.js?19"></script>
+<script src="{{ javascripts_path }}/modernizr.js?25"></script>
 
-{% stylesheet_link "main.css?19" %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.css?19" %}<![endif]-->
-<!--[if lt IE 10]>{% stylesheet_link "ie9.css?19" %}<![endif]-->
+{% stylesheet_link "main.css?25" %}
+<!--[if lt IE 9]>{% stylesheet_link "ie8.css?25" %}<![endif]-->
+<!--[if lt IE 10]>{% stylesheet_link "ie9.css?25" %}<![endif]-->
 
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
 
