@@ -136,7 +136,7 @@ body {
     overflow: auto;
     padding: 10px;
     font-size: 14px;
-    @include bg($code-bg);
+    @include bg($grey-5);
   }
 
   h1,

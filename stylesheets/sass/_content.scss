@@ -1,7 +1,7 @@
 /* CONTENT */
 .content-topbar {
   min-height: 18px;
-  @include bg($secondary-bg);
+  @include bg($grey-4);
 }
 
 .content {
@@ -9,7 +9,7 @@
 
   &.two-columns {
     @include clearfix;
-    @include bg($secondary-bg);
+    @include bg($grey-4);
     & .content-formatted {
       h1 {
         text-align: left;
@@ -18,7 +18,7 @@
   }
   .content-inner {
     padding: 33px 50px 50px;
-    @include bg($secondary-bg);
+    @include bg($grey-4);
     @include query($tablet-1) {
       padding: 33px 20px 50px;
     }
