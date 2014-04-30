@@ -8,7 +8,7 @@
   display: block;
 
   &.two-columns {
-    @include clearfix;
+    @extend %clearfix;
     @include bg($grey-4);
 
     & .content-formatted {

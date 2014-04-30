@@ -1,6 +1,6 @@
 /* SEARCH */
 .search {
-  @include clearfix;
+  @extend %clearfix;
   display: inline-block;
   vertical-align: middle;
   margin-top: 2px;
