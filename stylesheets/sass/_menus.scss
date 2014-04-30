@@ -14,6 +14,7 @@
     outline: none;
     cursor: pointer;
 
+    &:hover,
     &.open {
       .menu-stripe {
         @include bg($secondary-color, 0.47);
@@ -120,21 +121,6 @@
         margin: 0;
         font-size: 20px;
         @include border(bottom,1px,solid,$primary-color, 0.2);
-
-        li {
-          a {
-            &.active,
-            &.active:hover {
-              @include color($grey-1);
-              @include bg($blue-2);
-            }
-
-            &:hover {
-              @include color($grey-1);
-              @include bg($blue-2, 0.5);
-            }
-          }
-        }
       }
 
       a {
@@ -147,15 +133,29 @@
         &.active,
         &.active:hover {
           @include color($grey-1, 0.67);
+
+          @include query($tablet-2) {
+            @include color($grey-1);
+            @include bg($blue-2);
+          }
         }
 
         &:hover {
           @include color($grey-1, 0.4);
+
+          @include query($tablet-2) {
+            @include color($grey-1);
+            @include bg($blue-2, 0.5);
+          }
         }
 
         @include query($tablet-2) {
           display: block;
-          padding: 8px 25px 4px;
+          padding: 7px 25px 4px;
+          &.active,
+          &.active:hover {
+
+          }
         }
       }
     }
@@ -180,12 +180,12 @@
         }
 
         a {
-          padding: 14px 30px 11px 53px;
+          padding: 12px 30px 8px 53px;
           font-size: 14px;
 
           &:before,
           &:after {
-            top: 13.5px;
+            top: 14px;
             left: 25px;
           }
 
@@ -194,12 +194,12 @@
             font-weight: bold;
           }
 
-          &.active {
+          &.active,
+          &.active:hover {
             @include color($grey-1);
             background: none;
           }
 
-          &.active:hover,
           &:hover {
             @include color($grey-1, 0.4);
             @include bg($grey-2, 0.5);
@@ -208,9 +208,8 @@
 
         &.edit-btn {
           display: block;
-          padding: 10px 25px;
+          padding: 4px 25px 0;
           text-align: left;
-          line-height: 0.5;
         }
       }
     }
@@ -226,30 +225,30 @@
     margin: 0 20px;
   }
 
-  li {
-    margin-right: 12px;
-
-    &.edit-btn {
-      @extend %edit-btn;
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    a {
-      @include color($third-color);
-
-      &.active,
-      &:hover {
-        @include color($secondary-color);
-      }
-    }
-  }
-
   .menu {
     text-align: center;
+
+    li {
+      margin-right: 12px;
+
+      &.edit-btn {
+        @extend %edit-btn;
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        @include color($third-color);
+
+        &.active,
+        &:hover {
+          @include color($secondary-color);
+        }
+      }
+    }
   }
 }
 
@@ -285,7 +284,7 @@
     position: absolute;
     display: block;
     width: 20px;
-    height: 13.5px;
+    height: 13px;
     content: '';
   }
 }
@@ -343,7 +342,7 @@
     a {
       position: relative;
       display: block;
-      padding: 5px 40px 3px 13px;
+      padding: 6px 40px 3px 13px;
       @include color($secondary-color, 0.67);
 
       &.active,
@@ -357,7 +356,7 @@
 
       &:before,
       &:after {
-        top: 3px;
+        top: 4px;
         right: 12px;
       }
     }
@@ -369,132 +368,171 @@
 }
 
 .sq:after {
-  background-position: 0 0; // Albanian
+  background-position: 0 0;
 }
+
 .hy:after {
-  background-position: -20px 0; // Armenia
+  background-position: -20px 0;
 }
+
 .bn:after {
-  background-position: -40px 0; // Bangladesh
+  background-position: -40px 0;
 }
+
 .pt:after {
-  background-position: -60px 0; // Brazil
+  background-position: -60px 0;
 }
+
 .bg:after {
-  background-position: -80px 0; // Bulgaria
+  background-position: -80px 0;
 }
+
 .zh:after {
-  background-position: -100px 0; // China
+  background-position: -100px 0;
 }
+
 .hr:after {
-  background-position: -120px 0; // Croatia
+  background-position: -120px 0;
 }
+
 .da:after {
-  background-position: -140px 0; // Denmark
+  background-position: -140px 0;
 }
+
 .cs:after {
-  background-position: -160px 0; // Czech  Republic
+  background-position: -160px 0;
 }
+
 .et:after {
-  background-position: -180px 0; // Estonia
+  background-position: -180px 0;
 }
 
 .fi:after {
-  background-position: 0 -14px; // Finland
+  background-position: 0 -14px;
 }
+
 .fr:after {
-  background-position: -20px -14px; // France
+  background-position: -20px -14px;
 }
+
 .ka:after {
-  background-position: -40px -14px; // Georgia
+  background-position: -40px -14px;
 }
+
 .de:after {
-  background-position: -60px -14px; // Germany
+  background-position: -60px -14px;
 }
+
 .el:after {
-  background-position: -80px -14px; // Grecee
+  background-position: -80px -14px;
 }
+
 .hu:after {
-  background-position: -100px -14px; // Hungary
+  background-position: -100px -14px;
 }
+
 .is:after {
-  background-position: -120px -14px; // Iceland
+  background-position: -120px -14px;
 }
+
 .hi:after {
-  background-position: -140px -14px; // India
+  background-position: -140px -14px;
 }
+
 .id:after {
-  background-position: -160px -14px; // Indonesia
+  background-position: -160px -14px;
 }
+
 .fa:after {
-  background-position: -280px -14px; // Iran
+  background-position: -280px -14px;
 }
 
 .he:after {
-  background-position: 0 -27px; // Israel
+  background-position: 0 -27px;
 }
+
 .it:after {
-  background-position: -20px -27px; // Italy
+  background-position: -20px -27px;
 }
+
 .ja:after {
-  background-position: -40px -27px; // Japan
+  background-position: -40px -27px;
 }
+
+
 .ko:after {
-  background-position: -60px -27px; // Korea, South
+  background-position: -60px -27px;
 }
+
 .lv:after {
-  background-position: -80px -27px; // Latvia
+  background-position: -80px -27px;
 }
+
 .lt:after {
-  background-position: -100px -27px; // Lithuania
+  background-position: -100px -27px;
 }
+
 .ms:after {
-  background-position: -120px -27px; // Malaysia
+  background-position: -120px -27px;
 }
+
 .nl:after {
-  background-position: -140px -27px; // Netherlands
+  background-position: -140px -27px;
 }
+
 .no:after {
-  background-position: -160px -27px; // Norway
+  background-position: -160px -27px;
 }
+
 .ur:after {
-  background-position: -280px -27px; // Pakistan
+  background-position: -280px -27px;
 }
 
 .fil:after {
-  background-position: 0 -40px; // hilipines
-}
-.pl:after {
-  background-position: -20px -40px; // Poland
-}
-.ro:after {
-  background-position: -40px -40px; // Romania
-}
-.ru:after {
-  background-position: -60px -40px; // Russia
-}
-.ar:after {
-  background-position: -80px -40px; // Saudi  Arabia
-}
-.lt:after {
-  background-position: -100px -40px; // Slovakia
-}
-.sk:after {
-  background-position: -120px -40px; // Slovenia
-}
-.es:after {
-  background-position: -140px -40px; // Spain
-}
-.sv:after {
-  background-position: -160px -40px; // Sweden
-}
-.tr:after {
-  background-position: -180px -40px; // Turkey
+  background-position: 0 -40px;
 }
 
-.uk:after {
-  background-position: 0px -53px; // Ukraine
+.pl:after {
+  background-position: -20px -40px;
 }
+
+.ro:after {
+  background-position: -40px -40px;
+}
+
+.ru:after {
+  background-position: -60px -40px;
+}
+
+.ar:after {
+  background-position: -80px -40px;
+}
+
+.lt:after {
+  background-position: -100px -40px;
+}
+
+.sk:after {
+  background-position: -120px -40px;
+}
+
+.es:after {
+  background-position: -140px -40px;
+}
+
+.sv:after {
+  background-position: -160px -40px;
+}
+
+.tr:after {
+  background-position: -180px -40px;
+}
+
+
+.uk:after {
+  background-position: 0px -53px;
+}
+
 .en:after {
-  background-position: -20px -53px; // USA
+  background-position: -20px -53px;
 }
