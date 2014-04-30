@@ -31,7 +31,6 @@
   .content-right {
     float: left;
     width: 50%;
-    padding: 43px 50px;
     @include box-sizing(border-box);
 
     @include query($tablet-3) {
@@ -47,6 +46,8 @@
   }
 
   .content-left {
+    padding: 43px 50px;
+
     @include query($tablet-3) {
       padding: 33px 20px 0;
     }
@@ -58,6 +59,7 @@
 
     // TODO: Maybe there's a better way to style Google Maps?
     iframe {
+      display: block !important;
       width: 100% !important;
     }
   }
