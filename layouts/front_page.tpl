@@ -2,7 +2,7 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
-  <link rel="stylesheet" href="/assets/admin/tools/0.1.0/edicy-tools.css">
+  <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css">
 
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
@@ -15,8 +15,10 @@
   <div class="container">
 
     {% include "header" %}
+    <div>{{ page.data.cover_image}}</div>
+    <div>{{ page.data.cover_color}}</div>
     <main class="content" role="main">
-      <a class="js-bgpicker-cover-settings" data-bg-image="{{ page.data.cover_image }}" data-bg-color="{{ page.data.cover_color }}"></a>
+      <button class="bgpicker-btn js-bgpicker-cover-settings" data-bg-image="{{ page.data.cover_image }}" data-bg-color="{{ page.data.cover_color }}"></button>
       <div class="background-image stretch js-bgpicker-cover-image"{% if page.data.cover_image %} style="background-image: url('{{ page.data.cover_image }}');"{% endif %}></div>
       <div class="background-color stretch js-bgpicker-cover-color"{% if page.data.cover_color %} style="background-color: {{ page.data.cover_color }};{% if page.data.cover_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
       <div class="content-inner">
