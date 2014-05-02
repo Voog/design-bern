@@ -49,9 +49,11 @@
     }
   }
 
-  .edys-search-input:focus,
-  .search-submit:focus {
-    outline: none;
+  .edys-search-input,
+  .search-submit {
+    &:focus {
+      outline: none;
+    }
   }
 
   .search-submit {
