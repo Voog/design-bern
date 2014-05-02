@@ -11,14 +11,17 @@
     padding: 0;
     background: none;
     border: none;
-    outline: none;
     cursor: pointer;
 
-    &:hover,
-    &.open {
+    &.open,
+    &:hover {
       .menu-stripe {
         @include bg($secondary-color, 0.47);
       }
+    }
+
+    &:focus {
+      outline: none;
     }
 
     &::-moz-focus-inner {
@@ -63,7 +66,8 @@
   list-style: none;
 
   li {
-    display: inline;
+    display: inline-block;
+    vertical-align: middle;
     font-size: 14px;
   }
 }
@@ -77,12 +81,12 @@
 
     &.expanded {
       position: absolute;
-      top: 4px;
+      top: 5px;
       right: 20px;
       z-index: 10;
       display: block;
       min-width: 350px;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
       text-align: left;
       @include bg($white);
       @include box-shadow(0, 0, 5px, rgba($black, 0.3));
@@ -91,6 +95,7 @@
         left: -15px;
         right: -15px;
         min-width: 0;
+        margin-bottom: 40px;
         @include border(top,1px,solid,$primary-color, 0.2);
         @include no-box-shadow;
       }
@@ -98,10 +103,11 @@
   }
 
   .menu {
-    line-height: 1.4;
+    line-height: 1.3;
 
     li {
-      margin-left: 15px;
+      margin-left: 13px;
+
       &:first-child {
         margin-left: 0;
       }
@@ -124,10 +130,11 @@
       }
 
       a {
+        font-weight: 500;
         @include color($secondary-color, 0.67);
 
         &.untranslated {
-          @include color($red, 0.8);
+          @include color($red, 0.5);
         }
 
         &.active,
@@ -151,7 +158,7 @@
 
         @include query($tablet-2) {
           display: block;
-          padding: 7px 25px 4px;
+          padding: 8px 25px 5px;
           &.active,
           &.active:hover {
 
@@ -180,18 +187,18 @@
         }
 
         a {
-          padding: 12px 30px 8px 53px;
+          padding: 11px 30px 9px 53px;
           font-size: 14px;
 
           &:before,
           &:after {
-            top: 14px;
+            top: 13px;
             left: 25px;
           }
 
           &.active,
           &.active:hover {
-            font-weight: bold;
+            font-weight: 600;
           }
 
           &.active,
@@ -263,11 +270,14 @@
   font-size: 0;
   background: none;
   border: none;
-  outline: none;
   cursor: pointer;
 
   &:hover {
-    // TODO: Hover effect
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:before,
@@ -311,10 +321,11 @@
     top: 26px;
     right: -12px;
     display: block;
+    margin-bottom: 40px;
     padding: 6px 0;
     min-width: 121px;
     background: #fff;
-    @include box-shadow(0, 0, 5px, rgba($black, 0.3));
+    @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
     z-index: 1;
   }
 }
@@ -444,97 +455,97 @@
 }
 
 .fa:after {
-  background-position: -280px -14px;
+  background-position: -180px -14px;
 }
 
 .he:after {
-  background-position: 0 -27px;
+  background-position: 0 -28px;
 }
 
 .it:after {
-  background-position: -20px -27px;
+  background-position: -20px -28px;
 }
 
 .ja:after {
-  background-position: -40px -27px;
+  background-position: -40px -28px;
 }
 
 
 .ko:after {
-  background-position: -60px -27px;
+  background-position: -60px -28px;
 }
 
 .lv:after {
-  background-position: -80px -27px;
+  background-position: -80px -28px;
 }
 
 .lt:after {
-  background-position: -100px -27px;
+  background-position: -100px -28px;
 }
 
 .ms:after {
-  background-position: -120px -27px;
+  background-position: -120px -28px;
 }
 
 .nl:after {
-  background-position: -140px -27px;
+  background-position: -140px -28px;
 }
 
 .no:after {
-  background-position: -160px -27px;
+  background-position: -160px -28px;
 }
 
 .ur:after {
-  background-position: -280px -27px;
+  background-position: -180px -28px;
 }
 
 .fil:after {
-  background-position: 0 -40px;
+  background-position: 0 -42px;
 }
 
 .pl:after {
-  background-position: -20px -40px;
+  background-position: -20px -42px;
 }
 
 .ro:after {
-  background-position: -40px -40px;
+  background-position: -40px -42px;
 }
 
 .ru:after {
-  background-position: -60px -40px;
+  background-position: -60px -42px;
 }
 
 .ar:after {
-  background-position: -80px -40px;
+  background-position: -80px -42px;
 }
 
-.lt:after {
-  background-position: -100px -40px;
+.sr:after {
+  background-position: -100px -42px;
 }
 
 .sk:after {
-  background-position: -120px -40px;
+  background-position: -120px -42px;
 }
 
 .es:after {
-  background-position: -140px -40px;
+  background-position: -140px -42px;
 }
 
 .sv:after {
-  background-position: -160px -40px;
+  background-position: -160px -42px;
 }
 
 .tr:after {
-  background-position: -180px -40px;
+  background-position: -180px -42px;
 }
 
 
 .uk:after {
-  background-position: 0px -53px;
+  background-position: 0px -56px;
 }
 
 .en:after {
-  background-position: -20px -53px;
+  background-position: -20px -56px;
 }
 
 .menu-tags {
