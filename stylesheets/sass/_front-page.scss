@@ -25,7 +25,7 @@
     .content-inner {
       display: table;
       width: 100%;
-      max-width: 655px;
+      max-width: 660px;
       margin: 0 auto;
       padding: 0;
       height: 525px;
@@ -44,7 +44,11 @@
         padding: 40px;
         font-size: 36px;
         @include color($white);
-        line-height: 1.1;
+        line-height: 1.2;
+
+        .edy-texteditor-view {
+          min-height: 39px;
+        }
 
         @include query($tablet-4) {
           padding: 20px;
@@ -53,7 +57,6 @@
         @include query($mobile-1) {
           padding: 78px 25px;
           font-size: 24px;
-          line-height: 1.2;
         }
       }
 

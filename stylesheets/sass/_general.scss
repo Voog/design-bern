@@ -31,8 +31,11 @@ body {
   position: absolute;
   background: none;
   border: none;
-  outline: none;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .background-image,
@@ -73,7 +76,6 @@ body {
   h5,
   h6 {
     word-wrap: break-word;
-    font-family: 'Avenir Next';
   }
 
   h1,
