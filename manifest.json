@@ -133,6 +133,30 @@
       "filename": ".DS_Store"
     },
     {
+      "content_type": "unknown/unknown",
+      "file": "assets/ico-arrow-down.svg",
+      "kind": "assets",
+      "filename": "ico-arrow-down.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/ico-close.svg",
+      "kind": "assets",
+      "filename": "ico-close.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/ico-flags.svg",
+      "kind": "assets",
+      "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "unknown/unknown",
+      "file": "assets/ico-search.svg",
+      "kind": "assets",
+      "filename": "ico-search.svg"
+    },
+    {
       "content_type": "image/DS_Store",
       "file": "images/.DS_Store",
       "kind": "images",
@@ -167,12 +191,6 @@
       "file": "images/ico-flags.png",
       "kind": "images",
       "filename": "ico-flags.png"
-    },
-    {
-      "content_type": "image/svg",
-      "file": "images/ico-flags.svg",
-      "kind": "images",
-      "filename": "ico-flags.svg"
     },
     {
       "content_type": "image/png",
