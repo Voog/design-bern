@@ -6,7 +6,7 @@
     padding: 28px 20px;
   }
 
-  .comments-title {
+  .comment-title {
     margin-bottom: 22px;
     font-size: 24px;
     @include color($secondary-color);
@@ -17,7 +17,7 @@
     padding-left: 24px;
     font-size: 18px;
     @include color($primary-color);
-    @include border(left,5px,solid,$grey-4, 0.4);
+    @include border(left, 5px, solid, $grey-4, 0.4);
   }
 
   .comment-form {

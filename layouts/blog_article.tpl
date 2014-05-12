@@ -14,7 +14,7 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      {% include "tags-article" %}
+      {% include "tags-post" %}
       <div class="content-inner">
         <article class="post">
           <header class="post-header">
@@ -37,9 +37,11 @@
     <section class="comments content-formatted">
       {% case article.comments_count %}{% when 0 %}{% else %}<h2 class="comments-title">{{ "comments_for_count" | lc }}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span></h2>{% endcase %}
 
-      {% for comment in article.comments reversed %}
-        <div class="comment">{{ comment.body }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})</div>
-      {% endfor %}
+      <div class="comment-messages">
+        {% for comment in article.comments reversed %}
+          <div class="comment">{{ comment.body }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }})</div>
+        {% endfor %}
+      </div>
 
       {% include "comment-form" %}
     </section>
