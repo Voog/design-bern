@@ -113,13 +113,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/tags-article.tpl",
-      "layout_name": "",
-      "title": "tags-article"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/tags-blog.tpl",
       "layout_name": "",
       "title": "tags-blog"
