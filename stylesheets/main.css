@@ -75,6 +75,9 @@ body {
   border: none;
 }
 
+.content-formatted {
+  word-wrap: break-word;
+}
 .content-formatted h1,
 .content-formatted h2,
 .content-formatted h3,
@@ -83,14 +86,6 @@ body {
 .content-formatted h6,
 .content-formatted p {
   margin-bottom: 0;
-}
-.content-formatted h1,
-.content-formatted h2,
-.content-formatted h3,
-.content-formatted h4,
-.content-formatted h5,
-.content-formatted h6 {
-  word-wrap: break-word;
 }
 .content-formatted h1,
 .content-formatted h2,
