@@ -232,7 +232,6 @@ body {
 
 .menu-main .menu li.edit-btn, .menu-sub .menu li.edit-btn {
   display: inline-block;
-  vertical-align: bottom;
 }
 
 .menu {
