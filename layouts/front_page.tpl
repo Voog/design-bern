@@ -15,8 +15,6 @@
   <div class="container">
 
     {% include "header" %}
-    <div>{{ page.data.cover_image}}</div>
-    <div>{{ page.data.cover_color}}</div>
     <main class="content" role="main">
       <button class="bgpicker-btn js-bgpicker-cover-settings" data-bg-image="{{ page.data.cover_image }}" data-bg-color="{{ page.data.cover_color }}"></button>
       <div class="background-image stretch js-bgpicker-cover-image"{% if page.data.cover_image %} style="background-image: url('{{ page.data.cover_image }}');"{% endif %}></div>
