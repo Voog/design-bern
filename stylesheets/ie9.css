@@ -1,0 +1,5 @@
+/* FRONT PAGE */
+.content-formatted .form_field_textfield,
+.content-formatted .form_field_select {
+  height: 34px;
+}
