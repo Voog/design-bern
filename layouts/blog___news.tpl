@@ -23,7 +23,7 @@
         {% for article in articles %}
           <article class="post">
             <div class="post-left">
-              <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | date : "%b %d, %Y" }}</time>
+              <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | format_date: "long" }}</time>
             </div>
 
             <div class="post-right">

@@ -22,7 +22,7 @@
             <div class="post-header-inner">
               <span class="post-author">{{ article.author.name }}</span>
               <span class="separator">-</span>
-              <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | date : "%B %d, %Y" }}</time>
+              <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | format_date: "long" }}</time>
             </div>
           </header>
 
