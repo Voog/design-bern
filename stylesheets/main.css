@@ -39,7 +39,7 @@ body {
   }
 }
 
-.content-formatted:after, .content.two-columns:after, .common-page .content:after, .search:after {
+.content-formatted:after, .content.two-columns:after, .common-page .content:after, .edys-gallery-area .edys-gallery:after, .search:after {
   content: "";
   display: table;
   clear: both;
@@ -1082,8 +1082,18 @@ body {
 .edys-gallery-area:first-child {
   margin-top: 0;
 }
+.edys-gallery-area .edys-gallery {
+  display: inline-block;
+}
 .edys-gallery-area .edys-gallery:hover .edys-gallery-item .edys-gallery-image {
   opacity: 0.6;
+}
+.edys-gallery-area .edys-gallery .edys-gallery-item {
+  float: left;
+  padding-right: 0;
+}
+.edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image {
+  display: block;
 }
 .edys-gallery-area .edys-gallery .edys-gallery-item .edys-gallery-image:hover {
   opacity: 1;

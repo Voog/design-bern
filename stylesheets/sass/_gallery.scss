@@ -7,6 +7,9 @@
   }
 
   .edys-gallery {
+    @extend %clearfixs;
+    display: inline-block;
+
     &:hover {
       .edys-gallery-item {
         .edys-gallery-image {
@@ -16,7 +19,12 @@
     }
 
     .edys-gallery-item {
+      float: left;
+      padding-right: 0;
+
       .edys-gallery-image {
+        display: block;
+
         &:hover {
           opacity: 1;
         }
