@@ -187,12 +187,9 @@
           border-top: none;
         }
 
-        &.active a:hover {
-          @include bg($blue-2);
-        }
-
         a {
           padding: 11px 30px 9px 53px;
+          font-weight: 400;
           font-size: 14px;
 
           &:before,
@@ -204,11 +201,7 @@
           &.active,
           &.active:hover {
             font-weight: 600;
-          }
-
-          &.active,
-          &.active:hover {
-            @include color($grey-1);
+            @include color($grey-1, 0.67);
             background: none;
           }
 

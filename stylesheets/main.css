@@ -362,11 +362,9 @@ body {
   .menu-main .menu-lang li:first-child {
     border-top: none;
   }
-  .menu-main .menu-lang li.active a:hover {
-    background-color: #c7e5ff;
-  }
   .menu-main .menu-lang li a {
     padding: 11px 30px 9px 53px;
+    font-weight: 400;
     font-size: 14px;
   }
   .menu-main .menu-lang li a:before, .menu-main .menu-lang li a:after {
@@ -375,9 +373,8 @@ body {
   }
   .menu-main .menu-lang li a.active, .menu-main .menu-lang li a.active:hover {
     font-weight: 600;
-  }
-  .menu-main .menu-lang li a.active, .menu-main .menu-lang li a.active:hover {
     color: #838586;
+    color: rgba(131, 133, 134, 0.67);
     background: none;
   }
   .menu-main .menu-lang li a:hover {
