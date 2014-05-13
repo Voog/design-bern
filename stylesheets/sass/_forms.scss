@@ -39,7 +39,7 @@
   .form_field_textarea,
   .form_field_select,
   .form_submit input {
-    @include box-shadow(4px,4px,0,$black, 0.1);
+    @include box-shadow(4px, 4px, 0, rgba($black, 0.1));
   }
 
   .form_field_textfield,
@@ -119,10 +119,6 @@
     .form_field_textfield,
     .form_field_textarea {
       @include box-shadow(4px, 4px, 0, rgba($red, 1));
-    }
-
-    .form_field_focused {
-      @include no-box-shadow;
     }
   }
 
@@ -221,7 +217,7 @@
     height: 20px;
     margin: 2px 0 5px 9px;
     padding: 0;
-    @include border(all,1px,solid,$white,.3);
+    @include border(all, 1px, solid, $white, 0.3);
     border-radius: 100%;
     cursor: pointer;
 

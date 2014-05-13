@@ -1301,9 +1301,9 @@ body {
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select,
 .content-formatted .form_submit input {
-  -webkit-box-shadow: 4px 4px 0 black 0.1;
-  -moz-box-shadow: 4px 4px 0 black 0.1;
-  box-shadow: 4px 4px 0 black 0.1;
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
+  -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
 }
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
@@ -1382,11 +1382,6 @@ body {
   -webkit-box-shadow: 4px 4px 0 #cc0000 ;
   -moz-box-shadow: 4px 4px 0 #cc0000 ;
   box-shadow: 4px 4px 0 #cc0000 ;
-}
-.content-formatted .form_field_with_errors .form_field_focused {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
 }
 .content-formatted .form_field_error {
   margin-top: 5px;
