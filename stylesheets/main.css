@@ -1326,9 +1326,6 @@ body {
 .content-formatted .form_field_select:focus {
   outline: none;
 }
-.content-formatted .form_field_textarea {
-  min-height: 98px;
-}
 .content-formatted .form_field_select {
   height: 30px;
   padding: 8px 9px 6px 9px;
@@ -1378,18 +1375,27 @@ body {
     width: 100%;
   }
 }
-.content-formatted .form_field_error {
-  color: #cc0000;
-}
 .content-formatted .form_field_with_errors .form_field_textfield,
 .content-formatted .form_field_with_errors .form_field_textarea {
   -webkit-box-shadow: 4px 4px 0 #cc0000 ;
   -moz-box-shadow: 4px 4px 0 #cc0000 ;
   box-shadow: 4px 4px 0 #cc0000 ;
 }
+.content-formatted .form_field_with_errors .form_field_focused {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.content-formatted .form_field_error {
+  margin-top: 5px;
+  margin-left: 1px;
+  color: #cc0000;
+}
 .content-formatted .feedback-loading,
 .content-formatted .feedback-error,
-.content-formatted .feedback-success {
+.content-formatted .form_error,
+.content-formatted .feedback-success,
+.content-formatted .form_notice {
   display: inline-block;
   vertical-align: top;
   margin: 18px 0 0;
@@ -1400,8 +1406,10 @@ body {
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
 }
 .content-formatted .feedback-error,
-.content-formatted .feedback-success {
-  padding: 3px 12px 0;
+.content-formatted .form_error,
+.content-formatted .feedback-success,
+.content-formatted .form_notice {
+  padding: 8px 12px;
   font-size: 14px;
 }
 .content-formatted .feedback-loading {
@@ -1436,10 +1444,12 @@ body {
 .content-formatted .feedback-loading span:last-child {
   margin-right: 0;
 }
-.content-formatted .feedback-error {
+.content-formatted .feedback-error,
+.content-formatted .form_error {
   background-color: #cc0000;
 }
-.content-formatted .feedback-success {
+.content-formatted .feedback-success,
+.content-formatted .form_notice {
   background-color: #60a740;
 }
 .content-formatted .close-btn {
@@ -1464,9 +1474,6 @@ body {
 }
 .svg .content-formatted .close-btn {
   background: url("../assets/ico-close.svg") center center no-repeat;
-}
-.content-formatted .form_error {
-  display: none;
 }
 
 /* COMMENTS */

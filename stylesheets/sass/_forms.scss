@@ -60,10 +60,6 @@
     }
   }
 
-  .form_field_textarea {
-    min-height: 98px;
-  }
-
   .form_field_select {
     height: 30px;
     padding: 8px 9px 6px 9px;
@@ -120,19 +116,28 @@
     }
   }
 
-  .form_field_error {
-    @include color($red);
-  }
   .form_field_with_errors {
     .form_field_textfield,
     .form_field_textarea {
       @include box-shadow(4px, 4px, 0, rgba($red, 1));
     }
+
+    .form_field_focused {
+      @include no-box-shadow;
+    }
+  }
+
+  .form_field_error {
+    margin-top: 5px;
+    margin-left: 1px;
+    @include color($red);
   }
 
   .feedback-loading,
   .feedback-error,
-  .feedback-success {
+  .form_error,
+  .feedback-success,
+  .form_notice, {
     display: inline-block;
     vertical-align: top;
     margin: 18px 0 0;
@@ -142,8 +147,10 @@
   }
 
   .feedback-error,
-  .feedback-success {
-    padding: 3px 12px 0;
+  .form_error,
+  .feedback-success,
+  .form_notice {
+    padding: 8px 12px;
     font-size: 14px;
   }
 
@@ -199,11 +206,13 @@
     }
   }
 
-  .feedback-error {
+  .feedback-error,
+  .form_error {
     @include bg($red);
   }
 
-  .feedback-success {
+  .feedback-success,
+  .form_notice {
     @include bg($green);
   }
 
@@ -232,9 +241,5 @@
     .svg & {
       background: url("../assets/ico-close.svg") center center no-repeat;
     }
-  }
-
-  .form_error {
-    display: none;
   }
 }

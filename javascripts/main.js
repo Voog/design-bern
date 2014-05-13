@@ -21,12 +21,6 @@
     });
   };
 
-  var handleFormFieldClick = function() {
-    $('.form_field_with_errors').click(function() {
-      $(this).removeClass('form_field_with_errors');
-    });
-  };
-
   var focusCommentsWithErrors = function() {
     $(document).ready(function() {
       if ($('.form_field').hasClass('form_field_with_errors') === true) {
@@ -71,7 +65,6 @@
     };
 
     var initArticlePage = function() {
-      handleFormFieldClick();
       focusCommentsWithErrors();
     };
 
@@ -89,8 +82,7 @@
 
     window.site = $.extend(window.site || {}, {
       initBlogPage: initBlogPage,
-      initArticlePage: initArticlePage,
-      handleFormFieldClick: handleFormFieldClick
+      initArticlePage: initArticlePage
     });
 
     init();
