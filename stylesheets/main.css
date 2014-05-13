@@ -423,6 +423,10 @@ body {
 .menu-sub .menu li a {
   color: #9c9e9e;
 }
+.menu-sub .menu li a.untranslated {
+  color: #cc0000;
+  color: rgba(204, 0, 0, 0.5);
+}
 .menu-sub .menu li a.active, .menu-sub .menu li a:hover {
   color: #1b2124;
 }

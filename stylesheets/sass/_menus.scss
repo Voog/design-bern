@@ -259,6 +259,10 @@
       a {
         @include color($third-color);
 
+        &.untranslated {
+          @include color($red, 0.5);
+        }
+
         &.active,
         &:hover {
           @include color($secondary-color);
