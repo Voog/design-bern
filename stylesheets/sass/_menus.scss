@@ -53,10 +53,6 @@
   }
 }
 
-%edit-btn {
-  display: inline-block;
-}
-
 .menu {
   margin-top: 0;
   margin-bottom: 0;
@@ -113,12 +109,20 @@
       }
 
       &.edit-btn {
-        @extend %edit-btn;
+        display: inline-block;
 
         @include query($tablet-1) {
           display: block;
-          padding-top: 10px;
-          padding-left: 25px;
+
+          .edy-menu-menuadd {
+            display: inline-block;
+            margin: 6px 25px 8px 25px;
+            padding: 0;
+
+            &:hover {
+              background: none;
+            }
+          }
         }
       }
 
@@ -215,8 +219,13 @@
 
         &.edit-btn {
           display: block;
-          padding: 4px 25px 0;
           text-align: left;
+
+          .edy-menu-langadd {
+            display: inline-block;
+            padding: 0;
+            margin: 11px 25px 11px 25px;
+          }
         }
       }
     }
@@ -239,7 +248,7 @@
       margin-right: 12px;
 
       &.edit-btn {
-        @extend %edit-btn;
+        display: inline-block;
         margin-left: 0;
       }
 
@@ -341,6 +350,14 @@
   position: relative;
   display: inline-block;
   line-height: 1;
+
+  &.edit-btn {
+    display: inline-block;
+    margin: 7px 20px;
+    padding: 0;
+
+  }
+
   @include query($tablet-2) {
     display: none;
   }
@@ -349,13 +366,6 @@
     display: list-item;
     text-align: right;
     font-size: 12px;
-
-    &.edit-btn {
-      a {
-        margin-top: 5px;
-        margin-right: 10px;
-      }
-    }
 
     a {
       position: relative;
@@ -378,9 +388,14 @@
         right: 12px;
       }
     }
+  }
 
-    &.edy-menu-langadd {
-      margin-left: 5px;
+  .edy-menu-langadd {
+    display: inline-block;
+    padding: 10px 15px 5px;
+
+    &:hover {
+      background: none;
     }
   }
 }
