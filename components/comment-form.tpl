@@ -26,7 +26,7 @@
 
         <div class="form_field{% if comment_body_error %} form_field_with_errors{% endif %}">
           <label for="comment-form-body">{{ "comment" | lc }}{% if comment_body_error %}<span class="form_field_error"> — {{ "comment_body_blank" | lc }}</span>{% endif %}</label>
-          <textarea id="comment-form-body" class="form_field_textarea form_field_size_medium" name="comment[body]" rows="5">{{ comment.body }}</textarea>
+          <textarea id="comment-form-body" class="form_field_textarea form_field_size_medium" name="comment[body]" rows="5">{{ comment.body_html }}</textarea>
         </div>
       </div>
 
