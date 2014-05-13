@@ -1088,9 +1088,6 @@ body {
 .edys-gallery-area:first-child {
   margin-top: 0;
 }
-.edys-gallery-area .edys-gallery {
-  display: inline-block;
-}
 .edys-gallery-area .edys-gallery:hover .edys-gallery-item .edys-gallery-image {
   opacity: 0.6;
 }

@@ -8,7 +8,6 @@
 
   .edys-gallery {
     @extend %clearfixs;
-    display: inline-block;
 
     &:hover {
       .edys-gallery-item {
