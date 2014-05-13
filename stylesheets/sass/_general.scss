@@ -119,24 +119,30 @@ body {
     }
   }
 
-  img,
-  pre,
-  code {
-    margin-top: 20px;
-  }
-
   img {
     max-width: 100%;
     height: auto;
+    margin-top: 20px;
   }
 
   pre,
   code {
-    display: block;
-    overflow: auto;
     padding: 10px;
     font-size: 14px;
     @include bg($grey-5);
+  }
+
+  pre {
+    margin-top: 10px;
+    margin-bottom: 0;
+    overflow: auto;
+    white-space: nowrap;
+
+    code {
+      display: block;
+      margin-top: 0;
+      padding: 0;
+    }
   }
 
   h1,

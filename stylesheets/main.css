@@ -39,7 +39,7 @@ body {
   }
 }
 
-.content-formatted:after, .content.two-columns:after, .common-page .content:after, .edys-gallery-area .edys-gallery:after, .search:after {
+.content-formatted:after, .content.two-columns:after, .common-page .content:after, .search:after {
   content: "";
   display: table;
   clear: both;
@@ -139,22 +139,27 @@ body {
   color: #0066bb;
   color: rgba(0, 102, 187, 0.8);
 }
-.content-formatted img,
-.content-formatted pre,
-.content-formatted code {
-  margin-top: 20px;
-}
 .content-formatted img {
   max-width: 100%;
   height: auto;
+  margin-top: 20px;
 }
 .content-formatted pre,
 .content-formatted code {
-  display: block;
-  overflow: auto;
   padding: 10px;
   font-size: 14px;
   background-color: #fafafa;
+}
+.content-formatted pre {
+  margin-top: 10px;
+  margin-bottom: 0;
+  overflow: auto;
+  white-space: nowrap;
+}
+.content-formatted pre code {
+  display: block;
+  margin-top: 0;
+  padding: 0;
 }
 .content-formatted h1:first-child,
 .content-formatted h2:first-child,
