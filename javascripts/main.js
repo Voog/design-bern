@@ -29,7 +29,7 @@
 
   var focusCommentsWithErrors = function() {
     $(document).ready(function() {
-      if ($('.comment-form').hasClass('form_with_errors') === true) {
+      if ($('.form_field').hasClass('form_field_with_errors') === true) {
         $('html, body').scrollTop($('.comment-form').offset().top);
       }
     });
