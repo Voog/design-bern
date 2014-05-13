@@ -251,7 +251,7 @@ body {
   }
   .menu-main.expanded {
     position: absolute;
-    top: 5px;
+    top: 62px;
     right: 20px;
     z-index: 10;
     display: block;
@@ -266,6 +266,7 @@ body {
 }
 @media screen and (max-width: 840px) and (max-width: 480px) {
   .menu-main.expanded {
+    top: 45px;
     left: -15px;
     right: -15px;
     min-width: 0;
@@ -782,7 +783,6 @@ body {
 }
 
 .header-right {
-  position: relative;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -moz-box-flex: 1;
