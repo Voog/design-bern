@@ -576,6 +576,7 @@
   }
 
   .tags-left {
+    width: 113px;
     margin-right: 20px;
     text-align: right;
 
@@ -587,6 +588,12 @@
     .tags-title {
       font-size: 14px;
       @include color($secondary-color, 0.5);
+    }
+  }
+
+  .tags-right {
+    .menu {
+      margin-top: 2px;
     }
   }
 }
