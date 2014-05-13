@@ -220,7 +220,6 @@ body {
 }
 @media screen and (max-width: 480px) {
   .menu-btn {
-    top: 7px;
     right: 0;
   }
 }
