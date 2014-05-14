@@ -1,21 +1,5 @@
 /* BLOG & BLOG ARTICLE */
 .post {
-  .post-left {
-    display: inline-block;
-    vertical-align: top;
-    width: 92px;
-  }
-
-  .post-right {
-    @include flex;
-    margin-left: 26px;
-
-    @include query($mobile-1) {
-      display: block;
-      margin-left: 0;
-    }
-  }
-
   .post-link {
     display: inline-block;
     margin-top: 12px;
@@ -56,27 +40,13 @@
 }
 
 .blog-page {
-  .tags {
-    .tags-left {
-      width: 104px;
-
-      @include query($tablet-1) {
-        margin-right: 0;
-      }
-
-      @include query($mobile-1) {
-        width: 84px;
-      }
-    }
-  }
-
   .post {
     margin-top: 39px;
 
-    .no-flex-box & {
+    .no-flexbox & {
       display: table;
-      vertical-align: top;
     }
+
     .flexbox & {
       @include flexbox;
     }
@@ -91,65 +61,64 @@
         display: block;
       }
     }
+  }
 
-    .post-date {
-      font-size: 14px;
-      @include color($secondary-color, 0.5);
+  .post-left,
+  .post-right {
+    .no-flexbox & {
+      display: table-cell;
+      vertical-align: top;
     }
+  }
+
+  .post-left {
+    display: inline-block;
+    width: 92px;
+    padding-right: 26px;
+  }
+
+  .post-right {
+    @include flex;
+  }
+
+  .post-date {
+    font-size: 14px;
+    @include color($secondary-color, 0.5);
   }
 }
 
 .post-page {
-  .tags {
-    .tags-left {
-      width: 91px;
-
-      @include query($mobile-1) {
-        width: 84px;
-      }
-    }
-
-    .editmode & {
-      .tags-right {
-        width: 85%;
-
-        @include query($tablet-2) {
-          width: 100%;
-        }
-      }
-    }
-  }
-
   .post {
     .post-header {
       text-align: center;
+    }
 
-      .post-title {
-        font-size: 36px;
-        line-height: 1;
+    .post-header-inner {
+      margin-top: 4px;
+      @include color($secondary-color);
+    }
 
-        input {
-          text-align: center;
-        }
-      }
-      .post-header-inner {
-        margin-top: 4px;
-        @include color($secondary-color);
+    .post-title {
+      font-size: 36px;
+      line-height: 1;
+
+      input {
+        text-align: center;
       }
     }
 
     .post-content {
       margin-top: 29px;
+    }
 
-      .post-body {
-        margin-top: 28px;
-      }
+    .post-body {
+      margin-top: 28px;
+    }
 
-      .post-excerpt,
-      .post-body {
-        .fci-editor {
-          min-height: 38px;
-        }
+    .post-excerpt,
+    .post-body {
+      .fci-editor {
+        min-height: 38px;
       }
     }
   }

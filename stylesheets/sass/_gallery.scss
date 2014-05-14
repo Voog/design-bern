@@ -7,7 +7,7 @@
   }
 
   .edys-gallery {
-    @extend %clearfixs;
+    @extend %clearfix;
 
     &:hover {
       .edys-gallery-item {

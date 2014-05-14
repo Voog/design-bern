@@ -576,11 +576,12 @@
   }
 
   .tags-left {
-    width: 113px;
-    margin-right: 20px;
+    width: 105px;
+    margin-right: 29px;
     text-align: right;
 
     @include query($tablet-1) {
+      width: 113px;
       margin-right: 0;
       text-align: left;
     }
