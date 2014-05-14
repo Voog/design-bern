@@ -1,4 +1,5 @@
 <!-- TODO: Add proper translations -->
+<!-- Add languages in alphabetical order -->
 {% case page.language_code %}
   {% when 'da' %}
     {% assign tags_title = 'Filter indlæg' %}
