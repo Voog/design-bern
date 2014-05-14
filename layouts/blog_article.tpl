@@ -4,7 +4,7 @@
   {% include "html-head" %}
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
-  <meta property="og:description" content="{{ page.description }}">
+  {% comment %}<meta property="og:description" content="{{ page.description }}"><!-- Add correct value -->{% endcomment %}
   {% unless article.data.fbimage == nil %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fbimage }}">{% endunless %}<!-- TODO: Add image location data tag -->
 </head>
 
