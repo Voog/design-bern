@@ -10,10 +10,10 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}"> <!-- TODO: Add image location data tag -->{% endif %}
 
-<script src="{{ javascripts_path }}/modernizr.js?25"></script>
+<script src="{{ javascripts_path }}/modernizr.js?28"></script>
 
-{% stylesheet_link "main.css?27" %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.css?27" %}<![endif]-->
+{% stylesheet_link "main.css?28" %}
+<!--[if lt IE 9]>{% stylesheet_link "ie8.css?28" %}<![endif]-->
 
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
 
