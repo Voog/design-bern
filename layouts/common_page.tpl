@@ -9,7 +9,6 @@
 </head>
 
 <body class="common-page js-bgpicker-body-image">
-
   <div class="container">
     {% include "header" %}
     {% include "menu-level-2" %}
