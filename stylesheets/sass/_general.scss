@@ -135,18 +135,18 @@ body {
     margin-top: 20px;
   }
 
-  pre,
-  code {
-    padding: 10px;
-    font-size: 14px;
-    @include bg($grey-5);
-  }
-
   pre {
     margin-top: 10px;
     margin-bottom: 0;
     overflow: auto;
     white-space: nowrap;
+
+    &,
+    code {
+      padding: 10px;
+      font-size: 14px;
+      @include bg($grey-5);
+    }
 
     code {
       display: block;

@@ -152,17 +152,17 @@ body {
   height: auto;
   margin-top: 20px;
 }
-.content-formatted pre,
-.content-formatted code {
-  padding: 10px;
-  font-size: 14px;
-  background-color: #fafafa;
-}
 .content-formatted pre {
   margin-top: 10px;
   margin-bottom: 0;
   overflow: auto;
   white-space: nowrap;
+}
+.content-formatted pre,
+.content-formatted pre code {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #fafafa;
 }
 .content-formatted pre code {
   display: block;
