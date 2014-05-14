@@ -1,5 +1,5 @@
 <div class="comment-form{% unless comment.valid? %} form_with_errors{% endunless %}">
-  <h2 class="comment-title">{{"add_a_comment"|lc}}</h2>
+  <h2 class="comments-title">{{"add_a_comment"|lc}}</h2>
   {% commentform %}
     {% assign comment_name_error = false %}
     {% assign comment_email_error = false %}
