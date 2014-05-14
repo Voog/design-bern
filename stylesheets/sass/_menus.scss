@@ -587,6 +587,7 @@
     }
 
     .tags-title {
+      display: inline-block;
       font-size: 14px;
       @include color($secondary-color, 0.5);
     }

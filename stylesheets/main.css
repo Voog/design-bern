@@ -740,6 +740,7 @@ body {
   }
 }
 .menu-tags .tags-left .tags-title {
+  display: inline-block;
   font-size: 14px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.5);
@@ -1029,8 +1030,15 @@ body {
 }
 .blog-page .post-left {
   display: inline-block;
-  width: 92px;
+  width: 87px;
+  margin-left: 5px;
   padding-right: 26px;
+}
+@media screen and (max-width: 940px) {
+  .blog-page .post-left {
+    width: 91px;
+    margin-left: 0;
+  }
 }
 .blog-page .post-right {
   -webkit-box-flex: 1;

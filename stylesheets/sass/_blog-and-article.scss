@@ -73,8 +73,14 @@
 
   .post-left {
     display: inline-block;
-    width: 92px;
+    width: 87px;
+    margin-left: 5px;
     padding-right: 26px;
+
+    @include query($tablet-1) {
+      width: 91px;
+      margin-left: 0;
+    }
   }
 
   .post-right {
