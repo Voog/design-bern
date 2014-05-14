@@ -1,12 +1,13 @@
 <section class="content-topbar">
   {% if site.has_language_tags? %}
+    {% include "tags-translations" %}
     <nav class="menu-tags menu-sub">
       <div class="tags-left">
-        <span class="tags-title">Filter posts</span>
+        <span class="tags-title">{{ tags_title }}</span>
       </div>
       <div class="tags-right">
         <ul class="menu">
-          <li><a class="js-tags-all" href="/{{ site.blogs.first.page.path }}">{% case page.language_code %}{% when 'et' %}Kõik teemad{% else %}All topics{% endcase %}</a></li>
+          <li><a class="js-tags-all" href="/{{ site.blogs.first.page.path }}">{{ tags_all }}</a></li>
           {% for tag in site.language_tags %}
             {% assign activestr = " " %}
             {% for tmptag in tags %}

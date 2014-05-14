@@ -728,8 +728,8 @@ body {
   vertical-align: middle;
 }
 .menu-tags .tags-left {
-  width: 105px;
-  margin-right: 29px;
+  width: 110px;
+  margin-right: 24px;
   text-align: right;
 }
 @media screen and (max-width: 940px) {

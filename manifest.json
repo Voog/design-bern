@@ -123,6 +123,13 @@
       "file": "components/tags-post.tpl",
       "layout_name": "tags-post",
       "title": "tags-post"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-translations.tpl",
+      "layout_name": "",
+      "title": "tags-translations"
     }
   ],
   "assets": [
