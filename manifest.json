@@ -44,120 +44,120 @@
       "content_type": "component",
       "component": true,
       "file": "components/bgpicker.tpl",
-      "layout_name": "",
+      "layout_name": "bgpicker",
       "title": "bgpicker"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/comment-form.tpl",
-      "layout_name": "",
+      "layout_name": "comment-form",
       "title": "comment-form"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/footer.tpl",
-      "layout_name": "",
+      "layout_name": "footer",
       "title": "footer"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/header.tpl",
-      "layout_name": "",
+      "layout_name": "header",
       "title": "header"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/html-head.tpl",
-      "layout_name": "",
+      "layout_name": "html-head",
       "title": "html-head"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/javascripts.tpl",
-      "layout_name": "",
+      "layout_name": "javascripts",
       "title": "javascripts"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/menu-lang.tpl",
-      "layout_name": "",
+      "layout_name": "menu-lang",
       "title": "menu-lang"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/menu-level-1.tpl",
-      "layout_name": "",
+      "layout_name": "menu-level-1",
       "title": "menu-level-1"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/menu-level-2.tpl",
-      "layout_name": "",
+      "layout_name": "menu-level-2",
       "title": "menu-level-2"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/search.tpl",
-      "layout_name": "",
+      "layout_name": "search",
       "title": "search"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/tags-blog.tpl",
-      "layout_name": "",
+      "layout_name": "tags-blog",
       "title": "tags-blog"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/tags-post.tpl",
-      "layout_name": "",
+      "layout_name": "tags-post",
       "title": "tags-post"
     }
   ],
   "assets": [
     {
-      "content_type": "unknown/unknown",
+      "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-down.svg",
       "kind": "assets",
       "filename": "ico-arrow-down.svg"
     },
     {
-      "content_type": "unknown/unknown",
+      "content_type": "image/svg+xml",
       "file": "assets/ico-close.svg",
       "kind": "assets",
       "filename": "ico-close.svg"
     },
     {
-      "content_type": "unknown/unknown",
+      "content_type": "image/svg+xml",
       "file": "assets/ico-flags.svg",
       "kind": "assets",
       "filename": "ico-flags.svg"
     },
     {
-      "content_type": "unknown/unknown",
+      "content_type": "image/svg+xml",
       "file": "assets/ico-search.svg",
       "kind": "assets",
       "filename": "ico-search.svg"
     },
     {
-      "content_type": "image/jpg",
+      "content_type": "image/jpeg",
       "file": "images/front-page-bg.jpg",
       "kind": "images",
       "filename": "front-page-bg.jpg"
     },
     {
-      "content_type": "image/jpg",
+      "content_type": "image/jpeg",
       "file": "images/front-page-bg@2x.jpg",
       "kind": "images",
       "filename": "front-page-bg@2x.jpg"
@@ -193,37 +193,37 @@
       "filename": "ico-search.png"
     },
     {
-      "content_type": "text/javascript",
+      "content_type": "application/javascript",
       "file": "javascripts/autogrow.js",
       "kind": "javascripts",
       "filename": "autogrow.js"
     },
     {
-      "content_type": "text/javascript",
+      "content_type": "application/javascript",
       "file": "javascripts/jquery.js",
       "kind": "javascripts",
       "filename": "jquery.js"
     },
     {
-      "content_type": "text/javascript",
+      "content_type": "application/javascript",
       "file": "javascripts/main.js",
       "kind": "javascripts",
       "filename": "main.js"
     },
     {
-      "content_type": "text/javascript",
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr.js",
       "kind": "javascripts",
       "filename": "modernizr.js"
     },
     {
-      "content_type": "text/javascript",
+      "content_type": "application/javascript",
       "file": "javascripts/overthrow.js",
       "kind": "javascripts",
       "filename": "overthrow.js"
     },
     {
-      "content_type": "text/javascript",
+      "content_type": "application/javascript",
       "file": "javascripts/retina.js",
       "kind": "javascripts",
       "filename": "retina.js"
