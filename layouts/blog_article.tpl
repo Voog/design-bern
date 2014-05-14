@@ -39,7 +39,7 @@
 
       <div class="comment-messages">
         {% for comment in article.comments reversed %}
-          <div class="comment edy-site-blog-comment">{{ comment.body_html }} ({{ comment.author }}, {{ comment.created_at | date : "%b %d, %Y" }}) {% removebutton %}</div>
+          <div class="comment edy-site-blog-comment">{{ comment.body_html }} ({{ comment.author }}, {{ comment.created_at | format_date: "long" }}) {% removebutton %}</div>
         {% endfor %}
       </div>
 
