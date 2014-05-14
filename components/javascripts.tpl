@@ -2,9 +2,6 @@
 <script src="{{ javascripts_path }}/main.js?17"></script>
 <script src="{{ javascripts_path }}/retina.js?17"></script>
 <script src="{{ javascripts_path }}/overthrow.js?17"></script>
-<script src="{{ javascripts_path }}/autogrow.js?17"></script>
-
-<script>$('.form_field_textarea').autogrow();</script>
 
 {% if site.search.enabled %}
   <script src="http://static.edicy.com/assets/site_search/3.0/site_search.js?2"></script>

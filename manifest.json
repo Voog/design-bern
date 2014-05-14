@@ -201,12 +201,6 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/autogrow.js",
-      "kind": "javascripts",
-      "filename": "autogrow.js"
-    },
-    {
-      "content_type": "application/javascript",
       "file": "javascripts/jquery.js",
       "kind": "javascripts",
       "filename": "jquery.js"
