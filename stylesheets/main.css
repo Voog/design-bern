@@ -743,7 +743,6 @@ body {
   display: inline-block;
   font-size: 14px;
   color: #1b2124;
-  color: rgba(27, 33, 36, 0.5);
 }
 .menu-tags .tags-right .menu {
   margin-top: 2px;
@@ -1030,7 +1029,7 @@ body {
 }
 .blog-page .post-left {
   display: inline-block;
-  width: 87px;
+  min-width: 87px;
   margin-left: 5px;
   padding-right: 26px;
 }
