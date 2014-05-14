@@ -764,7 +764,7 @@ body {
   display: flex;
 }
 @media screen and (max-width: 840px) {
-  .header {
+  .no-flexbox .header, .flexbox .header {
     display: block;
   }
 }
@@ -774,8 +774,7 @@ body {
   }
 }
 
-.no-flexbox .header-left, .flexbox .header-left, .no-flexbox
-.header-right, .flexbox
+.no-flexbox .header-left, .no-flexbox
 .header-right {
   display: table-cell;
   vertical-align: top;
@@ -787,9 +786,11 @@ body {
   }
 }
 @media screen and (max-width: 840px) {
-  .header-left,
+  .no-flexbox .header-left, .flexbox .header-left, .no-flexbox
+  .header-right, .flexbox
   .header-right {
     display: block;
+    width: auto;
   }
 }
 @media screen and (max-width: 480px) {

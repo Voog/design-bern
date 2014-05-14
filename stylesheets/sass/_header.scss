@@ -12,7 +12,10 @@
   }
 
   @include query($tablet-2) {
-    display: block;
+    .no-flexbox &,
+    .flexbox & {
+      display: block;
+    }
   }
 
   @include query($mobile-1) {
@@ -22,8 +25,7 @@
 
 .header-left,
 .header-right {
-  .no-flexbox &,
-  .flexbox & {
+  .no-flexbox & {
     display: table-cell;
     vertical-align: top;
   }
@@ -33,7 +35,11 @@
   }
 
   @include query($tablet-2) {
-    display: block;
+    .no-flexbox &,
+    .flexbox & {
+      display: block;
+      width: auto;
+    }
   }
 
   @include query($mobile-1) {
