@@ -237,12 +237,6 @@
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/ie9.css",
-      "kind": "stylesheets",
-      "filename": "ie9.css"
-    },
-    {
-      "content_type": "text/css",
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
