@@ -19,7 +19,7 @@
 
     .background-color {
       opacity: 0.5;
-      @include bg($blue);
+      @include bg($blue-1);
     }
 
     .content-inner {

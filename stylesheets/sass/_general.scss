@@ -66,6 +66,23 @@ body {
   h4,
   h5,
   h6,
+  p,
+  img,
+  pre,
+  code,
+  table,
+  form {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
   p {
     margin-bottom: 0;
   }
@@ -122,10 +139,10 @@ body {
   }
 
   a {
-    @include color($blue,1);
+    @include color($blue-1,1);
 
     &:hover {
-      @include color($blue,.8);
+      @include color($blue-1,.8);
     }
   }
 
@@ -152,22 +169,6 @@ body {
       display: block;
       margin-top: 0;
       padding: 0;
-    }
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  img,
-  pre,
-  code,
-  table {
-    &:first-child {
-      margin-top: 0;
     }
   }
 
