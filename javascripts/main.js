@@ -21,6 +21,17 @@
     });
   };
 
+  // REDUCES OPACITY OF THE GALLERY IMAGES THAT ARE NOT UNDER THE CURSOR
+  var handleGalleryHover = function() {
+    $('.edys-gallery-item').mouseover(function() {
+      $(this).siblings('.edys-gallery-item').find('.edys-gallery-image').addClass('inactive');
+    });
+
+    $('.edys-gallery-item').mouseout(function() {
+      $(this).siblings('.edys-gallery-item').find('.edys-gallery-image').removeClass('inactive');
+    });
+  };
+
   var focusCommentsWithErrors = function() {
     $(document).ready(function() {
       if ($('.form_field').hasClass('form_field_with_errors') === true) {
@@ -72,6 +83,7 @@
       toggleMainMenu();
       toggleLangMenu();
       handlePopoverMenuHide();
+      handleGalleryHover();
       handleWindowResize();
       wrapTables();
       if ($('.table-container').length > 0) {
