@@ -4,8 +4,9 @@
       <nav class="menu-sub">
         <ul class="menu">
           {% if editmode or item.children? %}
+            <li class="menu-item"><a class="menu-link{% if item.current? %} active{% endif %}{% unless item.translated? %} fci-editor-menuadd{% endunless %}" href="{{ item.url }}">{{ item.title }}</a></li>
             {% for subitem in item.visible_children %}
-              <li><a{% if subitem.selected? %} class="active"{% endif %}{% unless subitem.translated? %} class="untranslated fci-editor-menuadd"{% endunless %} href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+              <li class="menu-item"><a class="menu-link{% if subitem.selected? %} active{% endif %}{% unless item.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
             {% endfor %}
           {% endif %}
           {% if item.hidden_children.size > 0 %}<li>{% menubtn item.hidden_children %}</li>{% endif %}

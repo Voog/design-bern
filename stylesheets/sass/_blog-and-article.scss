@@ -40,6 +40,16 @@
 }
 
 .blog-page {
+  .edy-site-menu-add {
+    margin-left: 10px;
+  }
+
+  @include query($mobile-1) {
+    .edy-site-menu-add {
+      margin-left: 0;
+    }
+  }
+
   .post {
     margin-top: 39px;
 
@@ -51,7 +61,8 @@
       @include flexbox;
     }
 
-    &:first-child {
+    &:first-child,
+    .editmode &:nth-child(2) {
       margin-top: 0;
     }
 
@@ -80,6 +91,10 @@
     @include query($tablet-1) {
       width: 91px;
       margin-left: 0;
+    }
+
+    @include query($mobile-1) {
+      width: auto;
     }
   }
 

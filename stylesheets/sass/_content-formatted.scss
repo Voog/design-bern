@@ -53,10 +53,10 @@
   }
 
   a {
-    @include color($blue-1,1);
+    @include color($blue-1, 1);
 
     &:hover {
-      @include color($blue-1,.8);
+      @include color($blue-1, 0.8);
     }
   }
 

@@ -1,0 +1,161 @@
+/* GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  @include color($primary-color);
+
+  @include query($tablet-2) {
+    background-image: none !important;
+  }
+}
+
+ // Layout specific body classes
+ .front-page {
+  .content {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    @include bg($grey-3);
+
+    .background-image,
+    .background-color {
+      z-index: 0;
+    }
+
+    .background-image {
+      background-position: center;
+      background-size: cover;
+      background-image: url('../images/front-page-bg.jpg');
+    }
+
+    .background-color {
+      opacity: 0.5;
+      @include bg($blue-1);
+    }
+
+    .content-inner {
+      display: table;
+      width: 100%;
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 0;
+      height: 525px;
+      background: none;
+
+      @include query($mobile-1) {
+        min-height: 295px;
+      }
+
+      .content-body {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        padding: 40px;
+        font-size: 36px;
+        @include color($white);
+        line-height: 1.2;
+
+        .edy-texteditor-view {
+          min-height: 39px;
+        }
+
+        @include query($tablet-4) {
+          padding: 20px;
+        }
+
+        @include query($mobile-1) {
+          padding: 78px 25px;
+          font-size: 24px;
+        }
+      }
+
+      .content-formatted {
+        h3 {
+          text-align: center;
+        }
+
+        .fci-editor {
+          min-height: 41px;
+        }
+      }
+    }
+  }
+}
+
+
+.common-page {
+  .content {
+    @extend %clearfix;
+  }
+
+  .content-formatted {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include color($secondary-color);
+    }
+  }
+}
+
+.blog-page,
+.post-page {
+}
+
+.blog-page {
+}
+
+.post-page {
+}
+
+
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+%stretch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bgpicker-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.background-image,
+.background-color {
+  @extend %stretch;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+
+    img {
+      border: none;
+    }
+  }
+}
