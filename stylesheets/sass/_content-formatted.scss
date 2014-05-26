@@ -1,0 +1,120 @@
+
+.content-formatted {
+  @extend %clearfix;
+  word-wrap: break-word;
+
+  // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
+  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, img, table form {
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+
+  h1, h2, p {
+    margin-top: 32px;
+
+    @include query($mobile-1) {
+      margin-top: 28px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+
+    @include query($mobile-1) {
+      font-size: 32px;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+
+    @include query($mobile-1) {
+      font-size: 20px;
+    }
+  }
+
+  h3, h4, h5, h6 {
+    margin-top: 23px;
+    font-size: 20px;
+
+    @include query($mobile-1) {
+      margin-top: 19px;
+      font-size: 16px;
+
+    }
+  }
+
+  a {
+    @include color($blue-1,1);
+
+    &:hover {
+      @include color($blue-1,.8);
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  pre {
+    margin-top: 10px;
+    margin-bottom: 0;
+    overflow: auto;
+    white-space: nowrap;
+
+    &, code {
+      padding: 10px;
+      font-size: 14px;
+      @include bg($grey-5);
+    }
+
+    code {
+      display: block;
+      margin-top: 0;
+      padding: 0;
+    }
+  }
+
+  .content-formatted {
+    .table-container {
+      margin-top: 20px;
+    }
+
+    .overthrow {
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .horizontal-scroll {
+      @include border(left,1px,dashed,$third-color);
+      @include border(right,1px,dashed,$third-color);
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 16px;
+      border-collapse: collapse;
+
+      td {
+        padding: 10px;
+        @include border(top,1px,solid,$third-color);
+        @include border(bottom,1px,solid,$third-color);
+      }
+    }
+  }
+
+  .edy-texteditor-view {
+    min-height: 36px;
+  }
+}
