@@ -6,7 +6,6 @@
   src: url("../assets/custom-font-file-name.eot");
   src: url("../assets/custom-font-file-name.eot?#iefix") format("embedded-opentype"), url("../assets/custom-font-file-name.woff") format("woff"), url("../assets/custom-font-file-name.ttf") format("truetype"), url("../assets/custom-font-file-name.svg#Custom Font name") format("svg");
 }
-
 @font-face {
   font-family: "Custom Font name";
   font-weight: 700;
@@ -14,7 +13,6 @@
   src: url("../assets/custom-font-file-name.eot");
   src: url("../assets/custom-font-file-name.eot?#iefix") format("embedded-opentype"), url("../assets/custom-font-file-name.woff") format("woff"), url("../assets/custom-font-file-name.ttf") format("truetype"), url("../assets/custom-font-file-name.svg#Custom Font name") format("svg");
 }
-
 @font-face {
   font-family: "Custom Font name";
   font-weight: 400;
@@ -22,7 +20,6 @@
   src: url("../assets/custom-font-file-name.eot");
   src: url("../assets/custom-font-file-name.eot?#iefix") format("embedded-opentype"), url("../assets/custom-font-file-name.woff") format("woff"), url("../assets/custom-font-file-name.ttf") format("truetype"), url("../assets/custom-font-file-name.svg#Custom Font name") format("svg");
 }
-
 /* GENERAL */
 body {
   margin: 0;
@@ -78,46 +75,20 @@ body {
 .content-formatted {
   word-wrap: break-word;
 }
-.content-formatted h1:first-child,
-.content-formatted h2:first-child,
-.content-formatted h3:first-child,
-.content-formatted h4:first-child,
-.content-formatted h5:first-child,
-.content-formatted h6:first-child,
-.content-formatted p:first-child,
-.content-formatted img:first-child,
-.content-formatted pre:first-child,
-.content-formatted code:first-child,
-.content-formatted table:first-child,
-.content-formatted form:first-child {
-  margin-top: 0;
-}
-.content-formatted h1,
-.content-formatted h2,
-.content-formatted h3,
-.content-formatted h4,
-.content-formatted h5,
-.content-formatted h6,
-.content-formatted p {
+.content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6, .content-formatted p, .content-formatted ul, .content-formatted ol, .content-formatted pre, .content-formatted code, .content-formatted img, .content-formatted table form {
   margin-bottom: 0;
 }
-.content-formatted h1,
-.content-formatted h2,
-.content-formatted h3,
-.content-formatted h4,
-.content-formatted h5,
-.content-formatted h6 {
+.content-formatted h1:first-child, .content-formatted h2:first-child, .content-formatted h3:first-child, .content-formatted h4:first-child, .content-formatted h5:first-child, .content-formatted h6:first-child, .content-formatted p:first-child, .content-formatted ul:first-child, .content-formatted ol:first-child, .content-formatted pre:first-child, .content-formatted code:first-child, .content-formatted img:first-child, .content-formatted table form:first-child {
+  margin-top: 0;
+}
+.content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
   font-weight: 600;
 }
-.content-formatted h1,
-.content-formatted h2,
-.content-formatted p {
+.content-formatted h1, .content-formatted h2, .content-formatted p {
   margin-top: 32px;
 }
 @media screen and (max-width: 480px) {
-  .content-formatted h1,
-  .content-formatted h2,
-  .content-formatted p {
+  .content-formatted h1, .content-formatted h2, .content-formatted p {
     margin-top: 28px;
   }
 }
@@ -138,18 +109,12 @@ body {
     font-size: 20px;
   }
 }
-.content-formatted h3,
-.content-formatted h4,
-.content-formatted h5,
-.content-formatted h6 {
+.content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
   margin-top: 23px;
   font-size: 20px;
 }
 @media screen and (max-width: 480px) {
-  .content-formatted h3,
-  .content-formatted h4,
-  .content-formatted h5,
-  .content-formatted h6 {
+  .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
     margin-top: 19px;
     font-size: 16px;
   }
@@ -172,8 +137,7 @@ body {
   overflow: auto;
   white-space: nowrap;
 }
-.content-formatted pre,
-.content-formatted pre code {
+.content-formatted pre, .content-formatted pre code {
   padding: 10px;
   font-size: 14px;
   background-color: #fafafa;
@@ -287,6 +251,7 @@ body {
     box-shadow: none;
   }
 }
+
 .menu-main .menu {
   line-height: 1.3;
 }
@@ -463,8 +428,8 @@ body {
 }
 
 .menu-lang-btn:before, .menu-lang-btn:after,
-.menu-lang li a.ico-lang:before,
-.menu-lang li a.ico-lang:after {
+.menu-lang li a.lang-flag:before,
+.menu-lang li a.lang-flag:after {
   position: absolute;
   display: block;
   width: 20px;
@@ -473,21 +438,21 @@ body {
 }
 
 .menu-lang-btn:before,
-.menu-lang li a.ico-lang:before {
+.menu-lang li a.lang-flag:before {
   background-color: black;
 }
 .menu-lang-btn:after,
-.menu-lang li a.ico-lang:after {
+.menu-lang li a.lang-flag:after {
   opacity: 0.95;
   background-size: 200px;
   background-repeat: no-repeat;
 }
 .no-svg .menu-lang-btn:after, .no-svg
-.menu-lang li a.ico-lang:after {
+.menu-lang li a.lang-flag:after {
   background-image: url("../images/ico-flags.png");
 }
 .svg .menu-lang-btn:after, .svg
-.menu-lang li a.ico-lang:after {
+.menu-lang li a.lang-flag:after {
   background-image: url("../assets/ico-flags.svg");
 }
 
@@ -555,171 +520,171 @@ body {
   background: none;
 }
 
-.sq:after {
+.lang-flag-sq:after {
   background-position: 0 0;
 }
 
-.hy:after {
+.lang-flag-hy:after {
   background-position: -20px 0;
 }
 
-.bn:after {
+.lang-flag-bn:after {
   background-position: -40px 0;
 }
 
-.pt:after {
+.lang-flag-pt:after {
   background-position: -60px 0;
 }
 
-.bg:after {
+.lang-flag-bg:after {
   background-position: -80px 0;
 }
 
-.zh:after {
+.lang-flag-zh:after {
   background-position: -100px 0;
 }
 
-.hr:after {
+.lang-flag-hr:after {
   background-position: -120px 0;
 }
 
-.da:after {
+.lang-flag-da:after {
   background-position: -140px 0;
 }
 
-.cs:after {
+.lang-flag-cs:after {
   background-position: -160px 0;
 }
 
-.et:after {
+.lang-flag-et:after {
   background-position: -180px 0;
 }
 
-.fi:after {
-  background-position: 0 -14px;
+.lang-flag-fi:after {
+  background-position: 0px -14px;
 }
 
-.fr:after {
+.lang-flag-fr:after {
   background-position: -20px -14px;
 }
 
-.ka:after {
+.lang-flag-ka:after {
   background-position: -40px -14px;
 }
 
-.de:after {
+.lang-flag-de:after {
   background-position: -60px -14px;
 }
 
-.el:after {
+.lang-flag-el:after {
   background-position: -80px -14px;
 }
 
-.hu:after {
+.lang-flag-hu:after {
   background-position: -100px -14px;
 }
 
-.is:after {
+.lang-flag-is:after {
   background-position: -120px -14px;
 }
 
-.hi:after {
+.lang-flag-hi:after {
   background-position: -140px -14px;
 }
 
-.id:after {
+.lang-flag-id:after {
   background-position: -160px -14px;
 }
 
-.fa:after {
+.lang-flag-fa:after {
   background-position: -180px -14px;
 }
 
-.he:after {
-  background-position: 0 -28px;
+.lang-flag-he:after {
+  background-position: 0px -28px;
 }
 
-.it:after {
+.lang-flag-it:after {
   background-position: -20px -28px;
 }
 
-.ja:after {
+.lang-flag-ja:after {
   background-position: -40px -28px;
 }
 
-.ko:after {
+.lang-flag-ko:after {
   background-position: -60px -28px;
 }
 
-.lv:after {
+.lang-flag-lv:after {
   background-position: -80px -28px;
 }
 
-.lt:after {
+.lang-flag-lt:after {
   background-position: -100px -28px;
 }
 
-.ms:after {
+.lang-flag-ms:after {
   background-position: -120px -28px;
 }
 
-.nl:after {
+.lang-flag-nl:after {
   background-position: -140px -28px;
 }
 
-.no:after {
+.lang-flag-no:after {
   background-position: -160px -28px;
 }
 
-.ur:after {
+.lang-flag-ur:after {
   background-position: -180px -28px;
 }
 
-.fil:after {
-  background-position: 0 -42px;
+.lang-flag-fil:after {
+  background-position: 0px -42px;
 }
 
-.pl:after {
+.lang-flag-pl:after {
   background-position: -20px -42px;
 }
 
-.ro:after {
+.lang-flag-ro:after {
   background-position: -40px -42px;
 }
 
-.ru:after {
+.lang-flag-ru:after {
   background-position: -60px -42px;
 }
 
-.ar:after {
+.lang-flag-ar:after {
   background-position: -80px -42px;
 }
 
-.sr:after {
+.lang-flag-lt:after {
   background-position: -100px -42px;
 }
 
-.sk:after {
+.lang-flag-sk:after {
   background-position: -120px -42px;
 }
 
-.es:after {
+.lang-flag-es:after {
   background-position: -140px -42px;
 }
 
-.sv:after {
+.lang-flag-sv:after {
   background-position: -160px -42px;
 }
 
-.tr:after {
+.lang-flag-tr:after {
   background-position: -180px -42px;
 }
 
-.uk:after {
+.lang-flag-uk:after {
   background-position: 0px -56px;
 }
 
-.en:after {
+.lang-flag-en:after {
   background-position: -20px -56px;
 }
 
@@ -1196,64 +1161,6 @@ body {
 }
 
 /* FORMS */
-.content-formatted {
-  @-webkit-keyframes feedback-loading {
-    0% {
-      background: transparent;
-    }
-
-    50% {
-      background: white;
-    }
-
-    100% {
-      background: transparent;
-    }
-}
-
-  @-moz-keyframes feedback-loading {
-    0% {
-      background: transparent;
-    }
-
-    50% {
-      background: white;
-    }
-
-    100% {
-      background: transparent;
-    }
-}
-
-  @-o-keyframes feedback-loading {
-    0% {
-      background: transparent;
-    }
-
-    50% {
-      background: white;
-    }
-
-    100% {
-      background: transparent;
-    }
-}
-
-  @keyframes feedback-loading {
-    0% {
-      background: transparent;
-    }
-
-    50% {
-      background: white;
-    }
-
-    100% {
-      background: transparent;
-    }
-}
-
-}
 .content-formatted form {
   max-width: 100%;
   margin-top: 20px;
@@ -1429,6 +1336,39 @@ body {
 }
 .content-formatted .feedback-loading span:last-child {
   margin-right: 0;
+}
+@-webkit-keyframes feedback-loading {
+  .content-formatted 0%  {
+    background: transparent;
+  }
+  .content-formatted 50%  {
+    background: white;
+  }
+  .content-formatted 100%  {
+    background: transparent;
+  }
+}
+@-moz-keyframes feedback-loading {
+  .content-formatted 0%  {
+    background: transparent;
+  }
+  .content-formatted 50%  {
+    background: white;
+  }
+  .content-formatted 100%  {
+    background: transparent;
+  }
+}
+@keyframes feedback-loading {
+  .content-formatted 0%  {
+    background: transparent;
+  }
+  .content-formatted 50%  {
+    background: white;
+  }
+  .content-formatted 100%  {
+    background: transparent;
+  }
 }
 .content-formatted .feedback-error,
 .content-formatted .form_error {

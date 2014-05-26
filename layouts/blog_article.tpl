@@ -4,8 +4,8 @@
   {% include "html-head" %}
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
-  {% comment %}<meta property="og:description" content="{{ page.description }}"><!-- Add correct value -->{% endcomment %}
-  {% unless article.data.fbimage == nil %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fbimage }}">{% endunless %}<!-- TODO: Add image location data tag -->
+  <meta property="og:description" content="{{ page.description }}">{% comment %}<!-- TODO: Add correct value -->{% endcomment %}
+  {% unless article.data.fb_image == nil or article.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fb_image }}">{% endunless %}{% comment %}<!-- TODO: Add image location data tag -->{% endcomment %}
 </head>
 
 <body class="post-page js-bgpicker-body-image">
