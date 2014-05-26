@@ -995,7 +995,7 @@ body {
 .blog-page .edy-site-menu-add {
   margin-left: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 940px) {
   .blog-page .edy-site-menu-add {
     margin-left: 0;
   }
