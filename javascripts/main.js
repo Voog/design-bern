@@ -1,4 +1,5 @@
 ;(function($) {
+  // Shows/hides the popover main menu (visible on smalles screens).
   var toggleMainMenu = function() {
     $('.js-menu-btn').click(function() {
       $(this).toggleClass('open');
@@ -6,6 +7,7 @@
     });
   };
 
+  // Shows/hides the popover language menu.
   var toggleLangMenu = function() {
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
@@ -13,6 +15,7 @@
     });
   };
 
+  // Hides the popover main menu if cicked anywhere else than the menu itself (visible on smalles screens).
   var handlePopoverMenuHide = function() {
     $('html').click(function() {
       if ($('.js-menu-lang-popover').hasClass('expanded')) {
@@ -21,7 +24,7 @@
     });
   };
 
-  // REDUCES OPACITY OF THE GALLERY IMAGES THAT ARE NOT UNDER THE CURSOR
+  // Reduces opacity of the gallery images that are not under the cursor.
   var handleGalleryHover = function() {
     $('.edys-gallery-item').mouseover(function() {
       $(this).siblings('.edys-gallery-item').find('.edys-gallery-image').addClass('inactive');
@@ -32,6 +35,7 @@
     });
   };
 
+  // Scrolls to the comment-form if comment submit failed (to show the error messages to the user).
   var focusCommentsWithErrors = function() {
     $(document).ready(function() {
       if ($('.form_field').hasClass('form_field_with_errors') === true) {
@@ -40,10 +44,13 @@
     });
   };
 
+  // Wraps tables in the container.
+  // TODO: remove if edicy is going to wrap table with the container.
   var wrapTables = function() {
     $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
   };
 
+  // Checks the presence of the scrollbar.
   var checkScrollBar = function() {
     jQuery.fn.hasScrollBar = function(direction) {
       if (direction == 'vertical') {
@@ -55,6 +62,7 @@
     }
   };
 
+  // Adds horizontal scroll to tables that don't fit into the content area.
   var handleTableHorizontalScrolling = function() {
     $.each($('.table-container'), function() {
       if ($(this).hasScrollBar('horizontal') === true) {
@@ -65,37 +73,51 @@
     });
   };
 
+  // Initiates the table horisontal scroll function when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTableHorizontalScrolling();
     });
   };
 
-    // Initiations
-    var initBlogPage = function() {
-    };
+  // FUNCTIONS INITIATIONS
+  var initBlogPage = function() {
+    // Add blog listing view specific functions here.
+  };
 
-    var initArticlePage = function() {
-      focusCommentsWithErrors();
-    };
+  var initArticlePage = function() {
+    // Add single post view specific functions here.
+    focusCommentsWithErrors();
+  };
 
-    var init = function() {
-      toggleMainMenu();
-      toggleLangMenu();
-      handlePopoverMenuHide();
-      handleGalleryHover();
-      handleWindowResize();
-      wrapTables();
-      if ($('.table-container').length > 0) {
-        checkScrollBar();
-        handleTableHorizontalScrolling();
-      }
-    };
+  var initCommonPage = function() {
+    // Add common page specific functions here.
+    handleFormFieldClick();
+    focusCommentsWithErrors();
+  };
 
-    window.site = $.extend(window.site || {}, {
-      initBlogPage: initBlogPage,
-      initArticlePage: initArticlePage
-    });
+  var init = function() {
+    // Add site wide functions here.
+    toggleMainMenu();
+    toggleLangMenu();
+    handlePopoverMenuHide();
+    handleGalleryHover();
+    handleWindowResize();
+    wrapTables();
+    if ($('.table-container').length > 0) {
+      checkScrollBar();
+      handleTableHorizontalScrolling();
+    }
+  };
 
-    init();
-  })(jQuery);
+  // Enables the usage of the initiations outside this file.
+  // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
+  window.site = $.extend(window.site || {}, {
+    initBlogPage: initBlogPage,
+    initArticlePage: initArticlePage,
+    initCommonPage: initCommonPage
+  });
+
+  // Initiates site wide functions.
+  init();
+})(jQuery);
