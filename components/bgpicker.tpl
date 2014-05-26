@@ -1,6 +1,7 @@
 {% editorjsblock %}
   <script src='/assets/admin/tools/0.1.1/edicy-tools.js'></script>
   <script>
+    // Front page cover image and color data preview and save logic
     var pageData = new Edicy.CustomData({
       type: 'page',
       id: '{{ page.id }}'
