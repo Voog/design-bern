@@ -67,6 +67,19 @@
 }
 
 // FORMS
+.content-formatted {
+  .form_field_checkbox,
+  .form_field_radio {
+    position: relative;
+    visibility: visible;
+    padding-left: 0;
+    top: 2px;
+
+    + .form_control_indicator {
+      display: none;
+    }
+  }
+}
 
 // COMMENTS
 

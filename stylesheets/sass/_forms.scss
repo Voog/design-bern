@@ -12,11 +12,31 @@
     @include color($secondary-color);
   }
 
-  .form_field label,
-  .edy-fe-label {
-    display: block;
-    font-weight: 600;
-    line-height: 1.3;
+  .form_field {
+    label {
+      position: relative;
+      display: inline;
+      padding-left: 8px;
+      font-weight: 400;
+      line-height: 1.3;
+      cursor: pointer;
+
+      &:after {
+        content: '\a';
+        white-space: pre;
+      }
+
+      &:before {
+        display: block;
+      }
+    }
+
+    .edy-fe-label,
+    .form_field_label {
+      display: block;
+      padding-left: 0;
+      font-weight: 600;
+    }
   }
 
   .form_field_textfield,
@@ -38,7 +58,7 @@
   .form_field_textfield,
   .form_field_textarea,
   .form_field_select,
-  .form_submit input {
+  .form_submit input, {
     @include box-shadow(4px, 4px, 0, rgba($black, 0.1));
   }
 
@@ -67,16 +87,75 @@
     background-position: 97.5% 13px;
     background-repeat: no-repeat;
     border: none;
-  }
+    cursor: pointer;
 
-  .no-svg & {
-    .form_field_select {
+    .no-svg & {
+      background-image: url('../images/ico-arrow-down.png');
+    }
+
+    .svg & {
       background-image: url('../images/ico-arrow-down.png');
     }
   }
-  .svg & {
-    .form_field_select {
-      background-image: url('../images/ico-arrow-down.png');
+
+  .form_field_checkbox,
+  .form_field_radio {
+    visibility: hidden;
+    margin-bottom: 8px;
+
+    + .form_control_indicator {
+      position: absolute;
+      top: 1px;
+      left: 0;
+      display: block;
+      width: 15px;
+      height: 15px;
+      @include bg($white);
+      @include box-shadow(2px, 2px, 0, rgba($black, 0.1));
+    }
+  }
+
+  .form_field_checkbox {
+    &:checked {
+      + .form_control_indicator:before {
+        position: absolute;
+        top: -3px;
+        left: 3px;
+        display: block;
+        width: 14px;
+        height: 14px;
+        content: '';
+        background-size: cover;
+
+        .no-svg & {
+          background-image: url('../images/ico-tick.png');
+        }
+
+        .svg & {
+          background-image: url('../assets/ico-tick.svg');
+        }
+      }
+    }
+  }
+
+  .form_field_radio {
+    + .form_control_indicator {
+      &, &:before {
+        border-radius: 100%;
+      }
+    }
+
+    &:checked {
+      + .form_control_indicator:before {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        display: block;
+        width: 9px;
+        height: 9px;
+        content: '';
+        @include bg($black);
+      }
     }
   }
 

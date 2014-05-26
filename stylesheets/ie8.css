@@ -30,6 +30,18 @@
   line-height: 1.5;
 }
 
+.content-formatted .form_field_checkbox,
+.content-formatted .form_field_radio {
+  position: relative;
+  visibility: visible;
+  padding-left: 0;
+  top: 2px;
+}
+.content-formatted .form_field_checkbox + .form_control_indicator,
+.content-formatted .form_field_radio + .form_control_indicator {
+  display: none;
+}
+
 .footer .voog-reference a {
   border: 1px solid #e5e5e5;
 }

@@ -158,6 +158,12 @@
       "filename": "ico-search.svg"
     },
     {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-tick.svg",
+      "kind": "assets",
+      "filename": "ico-tick.svg"
+    },
+    {
       "content_type": "image/jpeg",
       "file": "images/front-page-bg.jpg",
       "kind": "images",
@@ -200,6 +206,12 @@
       "filename": "ico-search.png"
     },
     {
+      "content_type": "image/png",
+      "file": "images/ico-tick.png",
+      "kind": "images",
+      "filename": "ico-tick.png"
+    },
+    {
       "content_type": "application/javascript",
       "file": "javascripts/jquery.js",
       "kind": "javascripts",
@@ -240,6 +252,12 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "stylesheets/sass",
+      "kind": "stylesheets",
+      "filename": "sass"
     }
   ]
 }
