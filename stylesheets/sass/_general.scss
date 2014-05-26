@@ -1,8 +1,9 @@
 /* GENERAL */
+// Styling rules for the basic parts of the page. These rules affect the entire site.
 body {
   margin: 0;
   padding: 0;
-  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
@@ -13,8 +14,8 @@ body {
   }
 }
 
- // Layout specific body classes
- .front-page {
+// Layout specific body classes.
+.front-page {
   .content {
     position: relative;
     padding: 0;
@@ -61,10 +62,6 @@ body {
         @include color($white);
         line-height: 1.2;
 
-        .edy-texteditor-view {
-          min-height: 39px;
-        }
-
         @include query($tablet-4) {
           padding: 20px;
         }
@@ -72,6 +69,11 @@ body {
         @include query($mobile-1) {
           padding: 78px 25px;
           font-size: 24px;
+        }
+
+
+        .edy-texteditor-view {
+          min-height: 39px;
         }
       }
 
@@ -116,7 +118,7 @@ body {
 .post-page {
 }
 
-
+// Pseudo classes to declare commonly used styling rules for different elements.
 %clearfix:after {
   content: "";
   display: table;
@@ -131,6 +133,7 @@ body {
   bottom: 0;
 }
 
+// Styling rules for the independent elements that can be located everywhere in the DOM and always have the same look.
 .bgpicker-btn {
   position: absolute;
   background: none;

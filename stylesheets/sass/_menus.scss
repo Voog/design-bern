@@ -1,4 +1,7 @@
 /* MENUS */
+// Styling rules for the site's menus.
+
+// Menu button. Only visible on smaller screens.
 .menu-btn {
   display: none;
 
@@ -53,6 +56,7 @@
   }
 }
 
+// General rules for all navigation menus.
 .menu {
   margin-top: 0;
   margin-bottom: 0;
@@ -66,6 +70,7 @@
   }
 }
 
+// Styling rules for the site's main menu.
 .menu-main {
   display: inline-block;
   vertical-align: middle;
@@ -85,17 +90,17 @@
       @include bg($white);
       @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
     }
+  }
 
-    @include query($mobile-1) {
-      &.expanded {
-        top: 45px;
-        left: 0;
-        right: 0;
-        min-width: 0;
-        margin-bottom: 40px;
-        @include border(top, 1px, solid, $primary-color, 0.2);
-        @include no-box-shadow;
-      }
+  @include query($mobile-1) {
+    &.expanded {
+      top: 45px;
+      left: 0;
+      right: 0;
+      min-width: 0;
+      margin-bottom: 40px;
+      @include border(top, 1px, solid, $primary-color, 0.2);
+      @include no-box-shadow;
     }
   }
 
@@ -109,13 +114,6 @@
         margin-left: 0;
       }
 
-      @include query($tablet-2) {
-        display: block;
-        margin: 0;
-        font-size: 20px;
-        @include border(bottom, 1px, solid, $primary-color, 0.2);
-      }
-
       .menu-link {
         font-weight: 600;
         @include color($secondary-color, 0.67);
@@ -127,29 +125,29 @@
         &.active,
         &.active:hover {
           @include color($grey-1, 0.67);
-
-          @include query($tablet-2) {
-            @include color($grey-1);
-            @include bg($blue-2);
-          }
         }
 
         &:hover {
           @include color($grey-1, 0.4);
+        }
+      }
 
-          @include query($tablet-2) {
-            @include color($grey-1);
-            @include bg($blue-2, 0.5);
-          }
+      @include query($tablet-2) {
+        display: block;
+        margin: 0;
+        padding: 8px 25px 5px;
+        font-size: 20px;
+        @include border(bottom, 1px, solid, $primary-color, 0.2);
+
+        &.active,
+        &.active:hover {
+          @include color($grey-1);
+          @include bg($blue-2);
         }
 
-        @include query($tablet-2) {
-          display: block;
-          padding: 8px 25px 5px;
-          &.active,
-          &.active:hover {
-
-          }
+        &:hover {
+          @include color($grey-1);
+          @include bg($blue-2, 0.5);
         }
       }
     }
@@ -175,6 +173,7 @@
     }
   }
 
+  // Styling rules for the language menu in the site's main menu. Only visible on smaller screens.
   .menu-lang {
     display: none;
 
@@ -227,6 +226,7 @@
   }
 }
 
+// Styling rules for the site's sub menu.
 .menu-sub {
   margin: 0 30px;
   padding: 5px 0 8px;
@@ -271,6 +271,7 @@
   }
 }
 
+// Styling rules for the site's language menu.
 .menu-lang-btn {
   position: relative;
   display: inline-block;
@@ -456,6 +457,7 @@ $flags:
   .lang-flag-#{$flag}:after { background-position: $pos; }
 }
 
+// Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
 .menu-tags {
   .tags-left,
   .tags-right {

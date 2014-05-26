@@ -1,4 +1,7 @@
 // VARIABLES
+// Custom variables to use in every .scss files.
+// Comment out the "_variables.scss" partial in the "main.scss" file if not used.
+
 // General colors
 $primary-color: #696b6C;
 $secondary-color: #1b2124;
@@ -27,3 +30,8 @@ $tablet-4: 600px;
 
 $mobile-1: 480px;
 $mobile-2: 420px;
+
+// Reusable values
+// Define the reusable variables here.
+// For example the width of several different elements, that allways have to be with the same height:
+// $box-width: 400px;
