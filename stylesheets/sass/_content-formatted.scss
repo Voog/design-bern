@@ -60,7 +60,7 @@
     }
   }
 
-  img {
+  img, iframe {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
@@ -85,32 +85,30 @@
     }
   }
 
-  .content-formatted {
-    .table-container {
-      margin-top: 20px;
-    }
+  .table-container {
+    margin-top: 20px;
+  }
 
-    .overthrow {
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-    }
+  .overthrow {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    .horizontal-scroll {
-      @include border(left,1px,dashed,$third-color);
-      @include border(right,1px,dashed,$third-color);
-    }
+  .horizontal-scroll {
+    @include border(left,1px,dashed,$third-color);
+    @include border(right,1px,dashed,$third-color);
+  }
 
-    table {
-      width: 100%;
-      margin-top: 20px;
-      font-size: 16px;
-      border-collapse: collapse;
+  table {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    border-collapse: collapse;
 
-      td {
-        padding: 10px;
-        @include border(top,1px,solid,$third-color);
-        @include border(bottom,1px,solid,$third-color);
-      }
+    td {
+      padding: 10px;
+      @include border(top,1px,solid,$third-color);
+      @include border(bottom,1px,solid,$third-color);
     }
   }
 
