@@ -160,7 +160,7 @@
       display: inline-block;
       margin-left: 20px;
 
-      @include query($tablet-1) {
+      @include query($tablet-2) {
         display: block;
         margin-left: 0;
         padding: 1px 30px 7px;

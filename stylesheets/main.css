@@ -396,7 +396,7 @@ body {
   display: inline-block;
   margin-left: 20px;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 840px) {
   .menu-main .menu .edit-btn {
     display: block;
     margin-left: 0;
@@ -460,7 +460,7 @@ body {
   border-bottom: 1px solid #696b6c;
   border-bottom: 1px solid rgba(105, 107, 108, 0.2);
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
   .menu-sub {
     margin: 0 20px;
   }
@@ -787,7 +787,7 @@ body {
   margin-right: 24px;
   text-align: right;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
   .menu-tags .tags-left {
     width: 113px;
     margin-right: 0;
@@ -834,7 +834,7 @@ body {
   display: table-cell;
   vertical-align: top;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
   .header-left,
   .header-right {
     padding: 0 20px;
@@ -900,7 +900,7 @@ body {
   padding: 33px 50px 50px;
   background-color: #eeeeee;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
   .content .content-inner {
     padding: 33px 20px 50px;
   }
@@ -979,7 +979,7 @@ body {
 .blog-page .edy-site-menu-add {
   margin-left: 10px;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
   .blog-page .edy-site-menu-add {
     margin-left: 0;
   }
@@ -1016,7 +1016,7 @@ body {
   margin-left: 5px;
   padding-right: 26px;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
   .blog-page .post-left {
     width: 91px;
     margin-left: 0;
@@ -1469,7 +1469,7 @@ body {
 .comments {
   padding: 28px 50px;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 960px) {
   .comments {
     padding: 28px 20px;
   }
