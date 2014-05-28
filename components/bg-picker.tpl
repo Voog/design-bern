@@ -10,8 +10,9 @@
     var bgPickerCover = new Edicy.BgPicker($('.js-bgpicker-cover-settings'), {
       picture: true,
       color: true,
+
       preview: function(data) {
-        var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : '',
+        var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
             col = (data.color && data.color !== '') ? data.color : '';
 
         $('.js-bgpicker-cover-image').css({'background-image' : img});
@@ -31,6 +32,5 @@
         });
       }
     });
-
   </script>
 {% endeditorjsblock %}
