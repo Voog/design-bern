@@ -10,7 +10,7 @@
   {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% endif %}
 
   <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css">
-  {% include "bgpicker-variables" %}
+  {% include "bg-picker-variables" %}
   {{ site.stats_header }}
 </head>
 
@@ -19,9 +19,9 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      {% if editmode %}<button class="bgpicker-btn js-bgpicker-cover-settings" data-bg-image="{{ bg_image }}" data-bg-color="{{ bg_color }}"></button>{% endif %}
-      <div class="background-image stretch js-bgpicker-cover-image"{{ bg_image_style }}></div>
-      <div class="background-color stretch js-bgpicker-cover-color"{{ bg_color_style }}></div>
+      {% if editmode %}<button class="bgpicker-btn js-bgpicker-cover-settings" data-bg-image="{{ cover_image }}" data-bg-color="{{ cover_color }}"></button>{% endif %}
+      <div class="background-image stretch js-bgpicker-cover-image"{{ cover_image_style }}></div>
+      <div class="background-color stretch js-bgpicker-cover-color"{{ cover_color_style }}></div>
       <div class="content-inner">
         <section class="content-body content-formatted">{% content %}</section>
       </div>
