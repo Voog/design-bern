@@ -100,6 +100,33 @@
     }
   }
 
+  .edy-texteditor-container {
+    &.edy-positionable-container-left,
+    &.edy-positionable-container-right {
+      width: 45%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    &.edy-positionable-container-left {
+      margin-right: 6%;
+    }
+
+    &.edy-positionable-container-right {
+      margin-left: 6%;
+    }
+
+    &.edy-positionable-container-left,
+    &.edy-positionable-container-right {
+      @include query($mobile-1) {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
   // Styling rules for the site's editable content area tables.
   // Container around editable content-area table.
   .table-container {
