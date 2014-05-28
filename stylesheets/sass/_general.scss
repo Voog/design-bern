@@ -20,7 +20,7 @@ body {
     position: relative;
     padding: 0;
     width: 100%;
-    @include bg($grey-3);
+    @include bg($grey-4);
 
     .background-image,
     .background-color {
