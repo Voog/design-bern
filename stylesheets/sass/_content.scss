@@ -82,7 +82,8 @@
     }
 
     .background-image {
-      background-position: center;
+      background-position: top;
+      background-repeat: no-repeat;
       background-size: cover;
       background-image: url('../images/front-page-bg.jpg');
     }
