@@ -2,14 +2,15 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
-  <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css">
 
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
+  {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
   {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
-  {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}"><!-- TODO: Add functionality -->{% endif %}
-  {% include "bgpicker-variables" %}
+  {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% endif %}
 
+  <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css">
+  {% include "bgpicker-variables" %}
   {{ site.stats_header }}
 </head>
 

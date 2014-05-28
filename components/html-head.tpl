@@ -12,7 +12,8 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/ico">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-{% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}"> <!-- TODO: Add image location data tag -->{% endif %}
+{% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
+{% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 <!-- MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC -->
 <script src="{{ javascripts_path }}/modernizr.js?1"></script>
@@ -25,6 +26,7 @@
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
 
 <!-- FACEBOOK OPENGRAPH -->
-<!-- Page specific opengraph tags are located in each page template -->
-{% if site.data.fb_admin %}<meta property="fb:admins" content="{{ site.data.fb_admin }}"><!-- TODO: Add functionality -->{% endif %}
+{% comment %}<!-- Page specific opengraph tags are located in each page template -->{% endcomment %}
+{% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
+{% if site.data.fb_admin %}<meta property="fb:admins" content="{{ site.data.fb_admin }}">{% endif %}
 <meta property="og:type" content="website">

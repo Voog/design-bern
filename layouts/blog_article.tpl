@@ -4,7 +4,8 @@
   {% include "html-head" %}
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
-  <meta property="og:description" content="{{ page.description }}">{% comment %}<!-- TODO: Add correct value -->{% endcomment %}
+  <meta property="og:description" content="{{ article.excerpt }}">
+  {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
   {% unless article.data.fb_image == nil or article.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fb_image }}">{% endunless %}{% comment %}<!-- TODO: Add image location data tag -->{% endcomment %}
 
   {{ site.stats_header }}
@@ -17,6 +18,7 @@
 
     <main class="content" role="main">
       {% include "tags-post" %}
+
       <div class="content-inner">
         <article class="post">
           <header class="post-header">
