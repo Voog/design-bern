@@ -14,12 +14,6 @@
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
             col = (data.color && data.color !== '') ? data.color : '';
 
-        console.log('img: ' + img);
-        console.log('col: ' + col);
-        console.log('data.image: ' + data.img);
-        console.log('data.color: ' + data.color);
-        console.log('');
-
         $('.js-bgpicker-cover-image').css({'background-image' : img});
         $('.js-bgpicker-cover-color').css({'background-color' : col});
 
