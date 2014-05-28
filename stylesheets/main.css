@@ -374,7 +374,6 @@ body {
   .menu-main .menu .menu-item {
     display: block;
     margin: 0;
-    padding: 8px 25px 5px;
     font-size: 20px;
     border-bottom: 1px solid #696b6c;
     border-bottom: 1px solid rgba(105, 107, 108, 0.2);
@@ -387,6 +386,10 @@ body {
     color: #838586;
     background-color: #c7e5ff;
     background-color: rgba(199, 229, 255, 0.5);
+  }
+  .menu-main .menu .menu-item .menu-link {
+    display: block;
+    padding: 8px 25px 5px;
   }
 }
 .menu-main .menu .edit-btn {
@@ -423,12 +426,12 @@ body {
     border-top: none;
   }
   .menu-main .menu-lang .menu-item .menu-link {
-    padding: 11px 30px 9px 53px;
+    padding: 12px 30px 10px 53px;
     font-weight: 400;
     font-size: 14px;
   }
   .menu-main .menu-lang .menu-item .menu-link:before, .menu-main .menu-lang .menu-item .menu-link:after {
-    top: 13px;
+    top: 14px;
     left: 25px;
   }
   .menu-main .menu-lang .menu-item .menu-link.active, .menu-main .menu-lang .menu-item .menu-link.active:hover {
