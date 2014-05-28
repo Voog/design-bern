@@ -19,7 +19,7 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      <button class="bgpicker-btn js-bgpicker-cover-settings" data-bg-image="{{ bg_image }}" data-bg-color="{{ bg_color }}"></button>
+      {% if editmode %}<button class="bgpicker-btn js-bgpicker-cover-settings" data-bg-image="{{ bg_image }}" data-bg-color="{{ bg_color }}"></button>{% endif %}
       <div class="background-image stretch js-bgpicker-cover-image"{{ bg_image_style }}></div>
       <div class="background-color stretch js-bgpicker-cover-color"{{ bg_color_style }}></div>
       <div class="content-inner">
