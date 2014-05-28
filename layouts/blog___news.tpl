@@ -8,6 +8,7 @@
   {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endif %}
 
   {{ blog.rss_link }}
+  {{ site.stats_header }}
 </head>
 
 <body class="blog-page js-bgpicker-body-image">

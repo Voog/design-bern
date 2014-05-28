@@ -6,6 +6,8 @@
   <meta property="og:title" content="{{ site.name }}">
   <meta property="og:description" content="{{ page.description }}">{% comment %}<!-- TODO: Add correct value -->{% endcomment %}
   {% unless article.data.fb_image == nil or article.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fb_image }}">{% endunless %}{% comment %}<!-- TODO: Add image location data tag -->{% endcomment %}
+
+  {{ site.stats_header }}
 </head>
 
 <body class="post-page js-bgpicker-body-image">
