@@ -11,23 +11,33 @@
       picture: true,
       color: true,
       preview: function(data) {
-        var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : '',
+        var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
             col = (data.color && data.color !== '') ? data.color : '';
 
-        $('.js-bgpicker-cover-color').css({'background-color' : col});
+        console.log('img: ' + img);
+        console.log('col: ' + col);
+        console.log('data.image: ' + data.img);
+        console.log('data.color: ' + data.color);
+        console.log('');
+
         $('.js-bgpicker-cover-image').css({'background-image' : img});
+        $('.js-bgpicker-cover-color').css({'background-color' : col});
 
         if (data.image === null || data.image === '') {
           $('.js-bgpicker-cover-color').css({'opacity' : 1});
         } else {
           $('.js-bgpicker-cover-color').css({'opacity' : 0.5});
         }
+
+        if (data.color === false) {
+          $('.js-bgpicker-cover-color').css({'background-color' : 'transparent'});
+        }
       },
 
       commit: function(data) {
         pageData.set({
-          'cover_image': data.image || null,
-          'cover_color': data.color || null
+          'cover_image': data.image || '',
+          'cover_color': data.color || ''
         });
       }
     });
