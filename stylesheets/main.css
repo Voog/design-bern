@@ -566,6 +566,7 @@ body {
 .menu-lang {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   line-height: 1;
 }
 .menu-lang.edit-btn {
