@@ -18,7 +18,7 @@ body {
   position: relative;
   padding: 0;
   width: 100%;
-  background-color: #333333;
+  background-color: #eeeeee;
 }
 .front-page .content .background-image,
 .front-page .content .background-color {
@@ -198,6 +198,25 @@ body {
   display: block;
   margin-top: 0;
   padding: 0;
+}
+.content-formatted .edy-texteditor-container.edy-positionable-container-left, .content-formatted .edy-texteditor-container.edy-positionable-container-right {
+  width: 45%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.content-formatted .edy-texteditor-container.edy-positionable-container-left {
+  margin-right: 6%;
+}
+.content-formatted .edy-texteditor-container.edy-positionable-container-right {
+  margin-left: 6%;
+}
+@media screen and (max-width: 480px) {
+  .content-formatted .edy-texteditor-container.edy-positionable-container-left, .content-formatted .edy-texteditor-container.edy-positionable-container-right {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .content-formatted .table-container {
   margin-top: 20px;
@@ -1166,7 +1185,6 @@ body {
 }
 .content-formatted .form_field .edy-fe-label,
 .content-formatted .form_field .form_field_label {
-  display: block;
   padding-left: 0;
   font-weight: 600;
 }
@@ -1313,6 +1331,9 @@ body {
   .content-formatted .form_submit input {
     width: 100%;
   }
+}
+.content-formatted .form_field_required .form_field_label:after {
+  content: ' * \a';
 }
 .content-formatted .form_field_with_errors .form_field_textfield,
 .content-formatted .form_field_with_errors .form_field_textarea {
