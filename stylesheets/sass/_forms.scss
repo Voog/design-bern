@@ -33,7 +33,6 @@
 
     .edy-fe-label,
     .form_field_label {
-      display: block;
       padding-left: 0;
       font-weight: 600;
     }
@@ -191,6 +190,12 @@
       @include query($mobile-2) {
         width: 100%;
       }
+    }
+  }
+
+  .form_field_required {
+    .form_field_label:after {
+      content: ' * \a';
     }
   }
 
