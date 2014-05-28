@@ -4,7 +4,7 @@
   {% include "html-head" %}
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
-  <meta property="og:description" content="{{ article.excerpt }}">
+  <meta property="og:description" content="{{ article.excerpt | strip_html | truncate: 120 }}">
   {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
   {% unless article.data.fb_image == nil or article.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fb_image }}">{% endunless %}{% comment %}<!-- TODO: Add image location data tag -->{% endcomment %}
 
