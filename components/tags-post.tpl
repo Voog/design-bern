@@ -15,7 +15,9 @@
             <a class="menu-link" href="/{{ page.path }}">{{ tags_all }}</a>
           </li>
           {% for tag in article.tags %}
-            <li class="menu-item"><a class="menu-link" href="/{{ page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a></li>
+            <li class="menu-item">
+              <a class="menu-link" href="/{{ page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a>
+            </li>
           {% endfor %}
         </ul>
       </nav>
