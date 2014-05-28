@@ -1,6 +1,6 @@
 <section class="content-topbar">
   {% if site.has_language_tags? %}
-    {% include "tags-translations" %}
+    {% include "tags-variables" %}
     <nav class="menu-tags menu-sub">
       <div class="tags-left">
         <span class="tags-title">{{ tags_title }}</span>

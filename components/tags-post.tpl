@@ -1,6 +1,6 @@
 <section class="content-topbar">
   <nav class="menu-tags menu-sub">
-    {% include "tags-translations" %}
+    {% include "tags-variables" %}
     <div class="tags-left">
       <span class="tags-title">{{ tags_title }}</span>
     </div>
