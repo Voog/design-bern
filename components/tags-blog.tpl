@@ -8,7 +8,7 @@
       <div class="tags-right">
         <ul class="menu">
           <li class="menu-item">
-            <a class="menu-link js-tags-all" href="{{ site.url }}{{ site.blogs.first.page.path }}">{{ tags_all }}</a>
+            <a class="menu-link js-tags-all" href="/{{ page.path }}">{{ tags_all }}</a>
           </li>
           {% for tag in site.language_tags %}
             {% assign activestr = " " %}
@@ -18,7 +18,7 @@
               {% endif %}
             {% endfor %}
             <li class="menu-item">
-              <a class="menu-link{{ activestr }}" href="{{ site.url }}{{ site.blogs.first.page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a>
+              <a class="menu-link{{ activestr }}" href="/{{ page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a>
             </li>
           {% endfor %}
         </ul>
