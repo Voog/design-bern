@@ -14,81 +14,7 @@ body {
   }
 }
 
-.front-page .content {
-  position: relative;
-  padding: 0;
-  width: 100%;
-  background-color: #eeeeee;
-}
-.front-page .content .background-image,
-.front-page .content .background-color {
-  z-index: 0;
-}
-.front-page .content .background-image {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../images/front-page-bg.jpg");
-}
-.front-page .content .background-color {
-  opacity: 0.5;
-  background-color: #0066bb;
-}
-.front-page .content .content-inner {
-  display: table;
-  width: 100%;
-  max-width: 660px;
-  margin: 0 auto;
-  padding: 0;
-  height: 525px;
-  background: none;
-}
-@media screen and (max-width: 480px) {
-  .front-page .content .content-inner {
-    height: 295px;
-  }
-}
-.front-page .content .content-inner .content-body {
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-  padding: 40px;
-  font-size: 36px;
-  color: white;
-  line-height: 1.2;
-}
-@media screen and (max-width: 600px) {
-  .front-page .content .content-inner .content-body {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .front-page .content .content-inner .content-body {
-    padding: 78px 25px;
-    font-size: 24px;
-  }
-}
-.front-page .content .content-inner .content-body .edy-texteditor-view {
-  min-height: 39px;
-}
-.front-page .content .content-inner .content-formatted h3 {
-  text-align: center;
-}
-.front-page .content .content-inner .content-formatted .fci-editor {
-  min-height: 41px;
-}
-
-.common-page .content-formatted h1,
-.common-page .content-formatted h2,
-.common-page .content-formatted h3,
-.common-page .content-formatted h4,
-.common-page .content-formatted h5,
-.common-page .content-formatted h6 {
-  color: #1b2124;
-}
-
-.common-page .content:after, .content-formatted:after, .content.two-columns:after, .edys-gallery-area .edys-gallery:after, .search:after {
+.content-formatted:after, .content:after, .content.two-columns:after, .edys-gallery-area .edys-gallery:after, .search:after {
   content: "";
   display: table;
   clear: both;
@@ -135,6 +61,7 @@ body {
 }
 .content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
   font-weight: 600;
+  color: #1b2124;
 }
 .content-formatted h1, .content-formatted h2, .content-formatted p {
   margin-top: 32px;
@@ -940,6 +867,70 @@ body {
   .content .content-right {
     padding: 33px 20px 50px;
   }
+}
+.front-page .content {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  background-color: #eeeeee;
+}
+.front-page .content .background-image,
+.front-page .content .background-color {
+  z-index: 0;
+}
+.front-page .content .background-image {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/front-page-bg.jpg");
+}
+.front-page .content .background-color {
+  opacity: 0.5;
+  background-color: #0066bb;
+}
+.front-page .content .content-inner {
+  display: table;
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0;
+  height: 525px;
+  background: none;
+}
+@media screen and (max-width: 480px) {
+  .front-page .content .content-inner {
+    height: 295px;
+  }
+}
+.front-page .content .content-inner .content-body {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 40px;
+  font-size: 36px;
+  color: white;
+  line-height: 1.2;
+}
+@media screen and (max-width: 600px) {
+  .front-page .content .content-inner .content-body {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .front-page .content .content-inner .content-body {
+    padding: 78px 25px;
+    font-size: 24px;
+  }
+}
+.front-page .content .content-inner .content-body .edy-texteditor-view {
+  min-height: 39px;
+}
+.front-page .content .content-inner .content-formatted h3 {
+  text-align: center;
+}
+.front-page .content .content-inner .content-formatted .fci-editor {
+  min-height: 41px;
 }
 
 /* BLOG & BLOG ARTICLE */

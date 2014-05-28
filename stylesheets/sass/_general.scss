@@ -16,96 +16,9 @@ body {
 
 // Layout specific body classes.
 .front-page {
-  .content {
-    position: relative;
-    padding: 0;
-    width: 100%;
-    @include bg($grey-4);
-
-    .background-image,
-    .background-color {
-      z-index: 0;
-    }
-
-    .background-image {
-      background-position: center;
-      background-size: cover;
-      background-image: url('../images/front-page-bg.jpg');
-    }
-
-    .background-color {
-      opacity: 0.5;
-      @include bg($blue-1);
-    }
-
-    .content-inner {
-      display: table;
-      width: 100%;
-      max-width: 660px;
-      margin: 0 auto;
-      padding: 0;
-      height: 525px;
-      background: none;
-
-      @include query($mobile-1) {
-        height: 295px;
-      }
-
-      .content-body {
-        display: table-cell;
-        vertical-align: middle;
-        position: relative;
-        z-index: 1;
-        margin: 0 auto;
-        padding: 40px;
-        font-size: 36px;
-        @include color($white);
-        line-height: 1.2;
-
-        @include query($tablet-4) {
-          padding: 20px;
-        }
-
-        @include query($mobile-1) {
-          padding: 78px 25px;
-          font-size: 24px;
-        }
-
-
-        .edy-texteditor-view {
-          min-height: 39px;
-        }
-      }
-
-      .content-formatted {
-        h3 {
-          text-align: center;
-        }
-
-        .fci-editor {
-          min-height: 41px;
-        }
-      }
-    }
-  }
 }
 
-
 .common-page {
-  .content {
-    @extend %clearfix;
-  }
-
-  .content-formatted {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      @include color($secondary-color);
-    }
-  }
 }
 
 .blog-page,
