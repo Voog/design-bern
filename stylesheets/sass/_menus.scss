@@ -138,20 +138,20 @@
         font-size: 20px;
         @include border(bottom, 1px, solid, $primary-color, 0.2);
 
-        &.active,
-        &.active:hover {
-          @include color($grey-1);
-          @include bg($blue-2);
-        }
-
-        &:hover {
-          @include color($grey-1);
-          @include bg($blue-2, 0.5);
-        }
-
         .menu-link {
           display: block;
           padding: 8px 25px 5px;
+
+          &.active,
+          &.active:hover {
+            @include color($grey-1);
+            @include bg($blue-2);
+          }
+
+          &:hover {
+            @include color($grey-1);
+            @include bg($blue-2, 0.5);
+          }
         }
       }
     }
@@ -212,7 +212,6 @@
 
           &:hover {
             @include color($grey-1, 0.4);
-            @include bg($grey-2, 0.5);
           }
         }
       }
