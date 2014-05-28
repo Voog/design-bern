@@ -22,7 +22,7 @@
 <!--[if lt IE 9]>{% stylesheet_link "ie8.css?1" %}<![endif]-->
 
 <!-- SITE TITLE -->
-<title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected?1}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
+<title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>
 
 <!-- FACEBOOK OPENGRAPH -->
 <!-- Page specific opengraph tags are located in each page template -->
