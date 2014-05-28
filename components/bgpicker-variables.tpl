@@ -7,7 +7,7 @@
   {% endif %}
 
   {% if page.data.cover_color == nil %}
-    {% assign bg_color = "/images/front-page-bg.jpg" %}
+    {% assign bg_color = "rgb(0, 102, 187)" %}
   {% else %}
     {% assign bg_color = page.data.cover_image %}
   {% endif %}
