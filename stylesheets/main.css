@@ -444,8 +444,8 @@ body {
 }
 
 .menu-lang-btn:before, .menu-lang-btn:after,
-.menu-lang li a.lang-flag:before,
-.menu-lang li a.lang-flag:after {
+.menu-lang .menu-item .lang-flag:before,
+.menu-lang .menu-item .lang-flag:after {
   position: absolute;
   display: block;
   width: 20px;
