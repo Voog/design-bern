@@ -15,7 +15,7 @@
     });
   };
 
-  // Hides the popover main menu if cicked anywhere else than the menu itself (visible on smalles screens).
+  // Hides the popover main menu if clicked anywhere else than the menu itself (visible on smalles screens).
   var handlePopoverMenuHide = function() {
     $('html').click(function() {
       if ($('.js-menu-lang-popover').hasClass('expanded')) {
@@ -50,7 +50,7 @@
     $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
   };
 
-  // Checks the presence of the scrollbar.
+  // Checks the presence of the table scrollbar.
   var checkScrollBar = function() {
     jQuery.fn.hasScrollBar = function(direction) {
       if (direction == 'vertical') {
@@ -73,20 +73,20 @@
     });
   };
 
-  // Initiates the table horisontal scroll function when window is resized.
+  // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTableHorizontalScrolling();
     });
   };
 
-  // FUNCTIONS INITIATIONS
+  // Initiations
   var initBlogPage = function() {
-    // Add blog listing view specific functions here.
+    // Add blog listing layout specific functions here.
   };
 
   var initArticlePage = function() {
-    // Add single post view specific functions here.
+    // Add single post layout specific functions here.
     focusCommentsWithErrors();
   };
 
