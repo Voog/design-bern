@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css">
   {% include "bg-picker-variables" %}
+
   {{ site.stats_header }}
 </head>
 
