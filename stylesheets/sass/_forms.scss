@@ -5,12 +5,20 @@
     margin-top: 20px;
   }
 
+  .form_field {
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
   .form_field,
   .edy-fe-label {
-    margin-top: 20px;
     font-size: 14px;
     @include color($secondary-color);
   }
+
 
   .form_field {
     label {
