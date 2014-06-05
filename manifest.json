@@ -177,12 +177,6 @@
       "filename": "front-page-bg.jpg"
     },
     {
-      "content_type": "image/jpeg",
-      "file": "images/front-page-bg@2x.jpg",
-      "kind": "images",
-      "filename": "front-page-bg@2x.jpg"
-    },
-    {
       "content_type": "image/png",
       "file": "images/ico-arrow-down.png",
       "kind": "images",
@@ -241,12 +235,6 @@
       "file": "javascripts/overthrow.js",
       "kind": "javascripts",
       "filename": "overthrow.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/retina.js",
-      "kind": "javascripts",
-      "filename": "retina.js"
     },
     {
       "content_type": "text/css",
