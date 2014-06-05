@@ -383,7 +383,7 @@ body {
 
 .menu-sub {
   margin: 0 30px;
-  padding: 5px 0 8px;
+  padding: 5px 0 5px;
   border-bottom: 1px solid #696b6c;
   border-bottom: 1px solid rgba(105, 107, 108, 0.2);
 }

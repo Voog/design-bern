@@ -232,7 +232,7 @@
 // Styling rules for the site's sub menu.
 .menu-sub {
   margin: 0 30px;
-  padding: 5px 0 8px;
+  padding: 5px 0 5px;
   @include border(bottom,1px,solid,$primary-color, 0.2);
 
   @include query($tablet-1) {
