@@ -27,7 +27,7 @@
   <!-- Builds style tag for background color -->
   {% assign cover_color_style = "" %}
   {% unless page.data.cover_color == nil %}
-    {% assign cover_color_style = ' style="background-color: ' %}
+    {% assign cover_color_style = ' style="background: ' %}
     {% if page.data.cover_color == '' %}
       {% assign cover_color_style = cover_color_style | append: 'none' %}
     {% else %}
@@ -35,7 +35,7 @@
       {% if page.data.cover_image == '' %}
         {% assign cover_color_style = cover_color_style | append: '; opacity: 1' %}
       {% else %}
-        {% assign cover_color_style = cover_color_style | append: '; opacity: 0.5' %}
+        {% assign cover_color_style = cover_color_style | append: '; opacity: 0.25' %}
       {% endif %}
     {% endif %}
     {% assign cover_color_style = cover_color_style | append: ';"' %}
