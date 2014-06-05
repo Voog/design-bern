@@ -1,10 +1,10 @@
-<!-- SITE WIDE JAVASCRIPTS -->
+{% comment %}<!-- SITE WIDE JAVASCRIPTS -->{% endcomment %}
 <script src="{{ javascripts_path }}/jquery.js?1"></script>
 <script src="{{ javascripts_path }}/main.js?1"></script>
 <script src="{{ javascripts_path }}/retina.js?1"></script>
 <script src="{{ javascripts_path }}/overthrow.js?1"></script>
 
-<!-- SITE SEARCH INITIATION -->
+{% comment %}<!-- SITE SEARCH INITIATION -->{% endcomment %}
 {% if site.search.enabled %}
   <script src="http://static.edicy.com/assets/site_search/3.0/site_search.js?1"></script>
   <script>
@@ -15,5 +15,5 @@
   </script>
 {% endif %}
 
-<!-- GOOGLE ANALYTICS INITIATION -->
+{% comment %}<!-- GOOGLE ANALYTICS INITIATION -->{% endcomment %}
 {% unless editmode %}{{ site.analytics }}{% endunless %}
