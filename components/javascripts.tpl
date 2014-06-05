@@ -1,7 +1,6 @@
 {% comment %}<!-- SITE WIDE JAVASCRIPTS -->{% endcomment %}
 <script src="{{ javascripts_path }}/jquery.js?1"></script>
 <script src="{{ javascripts_path }}/main.js?1"></script>
-<script src="{{ javascripts_path }}/retina.js?1"></script>
 <script src="{{ javascripts_path }}/overthrow.js?1"></script>
 
 {% comment %}<!-- SITE SEARCH INITIATION -->{% endcomment %}
