@@ -142,6 +142,12 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
+      "file": "assets/dotLoader.svg",
+      "kind": "assets",
+      "filename": "dotLoader.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-down.svg",
       "kind": "assets",
       "filename": "ico-arrow-down.svg"
@@ -175,6 +181,18 @@
       "file": "assets/ico-tick.svg",
       "kind": "assets",
       "filename": "ico-tick.svg"
+    },
+    {
+      "content_type": "application/json",
+      "file": "assets/page1.json",
+      "kind": "assets",
+      "filename": "page1.json"
+    },
+    {
+      "content_type": "application/json",
+      "file": "assets/page2.json",
+      "kind": "assets",
+      "filename": "page2.json"
     },
     {
       "content_type": "image/jpeg",
@@ -226,6 +244,12 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/edicy-search.js",
+      "kind": "javascripts",
+      "filename": "edicy-search.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/jquery.js",
       "kind": "javascripts",
       "filename": "jquery.js"
@@ -247,6 +271,12 @@
       "file": "javascripts/overthrow.js",
       "kind": "javascripts",
       "filename": "overthrow.js"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/edicy-search.css",
+      "kind": "stylesheets",
+      "filename": "edicy-search.css"
     },
     {
       "content_type": "text/css",

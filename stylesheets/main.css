@@ -1196,7 +1196,7 @@ body {
     display: none;
   }
 }
-.search .edys-search,
+.search .search,
 .search .search-left,
 .search .search-right {
   height: 30px;
@@ -1227,7 +1227,7 @@ body {
   padding: 2px 0 4px 0;
   line-height: 1;
 }
-.search .edys-search-input:focus,
+.search .search-input:focus,
 .search .search-submit:focus {
   outline: none;
 }
@@ -1251,6 +1251,25 @@ body {
 }
 .svg .search .search-submit {
   background-image: url("../assets/ico-search.svg");
+}
+
+.voog-search-modal {
+  margin-top: 20px;
+}
+
+.voog-search-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.voog-search-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1b2124;
+}
+
+.voog-search-content {
+  font-size: 14px;
 }
 
 /* FORMS */

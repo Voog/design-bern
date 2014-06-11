@@ -21,6 +21,7 @@
 <!-- STYLESHEETS -->
 {% stylesheet_link "main.css?2" %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.css?2" %}<![endif]-->
+{% stylesheet_link "edicy-search.css?2" %}
 
 <!-- SITE TITLE -->
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>

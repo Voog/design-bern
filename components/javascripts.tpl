@@ -4,15 +4,13 @@
 <script src="{{ javascripts_path }}/overthrow.js?2"></script>
 
 {% comment %}<!-- SITE SEARCH INITIATION -->{% endcomment %}
-{% if site.search.enabled %}
-  <script src="http://static.edicy.com/assets/site_search/3.0/site_search.js?2"></script>
-  <script>
-    var edys_site_search_options = {
-      texts: { noresults: "{{ "search_noresults" | lc }}" },
-      default_stylesheet_enabled: false
-    }
-  </script>
-{% endif %}
+<script src="{{ javascripts_path }}/edicy-search.js?2"></script>
+<script type="text/javascript">
+  var search = new VoogSearch($('.js-search-form').get(0), {
+    per_page: 3,
+    lang: '{{ page.language_code }}'
+  });
+</script>
 
 {% comment %}<!-- GOOGLE ANALYTICS INITIATION -->{% endcomment %}
 {% unless editmode %}{{ site.analytics }}{% endunless %}

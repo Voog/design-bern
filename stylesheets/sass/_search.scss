@@ -19,7 +19,7 @@
     display: none;
   }
 
-  .edys-search,
+  .search,
   .search-left,
   .search-right {
     height: 30px;
@@ -55,7 +55,7 @@
     }
   }
 
-  .edys-search-input,
+  .search-input,
   .search-submit {
     &:focus {
       outline: none;
@@ -87,4 +87,23 @@
       background-image: url("../assets/ico-search.svg");
     }
   }
+}
+
+.voog-search-modal {
+  margin-top: 20px;
+}
+
+.voog-search-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.voog-search-link {
+  text-decoration: none;
+  font-weight: 600;
+  @include color($secondary-color);
+}
+
+.voog-search-content {
+  font-size: 14px;
 }

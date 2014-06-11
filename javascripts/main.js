@@ -76,11 +76,11 @@
 
   // Adds/removes active class to search box if input is focused.
   var handleSearchFocus = function() {
-    search = $('.js-search');
+    searchWrap = $('.js-search');
     $('.js-search-input').focus(function() {
-      search.addClass('active');
+      searchWrap.addClass('active');
     }).blur(function() {
-      search.removeClass('active');
+      searchWrap.removeClass('active');
     });
   };
 
