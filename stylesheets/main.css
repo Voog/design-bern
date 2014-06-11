@@ -493,12 +493,12 @@ body {
 }
 .menu-lang-popover.expanded {
   position: absolute;
-  top: 26px;
+  top: 23px;
   right: -12px;
   display: block;
   margin-bottom: 40px;
   padding: 6px 0;
-  min-width: 121px;
+  min-width: 123px;
   background: #fff;
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
@@ -530,20 +530,27 @@ body {
 .menu-lang .menu-item .menu-link {
   position: relative;
   display: block;
-  padding: 6px 40px 3px 13px;
+  padding: 4px 39px 4px 12px;
   color: #1b2124;
   color: rgba(27, 33, 36, 0.67);
 }
 .menu-lang .menu-item .menu-link.active, .menu-lang .menu-item .menu-link.active:hover {
-  background-color: #cccccc;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .menu-lang .menu-item .menu-link:hover {
-  background-color: #cccccc;
-  background-color: rgba(204, 204, 204, 0.5);
+  opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: alpha(opacity=75);
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
 }
 .menu-lang .menu-item .menu-link:before, .menu-lang .menu-item .menu-link:after {
-  top: 4px;
-  right: 12px;
+  top: 3px;
+  right: 11px;
 }
 .menu-lang .edy-menu-langadd {
   display: inline-block;
