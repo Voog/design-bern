@@ -95,7 +95,7 @@
 
   @include query($mobile-1) {
     &.expanded {
-      top: 45px;
+      top: 50px;
       left: 0;
       right: 0;
       min-width: 0;
@@ -119,6 +119,7 @@
         font-weight: 600;
         @include color($secondary-color, 0.67);
 
+
         &.untranslated {
           @include color($red, 0.5);
         }
@@ -137,11 +138,18 @@
         display: block;
         margin: 0;
         font-size: 20px;
-        @include border(bottom, 1px, solid, $primary-color, 0.2);
+        @include border(bottom, 1px, solid, $secondary-color, 0.2);
+
+        &:first-child {
+          .menu-link {
+            font-weight: 600;
+          }
+        }
 
         .menu-link {
           display: block;
           padding: 8px 25px 5px;
+          font-weight: 400;
 
           &.active,
           &.active:hover {
@@ -186,44 +194,50 @@
       display: block;
       padding-left: 0;
 
-      .menu-item {
-        text-align: left;
+      .menu {
+        .menu-item {
+          text-align: left;
 
-        &:first-child {
-          border-top: none;
+          &:first-child {
+            border-top: none;
+          }
+
+          .menu-link {
+            padding: 11px 30px 10px 53px;
+            font-weight: 400;
+            font-size: 14px;
+
+            &:before,
+            &:after {
+              top: 13px;
+              left: 25px;
+            }
+
+            &.active,
+            &.active:hover,
+            &:hover {
+              background: none;
+            }
+
+            &.active,
+            &.active:hover {
+              @include color($grey-1, 0.67);
+            }
+
+            &:hover {
+              @include color($grey-1, 0.4);
+            }
+          }
         }
 
-        .menu-link {
-          padding: 12px 30px 10px 53px;
-          font-weight: 400;
-          font-size: 14px;
+        .edit-btn {
+          display: block;
+          text-align: left;
 
-          &:before,
-          &:after {
-            top: 14px;
-            left: 25px;
+          .edy-menu-langadd {
+            display: inline-block;
+            padding: 0;
           }
-
-          &.active,
-          &.active:hover {
-            font-weight: 600;
-            @include color($grey-1, 0.67);
-            background: none;
-          }
-
-          &:hover {
-            @include color($grey-1, 0.4);
-          }
-        }
-      }
-
-      .edit-btn {
-        display: block;
-        text-align: left;
-
-        .edy-menu-langadd {
-          display: inline-block;
-          padding: 0;
         }
       }
     }

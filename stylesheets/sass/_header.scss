@@ -26,6 +26,10 @@
 
 .header-left,
 .header-right {
+  .flexbox & {
+    @include flex-grow(2);
+  }
+
   .no-flexbox & {
     display: table-cell;
     vertical-align: top;
@@ -49,24 +53,29 @@
 }
 
 .header-left {
-  width: 270px;
   position: relative;
+
+  .no-flexbox & {
+    width: 180px;
+  }
 }
 
 .header-right {
-  width: 670px;
   text-align: right;
+
+  .no-flexbox & {
+    width: 760px;
+  }
 }
 
 .header-title {
   display: inline-block;
   vertical-align: middle;
-  max-width: 270px;
+  // max-width: 270px;
   font-weight: 600;
   font-size: 24px;
 
-  &,
-  a {
+  &, a {
     @include color($secondary-color);
   }
 
