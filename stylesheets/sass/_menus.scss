@@ -552,9 +552,11 @@ $flags:
     vertical-align: middle;
     line-height: 1.3;
 
-    .menu-link {
+    .menu-item,
+    .menu-link, {
       @include color($third-color);
-
+    }
+    .menu-link {
       &:hover {
         @include color($secondary-color);
       }
