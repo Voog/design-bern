@@ -761,6 +761,10 @@ body {
   background-image: url("../images/ico-tags.png");
 }
 
+.tags {
+  margin-top: 15px;
+}
+
 .menu-tags .tags-left,
 .menu-tags .tags-right {
   display: inline-block;
