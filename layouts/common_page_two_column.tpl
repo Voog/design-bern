@@ -11,7 +11,7 @@
   {{ site.stats_header }}
 </head>
 
-<body class="common-page js-bgpicker-body-image">
+<body class="common-page two-column-page js-bgpicker-body-image">
 
   <div class="container">
     {% include "header" %}

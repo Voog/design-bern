@@ -3,6 +3,10 @@
 .content-topbar {
   min-height: 18px;
   @include bg($grey-4);
+
+  .two-column-page & {
+    padding-bottom: 20px;
+  }
 }
 
 .content {

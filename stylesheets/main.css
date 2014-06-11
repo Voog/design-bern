@@ -173,6 +173,12 @@ body {
 .content-formatted .edy-texteditor-view {
   min-height: 36px;
 }
+.content-right .content-formatted .edy-empty-bordered {
+  padding: 251px 40px 252px;
+}
+.content-right .content-formatted .edy-texteditor-view {
+  min-height: 525px;
+}
 
 /* MENUS */
 .menu-btn {
@@ -826,6 +832,9 @@ body {
 .content-topbar {
   min-height: 18px;
   background-color: #eeeeee;
+}
+.two-column-page .content-topbar {
+  padding-bottom: 20px;
 }
 
 .content {
