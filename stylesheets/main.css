@@ -268,6 +268,10 @@ body {
     -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   }
+  .menu-main.expanded > .menu {
+    border-top: 1px solid #696b6c;
+    border-top: 1px solid rgba(105, 107, 108, 0.2);
+  }
 }
 @media screen and (max-width: 480px) {
   .menu-main.expanded {
@@ -277,10 +281,6 @@ body {
     min-width: 0;
     margin-bottom: 40px;
   }
-}
-.menu-main > .menu {
-  border-top: 1px solid #696b6c;
-  border-top: 1px solid rgba(105, 107, 108, 0.2);
 }
 .menu-main .menu {
   line-height: 1.3;
