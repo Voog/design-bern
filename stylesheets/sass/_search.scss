@@ -11,6 +11,10 @@
   @include bg($white);
   @include border(all, 1px, solid, $black, 0.1);
 
+  &.active {
+    @include border(all, 1px, solid, $black, 0.3);
+  }
+
   @include query($tablet-2) {
     display: none;
   }
@@ -27,7 +31,7 @@
     float: left;
   }
 
-  .edys-search-input {
+  .search-input {
     vertical-align: middle;
     width: 101px;
     height: 28px;

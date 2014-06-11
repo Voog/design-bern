@@ -1104,6 +1104,10 @@ body {
   border: 1px solid black;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.search.active {
+  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
 @media screen and (max-width: 840px) {
   .search {
     display: none;
@@ -1119,7 +1123,7 @@ body {
 .search .search-right {
   float: left;
 }
-.search .edys-search-input {
+.search .search-input {
   vertical-align: middle;
   width: 101px;
   height: 28px;
@@ -1133,10 +1137,10 @@ body {
   background: none;
   border: none;
 }
-.search .edys-search-input::-ms-clear {
+.search .search-input::-ms-clear {
   display: none;
 }
-.search .edys-search-input::-webkit-input-placeholder {
+.search .search-input::-webkit-input-placeholder {
   padding: 2px 0 4px 0;
   line-height: 1;
 }

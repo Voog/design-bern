@@ -73,6 +73,16 @@
     });
   };
 
+  // Adds/removes active class to search box if input is focused.
+  var handleSearchFocus = function() {
+    search = $('.js-search');
+    $('.js-search-input').focus(function() {
+      search.addClass('active');
+    }).blur(function() {
+      search.removeClass('active');
+    });
+  };
+
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
@@ -103,6 +113,7 @@
     handlePopoverMenuHide();
     handleGalleryHover();
     handleWindowResize();
+    handleSearchFocus();
     wrapTables();
     if ($('.table-container').length > 0) {
       checkScrollBar();
