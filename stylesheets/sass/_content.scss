@@ -6,6 +6,10 @@
 
   .two-column-page & {
     padding-bottom: 20px;
+
+    @include query($tablet-3) {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -54,6 +58,10 @@
     iframe {
       display: block !important;
       width: 100% !important;
+
+      @include query($tablet-3) {
+        max-height: 262px;
+      }
     }
   }
 

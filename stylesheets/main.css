@@ -836,6 +836,11 @@ body {
 .two-column-page .content-topbar {
   padding-bottom: 20px;
 }
+@media screen and (max-width: 760px) {
+  .two-column-page .content-topbar {
+    padding-bottom: 0;
+  }
+}
 
 .content {
   display: block;
@@ -874,6 +879,11 @@ body {
 .content .content-right iframe {
   display: block !important;
   width: 100% !important;
+}
+@media screen and (max-width: 760px) {
+  .content .content-right iframe {
+    max-height: 262px;
+  }
 }
 @media screen and (max-width: 760px) {
   .content .content-left,
