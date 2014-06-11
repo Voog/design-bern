@@ -74,7 +74,7 @@
 .menu-main {
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 
   @include query($tablet-2) {
     display: none;
@@ -278,7 +278,7 @@
 // Styling rules for the site's language menu.
 .menu-lang-btn {
   position: relative;
-  top: -2px;
+  top: -3px;
   right: -5px;
   display: inline-block;
   vertical-align: middle;
@@ -311,17 +311,12 @@
   &:before,
   &:after {
     position: absolute;
-    top: 6px;
-    left: 5px;
     display: block;
     width: 20px;
     height: 13px;
     content: '';
   }
-}
 
-.menu-lang-btn,
-.menu-lang .menu-item .lang-flag {
   &:before {
     @include bg($black);
   }
@@ -338,6 +333,14 @@
     .svg & {
       background-image: url('../assets/ico-flags.svg');
     }
+  }
+}
+
+.menu-lang-btn {
+  &:before,
+  &:after {
+    top: 6px;
+    left: 5px;
   }
 }
 

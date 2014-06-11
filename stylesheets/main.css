@@ -240,7 +240,7 @@ body {
 .menu-main {
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 @media screen and (max-width: 840px) {
   .menu-main {
@@ -425,7 +425,7 @@ body {
 
 .menu-lang-btn {
   position: relative;
-  top: -2px;
+  top: -3px;
   right: -5px;
   display: inline-block;
   vertical-align: middle;
@@ -453,14 +453,11 @@ body {
 .menu-lang .menu-item .lang-flag:before,
 .menu-lang .menu-item .lang-flag:after {
   position: absolute;
-  top: 6px;
-  left: 5px;
   display: block;
   width: 20px;
   height: 13px;
   content: '';
 }
-
 .menu-lang-btn:before,
 .menu-lang .menu-item .lang-flag:before {
   background-color: black;
@@ -478,6 +475,11 @@ body {
 .svg .menu-lang-btn:after, .svg
 .menu-lang .menu-item .lang-flag:after {
   background-image: url("../assets/ico-flags.svg");
+}
+
+.menu-lang-btn:before, .menu-lang-btn:after {
+  top: 6px;
+  left: 5px;
 }
 
 .menu-lang-popover {
@@ -743,7 +745,7 @@ body {
 /* HEADER */
 .header {
   position: relative;
-  padding: 24px 0 20px;
+  padding: 23px 0 21px;
 }
 .no-flexbox .header {
   display: table;
@@ -1096,7 +1098,7 @@ body {
 .search {
   display: inline-block;
   vertical-align: middle;
-  margin-top: -2px;
+  margin-top: -4px;
   margin-left: 15px;
   height: 30px;
   line-height: 1;
