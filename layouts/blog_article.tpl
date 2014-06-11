@@ -17,8 +17,6 @@
     {% include "header" %}
 
     <main class="content" role="main">
-      {% include "tags-post" %}
-
       <div class="content-inner">
         <article class="post">
           <header class="post-header">
@@ -35,6 +33,8 @@
             <div class="post-body content-formatted">{% editable article.body %}</div>
           </section>
         </article>
+
+        {% include "tags-post" %}
       </div>
     </main>
 

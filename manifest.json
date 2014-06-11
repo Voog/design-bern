@@ -44,14 +44,14 @@
       "content_type": "component",
       "component": true,
       "file": "components/bg-picker-variables.tpl",
-      "layout_name": "",
+      "layout_name": "bg-picker-variables",
       "title": "bg-picker-variables"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/bg-picker.tpl",
-      "layout_name": "",
+      "layout_name": "bg-picker",
       "title": "bg-picker"
     },
     {
@@ -135,7 +135,7 @@
       "content_type": "component",
       "component": true,
       "file": "components/tags-variables.tpl",
-      "layout_name": "",
+      "layout_name": "tags-variables",
       "title": "tags-variables"
     }
   ],
@@ -163,6 +163,12 @@
       "file": "assets/ico-search.svg",
       "kind": "assets",
       "filename": "ico-search.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-tags.svg",
+      "kind": "assets",
+      "filename": "ico-tags.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -205,6 +211,12 @@
       "file": "images/ico-search.png",
       "kind": "images",
       "filename": "ico-search.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-tags.png",
+      "kind": "images",
+      "filename": "ico-tags.png"
     },
     {
       "content_type": "image/png",

@@ -494,6 +494,34 @@ $flags:
 }
 
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
+.tags {
+  .editmode & {
+    margin-top: 20px;
+  }
+}
+.tags-title {
+  display: inline-block;
+  font-size: 14px;
+  @include color($secondary-color);
+}
+
+.tags-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  margin: 11px 5px 10px 0;
+  background-position: center;
+
+  .svg & {
+    background-image: url('../assets/ico-tags.svg');
+  }
+
+  .no-svg & {
+    background-image: url('../images/ico-tags.png');
+  }
+}
+
 .menu-tags {
   .tags-left,
   .tags-right {
@@ -511,19 +539,25 @@ $flags:
       margin-right: 0;
       text-align: left;
     }
-
-    .tags-title {
-      display: inline-block;
-      font-size: 14px;
-      @include color($secondary-color);
-    }
   }
 
   .tags-right {
     .menu {
       margin-top: 2px;
-      line-height: 1.3;
+    }
+  }
+
+  .menu {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.3;
+
+    .menu-link {
+      @include color($third-color);
+
+      &:hover {
+        @include color($secondary-color);
+      }
     }
   }
 }
-
