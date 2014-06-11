@@ -9,7 +9,7 @@
   }
 
   .flexbox & {
-    @include flexbox;
+    @include display(flex);
   }
 
   @include query($tablet-2) {

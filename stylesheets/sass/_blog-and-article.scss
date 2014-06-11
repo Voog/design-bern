@@ -58,7 +58,7 @@
     }
 
     .flexbox & {
-      @include flexbox;
+      @include display(flex);
     }
 
     &:first-child,
