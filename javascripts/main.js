@@ -1,27 +1,38 @@
 ;(function($) {
-  // Shows/hides the popover main menu (visible on smalles screens).
-  var toggleMainMenu = function() {
+  var handleElementsToggle = function() {
+    $('html').click(function() {
+      if ($('.js-popover').hasClass('expanded')) {
+        $('.js-popover').removeClass('expanded');
+      }
+
+      if ($('.js-modal-overlay').hasClass('active')) {
+        $('.js-modal-overlay').removeClass('active');
+      }
+    });
+
+    // Toggles the popover main menu (visible on smalles screens).
     $('.js-menu-btn').click(function(event) {
       event.stopPropagation();
       $(this).toggleClass('open');
       $('.js-menu-main').toggleClass('expanded');
     });
-  };
 
-  // Shows/hides the popover language menu.
-  var toggleLangMenu = function() {
+    // Toggles the popover language menu.
     $('.js-menu-lang-btn').click(function(event) {
       event.stopPropagation();
       $('.js-menu-lang-popover').toggleClass('expanded');
     });
-  };
 
-  // Hides the popover menus if clicked anywhere else than the menu itself.
-  var handlePopoverMenuHide = function() {
-    $('html').click(function() {
-      if ($('.js-menu-popover').hasClass('expanded')) {
-        $('.js-menu-popover').removeClass('expanded');
-      }
+    // Toggles the mobile search modal.
+    $('.js-search-btn').click(function(event) {
+      event.stopPropagation();
+      $(this).toggleClass('open');
+      $('.js-search').toggleClass('active');
+    });
+
+    // Prevents modal closing
+    $('.js-modal').click(function(event) {
+      event.stopPropagation();
     });
   };
 
@@ -76,11 +87,20 @@
 
   // Adds/removes active class to search box if input is focused.
   var handleSearchFocus = function() {
-    searchWrap = $('.js-search');
+    searchForm = $('.js-search-form');
     $('.js-search-input').focus(function() {
-      searchWrap.addClass('active');
+      searchForm.addClass('active');
     }).blur(function() {
-      searchWrap.removeClass('active');
+      searchForm.removeClass('active');
+    });
+  };
+
+  var handleSearchMobilePosition = function() {
+    $('.js-search-form').on('submit', function() {
+      searchModalHeight = $('.js-voog-search-modal').height();
+      $('.js-modal').css({'top': '40px'});
+      // console.log('searchModalHeight: ' + searchModalHeight);
+
     });
   };
 
@@ -88,6 +108,7 @@
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTableHorizontalScrolling();
+      // handleSearchMaxWidth();
     });
   };
 
@@ -109,12 +130,11 @@
 
   var init = function() {
     // Add site wide functions here.
-    toggleMainMenu();
-    toggleLangMenu();
-    handlePopoverMenuHide();
+    handleElementsToggle();
     handleGalleryHover();
     handleWindowResize();
     handleSearchFocus();
+    handleSearchMobilePosition();
     wrapTables();
     if ($('.table-container').length > 0) {
       checkScrollBar();

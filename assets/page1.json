@@ -1,36 +1,32 @@
 {
-    "result": [
-        {
-            "description": "from the Blogs section below. By the way, you can add any kind of content to your <em>blog</em> post \u2014 text, pictures, tab... \nRead more\nMarch 31, 2014Having sample news",
-            "lang": "en",
-            "path": "/blog",
-            "tags": [],
-            "title": "Uussait | <em>Blog</em>",
-            "type": "page",
-            "updated_at": "2014-03-31T20:29:26Z"
-        },
-        {
-            "description": "Blogs section below. By the way, you can add any kind of content to your <em>blog</em> post \u2014 text, pictures, tables, forms, and galleries.\n\n The above is excerpt of the",
-            "lang": "en",
-            "path": "/blog/having-sample-news-pieces",
-            "tags": [],
-            "title": "Having sample news pieces? | Uussait",
-            "type": "article",
-            "updated_at": "2014-03-31T20:29:27Z"
-        },
-        {
-            "description": "the Blogs section below. By the way, you can add any kind of content to your <em>blog</em> post \u2014 text, pictures, tables, forms, and galleries.\n\n The above is excerpt of",
-            "lang": "en",
-            "path": "/blog/how-i-wrote-my-first-article",
-            "tags": [
-                "\u00fcks",
-                "kaks",
-                "kolm"
-            ],
-            "title": "How I wrote my first article | Uussait",
-            "type": "article",
-            "updated_at": "2014-04-24T08:36:55Z"
-        }
-    ],
-    "time_ms": 49
+  "result": [
+    {
+      "description": "Edicy is a cloud based service for building and hosting your <em>password</em>s and managing their content. Edicy offers free and paid services with extensive feature list for both first time users, design agencies and web developers.",
+      "lang": "en",
+      "path": "/blog",
+      "tags": [],
+      "title": "Where do I change my <em>password</em>?",
+      "type": "page",
+      "updated_at": "2014-03-31T20:29:26Z"
+    },
+    {
+      "description": "First, you have to be an admin and your site must be using Plus plan.",
+      "lang": "en",
+      "path": "/blog/having-sample-news-pieces",
+      "tags": [],
+      "title": "Setting up page <em>passwords</em>",
+      "type": "article",
+      "updated_at": "2014-03-31T20:29:27Z"
+    },
+    {
+      "description": "When I was still a little junkie, I often rented a bike from my drunkard neighbour to ride downtown and get some hash from my clocker. Then times changed. I was shot dead and now I’m nicely in my grave.",
+      "lang": "en",
+      "path": "/blog",
+      "tags": [],
+      "title": "I forgot my <em>password</em> or email address",
+      "type": "page",
+      "updated_at": "2014-03-31T20:29:26Z"
+    }
+  ],
+  "time_ms": 49
 }

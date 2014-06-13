@@ -57,6 +57,10 @@
 
   .no-flexbox & {
     width: 180px;
+
+    @include query($mobile-1) {
+      width: auto;
+    }
   }
 }
 

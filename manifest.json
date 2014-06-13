@@ -10,7 +10,7 @@
       "component": false,
       "file": "layouts/blog___news.tpl",
       "layout_name": "page_default",
-      "title": "Blog & News"
+      "title": "Blog   news"
     },
     {
       "content_type": "page",
@@ -142,9 +142,9 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "assets/dotLoader.svg",
+      "file": "assets/dot-loader.svg",
       "kind": "assets",
-      "filename": "dotLoader.svg"
+      "filename": "dot-loader.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -244,9 +244,9 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/edicy-search.js",
+      "file": "javascripts/autosize-input.js",
       "kind": "javascripts",
-      "filename": "edicy-search.js"
+      "filename": "autosize-input.js"
     },
     {
       "content_type": "application/javascript",
@@ -273,10 +273,10 @@
       "filename": "overthrow.js"
     },
     {
-      "content_type": "text/css",
-      "file": "stylesheets/edicy-search.css",
-      "kind": "stylesheets",
-      "filename": "edicy-search.css"
+      "content_type": "application/javascript",
+      "file": "javascripts/search.js",
+      "kind": "javascripts",
+      "filename": "search.js"
     },
     {
       "content_type": "text/css",

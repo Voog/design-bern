@@ -46,6 +46,25 @@ body {
   bottom: 0;
 }
 
+%button {
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &, &::-moz-focus-inner {
+    padding: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
 // Styling rules for the independent elements that can be located everywhere in the DOM and always have the same look.
 .bgpicker-btn {
   position: absolute;

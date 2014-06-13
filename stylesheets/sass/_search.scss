@@ -1,13 +1,52 @@
 /* SEARCH */
 // Styling rules for the site's search box. These rules affect the entire site.
-.search {
+.search,
+.search-form {
   @extend %clearfix;
+}
+
+.search {
   display: inline-block;
   vertical-align: middle;
   margin-top: -4px;
   margin-left: 15px;
-  height: 30px;
+  height: $search-height-1;
   line-height: 1;
+  @include bg($white);
+
+  @include query($tablet-2) {
+    display: none;
+
+    &.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 20;
+      display: block;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      @include bg($black, 0.5);
+    }
+  }
+}
+
+.search-inner {
+  @include query($tablet-2) {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -$search-height-2 / 2;
+    padding: 0 20px;
+    @include box-sizing(border-box);
+  }
+}
+
+.search-form {
+  position: relative;
+  z-index: 20;
   @include bg($white);
   @include border(all, 1px, solid, $black, 0.1);
 
@@ -16,81 +55,154 @@
   }
 
   @include query($tablet-2) {
-    display: none;
-  }
-
-  .search,
-  .search-left,
-  .search-right {
-    height: 30px;
-    line-height: 1;
-  }
-
-  .search-left,
-  .search-right {
-    float: left;
-  }
-
-  .search-input {
-    vertical-align: middle;
-    width: 101px;
-    height: 28px;
-    margin: 0;
-    padding: 1px 0 0 7px;
-    font-family: inherit;
-    font-size: 14px;
-    line-height: 1;
-    @include color($secondary-color, 0.67);
-    background: none;
-    border: none;
-
-    // Removes the clear input button in IE11
-    &::-ms-clear {
-      display: none;
-    }
-
-    &::-webkit-input-placeholder {
-      padding: 2px 0 4px 0;
-      line-height: 1;
-    }
-  }
-
-  .search-input,
-  .search-submit {
-    &:focus {
-      outline: none;
-    }
-  }
-
-  .search-submit {
-    display: inline-block;
-    vertical-align: top;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    @include bg($white);
-    border: none;
-    cursor: pointer;
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-  .no-svg & {
-    .search-submit {
-      background-image: url("../images/ico-search.png");
-    }
-  }
-  .svg & {
-    .search-submit {
-      background-image: url("../assets/ico-search.svg");
+    &, &.active {
+      max-width: 400px;
+      margin: 0 auto;
+      border: none;
     }
   }
 }
 
+.search-input,
+.search-submit {
+  &:focus {
+    outline: none;
+  }
+}
+
+.search-submit,
+.search-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: $search-height-1;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  .no-svg & {
+    background-image: url("../images/ico-search.png");
+  }
+  .svg & {
+    background-image: url("../assets/ico-search.svg");
+  }
+}
+
+.search-input {
+  vertical-align: middle;
+  width: 100%;
+  height: $search-height-1;
+  margin: 0;
+  padding: 0 30px 0 7px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1;
+  @include color($secondary-color, 0.67);
+  background: none;
+  @include box-sizing(border-box);
+  border: none;
+
+  // Removes the clear input button in IE11
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-input-placeholder {
+    padding: 2px 0 4px 0;
+    line-height: 1;
+  }
+
+  @include query($tablet-2) {
+    height: $search-height-2;
+    font-size: 24px;
+    padding-right: 45px;
+  }
+}
+
+.search-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+
+  @include query($tablet-2) {
+    width: 41px;
+    height: $search-height-2;
+    background-size: 32px;
+  }
+}
+
+.search-btn {
+  @extend %button;
+  display: none;
+  font-size: 0;
+
+  @include query($tablet-2) {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    display: block;
+    margin-right: 50px;
+  }
+}
+
 .voog-search-modal {
+  position: absolute;
+  @include box-sizing(border-box);
+  z-index: 20;
+  width: 100%;
+  max-width: 346px;
+  max-height: 300px;
   margin-top: 20px;
+  padding: 20px 27px;
+  @include bg($white);
+  @include box-shadow(0, 0, 30px, rgba($black, 0.5));
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &.no-content {
+    text-align: center;
+    padding-bottom: 24px;
+  }
+
+  em {
+    font-weight: 600;
+    font-style: normal;
+    @include bg($yellow, 0.5);
+    border-radius: 2px;
+  }
+
+  @include query($tablet-2) {
+    max-width: 400px;
+    max-height: 300px;
+    margin-top: 0;
+    @include box-sizing(border-box);
+    box-shadow: none;
+  }
+}
+
+.voog-search-modal-result {
+  margin-top: 18px;
+}
+
+.voog-search-loader {
+  display: none;
+  height: 24px;
+  text-align: center;
+  background: url('../assets/dot-loader.svg') no-repeat center;
+}
+
+.voog-search-modal-result {
+  margin-top: 18px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .voog-search-title {
@@ -105,5 +217,6 @@
 }
 
 .voog-search-content {
+  margin: 5px 0 0;
   font-size: 14px;
 }

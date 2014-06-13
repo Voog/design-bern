@@ -1,14 +1,18 @@
 {
-    "result": [
-        {
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non dignissim nulla, nec rhoncus lacus. Aliquam tempor est dolor, sed dapibus elit sodales qui",
-            "lang": "en",
-            "path": "/en",
-            "tags": [],
-            "title": "Uussait | Home Page",
-            "type": "page",
-            "updated_at": "2014-05-19T13:34:45Z"
-        }
-    ],
-    "time_ms": 38
+  "result": [
+    {
+      "description": "Log in to your account with your email address and <em>password</em>. Then, just do whatever you want to do, badger.",
+      "lang": "en",
+      "path": "/blog/how-i-wrote-my-first-article",
+      "tags": [
+        "üks",
+        "kaks",
+        "kolm"
+      ],
+      "title": "How to access your Voog account?",
+      "type": "article",
+      "updated_at": "2014-04-24T08:36:55Z"
+    }
+  ],
+  "time_ms": 38
 }
