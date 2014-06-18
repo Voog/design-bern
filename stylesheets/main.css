@@ -1407,19 +1407,16 @@ body {
 .voog-search-modal-result:first-child {
   margin-top: 0;
 }
-
-.voog-search-title {
+.voog-search-modal-result h3 {
   margin: 0;
   font-size: 16px;
 }
-
-.voog-search-link {
+.voog-search-modal-result a {
   text-decoration: none;
   font-weight: 600;
   color: #1b2124;
 }
-
-.voog-search-content {
+.voog-search-modal-result p {
   margin: 5px 0 0;
   font-size: 14px;
 }

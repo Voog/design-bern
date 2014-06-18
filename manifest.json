@@ -183,18 +183,6 @@
       "filename": "ico-tick.svg"
     },
     {
-      "content_type": "application/json",
-      "file": "assets/page1.json",
-      "kind": "assets",
-      "filename": "page1.json"
-    },
-    {
-      "content_type": "application/json",
-      "file": "assets/page2.json",
-      "kind": "assets",
-      "filename": "page2.json"
-    },
-    {
       "content_type": "image/jpeg",
       "file": "images/front-page-bg.jpg",
       "kind": "images",
@@ -271,12 +259,6 @@
       "file": "javascripts/overthrow.js",
       "kind": "javascripts",
       "filename": "overthrow.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/search.js",
-      "kind": "javascripts",
-      "filename": "search.js"
     },
     {
       "content_type": "text/css",

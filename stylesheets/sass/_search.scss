@@ -203,20 +203,20 @@
   &:first-child {
     margin-top: 0;
   }
-}
 
-.voog-search-title {
-  margin: 0;
-  font-size: 16px;
-}
+  h3 {
+    margin: 0;
+    font-size: 16px;
+  }
 
-.voog-search-link {
-  text-decoration: none;
-  font-weight: 600;
-  @include color($secondary-color);
-}
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    @include color($secondary-color);
+  }
 
-.voog-search-content {
-  margin: 5px 0 0;
-  font-size: 14px;
+  p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
 }
