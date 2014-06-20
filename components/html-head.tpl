@@ -16,12 +16,12 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 <!-- MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC -->
-<script src="{{ javascripts_path }}/modernizr.js?2"></script>
+<script src="{{ javascripts_path }}/modernizr.js?3"></script>
 
 <!-- STYLESHEETS -->
-{% stylesheet_link "main.css?2" %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.css?2" %}<![endif]-->
-<link rel="stylesheet" href="http://static.voog.com/libs/edicy-search/1.0.0/edicy-search.css">
+<link rel="stylesheet" href="http://static.voog.com/libs/edicy-search/1.0.0/edicy-search.css?3">
+{% stylesheet_link "main.css?3" %}
+<!--[if lt IE 9]>{% stylesheet_link "ie8.css?3" %}<![endif]-->
 
 <!-- SITE TITLE -->
 <title>{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}</title>

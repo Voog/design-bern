@@ -5,8 +5,8 @@
         $('.js-popover').removeClass('expanded');
       }
 
-      if ($('.js-modal-overlay').hasClass('active')) {
-        $('.js-modal-overlay').removeClass('active');
+      if ($('.js-search-close-btn').hasClass('open') && $('.voog-search-modal').length === 0) {
+        $('.js-search-close-btn').trigger('click');
       }
     });
 
@@ -15,6 +15,10 @@
       event.stopPropagation();
       $(this).toggleClass('open');
       $('.js-menu-main').toggleClass('expanded');
+
+      if ($('.js-search-close-btn').hasClass('open')) {
+        $('.js-search-close-btn').trigger('click');
+      }
     });
 
     // Toggles the popover language menu.
@@ -23,15 +27,31 @@
       $('.js-menu-lang-popover').toggleClass('expanded');
     });
 
-    // Toggles the mobile search modal.
-    $('.js-search-btn').click(function(event) {
+    // Opens the search modal.
+    $('.js-search-open-btn').click(function(event) {
       event.stopPropagation();
-      $(this).toggleClass('open');
-      $('.js-search').toggleClass('active');
+      if ($('.js-menu-btn').hasClass('open')) {
+        $('.js-menu-btn').trigger('click');
+      }
+
+      $(this).addClass('open');
+      $('.js-search-close-btn').addClass('open');
+      $('.js-search').addClass('active');
+      $('.js-search-inner').css({'margin-top': '-25px'});
+      $('.js-search-input').val('').focus();
     });
 
-    // Prevents modal closing
-    $('.js-modal').click(function(event) {
+    // Closes the search modal.
+    $('.js-search-close-btn').click(function(event) {
+      event.stopPropagation();
+      $(this).removeClass('open');
+      $('.js-search-open-btn').removeClass('open');
+      $('.js-search').removeClass('active');
+      $('.voog-search-modal').remove();
+    });
+
+    // Prevents search modal closing on click
+    $('.js-popover').click(function(event) {
       event.stopPropagation();
     });
   };

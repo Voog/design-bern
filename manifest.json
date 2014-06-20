@@ -1,5 +1,5 @@
 {
-  "description": "Bern design by Tõnu Runnel",
+  "description": "Classical design beauty",
   "name": "Bern",
   "preview_medium": "",
   "preview_small": "",
@@ -157,12 +157,6 @@
       "file": "assets/ico-flags.svg",
       "kind": "assets",
       "filename": "ico-flags.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-search.svg",
-      "kind": "assets",
-      "filename": "ico-search.svg"
     },
     {
       "content_type": "image/svg+xml",
