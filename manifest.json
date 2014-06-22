@@ -220,12 +220,6 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/autosize-input.js",
-      "kind": "javascripts",
-      "filename": "autosize-input.js"
-    },
-    {
-      "content_type": "application/javascript",
       "file": "javascripts/jquery.js",
       "kind": "javascripts",
       "filename": "jquery.js"
