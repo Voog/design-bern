@@ -6,13 +6,12 @@
 {% if site.search.enabled %}
   <script src="http://static.voog.com/libs/edicy-search/1.0.0/edicy-search.js"></script>
   <script>
-    $(function() {
-      var search = new VoogSearch($('.js-search-form').get(0), {
-        per_page: 2,
-        lang: '{{ page.language_code }}',
-        noResults: '{{ "search_noresults" | lc }}',
-        minChars: 2
-      });
+    var search = new VoogSearch($('.js-search-form').get(0), {
+      per_page: 3,
+      lang: '{{ page.language_code }}',
+      resultsContainer: null,
+      sideclick: true,
+      updateOnKeypress: false
     });
   </script>
 {% endif %}
