@@ -10,6 +10,7 @@
     var bgPickerCover = new Edicy.BgPicker($('.js-bgpicker-cover-settings'), {
       picture: true,
       color: true,
+      showAlpha: true,
 
       preview: function(data) {
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
