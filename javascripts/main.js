@@ -1,5 +1,5 @@
 ;(function($) {
-  var handleElementsToggle = function() {
+  var handleElementsClick = function() {
     $('html').click(function() {
       if ($('.js-popover').hasClass('expanded')) {
         $('.js-popover').removeClass('expanded');
@@ -150,7 +150,7 @@
 
   var init = function() {
     // Add site wide functions here.
-    handleElementsToggle();
+    handleElementsClick();
     handleGalleryHover();
     handleWindowResize();
     handleSearchFocus();
