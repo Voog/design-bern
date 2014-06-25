@@ -30,8 +30,9 @@
     // Opens the search modal.
     $('.js-search-open-btn').click(function(event) {
       event.stopPropagation();
-      if ($('.js-menu-btn').hasClass('open')) {
-        $('.js-menu-btn').trigger('click');
+      if ($('.js-menu-main').hasClass('expanded')) {
+        $('.js-menu-main').removeClass('expanded');
+        $('.js-menu-btn').removeClass('open');
       }
 
       $(this).addClass('open');
@@ -51,7 +52,7 @@
     });
 
     // Prevents search modal closing on click
-    $('.js-popover').click(function(event) {
+    $('.js-search').click(function(event) {
       event.stopPropagation();
     });
   };
@@ -119,8 +120,6 @@
     $('.js-search-form').on('submit', function() {
       searchModalHeight = $('.js-voog-search-modal').height();
       $('.js-modal').css({'top': '40px'});
-      // console.log('searchModalHeight: ' + searchModalHeight);
-
     });
   };
 
@@ -128,7 +127,6 @@
   var handleWindowResize = function() {
     $(window).resize(function() {
       handleTableHorizontalScrolling();
-      // handleSearchMaxWidth();
     });
   };
 
