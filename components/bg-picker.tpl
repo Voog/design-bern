@@ -19,11 +19,9 @@
         $('.js-bgpicker-cover-color').css({'background' : col});
 
         if (data.image === null || data.image === '') {
-          $('.js-bgpicker-body-image').css({'background-image': 'none'});
-          $('.js-bgpicker-body-color').css({'opacity': 1});
+          $('.js-bgpicker-cover-color').css({'opacity': 1});
         } else {
-          $('.js-bgpicker-body-image').css({'background-image': data.image});
-          $('.js-bgpicker-body-color').css({'opacity': 0.5});
+          $('.js-bgpicker-cover-color').css({'opacity': 0.5});
         }
       },
 
