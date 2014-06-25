@@ -1323,9 +1323,15 @@ body {
   padding: 1px 0 0 1px;
 }
 .search-btn svg {
+  fill: #838586;
+}
+.search-open-btn .search-btn svg, .search-close-btn .search-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.search-submit .search-btn svg {
   width: 16px;
   height: 16px;
-  fill: #838586;
 }
 
 .search-submit {
@@ -1335,7 +1341,7 @@ body {
 }
 @media screen and (max-width: 840px) {
   .search-submit {
-    width: 40px;
+    width: 45px;
     height: 40px;
   }
 }

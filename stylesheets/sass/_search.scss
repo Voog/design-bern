@@ -123,8 +123,16 @@
   padding: 1px 0 0 1px;
 
   svg {
-    width: 16px;
-    height: 16px;
+    .search-open-btn &,
+    .search-close-btn & {
+      width: 20px;
+      height: 20px;
+    }
+
+    .search-submit & {
+      width: 16px;
+      height: 16px;
+    }
     fill: $grey-1;
   }
 }
@@ -133,7 +141,7 @@
   @include opacity(0.33);
 
   @include query($tablet-2) {
-    width: 40px;
+    width: 45px;
     height: $search-height-2;
   }
 }
