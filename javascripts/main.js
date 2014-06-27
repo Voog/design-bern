@@ -3,7 +3,6 @@
 
   var handleElementsClick = function() {
     $('html').click(function() {
-      console.log('test');
       if ($('.js-popover').hasClass('expanded')) {
         $('.js-popover').removeClass('expanded');
       }

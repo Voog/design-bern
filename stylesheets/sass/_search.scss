@@ -209,7 +209,7 @@
 
 .voog-search-modal-inner {
   display: none;
-  max-height: 460px;
+  max-height: 660px;
   padding: 20px;
   text-align: left;
   font-size: 14px;
@@ -255,21 +255,25 @@
     }
   }
 
-  // @media screen and (min-width: 480px), screen and (max-height: 640px) {
-  //   background: blue;
-  // }
-  // @include query(640px, 'max-height') {
-  //   max-height: 360px;
-  // }
+  @media screen and (min-width: $mobile-1) and (max-height: 840px) {
+    max-height: 560px;
+  }
 
-  // @include query(540px, 'max-height') {
-  //   max-height: 260px;
-  // }
+  @media screen and (min-width: $mobile-1) and (max-height: 740px) {
+    max-height: 460px;
+  }
 
-  // @include query(480px, 'max-height') {
-  //   height: 100%;
-  //   max-height: none;
-  // }
+  @media screen and (min-width: $mobile-1) and (max-height: 640px) {
+    max-height: 360px;
+  }
+
+  @media screen and (min-width: $mobile-1) and (max-height: 540px) {
+    max-height: 260px;
+  }
+
+  @media screen and (min-width: $mobile-1) and (max-height: 440px) {
+    max-height: 160px;
+  }
 }
 
 .voog-search-modal-results {

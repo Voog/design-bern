@@ -57,9 +57,9 @@
   position: relative;
 
   .no-flexbox & {
-    width: 180px;
+    width: 200px;
 
-    @include query($mobile-1) {
+    @include query($tablet-1) {
       width: auto;
     }
   }
@@ -69,7 +69,7 @@
   text-align: right;
 
   .no-flexbox & {
-    width: 760px;
+    width: 740px;
   }
 }
 

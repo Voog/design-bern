@@ -1,7 +1,7 @@
 {% comment %}<!-- SITE WIDE JAVASCRIPTS -->{% endcomment %}
-<script src="{{ javascripts_path }}/jquery.js?2"></script>
-<script src="{{ javascripts_path }}/main.js?2"></script>
-<script src="{{ javascripts_path }}/overthrow.js?2"></script>
+<script src="{{ javascripts_path }}/jquery.js?4"></script>
+<script src="{{ javascripts_path }}/main.js?4"></script>
+<script src="{{ javascripts_path }}/overthrow.js?4"></script>
 
 {% if site.search.enabled %}
   <script src="http://static.voog.com/libs/edicy-search/1.0.0/edicy-search.js"></script>
