@@ -7,7 +7,7 @@
   .two-column-page & {
     padding-bottom: 20px;
 
-    @include query($tablet-3) {
+    @include query($tablet-4) {
       padding-bottom: 0;
     }
   }
@@ -32,7 +32,7 @@
     padding: 33px 50px 50px;
     @include bg($grey-4);
 
-    @include query($tablet-1) {
+    @include query($tablet-2) {
       padding: 33px 20px 50px;
     }
   }
@@ -59,13 +59,13 @@
       display: block !important;
       width: 100% !important;
 
-      @include query($tablet-3) {
+      @include query($tablet-4) {
         max-height: 262px;
       }
     }
   }
 
-  @include query($tablet-3) {
+  @include query($tablet-4) {
     .content-left,
     .content-right {
       display: block;
@@ -129,7 +129,7 @@
         @include color($white);
         line-height: 1.2;
 
-        @include query($tablet-4) {
+        @include query($tablet-5) {
           padding: 20px;
         }
 

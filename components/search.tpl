@@ -8,5 +8,9 @@
         </svg>
       </button>
     </form>
+
+    <div class="voog-search-modal">
+      <div class="voog-search-modal-inner js-voog-search-modal-inner"></div>
+    </div>
   </div>
 {% endif %}

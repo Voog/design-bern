@@ -3,6 +3,7 @@
 
   var handleElementsClick = function() {
     $('html').click(function() {
+      console.log('test');
       if ($('.js-popover').hasClass('expanded')) {
         $('.js-popover').removeClass('expanded');
       }
@@ -38,6 +39,7 @@
       }
 
       $(this).addClass('open');
+      $('body').addClass('search-open');
       $('.js-search-close-btn').addClass('open');
       $('.js-search').addClass('active');
       $('.js-search-inner').css({'margin-top': '-25px'});
@@ -46,11 +48,10 @@
 
     // Closes the search modal.
     $('.js-search-close-btn').click(function(event) {
-      event.stopPropagation();
       $(this).removeClass('open');
+      $('body').removeClass('search-open');
       $('.js-search-open-btn').removeClass('open');
       $('.js-search').removeClass('active');
-      $('.voog-search-modal').remove();
     });
 
     // Prevents search modal closing on click

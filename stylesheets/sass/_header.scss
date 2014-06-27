@@ -12,7 +12,7 @@
     @include display(flex);
   }
 
-  @include query($tablet-2) {
+  @include query($tablet-3) {
     .no-flexbox &,
     .flexbox & {
       display: block;
@@ -20,6 +20,7 @@
   }
 
   @include query($mobile-1) {
+    position: static;
     padding: 7px 15px 6px;
   }
 }
@@ -35,11 +36,11 @@
     vertical-align: top;
   }
 
-  @include query($tablet-1) {
+  @include query($tablet-2) {
     padding: 0 20px;
   }
 
-  @include query($tablet-2) {
+  @include query($tablet-3) {
     .no-flexbox &,
     .flexbox & {
       display: block;

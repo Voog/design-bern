@@ -6,6 +6,7 @@
 }
 
 .search {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   margin-top: -4px;
@@ -14,23 +15,23 @@
   line-height: 1;
   @include bg($white);
 
-  @include query($tablet-2) {
+  @include query($tablet-3) {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+  }
+
+  @include query($mobile-1) {
+    position: static;
     display: none;
 
     &.active {
-      position: absolute;
-      top: 85px;
+      top: 54px;
       left: 0;
       right: 0;
       display: block;
       height: $search-height-2;
       margin-left: 0;
-    }
-  }
-
-  @include query($mobile-1) {
-    &.active {
-      top: 54px;
     }
   }
 }
@@ -45,7 +46,12 @@
     @include border(all, 1px, solid, $black, 0.3);
   }
 
-  @include query($tablet-2) {
+  @include query($mobile-1) {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+
     &, &.active {
       max-width: 100%;
       margin: 0 auto;
@@ -106,7 +112,7 @@
     line-height: 1;
   }
 
-  @include query($tablet-2) {
+  @include query($mobile-1) {
     width: 100%;
     height: $search-height-2;
     font-size: 20px;
@@ -140,7 +146,7 @@
 .search-submit {
   @include opacity(0.33);
 
-  @include query($tablet-2) {
+  @include query($mobile-1) {
     width: 45px;
     height: $search-height-2;
   }
@@ -151,21 +157,17 @@
 .search-close-btn {
   display: none;
 
-  @include query($tablet-2) {
+  @include query($mobile-1) {
     position: absolute;
     top: 3px;
     right: 0;
     z-index: 40;
-    margin-right: 50px;
-  }
-
-  @include query($mobile-1) {
     margin-right: 30px;
   }
 }
 
 .search-open-btn {
-  @include query($tablet-2) {
+  @include query($mobile-1) {
     display: block;
 
     &.open {
@@ -175,7 +177,7 @@
 }
 
 .search-close-btn {
-  @include query($tablet-2) {
+  @include query($mobile-1) {
     display: none;
 
     &.open {
@@ -185,30 +187,100 @@
 }
 
 .voog-search-modal {
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  right: -58px;
   z-index: 999;
-  width: 400px;
-  margin-top: 20px;
-  font-size: 14px;
 
-  @include query($tablet-2) {
-    left: 0 !important;
+  @include query($tablet-1) {
+    left: -220px;
+    right: -38px;
+  }
+
+  @include query($mobile-1) {
+    top: 86px;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    max-height: none;
-    margin-top: 0;
-    @include no-box-shadow;
+    @include bg($white);
   }
 }
 
-.voog-search-modal.no-content {
-  padding-bottom: 20px;
+.voog-search-modal-inner {
+  display: none;
+  max-height: 460px;
+  padding: 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+  @include bg($white);
+  @include box-shadow(0, 0, 30px, rgba($black, 0.3));
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  em {
+    font-style: normal;
+    @include bg($yellow, 0.5);
+    border-radius: 2px;
+    padding: 0 0.2em;
+  }
+
+  &.search-results-active {
+    display: block;
+  }
+
+  &.no-content.search-results-active {
+    text-align: center;
+
+    .voog-search-modal-results {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+    }
+  }
+
+  @include query($mobile-1) {
+    display: block;
+    @include box-sizing(border-box);
+    height: 100%;
+    max-height: none;
+    @include no-box-shadow;
+
+    &.no-content.search-results-active {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  // @media screen and (min-width: 480px), screen and (max-height: 640px) {
+  //   background: blue;
+  // }
+  // @include query(640px, 'max-height') {
+  //   max-height: 360px;
+  // }
+
+  // @include query(540px, 'max-height') {
+  //   max-height: 260px;
+  // }
+
+  // @include query(480px, 'max-height') {
+  //   height: 100%;
+  //   max-height: none;
+  // }
 }
 
-
 .voog-search-modal-results {
-  &.no-content {
-    text-align: center;
-    padding-bottom: 20px;
+
+}
+
+.voog-search-modal-result {
+  margin-top: 18px;
+
+  &:first-child {
+    margin-top: 0;
   }
 
   h3 {
@@ -233,10 +305,23 @@
   }
 }
 
-.voog-search-modal-result {
-  margin-top: 18px;
+// .voog-search-modal {
+//   z-index: 999;
+//   width: 400px;
+//   max-height: 70%;
+//   margin-top: 20px;
+//   padding-bottom: 20px;
+//   font-size: 14px;
 
-  &:first-child {
-    margin-top: 0;
-  }
-}
+//   @include query($mobile-1) {
+//     top: 121px !important;
+//     width: 100%;
+//     max-height: none;
+//     margin-top: 0;
+//     @include no-box-shadow;
+//   }
+
+//   @include query($mobile-1) {
+//     top: 90px !important;
+//   }
+// }

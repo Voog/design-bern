@@ -19,7 +19,6 @@
 <script src="{{ javascripts_path }}/modernizr.js?3"></script>
 
 <!-- STYLESHEETS -->
-<link rel="stylesheet" href="http://static.voog.com/libs/edicy-search/1.0.0/edicy-search.css?3">
 {% stylesheet_link "main.css?3" %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.css?3" %}<![endif]-->
 

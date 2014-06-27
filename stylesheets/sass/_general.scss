@@ -9,7 +9,14 @@ body {
   line-height: 1.5;
   @include color($primary-color);
 
-  @include query($tablet-2) {
+  &.search-open {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include query($tablet-3) {
     background-image: none !important;
   }
 }
