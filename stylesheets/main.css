@@ -1016,8 +1016,8 @@ body.search-open {
   background-image: url("../images/front-page-bg.jpg");
 }
 .front-page .content .background-color {
-  opacity: 0.5;
   background-color: #0066bb;
+  background-color: rgba(0, 102, 187, 0.25);
 }
 .front-page .content .content-inner {
   display: table;
@@ -1339,7 +1339,7 @@ body.search-open {
   padding: 1px 0 0 1px;
 }
 .search-btn svg {
-  fill: #838586;
+  fill: rgba(27, 33, 36, 0.67);
 }
 .search-open-btn .search-btn svg, .search-close-btn .search-btn svg {
   width: 20px;

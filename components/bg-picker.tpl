@@ -18,12 +18,6 @@
 
         $('.js-bgpicker-cover-image').css({'background-image' : img});
         $('.js-bgpicker-cover-color').css({'background' : col});
-
-        if (data.image === null || data.image === '') {
-          $('.js-bgpicker-cover-color').css({'opacity': 1});
-        } else {
-          $('.js-bgpicker-cover-color').css({'opacity': 0.5});
-        }
       },
 
       commit: function(data) {

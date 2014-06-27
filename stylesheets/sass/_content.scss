@@ -101,8 +101,7 @@
     }
 
     .background-color {
-      opacity: 0.5;
-      @include bg($blue-1);
+      @include bg($blue-1, 0.25);
     }
 
     .content-inner {
