@@ -1,4 +1,6 @@
 ;(function($) {
+  var editmode = $('html').hasClass('editmode');
+
   var handleElementsClick = function() {
     $('html').click(function() {
       if ($('.js-popover').hasClass('expanded')) {
@@ -77,10 +79,16 @@
     });
   };
 
-  // Wraps tables in the container.
-  // TODO: remove if edicy is going to wrap table with the container.
+
+  // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
-    $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
+    if (editmode === false) {
+      $.each($('.content-formatted'), function() {
+        if (!$(this).hasClass('js-custom-content-formatted')) {
+          $(this).find('table').wrap('<div class="table-container overthrow"></div>');
+        }
+      });
+    }
   };
 
   // Checks the presence of the table scrollbar.
