@@ -1420,7 +1420,7 @@ body.search-open {
 
 .voog-search-modal-inner {
   display: none;
-  max-height: 660px;
+  max-height: 760px;
   padding: 20px;
   text-align: left;
   font-size: 14px;
@@ -1469,27 +1469,32 @@ body.search-open {
     padding: 0;
   }
 }
-@media screen and (min-width: 480px) and (max-height: 840px) {
+@media screen and (min-width: 480px) and (max-height: 900px) {
+  .voog-search-modal-inner {
+    max-height: 660px;
+  }
+}
+@media screen and (min-width: 480px) and (max-height: 800px) {
   .voog-search-modal-inner {
     max-height: 560px;
   }
 }
-@media screen and (min-width: 480px) and (max-height: 740px) {
+@media screen and (min-width: 480px) and (max-height: 700px) {
   .voog-search-modal-inner {
     max-height: 460px;
   }
 }
-@media screen and (min-width: 480px) and (max-height: 640px) {
+@media screen and (min-width: 480px) and (max-height: 600px) {
   .voog-search-modal-inner {
     max-height: 360px;
   }
 }
-@media screen and (min-width: 480px) and (max-height: 540px) {
+@media screen and (min-width: 480px) and (max-height: 500px) {
   .voog-search-modal-inner {
     max-height: 260px;
   }
 }
-@media screen and (min-width: 480px) and (max-height: 440px) {
+@media screen and (min-width: 480px) and (max-height: 400px) {
   .voog-search-modal-inner {
     max-height: 160px;
   }
