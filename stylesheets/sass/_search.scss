@@ -280,6 +280,10 @@
   }
 }
 
+.voog-search-modal-results {
+
+}
+
 .voog-search-modal-result {
   margin-top: 18px;
 
@@ -308,24 +312,3 @@
     font-size: 14px;
   }
 }
-
-// .voog-search-modal {
-//   z-index: 999;
-//   width: 400px;
-//   max-height: 70%;
-//   margin-top: 20px;
-//   padding-bottom: 20px;
-//   font-size: 14px;
-
-//   @include query($mobile-1) {
-//     top: 121px !important;
-//     width: 100%;
-//     max-height: none;
-//     margin-top: 0;
-//     @include no-box-shadow;
-//   }
-
-//   @include query($mobile-1) {
-//     top: 90px !important;
-//   }
-// }
