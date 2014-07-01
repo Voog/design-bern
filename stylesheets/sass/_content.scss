@@ -124,9 +124,6 @@
         z-index: 1;
         margin: 0 auto;
         padding: 40px;
-        font-size: 36px;
-        @include color($white);
-        line-height: 1.2;
 
         @include query($tablet-5) {
           padding: 20px;
@@ -134,7 +131,6 @@
 
         @include query($mobile-1) {
           padding: 78px 25px;
-          font-size: 24px;
         }
 
 
@@ -144,12 +140,19 @@
       }
 
       .content-formatted {
+        font-size: 36px;
+        line-height: 1.2;
+
         h3 {
           text-align: center;
         }
 
         .fci-editor {
           min-height: 41px;
+        }
+
+        @include query($mobile-1) {
+          font-size: 24px;
         }
       }
     }

@@ -1,4 +1,11 @@
 {% capture dont_render %}
+  <!-- Sets cover color lightness class -->
+  {% if page.data.cover_lightness == nil or page.data.cover_lightness <= 0.5 %}
+    {% assign cover_color_class = 'dark-background' %}
+  {% else %}
+    {% assign cover_color_class = 'light-background' %}
+  {% endif %}
+
   <!-- Sets the "front page" cover image and color values -->
   {% if page.data.cover_image == nil %}
     {% assign cover_image = images_path | append: '/front-page-bg.jpg' %}

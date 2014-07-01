@@ -3,7 +3,7 @@
 // NB! Contact forms and image galleries are located in the separate partials: "_forms.scss" and "_gallery.scss".
 .content-formatted {
   @extend %clearfix;
-  word-wrap: break-word;
+  word-break: break-word;
 
   // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
   h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, img, iframe, table, form {
@@ -15,9 +15,18 @@
   }
 
   // Styling rules for the editable content area headings and paragraphs.
+  h1, h2, h3, h4, h5, h6, p, ul, ol, table {
+    & .light-background & {
+      @include color($secondary-color);
+    }
+
+    .dark-background & {
+      @include color($white);
+    }
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    @include color($secondary-color);
   }
 
   h1, h2, p {
@@ -105,30 +114,39 @@
     margin: 20px 40px;
   }
 
-  .edy-texteditor-container {
-    &.edy-positionable-container-left,
-    &.edy-positionable-container-right {
-      width: 45%;
-      margin-top: 3%;
-      margin-bottom: 3%;
+  .image-container {
+    img {
+      margin-top: 0;
     }
+  }
 
-    &.edy-positionable-container-left {
-      margin-right: 6%;
-    }
+  .edy-image-container-title-inner {
+    padding: 4px 6px 2px;
+    font-size: 16px;
+  }
 
-    &.edy-positionable-container-right {
-      margin-left: 6%;
-    }
+  .edy-positionable-container-left,
+  .edy-positionable-container-right {
+    width: 45%;
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
 
-    &.edy-positionable-container-left,
-    &.edy-positionable-container-right {
-      @include query($mobile-1) {
-        float: none;
-        width: auto;
-        margin-left: 0;
-        margin-right: 0;
-      }
+  .edy-positionable-container-left {
+    margin-right: 3%;
+  }
+
+  .edy-positionable-container-right {
+    margin-left: 3%;
+  }
+
+  .edy-positionable-container-left,
+  .edy-positionable-container-right {
+    @include query($mobile-1) {
+      float: none;
+      width: auto;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
@@ -164,6 +182,19 @@
   }
 
   // CMS STYLE OVERRIDES
+
+  // Draggable content area without content.
+  // TODO: Remove if different color schemes are supported by VOOG.
+  &.dark-background {
+    .edy-empty-bordered {
+      @include border(all, 1px, dashed, $white, 0.63);
+
+      .edy-empty-header {
+        @include color($white, 0.63);
+      }
+    }
+  }
+
   // Space between editable content areas in editmode.
   .edy-content-element {
     margin-top: 20px;
