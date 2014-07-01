@@ -1,14 +1,13 @@
 <section class="content-topbar">
   {% if site.has_language_tags? %}
-    {% include "tags-variables" %}
     <nav class="menu-tags menu-sub">
       <div class="tags-left">
-        <span class="tags-title">{{ tags_blog_title }}</span>
+        <span class="tags-title">{{ 'filter_posts' | lc }}</span>
       </div>
       <div class="tags-right">
         <ul class="menu">
           <li class="menu-item">
-            <a class="menu-link js-tags-all" href="/{{ page.path }}">{{ tags_all }}</a>
+            <a class="menu-link js-tags-all" href="/{{ page.path }}">All posts</a> {% comment %}/* TODO: Add multilanguge tag */{% endcomment %}
           </li>
           {% for tag in site.language_tags %}
             {% assign activestr = " " %}

@@ -130,13 +130,6 @@
       "file": "components/tags-post.tpl",
       "layout_name": "tags-post",
       "title": "tags-post"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/tags-variables.tpl",
-      "layout_name": "tags-variables",
-      "title": "tags-variables"
     }
   ],
   "assets": [
