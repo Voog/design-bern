@@ -15,9 +15,9 @@
   }
 
   // Styling rules for the editable content area headings and paragraphs.
-  h1, h2, h3, h4, h5, h6, p, ul, ol, table {
-    & .light-background & {
-      @include color($secondary-color);
+  &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
+    .light-background & {
+      @include color($primary-color);
     }
 
     .dark-background & {
@@ -185,12 +185,25 @@
 
   // Draggable content area without content.
   // TODO: Remove if different color schemes are supported by VOOG.
-  &.dark-background {
+  .dark-background & {
     .edy-empty-bordered {
       @include border(all, 1px, dashed, $white, 0.63);
 
       .edy-empty-header {
         @include color($white, 0.63);
+      }
+    }
+
+    // Content area border.
+    .edy-content-element-hover {
+      @include border(all, 1px, solid, $white, 0.2);
+    }
+
+    .edy-texteditor-active {
+      outline: 1px solid rgba($white, 0.4);
+
+      &:hover {
+        outline: 1px solid rgba($white, 0.63)
       }
     }
   }
