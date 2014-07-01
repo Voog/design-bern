@@ -202,7 +202,7 @@
 
   .form_field_required {
     .form_field_label:after {
-      content: ' * \a';
+      content: '* \a';
     }
   }
 
@@ -226,7 +226,7 @@
   .form_notice, {
     display: inline-block;
     vertical-align: top;
-    margin: 18px 0 0;
+    margin: 0 0 18px;
     @include color($white);
     line-height: 1;
     @include box-shadow(4px, 4px, 0, rgba($black, 0.1));
