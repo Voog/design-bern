@@ -30,4 +30,6 @@
 {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
 {% if site.data.fb_admin %}<meta property="fb:admins" content="{{ site.data.fb_admin }}">{% endif %}
 <meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}">
+<meta property="og:title" content="{{ site.name }}">
 <!-- https://developers.facebook.com/tools/debug - Debug after each modification -->
