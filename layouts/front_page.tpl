@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
-<head>
+<head prefix="og: http://ogp.me/ns#">
   {% include "html-head" %}
-  {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
-  {% comment %}<!-- TODO: Add functionality after the CMS is going to support it -->{% endcomment %}
-  {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% endif %}
-
   <link rel="stylesheet" href="/assets/admin/tools/0.1.3/edicy-tools.css">
   {% include "bg-picker-variables" %}
-
   {{ site.stats_header }}
 </head>
 
