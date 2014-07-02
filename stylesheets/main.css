@@ -1470,13 +1470,6 @@ body.search-open {
   overflow-x: hidden;
   overflow-y: auto;
 }
-.voog-search-modal-inner em {
-  font-style: normal;
-  background-color: #f9ec5a;
-  background-color: rgba(249, 236, 90, 0.5);
-  border-radius: 2px;
-  padding: 0 0.2em;
-}
 .voog-search-modal-inner.search-results-active {
   display: block;
 }
@@ -1561,6 +1554,13 @@ body.search-open {
 .voog-search-modal-result p {
   margin: 5px 0 0;
   font-size: 14px;
+}
+.voog-search-modal-result em {
+  font-style: normal;
+  background-color: #f9ec5a;
+  background-color: rgba(249, 236, 90, 0.5);
+  border-radius: 2px;
+  padding: 0 0.2em;
 }
 
 /* FORMS */

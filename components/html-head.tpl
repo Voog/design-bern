@@ -28,7 +28,7 @@
 
 {% comment %}<!-- FACEBOOK OPENGRAPH -->{% endcomment %}
 <!-- https://developers.facebook.com/tools/debug - Debug after each modification -->
-{% comment %}<!-- TODO: Add admin and img support after the CMS is going to support it -->{% endcomment %}
+{% comment %}<!-- TODO: Add admin and image editing support after the CMS is going to support it -->{% endcomment %}
 {% if site.data.fb_admin %}<meta property="fb:admins" content="{{ site.data.fb_admin }}">{% endif %}
 <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ site.url }}{% if article %}{{ article.url | remove_first:'/' }}{% else %}{{ page.url | remove_first:'/' }}{% endif %}">
