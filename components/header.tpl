@@ -1,6 +1,7 @@
 <header class="header">
   <section class="header-left">
     <div class="header-title content-formatted">{% unless editmode %}<a href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
+
     {% if site.search.enabled %}
       <button class="search-btn search-close-btn js-search-close-btn">
         <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -13,8 +14,8 @@
           <path d="M20,17.675 C20,18.296 19.755,18.88 19.31,19.319 C18.865,19.758 18.274,20 17.645,20 C17.016,20 16.425,19.758 15.98,19.319 C15.98,19.319 11.946,15.335 11.946,15.335 C10.825,15.9 9.56,16.226 8.216,16.226 C3.678,16.226 0,12.594 0,8.113 C0,3.632 3.678,0 8.216,0 C12.753,0 16.431,3.632 16.431,8.113 C16.431,9.573 16.035,10.939 15.352,12.122 C15.352,12.122 19.31,16.031 19.31,16.031 C19.755,16.47 20,17.054 20,17.675 ZM8.217,1.954 C4.77,1.954 1.976,4.713 1.976,8.117 C1.976,11.52 4.77,14.279 8.217,14.279 C11.663,14.279 14.457,11.52 14.457,8.117 C14.457,4.713 11.663,1.954 8.217,1.954 Z"></path>
         </svg>
       </button>
-
     {% endif %}
+
       <button class="menu-btn js-menu-btn">
         <span class="menu-stripe"></span>
         <span class="menu-stripe"></span>

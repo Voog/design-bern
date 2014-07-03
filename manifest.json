@@ -213,39 +213,27 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/jquery.js",
+      "file": "javascripts/application.min.js",
       "kind": "javascripts",
-      "filename": "jquery.js"
+      "filename": "application.min.js"
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/main.js",
+      "file": "javascripts/modernizr.min.js",
       "kind": "javascripts",
-      "filename": "main.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/modernizr.js",
-      "kind": "javascripts",
-      "filename": "modernizr.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/overthrow.js",
-      "kind": "javascripts",
-      "filename": "overthrow.js"
+      "filename": "modernizr.min.js"
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/ie8.css",
+      "file": "stylesheets/ie8.min.css",
       "kind": "stylesheets",
-      "filename": "ie8.css"
+      "filename": "ie8.min.css"
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/main.css",
+      "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
-      "filename": "main.css"
+      "filename": "main.min.css"
     }
   ]
 }
