@@ -224,12 +224,6 @@
 
   &.no-content.search-results-active {
     text-align: center;
-
-    .voog-search-modal-results {
-      display: table-cell;
-      vertical-align: middle;
-      width: 100%;
-    }
   }
 
   @include query($mobile-1) {
@@ -244,6 +238,12 @@
       table-layout: fixed;
       width: 100%;
       padding: 0;
+
+      .voog-search-modal-results {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+      }
     }
   }
 
