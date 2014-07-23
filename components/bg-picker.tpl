@@ -14,9 +14,9 @@
 
       preview: function(data) {
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
-        col = (data.color && data.color !== '') ? data.color : 'none',
-        colorData = (data.colorData && data.colorData !== '') ? data.colorData : '',
-        lightness = colorData && colorData !== '' && colorData.lightness ? colorData.lightness : 0;
+            col = (data.color && data.color !== '') ? data.color : 'none',
+            colorData = (data.colorData && data.colorData !== '') ? data.colorData : '',
+            lightness = colorData && colorData !== '' && colorData.lightness ? colorData.lightness : 0;
 
         $('.js-content-inner').removeClass('light-background dark-background').addClass(lightness <= 0.5 ? 'dark-background' : 'light-background');
         $('.js-bgpicker-cover-image').css({'background-image' : img});
