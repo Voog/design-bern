@@ -1,4 +1,4 @@
-/* Modernizr 2.8.2 (Custom Build) | MIT & BSD
+/* Modernizr 2.8.3 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-flexbox-svg-shiv-cssclasses-testprop-testallprops-domprefixes-load
  */
 ;
@@ -7,7 +7,7 @@
 
 window.Modernizr = (function( window, document, undefined ) {
 
-    var version = '2.8.2',
+    var version = '2.8.3',
 
     Modernizr = {},
 
