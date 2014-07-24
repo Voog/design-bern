@@ -46,13 +46,10 @@ module.exports = function(grunt) {
         'devFile' : 'javascripts/src/modernizr.js',
         'outputFile' : 'javascripts/modernizr.js',
 
-        'css': {
-          'flexbox': true
-        },
-
-        'misc': {
-          'svg': true
-        },
+        'tests': [
+          'flexbox',
+          'svg'
+        ],
 
         'uglify' : false
       }
