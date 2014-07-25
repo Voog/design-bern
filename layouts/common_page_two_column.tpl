@@ -2,7 +2,6 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "html-head" %}
-  {{ site.stats_header }}
 </head>
 
 <body class="common-page two-column-page js-bgpicker-body-image">

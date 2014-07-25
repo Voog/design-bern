@@ -4,7 +4,6 @@
   {% include "html-head" %}
   <link rel="stylesheet" href="/assets/admin/tools/0.1.3/edicy-tools.css">
   {% include "bg-picker-variables" %}
-  {{ site.stats_header }}
 </head>
 
 <body class="front-page">
