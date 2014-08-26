@@ -1,5 +1,5 @@
 {% editorjsblock %}
-  <script src='/assets/admin/tools/0.1.3/edicy-tools.js'></script>
+  <script src='http://static.voog.construction/libs/edicy-tools/latest/edicy-tools.js'></script>
   <script>
     // Front page cover image and color data preview and save logic
     var pageData = new Edicy.CustomData({
