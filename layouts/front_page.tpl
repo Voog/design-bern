@@ -2,7 +2,7 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "html-head" %}
-  {% if editmode %}<link rel="stylesheet" href="http://static.voog.construction/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
+  {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
   {% include "bg-picker-variables" %}
 </head>
 
