@@ -65,17 +65,6 @@
     }
   }
 
-  // Styling rules for the editable content area lists and links.
-  ul {
-    li {
-    }
-  }
-
-  ol {
-    li {
-    }
-  }
-
   a {
     @include color($blue-1, 1);
 
