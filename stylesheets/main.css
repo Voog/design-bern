@@ -133,7 +133,7 @@ body.search-open {
   color: #0066bb;
   color: rgba(0, 102, 187, 0.8);
 }
-.content-formatted img, .content-formatted iframe {
+.content-formatted iframe {
   max-width: 100%;
   height: auto;
   margin-top: 20px;
@@ -157,9 +157,6 @@ body.search-open {
 .content-formatted blockquote {
   margin: 20px 40px;
 }
-.content-formatted .image-container img {
-  margin-top: 0;
-}
 .content-formatted .edy-image-container-title-inner {
   padding: 4px 6px 2px;
   font-size: 16px;
@@ -167,8 +164,11 @@ body.search-open {
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {
   width: 45%;
-  margin-top: 11px;
-  margin-bottom: 11px;
+  margin-top: 39px;
+}
+.content-formatted .edy-positionable-container-left:first-child,
+.content-formatted .edy-positionable-container-right:first-child {
+  margin-top: 8px;
 }
 .content-formatted .edy-positionable-container-left {
   margin-right: 3%;
@@ -208,15 +208,15 @@ body.search-open {
   border-bottom: 1px solid #9c9e9e;
 }
 .dark-background .content-formatted .edy-empty-bordered {
-  border: 1px dashed white;
+  border: 1px dashed #FFFFFF;
   border: 1px dashed rgba(255, 255, 255, 0.63);
 }
 .dark-background .content-formatted .edy-empty-bordered .edy-empty-header {
-  color: white;
+  color: #FFFFFF;
   color: rgba(255, 255, 255, 0.63);
 }
 .dark-background .content-formatted .edy-content-element-hover {
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .dark-background .content-formatted .edy-texteditor-active {
@@ -253,7 +253,7 @@ body.search-open {
     cursor: pointer;
   }
   .menu-btn.open .menu-stripe, .menu-btn:hover .menu-stripe {
-    background-color: #1b2124;
+    background-color: #1B2124;
     background-color: rgba(27, 33, 36, 0.47);
   }
   .menu-btn:focus {
@@ -274,7 +274,7 @@ body.search-open {
   width: 23px;
   height: 4px;
   margin: 4px 0;
-  background-color: #1b2124;
+  background-color: #1B2124;
   background-color: rgba(27, 33, 36, 0.67);
   border-radius: 5px;
 }
@@ -323,7 +323,7 @@ body.search-open {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   }
   .menu-main.expanded > .menu {
-    border-top: 1px solid #696b6c;
+    border-top: 1px solid #696B6C;
     border-top: 1px solid rgba(105, 107, 108, 0.2);
   }
 }
@@ -348,11 +348,11 @@ body.search-open {
 }
 .menu-main .menu .menu-item .menu-link {
   font-weight: 600;
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.67);
 }
 .menu-main .menu .menu-item .menu-link.untranslated {
-  color: #cc0000;
+  color: #CC0000;
   color: rgba(204, 0, 0, 0.5);
 }
 .menu-main .menu .menu-item .menu-link.active, .menu-main .menu .menu-item .menu-link.active:hover {
@@ -368,7 +368,7 @@ body.search-open {
     display: block;
     margin: 0;
     font-size: 20px;
-    border-bottom: 1px solid #1b2124;
+    border-bottom: 1px solid #1B2124;
     border-bottom: 1px solid rgba(27, 33, 36, 0.2);
     background-color: white;
   }
@@ -386,7 +386,7 @@ body.search-open {
   }
   .menu-main .menu .menu-item .menu-link:hover {
     color: #838586;
-    background-color: #c7e5ff;
+    background-color: #C7E5FF;
     background-color: rgba(199, 229, 255, 0.5);
   }
 }
@@ -403,7 +403,7 @@ body.search-open {
     margin-left: 0;
     padding: 1px 30px 7px;
     background-color: white;
-    border-bottom: 1px solid #696b6c;
+    border-bottom: 1px solid #696B6C;
     border-bottom: 1px solid rgba(105, 107, 108, 0.2);
   }
   .menu-main .menu .edit-btn .edy-menu-menuadd {
@@ -460,7 +460,7 @@ body.search-open {
 .menu-sub {
   margin: 0 30px;
   padding: 5px 0 5px;
-  border-bottom: 1px solid #696b6c;
+  border-bottom: 1px solid #696B6C;
   border-bottom: 1px solid rgba(105, 107, 108, 0.2);
 }
 @media screen and (max-width: 960px) {
@@ -485,7 +485,7 @@ body.search-open {
   color: #9c9e9e;
 }
 .menu-sub .menu .menu-item .menu-link.untranslated {
-  color: #cc0000;
+  color: #CC0000;
   color: rgba(204, 0, 0, 0.5);
 }
 .menu-sub .menu .menu-item .menu-link.active, .menu-sub .menu .menu-item .menu-link:hover {
@@ -597,7 +597,7 @@ body.search-open {
   position: relative;
   display: block;
   padding: 4px 39px 4px 12px;
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.67);
 }
 .menu-lang .menu-item .menu-link.active, .menu-lang .menu-item .menu-link.active:hover {
@@ -960,7 +960,7 @@ body.search-open {
   color: #1b2124;
 }
 .header-title a:hover {
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.8);
 }
 
@@ -1111,11 +1111,11 @@ body.search-open {
   font-size: 14px;
   line-height: 1;
   color: white;
-  background-color: #1b2124;
+  background-color: #1B2124;
   background-color: rgba(27, 33, 36, 0.5);
 }
 .post .post-link:hover {
-  background-color: #1b2124;
+  background-color: #1B2124;
   background-color: rgba(27, 33, 36, 0.8);
 }
 .post .post-title {
@@ -1128,7 +1128,7 @@ body.search-open {
   color: #1b2124;
 }
 .post .post-title a:hover {
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.8);
 }
 .post .post-excerpt,
@@ -1202,7 +1202,7 @@ body.search-open {
 }
 .blog-page .post-date {
   font-size: 14px;
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.5);
 }
 
@@ -1282,11 +1282,11 @@ body.search-open {
   position: relative;
   z-index: 20;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .search-form.active {
-  border: 1px solid black;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 480px) {
@@ -1338,7 +1338,7 @@ body.search-open {
   font-family: inherit;
   font-size: 14px;
   line-height: 1;
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.67);
   background-color: white;
   -webkit-box-sizing: border-box;
@@ -1359,7 +1359,7 @@ body.search-open {
     height: 40px;
     font-size: 20px;
     padding: 0 42px 0 20px;
-    background-color: black;
+    background-color: #000000;
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
@@ -1542,7 +1542,7 @@ body.search-open {
   color: #1b2124;
 }
 .voog-search-modal-result h3 a:hover {
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.8);
 }
 .voog-search-modal-result p {
@@ -1551,7 +1551,7 @@ body.search-open {
 }
 .voog-search-modal-result em {
   font-style: normal;
-  background-color: #f9ec5a;
+  background-color: #F9EC5A;
   background-color: rgba(249, 236, 90, 0.5);
   border-radius: 2px;
   padding: 0 0.2em;
@@ -1776,7 +1776,7 @@ body.search-open {
   width: 60px;
   text-align: center;
   font-size: 30px;
-  background-color: #1b2124;
+  background-color: #1B2124;
   background-color: rgba(27, 33, 36, 0.5);
 }
 .content-formatted .feedback-loading span {
@@ -1805,35 +1805,35 @@ body.search-open {
   margin-right: 0;
 }
 @-webkit-keyframes feedback-loading {
-  .content-formatted 0%  {
+  0% {
     background: transparent;
   }
-  .content-formatted 50%  {
-    background: white;
+  50% {
+    background: #FFFFFF;
   }
-  .content-formatted 100%  {
+  100% {
     background: transparent;
   }
 }
 @-moz-keyframes feedback-loading {
-  .content-formatted 0%  {
+  0% {
     background: transparent;
   }
-  .content-formatted 50%  {
-    background: white;
+  50% {
+    background: #FFFFFF;
   }
-  .content-formatted 100%  {
+  100% {
     background: transparent;
   }
 }
 @keyframes feedback-loading {
-  .content-formatted 0%  {
+  0% {
     background: transparent;
   }
-  .content-formatted 50%  {
-    background: white;
+  50% {
+    background: #FFFFFF;
   }
-  .content-formatted 100%  {
+  100% {
     background: transparent;
   }
 }
@@ -1851,7 +1851,7 @@ body.search-open {
   height: 20px;
   margin: 2px 0 5px 9px;
   padding: 0;
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 100%;
   cursor: pointer;
@@ -1888,7 +1888,7 @@ body.search-open {
   padding-left: 24px;
   font-size: 18px;
   color: #696b6c;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #EEEEEE;
   border-left: 5px solid rgba(238, 238, 238, 0.4);
 }
 .comments .comment-form .form_field_textfield,
@@ -1901,7 +1901,7 @@ body.search-open {
   padding: 30px 20px;
   text-align: center;
   font-size: 14px;
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.75);
 }
 @media screen and (max-width: 600px) {
@@ -1922,15 +1922,17 @@ body.search-open {
   padding: 7px 9px;
   font-size: 10px;
   line-height: 1;
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.75);
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .footer .voog-reference a:hover {
-  color: #1b2124;
+  color: #1B2124;
   color: rgba(27, 33, 36, 0.75);
-  border: 1px solid black;
+  border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.75);
 }
+
+/*# sourceMappingURL=main.css.map */

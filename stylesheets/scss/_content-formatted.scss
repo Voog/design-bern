@@ -85,7 +85,7 @@
   }
 
   // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.
-  img, iframe {
+  iframe {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
@@ -114,12 +114,6 @@
     margin: 20px 40px;
   }
 
-  .image-container {
-    img {
-      margin-top: 0;
-    }
-  }
-
   .edy-image-container-title-inner {
     padding: 4px 6px 2px;
     font-size: 16px;
@@ -128,8 +122,11 @@
   .edy-positionable-container-left,
   .edy-positionable-container-right {
     width: 45%;
-    margin-top: 11px;
-    margin-bottom: 11px;
+    margin-top: 39px;
+
+    &:first-child {
+      margin-top: 8px;
+    }
   }
 
   .edy-positionable-container-left {
