@@ -225,12 +225,6 @@ body.search-open {
 .dark-background .content-formatted .edy-texteditor-active:hover {
   outline: 1px solid rgba(255, 255, 255, 0.63);
 }
-.content-formatted .edy-content-element {
-  margin-top: 20px;
-}
-.content-formatted .edy-content-element:first-child {
-  margin-top: 0;
-}
 .content-formatted .edy-texteditor-view {
   min-height: 36px;
 }
@@ -1238,12 +1232,6 @@ body.search-open {
 }
 
 /* GALLERY */
-.edys-gallery-area {
-  margin-top: 20px;
-}
-.edys-gallery-area:first-child {
-  margin-top: 0;
-}
 .edys-gallery-area .edys-gallery .edys-gallery-item {
   display: inline-block;
   padding-bottom: 1px;
