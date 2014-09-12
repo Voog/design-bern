@@ -59,23 +59,16 @@
     {% endif %}
   {% endif %}
 
-  {% if front_page == true %}
-      {% if page.description == nil or page.description == "" %}
-        {% unless editmode %}
-          {% capture front_page_content %}{% content %}{% endcapture %}
-          <meta property="og:description" content="{{ front_page_content | strip_html }}">
-          <meta name="description" content="{{ front_page_content | strip_html  }}">
-        {% endunless %}
-      {% else %}
-        <meta property="og:description" content="{{ page.description }}">
-        <meta name="description" content="{{ page.description }}">
-      {% endif %}
+  {% unless page.description == nil or page.description == "" %}
+    <meta property="og:description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}">
   {% else %}
-    {% unless page.description == nil or page.description == "" %}
-      <meta property="og:description" content="{{ page.description }}">
-      <meta name="description" content="{{ page.description }}">
+    {% unless editmode %}
+      {% capture content %}{% content %}{% endcapture %}
+      <meta property="og:description" content="{{ content | strip_html }}">
+      <meta name="description" content="{{ content | strip_html  }}">
     {% endunless %}
-  {% endif %}
+  {% endunless %}
 {% endif %}
 
 {% if blog %}{{ blog.rss_link }}{% endif %}
