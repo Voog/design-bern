@@ -18,7 +18,6 @@
         <section class="content-body content-formatted">{% content %}</section>
       </div>
     </main>
-
     {% include "footer" %}
   </div>
 
