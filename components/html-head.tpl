@@ -62,11 +62,20 @@
     <meta property="og:description" content="{{ page.description }}">
     <meta name="description" content="{{ page.description }}">
   {% else %}
-    {% unless blog or editmode %}
-      {% capture content %}{% content %}{% endcapture %}
-      <meta property="og:description" content="{{ content | strip_html | truncatewords: 200, '...' }}">
-      <meta name="description" content="{{ content | strip_html | truncatewords: 200, '...'  }}">
-    {% endunless %}
+    {% if blog %}
+      {% for article in articles %}
+        {% if forloop.first %}
+          <meta property="og:description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
+          <meta name="description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...'  }}">
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% unless editmode %}
+        {% capture content %}{% content %}{% endcapture %}
+        <meta property="og:description" content="{{ content | strip_html | truncatewords: 200, '...' }}">
+        <meta name="description" content="{{ content | strip_html | truncatewords: 200, '...'  }}">
+      {% endunless %}
+    {% endif %}
   {% endunless %}
 {% endif %}
 
