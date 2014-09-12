@@ -52,7 +52,7 @@
     <meta property="og:image" content="{{ site.data.fb_image }}">
   {% endif %}
 
-  {% if site.root_item.selected? %}
+  {% if front_page == true %}
       {% if page.description == nil or page.description == "" %}
         {% unless editmode %}
           {% capture front_page_content %}{% content %}{% endcapture %}
