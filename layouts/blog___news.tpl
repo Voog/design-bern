@@ -5,7 +5,6 @@
 </head>
 
 <body class="blog-page js-bgpicker-body-image">
-
   <div class="container">
     {% include "header" %}
     {% include "tags-blog" %}

@@ -43,8 +43,8 @@
   {% elsif site.data.fb_image %}
     <meta property="og:image" content="{{ site.data.fb_image }}">
   {% endif %}
-  <meta property="og:description" content="{{ article.excerpt | strip_html | truncate: 200 }}">
-  <meta name="description" content="{{ article.excerpt | strip_html | truncate: 200 }}">
+  <meta property="og:description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
+  <meta name="description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
 {% else %}
 
   {% if front_page == true %}
@@ -63,10 +63,10 @@
     <meta property="og:description" content="{{ page.description }}">
     <meta name="description" content="{{ page.description }}">
   {% else %}
-    {% unless editmode %}
+    {% unless page.blog? or editmode %}
       {% capture content %}{% content %}{% endcapture %}
-      <meta property="og:description" content="{{ content | strip_html }}">
-      <meta name="description" content="{{ content | strip_html  }}">
+      <meta property="og:description" content="{{ content | strip_html | truncatewords: 200, '...' }}">
+      <meta name="description" content="{{ content | strip_html | truncatewords: 200, '...'  }}">
     {% endunless %}
   {% endunless %}
 {% endif %}
