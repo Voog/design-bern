@@ -46,7 +46,6 @@
   <meta property="og:description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
   <meta name="description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
 {% else %}
-
   {% if front_page == true %}
     {% unless page.data.cover_image == nil or page.data.cover_image == '' %}
       <meta property="og:image" content="{{ page.data.cover_image }}">
@@ -63,7 +62,7 @@
     <meta property="og:description" content="{{ page.description }}">
     <meta name="description" content="{{ page.description }}">
   {% else %}
-    {% unless page.blog? or editmode %}
+    {% unless blog or editmode %}
       {% capture content %}{% content %}{% endcapture %}
       <meta property="og:description" content="{{ content | strip_html | truncatewords: 200, '...' }}">
       <meta name="description" content="{{ content | strip_html | truncatewords: 200, '...'  }}">
