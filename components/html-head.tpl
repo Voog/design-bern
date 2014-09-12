@@ -46,10 +46,17 @@
   <meta property="og:description" content="{{ article.excerpt | strip_html | truncate: 200 }}">
   <meta name="description" content="{{ article.excerpt | strip_html | truncate: 200 }}">
 {% else %}
-  {% if page.data.fb_image %}
-    <meta property="og:image" content="{{ page.data.fb_image }}">
-  {% elsif site.data.fb_image %}
-    <meta property="og:image" content="{{ site.data.fb_image }}">
+
+  {% if front_page == true %}
+    {% unless page.data.cover_image == nil or page.data.cover_image == '' %}
+      <meta property="og:image" content="{{ page.data.cover_image }}">
+    {% endunless %}
+  {% else %}
+    {% if page.data.fb_image %}
+      <meta property="og:image" content="{{ page.data.fb_image }}">
+    {% elsif site.data.fb_image %}
+      <meta property="og:image" content="{{ site.data.fb_image }}">
+    {% endif %}
   {% endif %}
 
   {% if front_page == true %}
