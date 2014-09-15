@@ -4,7 +4,7 @@
   {% assign front_page = true %}
   {% include "html-head" %}
   {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
-  {% include "bg-picker-variables" %}
+  {% include "edicy-tools-variables" %}
 </head>
 
 <body class="front-page">
@@ -23,6 +23,6 @@
   </div>
 
   {% include "javascripts" %}
-  {% include "bg-picker" %}
+  {% include "edicy-tools" %}
 </body>
 </html>
