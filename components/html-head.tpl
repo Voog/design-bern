@@ -28,7 +28,7 @@
 
 {% comment %}<!-- FACEBOOK OPENGRAPH -->{% endcomment %}
 <!-- https://developers.facebook.com/tools/debug - Debug after each modification -->
-{% comment %}<!-- TODO: Add admin and image editing support after the CMS is going to support it -->{% endcomment %}
+{% comment %}<!-- TODO: Add admin value editing support after the CMS is going to support it -->{% endcomment %}
 {% if site.data.fb_admin %}<meta property="fb:admins" content="{{ site.data.fb_admin }}">{% endif %}
 <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ site.url }}{% if article %}{{ article.url | remove_first:'/' }}{% else %}{{ page.url | remove_first:'/' }}{% endif %}">
@@ -38,7 +38,7 @@
 {% comment %}Article page OG & meta tags.{% endcomment %}
 {% if article %}
   {% comment %}TODO: Add functionality to set custom Facebook OG image if the CMS is going to support it.{% endcomment %}
-  {% comment %}Article page OG image settings.{% endcomment %}
+  {% comment %}Article page OG image tags.{% endcomment %}
   {% if article.data.fb_image %}
     <meta property="og:image" content="{{ article.data.fb_image }}">
   {% elsif page.data.fb_image %}
@@ -50,17 +50,22 @@
   {% comment %}Article page description tags.{% endcomment %}
   <meta property="og:description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
   <meta name="description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...' }}">
-{% else %}
 
 {% comment %}Content page OG & meta tags.{% endcomment %}
+{% else %}
+  {% comment %}"Front page" type content pages OG image tags.{% endcomment %}
   {% if front_page == true %}
-    {% comment %}Front pages OG image tags. {% endcomment %}
-    {% unless page.data.cover_image == nil or page.data.cover_image == '' %}
-      <meta property="og:image" content="{{ page.data.cover_image }}">
+    {% unless page.data.cover_image == '' %}
+      {% if page.data.cover_image == nil %}
+        <meta property="og:image" content="{{ site.url }}{{ cover_image | remove_first: '/' }}">
+      {% else %}
+        <meta property="og:image" content="{{ cover_image }}">
+      {% endif %}
     {% endunless %}
+
+  {% comment %}All other content pages OG image tags.{% endcomment %}
   {% else %}
     {% comment %}TODO: Add functionality to set custom Facebook OG image if the CMS is going to support it.{% endcomment %}
-    {% comment %}Common pages OG image tags.{% endcomment %}
     {% if page.data.fb_image %}
       <meta property="og:image" content="{{ page.data.fb_image }}">
     {% elsif site.data.fb_image %}
@@ -68,10 +73,11 @@
     {% endif %}
   {% endif %}
 
-  {% comment %}Description tags.{% endcomment %}
+  {% comment %}Content pages description tags (if specific description is added under the page settings).{% endcomment %}
   {% unless page.description == nil or page.description == "" %}
     <meta property="og:description" content="{{ page.description }}">
     <meta name="description" content="{{ page.description }}">
+
   {% else %}
     {% comment %}Blog page description tags.{% endcomment %}
     {% if blog %}
@@ -81,12 +87,16 @@
           <meta name="description" content="{{ article.excerpt | strip_html | truncatewords: 200, '...'  }}">
         {% endif %}
       {% endfor %}
+
+    {% comment %}Content pages description tags (fallback behaviour to read from the content area).{% endcomment %}
     {% else %}
-      {% comment %}Content page description tags.{% endcomment %}
       {% unless editmode %}
         {% capture content %}{% content %}{% endcapture %}
-        <meta property="og:description" content="{{ content | strip_html | truncatewords: 200, '...' }}">
-        <meta name="description" content="{{ content | strip_html | truncatewords: 200, '...'  }}">
+        {% assign content_length = content | strip_html | size %}
+        {% if content_length > 0 %}
+          <meta property="og:description" content="{{ content | strip_html | escape | strip_newlines | truncatewords: 200, '...' }}">
+          <meta name="description" content="{{ content | strip_html | escape | strip_newlines | truncatewords: 200, '...' }}">
+        {% endif %}
       {% endunless %}
     {% endif %}
   {% endunless %}
