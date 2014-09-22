@@ -1,23 +1,9 @@
 /* HEADER */
 // Styling rules for the site's header. These rules affect the entire site.
 .header {
+  @extend %clearfix;
   position: relative;
   padding: 23px 0 21px;
-
-  .no-flexbox & {
-    display: table;
-  }
-
-  .flexbox & {
-    @include display(flex);
-  }
-
-  @include query($tablet-3) {
-    .no-flexbox &,
-    .flexbox & {
-      display: block;
-    }
-  }
 
   @include query($mobile-1) {
     position: static;
@@ -27,25 +13,8 @@
 
 .header-left,
 .header-right {
-  .flexbox & {
-    @include flex-grow(2);
-  }
-
-  .no-flexbox & {
-    display: table-cell;
-    vertical-align: top;
-  }
-
   @include query($tablet-2) {
     padding: 0 20px;
-  }
-
-  @include query($tablet-3) {
-    .no-flexbox &,
-    .flexbox & {
-      display: block;
-      width: auto;
-    }
   }
 
   @include query($mobile-1) {
@@ -54,24 +23,14 @@
 }
 
 .header-left {
+  float: left;
   min-width: 220px;
   position: relative;
-
-  .no-flexbox & {
-    width: 200px;
-
-    @include query($tablet-1) {
-      width: auto;
-    }
-  }
 }
 
 .header-right {
+  float: right;
   text-align: right;
-
-  .no-flexbox & {
-    width: 740px;
-  }
 }
 
 .header-title {
@@ -83,11 +42,12 @@
   font-size: 24px;
 
   .edy-editable {
+    max-width: none;
+    min-width: 120px;
+
     @include query($mobile-1) {
       max-width: 80%;
     }
-    max-width: 55%;
-    min-width: 120px;
   }
 
   &, a {
