@@ -92,7 +92,7 @@
     {% else %}
       {% unless editmode %}
         {% capture content %}{% content %}{% endcapture %}
-        {% assign content_length = content | strip_html | size %}
+        {% assign content_length = content | strip_html | strip_newlines | remove: ' ' | size %}
         {% if content_length > 0 %}
           <meta property="og:description" content="{{ content | strip_html | escape | strip_newlines | truncatewords: 200, '...' }}">
           <meta name="description" content="{{ content | strip_html | escape | strip_newlines | truncatewords: 200, '...' }}">
