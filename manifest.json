@@ -130,6 +130,13 @@
       "file": "components/tags-post.tpl",
       "layout_name": "tags-post",
       "title": "tags-post"
+    },
+    {
+      "title": "open-graph",
+      "layout_name": "open-graph",
+      "content_type": "component",
+      "component": true,
+      "file": "components/open-graph.tpl"
     }
   ],
   "assets": [
