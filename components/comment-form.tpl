@@ -31,7 +31,7 @@
       </div>
 
       <div class="form_submit">
-        <input type="submit" value="{{ "submit" | lc }}">
+        <input type="submit" value="{{ "submit_comment" | lc }}">
       </div>
     </div>
   {% endcommentform %}
