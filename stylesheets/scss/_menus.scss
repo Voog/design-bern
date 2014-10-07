@@ -8,7 +8,7 @@
   @include query($tablet-3) {
     position: absolute;
     z-index: 11;
-    top: 8px;
+    top: 7px;
     right: 20px;
     display: inline-block;
     margin: 0;
@@ -74,7 +74,7 @@
 // Styling rules for the site's main menu.
 .menu-main {
   position: relative;
-  bottom: 2px;
+  top: -2px;
   display: inline-block;
   vertical-align: middle;
 
@@ -305,7 +305,7 @@
 // Styling rules for the site's language menu.
 .menu-lang-btn {
   position: relative;
-  top: -3px;
+  top: -2px;
   right: -5px;
   display: inline-block;
   vertical-align: middle;

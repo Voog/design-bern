@@ -24,6 +24,7 @@
 {% capture page_title %}{% if article %}{{ article.title }} — {{ page.site_title }}{% else %}{% if site.root_item.selected? %}{{ page.site_title }}{% else %}{{ page.title }} — {{ page.site_title }}{% endif %}{% endif %}{% endcapture %}
 <title>{{ page_title }}</title>
 
+{% comment %}FACEBOOK OPEN GRAPH META TAGS{% endcomment%}
 {% include "open-graph" %}
 
 {% if blog %}{{ blog.rss_link }}{% endif %}

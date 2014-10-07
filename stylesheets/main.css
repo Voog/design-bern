@@ -246,7 +246,7 @@ body.search-open {
   .menu-btn {
     position: absolute;
     z-index: 11;
-    top: 8px;
+    top: 7px;
     right: 20px;
     display: inline-block;
     margin: 0;
@@ -304,7 +304,7 @@ body.search-open {
 
 .menu-main {
   position: relative;
-  bottom: 2px;
+  top: -2px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -503,7 +503,7 @@ body.search-open {
 
 .menu-lang-btn {
   position: relative;
-  top: -3px;
+  top: -2px;
   right: -5px;
   display: inline-block;
   vertical-align: middle;
@@ -864,7 +864,8 @@ body.search-open {
 /* HEADER */
 .header {
   position: relative;
-  padding: 23px 0 21px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 @media screen and (max-width: 480px) {
   .header {
@@ -887,13 +888,26 @@ body.search-open {
 }
 
 .header-left {
+  position: relative;
   float: left;
   min-width: 220px;
-  position: relative;
+}
+@media screen and (max-width: 840px) {
+  .header-left {
+    float: none;
+    min-width: none;
+  }
 }
 
 .header-right {
+  float: right;
   text-align: right;
+  margin-left: 20px;
+}
+@media screen and (max-width: 1020px) {
+  .header-right {
+    margin-left: 0;
+  }
 }
 
 .header-title {
@@ -904,14 +918,23 @@ body.search-open {
   font-weight: 600;
   font-size: 24px;
 }
+@media screen and (max-width: 840px) {
+  .header-title {
+    margin-right: 40px;
+  }
+  .search-enabled .header-title {
+    margin-right: 202px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .search-enabled .header-title {
+    margin-right: 65px;
+  }
+}
 .header-title .edy-editable {
   max-width: none;
   min-width: 120px;
-}
-@media screen and (max-width: 480px) {
-  .header-title .edy-editable {
-    max-width: 80%;
-  }
+  min-height: 33px;
 }
 .header-title, .header-title a {
   color: #1b2124;
@@ -1205,9 +1228,9 @@ body.search-open {
 /* SEARCH */
 .search {
   position: relative;
+  top: -2px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -4px;
   margin-left: 15px;
   height: 30px;
   line-height: 1em;
@@ -1216,7 +1239,8 @@ body.search-open {
 @media screen and (max-width: 840px) {
   .search {
     position: absolute;
-    top: 30px;
+    margin-left: 0;
+    top: 24px;
     right: 60px;
   }
 }
@@ -1291,7 +1315,7 @@ body.search-open {
   width: 140px;
   height: 30px;
   margin: 0;
-  padding: 0 30px 0 7px;
+  padding: 6px 30px 5px 7px;
   font-family: inherit;
   font-size: 14px;
   line-height: 1em;
@@ -1307,7 +1331,7 @@ body.search-open {
   display: none;
 }
 .search-input::-webkit-input-placeholder {
-  padding: 2px 0 4px 0;
+  padding: 3px 0 4px 0;
   line-height: 1em;
 }
 @media screen and (max-width: 480px) {

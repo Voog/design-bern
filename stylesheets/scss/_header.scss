@@ -3,7 +3,8 @@
 .header {
   @extend %clearfix;
   position: relative;
-  padding: 23px 0 21px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 
   @include query($mobile-1) {
     position: static;
@@ -23,13 +24,24 @@
 }
 
 .header-left {
+  position: relative;
   float: left;
   min-width: 220px;
-  position: relative;
+
+  @include query($tablet-3) {
+    float: none;
+    min-width: none;
+  }
 }
 
 .header-right {
+  float: right;
   text-align: right;
+  margin-left: 20px;
+
+  @include query($tablet-1) {
+    margin-left: 0;
+  }
 }
 
 .header-title {
@@ -40,13 +52,24 @@
   font-weight: 600;
   font-size: 24px;
 
+  @include query($tablet-3) {
+    margin-right: 40px;
+
+    .search-enabled & {
+      margin-right: 202px;
+    }
+  }
+
+  @include query($mobile-1) {
+    .search-enabled & {
+      margin-right: 65px;
+    }
+  }
+
   .edy-editable {
     max-width: none;
     min-width: 120px;
-
-    @include query($mobile-1) {
-      max-width: 80%;
-    }
+    min-height: 33px;
   }
 
   &, a {

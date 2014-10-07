@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header{% if site.search.enabled %} search-enabled{% endif %}">
   <section class="header-left">
     <div class="header-title content-formatted">{% unless editmode %}<a href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
 
