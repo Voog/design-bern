@@ -75,6 +75,10 @@ body.search-open {
 
 .content-formatted {
   word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6, .content-formatted p, .content-formatted ul, .content-formatted ol, .content-formatted pre, .content-formatted code, .content-formatted img, .content-formatted iframe, .content-formatted table, .content-formatted form {
   margin-bottom: 0;
@@ -136,10 +140,12 @@ body.search-open {
 .content-formatted span[style*="font-size"] {
   line-height: 1.7em;
 }
-.content-formatted iframe {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+.content-formatted pre, .content-formatted code, .content-formatted iframe, .content-formatted table, .content-formatted form {
+  word-break: normal;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 .content-formatted pre {
   margin-top: 10px;
@@ -156,6 +162,11 @@ body.search-open {
   display: block;
   margin-top: 0;
   padding: 0;
+}
+.content-formatted iframe {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 .content-formatted blockquote {
   margin: 20px 40px;
