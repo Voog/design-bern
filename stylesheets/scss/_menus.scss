@@ -553,27 +553,31 @@ $flags:
 }
 
 .tags-icon {
-  display: inline-block;
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-  margin: 11px 5px 10px 0;
-  background-position: center;
-
-  .svg & {
-    background-image: url('../assets/ico-tags.svg');
-  }
+  position: absolute;
+  top: 9px;
+  line-height: 0;
 
   .no-svg & {
+    width: 16px;
+    height: 16px;
+    background-position: center;
     background-image: url('../images/ico-tags.png');
   }
 }
 
 .tags {
-  margin-top: 15px;
+  margin-top: 11px;
+
+  .post-page & {
+    position: relative;
+  }
 }
 
 .menu-tags {
+  .post-page & {
+    margin-left: 25px;
+  }
+
   .tags-left,
   .tags-right {
     display: inline-block;
@@ -599,8 +603,6 @@ $flags:
   }
 
   .menu {
-    display: inline-block;
-    vertical-align: middle;
     line-height: 1.3em;
 
     .menu-item,

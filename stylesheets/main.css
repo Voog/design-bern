@@ -821,24 +821,27 @@ body.search-open {
 }
 
 .tags-icon {
-  display: inline-block;
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-  margin: 11px 5px 10px 0;
-  background-position: center;
-}
-.svg .tags-icon {
-  background-image: url("../assets/ico-tags.svg");
+  position: absolute;
+  top: 9px;
+  line-height: 0;
 }
 .no-svg .tags-icon {
+  width: 16px;
+  height: 16px;
+  background-position: center;
   background-image: url("../images/ico-tags.png");
 }
 
 .tags {
-  margin-top: 15px;
+  margin-top: 11px;
+}
+.post-page .tags {
+  position: relative;
 }
 
+.post-page .menu-tags {
+  margin-left: 25px;
+}
 .menu-tags .tags-left,
 .menu-tags .tags-right {
   display: inline-block;
@@ -860,8 +863,6 @@ body.search-open {
   margin-top: 2px;
 }
 .menu-tags .menu {
-  display: inline-block;
-  vertical-align: middle;
   line-height: 1.3em;
 }
 .menu-tags .menu .menu-item,
