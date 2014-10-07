@@ -27,7 +27,7 @@
   border: 1px solid #e5e5e5;
 }
 .search .search-left {
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 .content-formatted .form_field_checkbox,
@@ -45,5 +45,3 @@
 .footer .voog-reference a {
   border: 1px solid #e5e5e5;
 }
-
-/*# sourceMappingURL=ie8.css.map */

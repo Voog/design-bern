@@ -5,7 +5,7 @@
     margin-top: 12px;
     padding: 6px 10px;
     font-size: 14px;
-    line-height: 1;
+    line-height: 1em;
     @include color($white);
     @include bg($secondary-color, 0.5);
 
@@ -31,7 +31,7 @@
 
   .post-excerpt,
   .post-body {
-    line-height: 1.3;
+    line-height: 1.3em;
   }
 
   .post-excerpt {
@@ -51,7 +51,7 @@
   }
 
   .post {
-    margin-top: 39px;
+    margin-top: 45px;
 
     .no-flexbox & {
       display: table;
@@ -121,7 +121,7 @@
 
     .post-title {
       font-size: 36px;
-      line-height: 1;
+      line-height: 1em;
 
       input {
         text-align: center;

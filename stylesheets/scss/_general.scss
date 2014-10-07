@@ -6,7 +6,7 @@ body {
   font-family: "Avenir Next", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.5;
+  line-height: 1.4em;
   @include color($primary-color);
 
   &.search-open {
@@ -19,23 +19,6 @@ body {
   @include query($tablet-3) {
     background-image: none !important;
   }
-}
-
-// Layout specific body classes.
-.front-page {
-}
-
-.common-page {
-}
-
-.blog-page,
-.post-page {
-}
-
-.blog-page {
-}
-
-.post-page {
 }
 
 // Pseudo classes to declare commonly used styling rules for different elements.

@@ -73,6 +73,11 @@
     }
   }
 
+  // Sets the dynamic line-height for the text.
+  span[style*="font-size"] {
+    line-height: 1.7em;
+  }
+
   // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.
   iframe {
     max-width: 100%;

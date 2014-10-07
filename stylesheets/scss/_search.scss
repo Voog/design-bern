@@ -12,7 +12,7 @@
   margin-top: -4px;
   margin-left: 15px;
   height: $search-height-1;
-  line-height: 1;
+  line-height: 1em;
   @include bg($white);
 
   @include query($tablet-3) {
@@ -96,7 +96,7 @@
   padding: 0 30px 0 7px;
   font-family: inherit;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1em;
   @include color($secondary-color, 0.67);
   @include bg($white);
   @include box-sizing(border-box);
@@ -109,7 +109,7 @@
 
   &::-webkit-input-placeholder {
     padding: 2px 0 4px 0;
-    line-height: 1;
+    line-height: 1em;
   }
 
   @include query($mobile-1) {
@@ -212,7 +212,7 @@
   padding: 20px;
   text-align: left;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.5em;
   @include bg($white);
   @include box-shadow(0, 0, 30px, rgba($black, 0.3));
   overflow-x: hidden;
