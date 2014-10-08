@@ -7,7 +7,7 @@
 
   @include query($tablet-3) {
     position: absolute;
-    z-index: 20;
+    z-index: 99999;
     top: 7px;
     right: 20px;
     display: inline-block;
@@ -83,7 +83,7 @@
 
     &.expanded {
       position: absolute;
-      z-index: 25;
+      z-index: 99999;
       top: 60px;
       right: 20px;
       display: block;
@@ -382,7 +382,7 @@
     min-width: 123px;
     background: #fff;
     @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
-    z-index: 25;
+    z-index: 99999;
   }
 }
 

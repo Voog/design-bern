@@ -146,6 +146,7 @@
   .edy-positionable-container-left,
   .edy-positionable-container-right {
     width: 45%;
+    margin-bottom: 20px;
   }
 
   .edy-positionable-container-left {
@@ -156,17 +157,7 @@
     margin-left: 20px;
   }
 
-  .edy-positionable-container-left,
-  .edy-positionable-container-right {
-    @include query($mobile-1) {
-      margin-right: 0;
-      margin-left: 0;
-    }
-  }
-
   // Styling rules for the site's editable content area tables.
-  // Container around editable content-area table.
-
   // Overthrow plugin to support horizontal scrolling on older devices that have touch-screens. For example Android 2.3 devices.
   .overthrow {
     overflow: auto;

@@ -224,19 +224,13 @@ body.search-open {
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {
   width: 45%;
+  margin-bottom: 20px;
 }
 .content-formatted .edy-positionable-container-left {
   margin-right: 20px;
 }
 .content-formatted .edy-positionable-container-right {
   margin-left: 20px;
-}
-@media screen and (max-width: 480px) {
-  .content-formatted .edy-positionable-container-left,
-  .content-formatted .edy-positionable-container-right {
-    margin-right: 0;
-    margin-left: 0;
-  }
 }
 .content-formatted .overthrow {
   overflow: auto;
@@ -287,7 +281,7 @@ body.search-open {
 @media screen and (max-width: 840px) {
   .menu-btn {
     position: absolute;
-    z-index: 20;
+    z-index: 99999;
     top: 7px;
     right: 20px;
     display: inline-block;
@@ -356,7 +350,7 @@ body.search-open {
   }
   .menu-main.expanded {
     position: absolute;
-    z-index: 25;
+    z-index: 99999;
     top: 60px;
     right: 20px;
     display: block;
@@ -615,7 +609,7 @@ body.search-open {
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-  z-index: 25;
+  z-index: 99999;
 }
 
 .menu-lang {
