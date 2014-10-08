@@ -6,16 +6,42 @@
   @include hyphenate(true);
 
   // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
-  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, img, iframe, table, form {
-    margin-bottom: 0;
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  pre,
+  code,
+  img,
+  iframe,
+  table,
+  form {
     &:first-child {
       margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
   // Styling rules for the editable content area headings and paragraphs.
-  &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  table {
     .light-background & {
       @include color($primary-color);
     }
@@ -25,16 +51,21 @@
     }
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 600;
   }
 
-  h1, h2, p {
-    margin-top: 32px;
-
-    @include query($mobile-1) {
-      margin-top: 28px;
-    }
+  iframe,
+  pre,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-right-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   h1 {
@@ -55,11 +86,9 @@
   }
 
   h3, h4, h5, h6 {
-    margin-top: 23px;
     font-size: 20px;
 
     @include query($mobile-1) {
-      margin-top: 19px;
       font-size: 16px;
 
     }
@@ -84,8 +113,6 @@
 
   // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.
   pre {
-    margin-top: 10px;
-    margin-bottom: 0;
     overflow: auto;
     white-space: nowrap;
 
@@ -97,7 +124,7 @@
 
     code {
       display: block;
-      margin-top: 0;
+      // margin-top: 0;
       padding: 0;
     }
   }
@@ -105,7 +132,6 @@
   iframe {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
   }
 
   blockquote {
@@ -120,11 +146,6 @@
   .edy-positionable-container-left,
   .edy-positionable-container-right {
     width: 45%;
-    margin-top: 39px;
-
-    &:first-child {
-      margin-top: 8px;
-    }
   }
 
   .edy-positionable-container-left {
@@ -147,9 +168,6 @@
 
   // Styling rules for the site's editable content area tables.
   // Container around editable content-area table.
-  .table-container {
-    margin-top: 20px;
-  }
 
   // Overthrow plugin to support horizontal scrolling on older devices that have touch-screens. For example Android 2.3 devices.
   .overthrow {
@@ -157,15 +175,8 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  // Adds dashed border to indicate that the table is too wide and can be scrolled horizontally.
-  .horizontal-scroll {
-    @include border(left, 1px, dashed, $third-color);
-    @include border(right, 1px, dashed, $third-color);
-  }
-
   table {
     width: 100%;
-    margin-top: 20px;
     font-size: 16px;
     border-collapse: collapse;
 

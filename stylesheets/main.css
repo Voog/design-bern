@@ -80,28 +80,80 @@ body.search-open {
   -ms-hyphens: auto;
   hyphens: auto;
 }
-.content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6, .content-formatted p, .content-formatted ul, .content-formatted ol, .content-formatted pre, .content-formatted code, .content-formatted img, .content-formatted iframe, .content-formatted table, .content-formatted form {
-  margin-bottom: 0;
-}
-.content-formatted h1:first-child, .content-formatted h2:first-child, .content-formatted h3:first-child, .content-formatted h4:first-child, .content-formatted h5:first-child, .content-formatted h6:first-child, .content-formatted p:first-child, .content-formatted ul:first-child, .content-formatted ol:first-child, .content-formatted pre:first-child, .content-formatted code:first-child, .content-formatted img:first-child, .content-formatted iframe:first-child, .content-formatted table:first-child, .content-formatted form:first-child {
+.content-formatted h1:first-child,
+.content-formatted h2:first-child,
+.content-formatted h3:first-child,
+.content-formatted h4:first-child,
+.content-formatted h5:first-child,
+.content-formatted h6:first-child,
+.content-formatted p:first-child,
+.content-formatted ul:first-child,
+.content-formatted ol:first-child,
+.content-formatted pre:first-child,
+.content-formatted code:first-child,
+.content-formatted img:first-child,
+.content-formatted iframe:first-child,
+.content-formatted table:first-child,
+.content-formatted form:first-child {
   margin-top: 0;
 }
-.light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
+.content-formatted h1:last-child,
+.content-formatted h2:last-child,
+.content-formatted h3:last-child,
+.content-formatted h4:last-child,
+.content-formatted h5:last-child,
+.content-formatted h6:last-child,
+.content-formatted p:last-child,
+.content-formatted ul:last-child,
+.content-formatted ol:last-child,
+.content-formatted pre:last-child,
+.content-formatted code:last-child,
+.content-formatted img:last-child,
+.content-formatted iframe:last-child,
+.content-formatted table:last-child,
+.content-formatted form:last-child {
+  margin-bottom: 0;
+}
+.light-background .content-formatted, .light-background
+.content-formatted h1, .light-background
+.content-formatted h2, .light-background
+.content-formatted h3, .light-background
+.content-formatted h4, .light-background
+.content-formatted h5, .light-background
+.content-formatted h6, .light-background
+.content-formatted p, .light-background
+.content-formatted ul, .light-background
+.content-formatted ol, .light-background
+.content-formatted table {
   color: #696b6c;
 }
-.dark-background .content-formatted, .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background .content-formatted p, .dark-background .content-formatted ul, .dark-background .content-formatted ol, .dark-background .content-formatted table {
+.dark-background .content-formatted, .dark-background
+.content-formatted h1, .dark-background
+.content-formatted h2, .dark-background
+.content-formatted h3, .dark-background
+.content-formatted h4, .dark-background
+.content-formatted h5, .dark-background
+.content-formatted h6, .dark-background
+.content-formatted p, .dark-background
+.content-formatted ul, .dark-background
+.content-formatted ol, .dark-background
+.content-formatted table {
   color: white;
 }
-.content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
+.content-formatted h1,
+.content-formatted h2,
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
+.content-formatted h6 {
   font-weight: 600;
 }
-.content-formatted h1, .content-formatted h2, .content-formatted p {
-  margin-top: 32px;
-}
-@media screen and (max-width: 480px) {
-  .content-formatted h1, .content-formatted h2, .content-formatted p {
-    margin-top: 28px;
-  }
+.content-formatted iframe,
+.content-formatted pre,
+.content-formatted .edy-positionable-container-left-block,
+.content-formatted .edy-positionable-container-right-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .content-formatted h1 {
   text-align: center;
@@ -121,12 +173,10 @@ body.search-open {
   }
 }
 .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
-  margin-top: 23px;
   font-size: 20px;
 }
 @media screen and (max-width: 480px) {
   .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
-    margin-top: 19px;
     font-size: 16px;
   }
 }
@@ -148,8 +198,6 @@ body.search-open {
   hyphens: none;
 }
 .content-formatted pre {
-  margin-top: 10px;
-  margin-bottom: 0;
   overflow: auto;
   white-space: nowrap;
 }
@@ -160,13 +208,11 @@ body.search-open {
 }
 .content-formatted pre code {
   display: block;
-  margin-top: 0;
   padding: 0;
 }
 .content-formatted iframe {
   max-width: 100%;
   height: auto;
-  margin-top: 20px;
 }
 .content-formatted blockquote {
   margin: 20px 40px;
@@ -178,11 +224,6 @@ body.search-open {
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {
   width: 45%;
-  margin-top: 39px;
-}
-.content-formatted .edy-positionable-container-left:first-child,
-.content-formatted .edy-positionable-container-right:first-child {
-  margin-top: 8px;
 }
 .content-formatted .edy-positionable-container-left {
   margin-right: 20px;
@@ -199,20 +240,12 @@ body.search-open {
     margin-right: 0;
   }
 }
-.content-formatted .table-container {
-  margin-top: 20px;
-}
 .content-formatted .overthrow {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-.content-formatted .horizontal-scroll {
-  border-left: 1px dashed #9c9e9e;
-  border-right: 1px dashed #9c9e9e;
-}
 .content-formatted table {
   width: 100%;
-  margin-top: 20px;
   font-size: 16px;
   border-collapse: collapse;
 }
