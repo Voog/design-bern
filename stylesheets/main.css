@@ -234,10 +234,8 @@ body.search-open {
 @media screen and (max-width: 480px) {
   .content-formatted .edy-positionable-container-left,
   .content-formatted .edy-positionable-container-right {
-    float: none;
-    width: auto;
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 .content-formatted .overthrow {

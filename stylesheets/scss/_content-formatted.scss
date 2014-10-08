@@ -159,10 +159,8 @@
   .edy-positionable-container-left,
   .edy-positionable-container-right {
     @include query($mobile-1) {
-      float: none;
-      width: auto;
-      margin-left: 0;
       margin-right: 0;
+      margin-left: 0;
     }
   }
 
