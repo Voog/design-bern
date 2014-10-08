@@ -90,7 +90,9 @@ body.search-open {
 .content-formatted ul:first-child,
 .content-formatted ol:first-child,
 .content-formatted pre:first-child,
-.content-formatted code:first-child {
+.content-formatted code:first-child,
+.content-formatted .edy-positionable-container-left-block:first-child,
+.content-formatted .edy-positionable-container-right-block:first-child {
   margin-top: 0;
 }
 .content-formatted h1:last-child,
@@ -103,7 +105,9 @@ body.search-open {
 .content-formatted ul:last-child,
 .content-formatted ol:last-child,
 .content-formatted pre:last-child,
-.content-formatted code:last-child {
+.content-formatted code:last-child,
+.content-formatted .edy-positionable-container-left-block:last-child,
+.content-formatted .edy-positionable-container-right-block:last-child {
   margin-bottom: 0;
 }
 .light-background .content-formatted, .light-background
@@ -139,14 +143,6 @@ body.search-open {
 .content-formatted h5,
 .content-formatted h6 {
   font-weight: 600;
-}
-.content-formatted pre,
-.content-formatted .edy-positionable-container-left-block,
-.content-formatted .edy-positionable-container-right-block,
-.content-formatted .embed-container,
-.content-formatted .table-container, .editmode .content-formatted table {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 .content-formatted h1 {
   text-align: center;
@@ -200,6 +196,14 @@ body.search-open {
   -ms-hyphens: none;
   hyphens: none;
 }
+.content-formatted pre,
+.content-formatted .edy-positionable-container-left-block,
+.content-formatted .edy-positionable-container-right-block,
+.content-formatted .embed-container,
+.content-formatted .table-container, .editmode .content-formatted table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .content-formatted pre {
   overflow: auto;
   white-space: nowrap;
@@ -218,20 +222,19 @@ body.search-open {
   max-width: 100%;
   height: auto;
 }
-.content-formatted .edy-image-container-title-inner {
-  padding: 4px 6px 2px;
-  font-size: 16px;
-}
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {
   width: 45%;
-  margin-bottom: 20px;
 }
 .content-formatted .edy-positionable-container-left {
   margin-right: 20px;
 }
 .content-formatted .edy-positionable-container-right {
   margin-left: 20px;
+}
+.content-formatted .edy-image-container-title-inner {
+  padding: 4px 6px 2px;
+  font-size: 16px;
 }
 .content-formatted .overthrow {
   overflow: auto;
@@ -247,33 +250,6 @@ body.search-open {
   border-top: 1px solid #9c9e9e;
   border-bottom: 1px solid #9c9e9e;
 }
-.dark-background .content-formatted .edy-empty-bordered {
-  border: 1px dashed #FFFFFF;
-  border: 1px dashed rgba(255, 255, 255, 0.63);
-}
-.dark-background .content-formatted .edy-empty-bordered .edy-empty-header {
-  color: #FFFFFF;
-  color: rgba(255, 255, 255, 0.63);
-}
-.dark-background .content-formatted .edy-content-element-hover {
-  border: 1px solid #FFFFFF;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-.dark-background .content-formatted .edy-texteditor-active {
-  outline: 1px solid rgba(255, 255, 255, 0.4);
-}
-.dark-background .content-formatted .edy-texteditor-active:hover {
-  outline: 1px solid rgba(255, 255, 255, 0.63);
-}
-.content-formatted .edy-texteditor-view {
-  min-height: 36px;
-}
-.content-right .content-formatted .edy-empty-bordered {
-  padding: 251px 40px 252px;
-}
-.content-right .content-formatted .edy-texteditor-view {
-  min-height: 525px;
-}
 
 /* MENUS */
 .menu-btn {
@@ -282,7 +258,7 @@ body.search-open {
 @media screen and (max-width: 840px) {
   .menu-btn {
     position: absolute;
-    z-index: 99999;
+    z-index: 10001;
     top: 7px;
     right: 20px;
     display: inline-block;
@@ -351,7 +327,7 @@ body.search-open {
   }
   .menu-main.expanded {
     position: absolute;
-    z-index: 99999;
+    z-index: 10001;
     top: 60px;
     right: 20px;
     display: block;
@@ -610,7 +586,7 @@ body.search-open {
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   -moz-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3) ;
-  z-index: 99999;
+  z-index: 10001;
 }
 
 .menu-lang {

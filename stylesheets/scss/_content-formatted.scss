@@ -5,7 +5,7 @@
   @extend %clearfix;
   @include hyphenate(true);
 
-  // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
+  // Resets the top margin for the first element and bottom margin for the last element in the content area (to prevent unwanted white-space at the beginning and the end of a content-area).
   h1,
   h2,
   h3,
@@ -16,7 +16,9 @@
   ul,
   ol,
   pre,
-  code {
+  code,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-right-block {
     &:first-child {
       margin-top: 0;
     }
@@ -26,7 +28,7 @@
     }
   }
 
-  // Styling rules for the editable content area headings and paragraphs.
+  // Colors for editable content area elements with editable background.
   &,
   h1,
   h2,
@@ -47,6 +49,7 @@
     }
   }
 
+  // Editable content area headings.
   h1,
   h2,
   h3,
@@ -54,17 +57,6 @@
   h5,
   h6 {
     font-weight: 600;
-  }
-
-  pre,
-  .edy-positionable-container-left-block,
-  .edy-positionable-container-right-block,
-  .embed-container,
-  .table-container,
-  .editmode & table {
-    margin-top: 20px;
-    margin-bottom: 20px;
-
   }
 
   h1 {
@@ -96,6 +88,7 @@
     }
   }
 
+  // Editable content area links.
   a {
     @include color($blue-1, 1);
 
@@ -104,11 +97,12 @@
     }
   }
 
-  // Sets the dynamic line-height for the text.
+  // Sets the dynamic line-height for the text with custom font-size.
   span[style*="font-size"] {
     line-height: 1.7em;
   }
 
+  // Disables hyphenation for the elements that shouldn't hyphenate.
   pre,
   code,
   iframe,
@@ -117,7 +111,18 @@
     @include hyphenate(false);
   }
 
-  // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.
+  // Top and bottom margin for the elements that doesn't have the default margin.
+  pre,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-right-block,
+  .embed-container,
+  .table-container,
+  .editmode & table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  // Code blocks and preformatted content.
   pre {
     overflow: auto;
     white-space: nowrap;
@@ -135,20 +140,16 @@
     }
   }
 
+  // Embeddable iframe content.
   iframe {
     max-width: 100%;
     height: auto;
   }
 
-  .edy-image-container-title-inner {
-    padding: 4px 6px 2px;
-    font-size: 16px;
-  }
-
+  // Content area floating images
   .edy-positionable-container-left,
   .edy-positionable-container-right {
     width: 45%;
-    margin-bottom: 20px;
   }
 
   .edy-positionable-container-left {
@@ -159,7 +160,13 @@
     margin-left: 20px;
   }
 
-  // Styling rules for the site's editable content area tables.
+  // Content area image title
+  .edy-image-container-title-inner {
+    padding: 4px 6px 2px;
+    font-size: 16px;
+  }
+
+  // Content area tables
   // Overthrow plugin to support horizontal scrolling on older devices that have touch-screens. For example Android 2.3 devices.
   .overthrow {
     overflow: auto;
@@ -175,49 +182,6 @@
       padding: 10px;
       @include border(top, 1px, solid, $third-color);
       @include border(bottom, 1px, solid, $third-color);
-    }
-  }
-
-  // CMS STYLE OVERRIDES
-
-  // Draggable content area without content.
-  // TODO: Remove if different color schemes are supported by VOOG.
-  .dark-background & {
-    .edy-empty-bordered {
-      @include border(all, 1px, dashed, $white, 0.63);
-
-      .edy-empty-header {
-        @include color($white, 0.63);
-      }
-    }
-
-    // Content area border.
-    .edy-content-element-hover {
-      @include border(all, 1px, solid, $white, 0.2);
-    }
-
-    .edy-texteditor-active {
-      outline: 1px solid rgba($white, 0.4);
-
-      &:hover {
-        outline: 1px solid rgba($white, 0.63);
-      }
-    }
-  }
-
-  // Minimum height of the text content areas.
-  .edy-texteditor-view {
-    min-height: 36px;
-  }
-
-  // Two columns view custom content area (right)
-  .content-right & {
-    .edy-empty-bordered {
-      padding: 251px 40px 252px;
-    }
-
-    .edy-texteditor-view {
-      min-height: 525px;
     }
   }
 }

@@ -18,6 +18,7 @@
 
 {% comment %}STYLESHEETS{% endcomment %}
 {% stylesheet_link "main.min.css" %}
+{% if editmode %}{% stylesheet_link "editmode.min.css" %}{% endif %}
 <!--[if lt IE 9]>{% stylesheet_link "ie8.min.css" %}<![endif]-->
 
 {% comment %}SITE TITLE{% endcomment %}
