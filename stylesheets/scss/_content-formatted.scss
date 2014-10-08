@@ -16,11 +16,7 @@
   ul,
   ol,
   pre,
-  code,
-  img,
-  iframe,
-  table,
-  form {
+  code {
     &:first-child {
       margin-top: 0;
     }
@@ -60,12 +56,15 @@
     font-weight: 600;
   }
 
-  iframe,
   pre,
   .edy-positionable-container-left-block,
-  .edy-positionable-container-right-block {
+  .edy-positionable-container-right-block,
+  .embed-container,
+  .table-container,
+  .editmode & table {
     margin-top: 20px;
     margin-bottom: 20px;
+
   }
 
   h1 {
@@ -85,7 +84,10 @@
     }
   }
 
-  h3, h4, h5, h6 {
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 20px;
 
     @include query($mobile-1) {
@@ -107,7 +109,11 @@
     line-height: 1.7em;
   }
 
-  pre, code, iframe, table, form {
+  pre,
+  code,
+  iframe,
+  table,
+  form {
     @include hyphenate(false);
   }
 
@@ -116,7 +122,8 @@
     overflow: auto;
     white-space: nowrap;
 
-    &, code {
+    &,
+    code {
       padding: 10px;
       font-size: 14px;
       @include bg($grey-5);
@@ -124,7 +131,6 @@
 
     code {
       display: block;
-      // margin-top: 0;
       padding: 0;
     }
   }
@@ -132,10 +138,6 @@
   iframe {
     max-width: 100%;
     height: auto;
-  }
-
-  blockquote {
-    margin: 20px 40px;
   }
 
   .edy-image-container-title-inner {

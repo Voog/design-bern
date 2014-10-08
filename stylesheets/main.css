@@ -90,11 +90,7 @@ body.search-open {
 .content-formatted ul:first-child,
 .content-formatted ol:first-child,
 .content-formatted pre:first-child,
-.content-formatted code:first-child,
-.content-formatted img:first-child,
-.content-formatted iframe:first-child,
-.content-formatted table:first-child,
-.content-formatted form:first-child {
+.content-formatted code:first-child {
   margin-top: 0;
 }
 .content-formatted h1:last-child,
@@ -107,11 +103,7 @@ body.search-open {
 .content-formatted ul:last-child,
 .content-formatted ol:last-child,
 .content-formatted pre:last-child,
-.content-formatted code:last-child,
-.content-formatted img:last-child,
-.content-formatted iframe:last-child,
-.content-formatted table:last-child,
-.content-formatted form:last-child {
+.content-formatted code:last-child {
   margin-bottom: 0;
 }
 .light-background .content-formatted, .light-background
@@ -148,10 +140,11 @@ body.search-open {
 .content-formatted h6 {
   font-weight: 600;
 }
-.content-formatted iframe,
 .content-formatted pre,
 .content-formatted .edy-positionable-container-left-block,
-.content-formatted .edy-positionable-container-right-block {
+.content-formatted .edy-positionable-container-right-block,
+.content-formatted .embed-container,
+.content-formatted .table-container, .editmode .content-formatted table {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -172,11 +165,17 @@ body.search-open {
     font-size: 20px;
   }
 }
-.content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
+.content-formatted h3,
+.content-formatted h4,
+.content-formatted h5,
+.content-formatted h6 {
   font-size: 20px;
 }
 @media screen and (max-width: 480px) {
-  .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
+  .content-formatted h3,
+  .content-formatted h4,
+  .content-formatted h5,
+  .content-formatted h6 {
     font-size: 16px;
   }
 }
@@ -190,7 +189,11 @@ body.search-open {
 .content-formatted span[style*="font-size"] {
   line-height: 1.7em;
 }
-.content-formatted pre, .content-formatted code, .content-formatted iframe, .content-formatted table, .content-formatted form {
+.content-formatted pre,
+.content-formatted code,
+.content-formatted iframe,
+.content-formatted table,
+.content-formatted form {
   word-break: normal;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -201,7 +204,8 @@ body.search-open {
   overflow: auto;
   white-space: nowrap;
 }
-.content-formatted pre, .content-formatted pre code {
+.content-formatted pre,
+.content-formatted pre code {
   padding: 10px;
   font-size: 14px;
   background-color: #fafafa;
@@ -213,9 +217,6 @@ body.search-open {
 .content-formatted iframe {
   max-width: 100%;
   height: auto;
-}
-.content-formatted blockquote {
-  margin: 20px 40px;
 }
 .content-formatted .edy-image-container-title-inner {
   padding: 4px 6px 2px;
@@ -1577,7 +1578,6 @@ body.search-open {
 /* FORMS */
 .content-formatted form {
   max-width: 100%;
-  margin-top: 20px;
 }
 .content-formatted .form_field {
   margin-top: 20px;
