@@ -10381,15 +10381,16 @@ return jQuery;
     });
   };
 
-  // Scrolls to the comment-form if comment submit failed (to show the error messages to the user).
-  var focusCommentsWithErrors = function() {
+  // Scrolls to the comment-form if comment submit failed (to show the error messages to the user)
+  var focusFormWithErrors = function() {
     $(document).ready(function() {
-      if ($('.form_field').hasClass('form_field_with_errors') === true) {
+      if ($('.comment-form').hasClass('form_with_errors')) {
         $('html, body').scrollTop($('.comment-form').offset().top);
+      } else if ($('form').find('.form_error, .form_notice').length > 0) {
+        $('html, body').scrollTop($('.form_error, .form_notice').closest('form').offset().top);
       }
     });
   };
-
 
   // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
@@ -10456,23 +10457,23 @@ return jQuery;
 
   var initArticlePage = function() {
     // Add single post layout specific functions here.
-    focusCommentsWithErrors();
   };
 
   var initCommonPage = function() {
     // Add common page specific functions here.
     handleFormFieldClick();
-    focusCommentsWithErrors();
   };
 
   var init = function() {
     // Add site wide functions here.
     handleElementsClick();
     handleGalleryHover();
+    focusFormWithErrors();
     handleWindowResize();
     handleSearchFocus();
     handleSearchMobilePosition();
     wrapTables();
+
     if ($('.table-container').length > 0) {
       checkScrollBar();
       handleTableHorizontalScrolling();
