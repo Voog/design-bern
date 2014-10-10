@@ -20,21 +20,12 @@ module.exports = function(grunt) {
           'modernizr.js': 'modernizr/modernizr.js'
         }
       },
-
-      stylesheets: {
-        options: {
-          destPrefix: 'stylesheets/scss/'
-        },
-        files: {
-          'bourbon': 'bourbon/dist'
-        }
-      }
     },
 
     // Builds custom modernizr script.
     modernizr: {
       build: {
-        'devFile' : 'javascripts/src/modernizr.js',
+        'devFile' : 'bower_components/modernizr/modernizr.js',
         'outputFile' : 'javascripts/modernizr.js',
 
         'tests': [
