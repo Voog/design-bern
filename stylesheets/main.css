@@ -206,16 +206,13 @@ body.search-open {
 }
 .content-formatted pre {
   overflow: auto;
-  white-space: nowrap;
-}
-.content-formatted pre,
-.content-formatted pre code {
   padding: 10px;
-  font-size: 14px;
   background-color: #fafafa;
+  font-size: 14px;
 }
 .content-formatted pre code {
   display: block;
+  white-space: nowrap;
   padding: 0;
 }
 .content-formatted iframe {

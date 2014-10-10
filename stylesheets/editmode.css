@@ -1,6 +1,6 @@
 .dark-background .edy-empty-bordered {
-  border: 1px dashed #FFFFFF;
-  border: 1px dashed rgba(255, 255, 255, 0.63);
+  border-color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.63);
 }
 .dark-background .edy-empty-bordered .edy-empty-header {
   color: #FFFFFF;

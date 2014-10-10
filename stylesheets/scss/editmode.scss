@@ -1,27 +1,28 @@
 // EDITMODE STYLESHEET
 // Stylesheet for styling elements that are only used in editmode
-@import 'bourbon/bourbon';
+@import '../../bower_components/bourbon/dist/bourbon';
 @import '_mixins';
 @import '_variables';
 
 .dark-background {
   .edy-empty-bordered {
-    @include border(all, 1px, dashed, $white, 0.63);
+    border-color: $white;
+    border-color: rgba($white, .63);
 
     .edy-empty-header {
-      @include color($white, 0.63);
+      @include color($white, .63);
     }
   }
 
   .edy-content-element-hover {
-    @include border(all, 1px, solid, $white, 0.2);
+    @include border(all, 1px, solid, $white, .2);
   }
 
   .edy-texteditor-active {
-    outline: 1px solid rgba($white, 0.4);
+    outline: 1px solid rgba($white, .4);
 
     &:hover {
-      outline: 1px solid rgba($white, 0.63);
+      outline: 1px solid rgba($white, .63);
     }
   }
 }
