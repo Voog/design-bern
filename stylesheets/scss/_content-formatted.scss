@@ -125,8 +125,8 @@
   pre {
     overflow: auto;
     padding: 10px;
-    @include bg($grey-5);
     font-size: 14px;
+    @include bg($grey-5);
 
     code {
       display: block;

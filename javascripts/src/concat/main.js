@@ -83,6 +83,7 @@
     });
   };
 
+  // Wraps tables in the container.
   // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
     if (editmode === false) {

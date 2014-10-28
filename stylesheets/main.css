@@ -207,8 +207,8 @@ body.search-open {
 .content-formatted pre {
   overflow: auto;
   padding: 10px;
-  background-color: #fafafa;
   font-size: 14px;
+  background-color: #fafafa;
 }
 .content-formatted pre code {
   display: block;
