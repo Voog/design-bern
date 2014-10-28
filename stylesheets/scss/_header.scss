@@ -26,7 +26,6 @@
 .header-left {
   position: relative;
   float: left;
-  min-width: 220px;
 
   @include query($tablet-3) {
     float: none;

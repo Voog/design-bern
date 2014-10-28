@@ -900,7 +900,6 @@ body.search-open {
 .header-left {
   position: relative;
   float: left;
-  min-width: 220px;
 }
 @media screen and (max-width: 840px) {
   .header-left {
