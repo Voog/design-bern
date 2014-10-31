@@ -504,6 +504,7 @@ body.search-open {
 }
 .menu-sub .menu .menu-item {
   margin-right: 12px;
+  line-height: 1.4em;
 }
 .menu-sub .menu .menu-item.edit-btn {
   display: inline-block;
