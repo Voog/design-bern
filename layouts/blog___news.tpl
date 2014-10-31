@@ -33,6 +33,7 @@
   </div>
 
   {% include "javascripts" %}
+  {% include "edicy-tools" %}
   <script>
     $(document).ready(function() {
       currentUrl = window.location.href;

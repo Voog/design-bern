@@ -44,13 +44,13 @@
       {% endif %}
 
       {% include "comment-form" %}
-      {% include "edicy-tools" %}
     </section>
 
     {% include "footer" %}
   </div>
 
   {% include "javascripts" %}
+  {% include "edicy-tools" %}
   <script>site.initArticlePage();</script>
 </body>
 </html>
