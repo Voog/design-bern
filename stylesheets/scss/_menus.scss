@@ -91,6 +91,7 @@
       margin-bottom: 60px;
       text-align: left;
       @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
+      @include bg($white);
 
       > .menu {
         @include border(top, 1px, solid, $primary-color, 0.2);
@@ -303,32 +304,40 @@
 
 // Styling rules for the site's language menu.
 .menu-lang-btn {
+  @extend %button;
   position: relative;
   top: -2px;
   right: -5px;
   display: inline-block;
   vertical-align: middle;
-  width: 30px;
-  height: 25px;
   margin-left: 2px;
-  padding: 0;
-  font-size: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
 
   &:hover {
     opacity: 0.8;
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &:before,
   &:after {
     top: 0;
     left: 0;
+  }
+
+  .flags-enabled & {
+    width: 30px;
+    height: 25px;
+
+    .lang-title {
+      display: none;
+    }
+  }
+
+  .ico-popover-toggle {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    font-size: 7.2px;
   }
 }
 
@@ -379,10 +388,18 @@
     display: block;
     margin-bottom: 40px;
     padding: 6px 0;
-    min-width: 123px;
+    min-width: 131px;
     background: #fff;
     @include box-shadow(0, 5px, 25px, rgba($black, 0.3));
     z-index: 10001;
+
+    .editmode & {
+      padding-bottom: 0;
+    }
+
+    .flags-disabled & {
+      min-width: 123px;
+    }
   }
 }
 
@@ -391,13 +408,6 @@
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
-
-  &.edit-btn {
-    display: inline-block;
-    margin: 7px 20px;
-    padding: 0;
-
-  }
 
   @include query($tablet-3) {
     display: none;
@@ -433,12 +443,30 @@
     }
   }
 
-  .edy-menu-langadd {
-    display: inline-block;
-    padding: 5px 19px;
+  .edit-btn {
+    .edy-menu-langadd {
+      margin: 7px 20px;
 
-    &:hover {
-      background: none;
+      @include query($tablet-3) {
+        margin: 0;
+      }
+    }
+  }
+
+  &.flags-disabled  {
+    .menu-link {
+      padding-right: 12px;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      @include query($tablet-2) {
+        .menu-main.expanded & {
+          padding: 5px 25px 3px;
+        }
+      }
     }
   }
 }
@@ -564,6 +592,48 @@ $flags:
 
 @each $flag, $pos in $flags {
   .lang-flag-#{$flag}:after { background-position: $pos; }
+}
+
+.lang-options {
+  @include bg($primary-color, 0.09);
+
+  .menu {
+    .menu-item {
+      margin-top: 8px;
+      padding: 5px 10px;
+      font-size: 13px;
+      background-color: transparent;
+
+      @include query($tablet-3) {
+        margin-top: 0;
+        padding: 4px 25px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.option-btn {
+  @extend %button;
+  font-family: inherit;
+  font-size: inherit;
+  @include color($blue-1);
+
+  &:hover {
+    @include color($blue-1, 0.8);
+  }
+
+  .flags-disabled & {
+    .disable-text {
+      display: none;
+    }
+  }
+
+  .flags-enabled & {
+    .enable-text {
+      display: none;
+    }
+  }
 }
 
 // Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.

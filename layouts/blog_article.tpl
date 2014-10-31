@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
+  {% include "edicy-tools-variables" %}
   {% include "html-head" %}
 </head>
 
@@ -43,6 +44,7 @@
       {% endif %}
 
       {% include "comment-form" %}
+      {% include "edicy-tools" %}
     </section>
 
     {% include "footer" %}
