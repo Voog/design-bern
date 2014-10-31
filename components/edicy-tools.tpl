@@ -38,7 +38,6 @@
     });
 
     $('.js-option-toggle-flags').on('click', function(event) {
-      console.log('does it hapen?');
       event.stopPropagation();
 
       if ($(this).hasClass('js-flag-disable-btn')) {
