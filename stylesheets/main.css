@@ -693,10 +693,6 @@ body.search-open {
   background-position: -42px 0;
 }
 
-.lang-flag-xx:after {
-  background-position: -63px 0;
-}
-
 .lang-flag-bg:after {
   background-position: -84px 0;
 }
@@ -849,11 +845,7 @@ body.search-open {
   background-position: -21px -60px;
 }
 
-.lang-flag-xx:after {
-  background-position: -42px -60px;
-}
-
-.lang-flag-xx:after {
+.lang-flag-en-gb:after {
   background-position: -63px -60px;
 }
 
@@ -861,20 +853,8 @@ body.search-open {
   background-position: -84px -60px;
 }
 
-.lang-flag-xx:after {
-  background-position: -105px;
-}
-
 .lang-flag-sr:after {
   background-position: -126px;
-}
-
-.lang-flag-xx:after {
-  background-position: -147px;
-}
-
-.lang-flag-xx:after {
-  background-position: -168px;
 }
 
 .lang-options {
