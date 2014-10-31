@@ -148,6 +148,10 @@
     @include word-wrap(break-word);
   }
 
+  blockquote {
+    margin: 20px 40px;
+  }
+
   // Embeddable iframe content.
   iframe {
     max-width: 100%;
