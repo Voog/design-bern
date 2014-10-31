@@ -926,7 +926,7 @@ body.search-open {
 .menu-tags .tags-left,
 .menu-tags .tags-right {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .menu-tags .tags-left {
   width: 110px;
@@ -941,7 +941,9 @@ body.search-open {
   }
 }
 .menu-tags .tags-right .menu {
+  max-width: 740px;
   margin-top: 2px;
+  text-align: left;
 }
 .menu-tags .menu {
   line-height: 1.3em;

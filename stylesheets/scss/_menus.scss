@@ -677,7 +677,7 @@ $flags:
   .tags-left,
   .tags-right {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
   }
 
   .tags-left {
@@ -694,7 +694,9 @@ $flags:
 
   .tags-right {
     .menu {
+      max-width: 740px;
       margin-top: 2px;
+      text-align: left;
     }
   }
 
