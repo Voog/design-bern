@@ -923,12 +923,8 @@ body.search-open {
 .post-page .menu-tags {
   margin-left: 25px;
 }
-.menu-tags .tags-left,
-.menu-tags .tags-right {
-  display: inline-block;
-  vertical-align: top;
-}
 .menu-tags .tags-left {
+  position: absolute;
   width: 110px;
   margin-right: 24px;
   text-align: right;
@@ -940,10 +936,28 @@ body.search-open {
     text-align: left;
   }
 }
+@media screen and (max-width: 480px) {
+  .menu-tags .tags-left {
+    position: static;
+  }
+}
+.menu-tags .tags-right {
+  margin-left: 142px;
+}
 .menu-tags .tags-right .menu {
   max-width: 740px;
   margin-top: 2px;
   text-align: left;
+}
+@media screen and (max-width: 960px) {
+  .menu-tags .tags-right {
+    margin-left: 120px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-tags .tags-right {
+    margin-left: 0;
+  }
 }
 .menu-tags .menu {
   line-height: 1.3em;

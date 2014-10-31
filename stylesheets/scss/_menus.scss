@@ -674,13 +674,8 @@ $flags:
     margin-left: 25px;
   }
 
-  .tags-left,
-  .tags-right {
-    display: inline-block;
-    vertical-align: top;
-  }
-
   .tags-left {
+    position: absolute;
     width: 110px;
     margin-right: 24px;
     text-align: right;
@@ -690,13 +685,27 @@ $flags:
       margin-right: 0;
       text-align: left;
     }
+
+    @include query($mobile-1) {
+      position: static;
+    }
   }
 
   .tags-right {
+    margin-left: 142px;
+
     .menu {
       max-width: 740px;
       margin-top: 2px;
       text-align: left;
+    }
+
+    @include query($tablet-2) {
+      margin-left: 120px;
+    }
+
+    @include query($mobile-1) {
+      margin-left: 0;
     }
   }
 
