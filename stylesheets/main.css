@@ -891,6 +891,10 @@ body.search-open {
 .flags-enabled .option-btn .enable-text {
   display: none;
 }
+.option-btn .disable-text:first-letter,
+.option-btn .enable-text:first-letter {
+  text-transform: capitalize;
+}
 
 .editmode .tags {
   margin-top: 20px;
