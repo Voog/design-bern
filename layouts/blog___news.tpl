@@ -22,7 +22,7 @@
             <div class="post-right">
               <h2 class="post-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
               <div class="post-excerpt content-formatted">{{ article.excerpt }}</div>
-              <a href="{{ article.url }}" class="post-link">Read more</a>
+              <a href="{{ article.url }}" class="post-link">{{ "read_more" | lc }}</a>
             </div>
           </article>
         {% endfor %}
