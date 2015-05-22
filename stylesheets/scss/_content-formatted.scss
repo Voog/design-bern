@@ -158,17 +158,29 @@
     height: auto;
   }
 
-  // Content area floating images
+  // Image container positioning
+  .edy-positionable-container-center,
+  .edy-positionable-container-left-block,
+  .edy-positionable-container-right-block,
+  .edy-texteditor-container-wrapper-center,
+  .edy-texteditor-container-wrapper-left-block,
+  .edy-texteditor-container-wrapper-right-block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .edy-positionable-container-left,
   .edy-positionable-container-right {
     width: 45%;
   }
 
-  .edy-positionable-container-left {
+  .edy-positionable-container-left,
+  .edy-texteditor-container-wrapper-left {
     margin-right: 20px;
   }
 
-  .edy-positionable-container-right {
+  .edy-positionable-container-right,
+  .edy-texteditor-container-wrapper-right {
     margin-left: 20px;
   }
 

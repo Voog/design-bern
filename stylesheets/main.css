@@ -234,14 +234,25 @@ body.search-open {
   max-width: 100%;
   height: auto;
 }
+.content-formatted .edy-positionable-container-center,
+.content-formatted .edy-positionable-container-left-block,
+.content-formatted .edy-positionable-container-right-block,
+.content-formatted .edy-texteditor-container-wrapper-center,
+.content-formatted .edy-texteditor-container-wrapper-left-block,
+.content-formatted .edy-texteditor-container-wrapper-right-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {
   width: 45%;
 }
-.content-formatted .edy-positionable-container-left {
+.content-formatted .edy-positionable-container-left,
+.content-formatted .edy-texteditor-container-wrapper-left {
   margin-right: 20px;
 }
-.content-formatted .edy-positionable-container-right {
+.content-formatted .edy-positionable-container-right,
+.content-formatted .edy-texteditor-container-wrapper-right {
   margin-left: 20px;
 }
 .content-formatted .edy-image-container-with-title:after {
