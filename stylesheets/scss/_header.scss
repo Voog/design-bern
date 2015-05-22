@@ -6,17 +6,28 @@
   padding-top: 23px;
   padding-bottom: 23px;
 
+  .flexbox & {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(flex-end);
+  }
+
+  .no-flexbox & {
+  }
+
   @include query($mobile-1) {
     position: static;
-    padding: 7px 15px;
+    padding: 15px;
+  }
+
+  @include query($tablet-2) {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
 .header-left,
 .header-right {
-  @include query($tablet-2) {
-    padding: 0 20px;
-  }
 
   @include query($mobile-1) {
     padding: 0;
@@ -25,7 +36,19 @@
 
 .header-left {
   position: relative;
-  float: left;
+  max-width: 100%;
+
+  .flexbox & {
+    @include flex(1 0 auto);
+  }
+
+  .no-flexbox & {
+    float: left;
+
+    @include query($tablet-3) {
+      float: none;
+    }
+  }
 
   @include query($tablet-3) {
     float: none;
@@ -34,20 +57,25 @@
 }
 
 .header-right {
-  float: right;
   text-align: right;
   margin-left: 20px;
 
-  @include query($tablet-1) {
-    margin-left: 0;
+  .no-flexbox & {
+    float: right;
+  }
+
+  // @include query($tablet-1) {
+  //   margin-left: 0;
+  // }
+
+  @include query($tablet-3) {
+    margin: 0;
   }
 }
 
 .header-title {
   position: relative;
   z-index: 11;
-  display: inline-block;
-  vertical-align: middle;
   font-weight: 600;
   font-size: 24px;
 
@@ -65,17 +93,16 @@
     }
   }
 
-  .edy-editable {
-    max-width: none;
-    min-width: 120px;
-    min-height: 33px;
-  }
-
   &, a {
     @include color($secondary-color);
   }
 
-  a:hover {
-    @include color($secondary-color,.8);
+  .header-link {
+    display: inline-block;
+
+    &:hover {
+      @include color($secondary-color,.8);
+    }
   }
+
 }

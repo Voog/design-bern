@@ -1,6 +1,6 @@
-<header class="header{% if site.search.enabled %} search-enabled{% endif %}">
-  <section class="header-left">
-    <div class="header-title content-formatted">{% unless editmode %}<a href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
+<header class="header js-header{% if site.search.enabled %} search-enabled{% endif %}">
+  <section class="header-left js-header-left">
+    <div class="header-title content-formatted">{% unless editmode %}<a class="header-link" href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
 
     {% if site.search.enabled %}
       <button class="search-btn search-close-btn js-search-close-btn">

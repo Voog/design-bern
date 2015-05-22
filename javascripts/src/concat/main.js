@@ -135,6 +135,17 @@
     });
   };
 
+  var bindFallbackHeaderLeftWidthCalculation = function() {
+    var headerWidth = $('.js-header').width(),
+        headerRight = $('.js-header-right'),
+        headerRightWidth = headerRight.width(),
+        headerRightMargin = parseInt(headerRight.css('margin-left')) + 1;
+
+        console.log(headerRightMargin);
+
+    $('.js-header-left').css('min-width', headerWidth - headerRightWidth - headerRightMargin);
+  };
+
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     $(window).resize(function() {
@@ -165,6 +176,10 @@
     handleSearchFocus();
     handleSearchMobilePosition();
     wrapTables();
+
+    if (!Modernizr.flexbox && editmode) {
+      bindFallbackHeaderLeftWidthCalculation();
+    };
 
     if ($('.table-container').length > 0) {
       checkScrollBar();
