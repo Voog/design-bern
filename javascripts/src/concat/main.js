@@ -1,6 +1,23 @@
 ;(function($) {
   var editmode = $('html').hasClass('editmode');
 
+  // Remove comments if debouncing is used.
+  // Function to limit the rate at which a function can fire.
+  // var debounce = function(func, wait, immediate) {
+  //   var timeout;
+  //   return function() {
+  //     var context = this, args = arguments;
+  //     var later = function() {
+  //       timeout = null;
+  //       if (!immediate) func.apply(context, args);
+  //     };
+  //     var callNow = immediate && !timeout;
+  //     clearTimeout(timeout);
+  //     timeout = setTimeout(later, wait);
+  //     if (callNow) func.apply(context, args);
+  //   };
+  // };
+
   // Handles mouse clicks on different buttons and sections of the web page.
   var handleElementsClick = function() {
     // Hides opened popups and modals if clicked on any other element.
@@ -83,8 +100,8 @@
     });
   };
 
-  // Wraps tables in the container.
-  // TODO: Remove if Edicy is going to wrap table with the container
+  // Wraps tables in the container to support horizontal scrolling for tables that are wider than the content area.
+  // TODO: Remove if Voog is going to wrap tables with the container.
   var wrapTables = function() {
     if (editmode === false) {
       $.each($('.content-formatted'), function() {
@@ -93,29 +110,6 @@
         }
       });
     }
-  };
-
-  // Checks the presence of the table scrollbar.
-  var checkScrollBar = function() {
-    jQuery.fn.hasScrollBar = function(direction) {
-      if (direction == 'vertical') {
-        return this.get(0).scrollHeight > this.innerHeight();
-      } else if (direction == 'horizontal') {
-        return this.get(0).scrollWidth > this.innerWidth();
-      }
-      return false;
-    }
-  };
-
-  // Adds horizontal scroll to tables that don't fit into the content area.
-  var handleTableHorizontalScrolling = function() {
-    $.each($('.table-container'), function() {
-      if ($(this).hasScrollBar('horizontal') === true) {
-        $(this).addClass('horizontal-scroll');
-      } else {
-        $(this).removeClass('horizontal-scroll');
-      }
-    });
   };
 
   // Adds/removes active class to search box if input is focused.
@@ -148,9 +142,9 @@
 
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
-    $(window).resize(function() {
-      handleTableHorizontalScrolling();
-    });
+    // Add functions that should be trgiggered while resizing the window here.
+    // Example:
+    // $(window).resize(debounce(yourFunctionName, 3000));
   };
 
   // Initiations
@@ -180,11 +174,6 @@
     if (!Modernizr.flexbox && editmode) {
       bindFallbackHeaderLeftWidthCalculation();
     };
-
-    if ($('.table-container').length > 0) {
-      checkScrollBar();
-      handleTableHorizontalScrolling();
-    }
   };
 
   // Enables the usage of the initiations outside this file.
