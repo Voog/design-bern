@@ -9,7 +9,6 @@
 </head>
 
 <body class="front-page">
-{{ page.id }}
   <div class="container">
     {% include "header" %}
 
