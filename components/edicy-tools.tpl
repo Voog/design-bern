@@ -1,11 +1,17 @@
 {% editorjsblock %}
   <script src='{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.js'></script>
   <script>
-    // Front page cover image and color data preview and save logic
+    var siteData = new Edicy.CustomData({
+      type: 'site'
+    });
+
     var pageData = new Edicy.CustomData({
       type: 'page',
       id: '{{ page.id }}'
     });
+
+    // Initiates language flag toggleing functionality.
+    site.toggleFlags();
 
     var bgPickerCover = new Edicy.BgPicker($('.js-bgpicker-cover-settings'), {
       picture: true,
@@ -31,25 +37,6 @@
           'cover_lightness' : data.colorData && data.colorData != '' && data.colorData.lightness ? data.colorData.lightness : 0
         });
       }
-    });
-
-    var siteData = new Edicy.CustomData({
-      type: 'site'
-    });
-
-    $('.js-option-toggle-flags').on('click', function(event) {
-      event.stopPropagation();
-
-      if ($(this).hasClass('js-flag-disable-btn')) {
-        var flagsState = false;
-      } else {
-        var flagsState = true;
-      }
-
-      siteData.set("flags_state", flagsState);
-
-      $(this).toggleClass('js-flag-disable-btn');
-      $('.js-menu-lang').toggleClass('flags-enabled flags-disabled');
     });
   </script>
  {% endeditorjsblock %}

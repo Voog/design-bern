@@ -129,6 +129,23 @@
     });
   };
 
+  var toggleFlags = function() {
+    $('.js-option-toggle-flags').on('click', function(event) {
+      event.stopPropagation();
+
+      if ($(this).hasClass('js-flag-disable-btn')) {
+        var flagsState = false;
+      } else {
+        var flagsState = true;
+      }
+
+      siteData.set("flags_state", flagsState);
+
+      $(this).toggleClass('js-flag-disable-btn');
+      $('.js-menu-lang').toggleClass('flags-enabled flags-disabled');
+    });
+  };
+
   var bindFallbackHeaderLeftWidthCalculation = function() {
     var headerWidth = $('.js-header').width(),
         headerRight = $('.js-header-right'),
@@ -148,6 +165,10 @@
   };
 
   // Initiations
+  var initFrontPage = function(animation) {
+    // Add front page layout specific functions here.
+  };
+
   var initBlogPage = function() {
     // Add blog listing layout specific functions here.
   };
@@ -181,7 +202,8 @@
   window.site = $.extend(window.site || {}, {
     initBlogPage: initBlogPage,
     initArticlePage: initArticlePage,
-    initCommonPage: initCommonPage
+    initCommonPage: initCommonPage,
+    toggleFlags: toggleFlags
   });
 
   // Initiates site wide functions.
