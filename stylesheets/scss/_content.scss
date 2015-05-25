@@ -97,11 +97,11 @@
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url('../images/front-page-bg.jpg');
+      // background-image: url('../images/front-page-bg.jpg');
     }
 
     .background-color {
-      @include bg($blue-1, 0.25);
+      // @include bg($blue-1, 0.25);
     }
 
     .content-inner {

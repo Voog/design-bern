@@ -120,7 +120,7 @@ body.search-open {
 .content-formatted ul, .light-background
 .content-formatted ol, .light-background
 .content-formatted table {
-  color: #696b6c;
+  color: black;
 }
 .dark-background .content-formatted, .dark-background
 .content-formatted h1, .dark-background
@@ -1188,11 +1188,6 @@ body.search-open {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/front-page-bg.jpg");
-}
-.front-page .content .background-color {
-  background-color: #0066bb;
-  background-color: rgba(0, 102, 187, 0.25);
 }
 .front-page .content .content-inner {
   display: table;
