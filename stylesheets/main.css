@@ -1384,7 +1384,7 @@ body.search-open {
 }
 .content-formatted .edys-gallery-area .edys-gallery-item.inactive,
 .content-formatted .edy-gallery-area .edys-gallery-item.inactive {
-  opacity: .8;
+  opacity: .6;
 }
 .content-formatted .edys-gallery-area .edys-gallery-item:hover,
 .content-formatted .edy-gallery-area .edys-gallery-item:hover {
