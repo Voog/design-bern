@@ -12,9 +12,6 @@
     @include justify-content(flex-end);
   }
 
-  .no-flexbox & {
-  }
-
   @include query($mobile-1) {
     position: static;
     padding: 15px;
