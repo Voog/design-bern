@@ -25,7 +25,6 @@
 
 .header-left,
 .header-right {
-
   @include query($mobile-1) {
     padding: 0;
   }
