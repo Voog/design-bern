@@ -100,7 +100,7 @@
   line-height: 1em;
   @include color($secondary-color, 0.67);
   @include bg($white);
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   border: none;
 
   // Removes the clear input button in IE11
@@ -229,9 +229,9 @@
 
   @include query($mobile-1) {
     display: block;
-    @include box-sizing(border-box);
     height: 100%;
     max-height: none;
+    box-sizing: border-box;
     @include no-box-shadow;
 
     &.no-content.search-results-active {

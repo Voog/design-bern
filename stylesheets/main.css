@@ -230,13 +230,15 @@ body.search-open {
   white-space: pre;
   line-height: inherit;
   background-color: transparent;
+  overflow-wrap: normal;
   word-wrap: normal;
+  word-break: normal;
 }
 .content-formatted code {
   display: inline-block;
   padding: 5px;
-  word-wrap: break-word;
   overflow-wrap: break-word;
+  word-wrap: break-word;
   word-break: break-all;
 }
 .content-formatted blockquote {
@@ -1142,8 +1144,6 @@ body.search-open {
 .content .content-right {
   float: left;
   width: 50%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .content .content-left iframe,
@@ -1498,8 +1498,6 @@ body.search-open {
   color: #1B2124;
   color: rgba(27, 33, 36, 0.67);
   background-color: white;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
 }
@@ -1630,11 +1628,9 @@ body.search-open {
 @media screen and (max-width: 480px) {
   .voog-search-modal-inner {
     display: block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     height: 100%;
     max-height: none;
+    box-sizing: border-box;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -1781,8 +1777,6 @@ body.search-open {
   padding: 8px 8px 5px;
   background-color: white;
   border: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media screen and (max-width: 420px) {
