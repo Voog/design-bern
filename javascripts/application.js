@@ -11178,17 +11178,6 @@ MMCQ = (function() {
     });
   };
 
-  // Reduces opacity of the gallery images that are not under the cursor.
-  var handleGalleryHover = function() {
-    $('.edys-gallery').mouseover(function() {
-      $(this).find('.edys-gallery-item').addClass('inactive');
-    });
-
-    $('.edys-gallery').mouseout(function() {
-      $(this).find('.edys-gallery-item').removeClass('inactive');
-    });
-  };
-
   // Scrolls to the comment-form if comment submit failed (to show the error messages to the user)
   var focusFormWithErrors = function() {
     $(document).ready(function() {
