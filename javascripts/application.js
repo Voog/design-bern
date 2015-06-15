@@ -11241,8 +11241,6 @@ MMCQ = (function() {
         headerRightWidth = headerRight.width(),
         headerRightMargin = parseInt(headerRight.css('margin-left')) + 1;
 
-        console.log(headerRightMargin);
-
     $('.js-header-left').css('min-width', headerWidth - headerRightWidth - headerRightMargin);
   };
 
