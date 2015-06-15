@@ -1,5 +1,5 @@
 {% if site.search.enabled %}
-  <div class="search js-search js-popover">
+  <div class="search js-search js-popover js-prevent-sideclick">
     <form id="search" class="search-form js-search-form" method="get" action="#">
       <input id="onpage_search" class="search-input js-search-input" type="text" name="" placeholder="{{ 'search_this_site' | lc }}">
       <button class="search-btn search-submit">
