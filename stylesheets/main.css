@@ -395,6 +395,11 @@ body.search-open {
   margin-left: 0;
 }
 .menu-main .menu .menu-item .menu-link {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   font-weight: 600;
   color: #1B2124;
   color: rgba(27, 33, 36, 0.67);
