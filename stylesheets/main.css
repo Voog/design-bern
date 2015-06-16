@@ -73,11 +73,12 @@ body.search-open {
 }
 
 .content-formatted {
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
-  -webkit-hyphens: auto;
   hyphens: auto;
-  word-break: break-word;
 }
 .content-formatted h1:first-child,
 .content-formatted h2:first-child,
@@ -197,11 +198,12 @@ body.search-open {
 .content-formatted iframe,
 .content-formatted table,
 .content-formatted form {
+  word-break: normal;
+  word-wrap: normal;
+  -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
-  -webkit-hyphens: none;
   hyphens: none;
-  word-break: normal;
 }
 .content-formatted pre,
 .content-formatted .edy-positionable-container-center,
@@ -395,11 +397,12 @@ body.search-open {
   margin-left: 0;
 }
 .menu-main .menu .menu-item .menu-link {
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
-  -webkit-hyphens: auto;
   hyphens: auto;
-  word-break: break-word;
   font-weight: 600;
   color: #1B2124;
   color: rgba(27, 33, 36, 0.67);
