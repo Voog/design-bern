@@ -29,17 +29,6 @@
 
   // Handles mouse clicks on different buttons and sections of the web page.
   var handleElementsClick = function() {
-    // Hides opened popups and modals if clicked on any other element.
-    // $('html').click(function() {
-    //   if ($('.js-popover').hasClass('expanded')) {
-    //     $('.js-popover').removeClass('expanded');
-    //   }
-
-    //   if ($('.js-search-close-btn').hasClass('open') && $('.voog-search-modal').length === 0) {
-    //     $('.js-search-close-btn').trigger('click');
-    //   }
-    // });
-
     // Toggles the popover main menu (visible on smalles screens).
     $('.js-menu-btn').click(function(event) {
       event.stopPropagation();
