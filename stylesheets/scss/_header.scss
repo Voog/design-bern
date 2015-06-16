@@ -48,7 +48,7 @@
 
   @include query($tablet-3) {
     float: none;
-    min-width: none;
+    min-width: 0;
   }
 }
 
