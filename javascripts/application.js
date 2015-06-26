@@ -11398,7 +11398,6 @@ MMCQ = (function() {
     // Add site wide functions here.
     bindSideClicks();
     handleElementsClick();
-    handleGalleryHover();
     focusFormWithErrors();
     handleWindowResize();
     handleSearchFocus();
