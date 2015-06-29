@@ -7,7 +7,7 @@
 
 <body class="post-page js-bgpicker-body-image">
 
-  <div class="container">
+  <div class="container js-container">
     {% include "header" %}
 
     <main class="content" role="main">

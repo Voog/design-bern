@@ -7,7 +7,7 @@
 
 <body class="common-page two-column-page js-bgpicker-body-image">
 
-  <div class="container">
+  <div class="container js-container">
     {% include "header" %}
     {% include "menu-level-2" %}
 
