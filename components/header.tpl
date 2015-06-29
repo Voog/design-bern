@@ -1,5 +1,5 @@
 <header class="header js-header{% if site.search.enabled %} search-enabled{% endif %}">
-  <section class="header-left js-header-left">
+  <div class="header-left js-header-left">
     <div class="header-title content-formatted">{% unless editmode %}<a class="header-link" href="{{ site.root_item.url }}">{% endunless %}{% editable site.header %}{% unless editmode %}</a>{% endunless %}</div>
 
     {% if site.search.enabled %}
@@ -16,14 +16,14 @@
       </button>
     {% endif %}
 
-      <button class="menu-btn js-menu-btn js-prevent-sideclick">
-        <span class="menu-stripe"></span>
-        <span class="menu-stripe"></span>
-        <span class="menu-stripe"></span>
-      </button>
-  </section>
+    <button class="menu-btn js-menu-btn js-prevent-sideclick">
+      <span class="menu-stripe"></span>
+      <span class="menu-stripe"></span>
+      <span class="menu-stripe"></span>
+    </button>
+  </div>
 
-  <section class="header-right js-header-right">
+  <div class="header-right js-header-right">
     <nav class="menu-main js-menu-main js-popover js-prevent-sideclick">
       {% include "menu-level-1" %}
 
@@ -51,5 +51,5 @@
         </div>
       </nav>
     {% endif %}
-  </section>
+  </div>
 </header>
