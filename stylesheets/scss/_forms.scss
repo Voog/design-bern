@@ -4,6 +4,13 @@
     max-width: 100%;
   }
 
+  .form_area,
+  .form {
+    .footer & {
+      text-align: left;
+    }
+  }
+
   .form_field {
     margin-top: 20px;
 
@@ -41,6 +48,10 @@
     .form_field_label {
       padding-left: 0;
       font-weight: 600;
+
+      .dark-background & {
+        @include color($white, 1);
+      }
     }
   }
 
@@ -64,7 +75,11 @@
   .form_field_textarea,
   .form_field_select,
   .form_submit input, {
-    @include box-shadow(4px, 4px, 0, rgba($black, 0.1));
+    @include box-shadow(4px, 4px, 0, rgba($black, .1));
+
+    .light-background & {
+      @include box-shadow(4px, 4px, 0, rgba($black, .2));
+    }
   }
 
   .form_field_textfield,
@@ -83,11 +98,19 @@
     &:focus {
       outline: none;
     }
+
+    .light-background & {
+      @include bg($secondary-color);
+    }
+
+    .footer & {
+      @include bg($black, .1);
+    }
   }
 
   .form_field_select {
     padding: 7px 9px 6px 9px;
-    text-indent: 0.01px;
+    text-indent: .01px;
     text-overflow: '';
     background-position: 97.5% 13px;
     background-repeat: no-repeat;
@@ -116,7 +139,7 @@
       width: 15px;
       height: 15px;
       @include bg($white);
-      @include box-shadow(2px, 2px, 0, rgba($black, 0.1));
+      @include box-shadow(2px, 2px, 0, rgba($black, .1));
     }
   }
 
@@ -190,7 +213,7 @@
       @include inputiosreset;
 
       &:hover {
-        @include bg($blue-1, 0.8);
+        @include bg($blue-1, .8);
       }
 
       @include query($mobile-2) {
@@ -228,7 +251,7 @@
     margin: 0 0 18px;
     @include color($white);
     line-height: 1em;
-    @include box-shadow(4px, 4px, 0, rgba($black, 0.1));
+    @include box-shadow(4px, 4px, 0, rgba($black, .1));
   }
 
   .feedback-error,
@@ -243,7 +266,7 @@
     width: 60px;
     text-align: center;
     font-size: 30px;
-    @include bg($secondary-color, 0.5);
+    @include bg($secondary-color, .5);
   }
 
   .feedback-loading {
@@ -255,7 +278,7 @@
       margin: 0 3px 5px 0;
       background: transparent;
       border-radius: 50%;
-      @include animation(feedback-loading 0.8s linear infinite);
+      @include animation(feedback-loading .8s linear infinite);
     }
   }
 
@@ -307,7 +330,7 @@
     height: 20px;
     margin: 2px 0 5px 9px;
     padding: 0;
-    @include border(all, 1px, solid, $white, 0.3);
+    @include border(all, 1px, solid, $white, .3);
     border-radius: 100%;
     cursor: pointer;
 

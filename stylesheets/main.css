@@ -1706,6 +1706,10 @@ body.search-open {
 .content-formatted form {
   max-width: 100%;
 }
+.footer .content-formatted .form_area, .footer
+.content-formatted .form {
+  text-align: left;
+}
 .content-formatted .form_field {
   margin-top: 20px;
 }
@@ -1737,6 +1741,10 @@ body.search-open {
   padding-left: 0;
   font-weight: 600;
 }
+.dark-background .content-formatted .form_field .edy-fe-label, .dark-background
+.content-formatted .form_field .form_field_label {
+  color: white;
+}
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select,
@@ -1761,6 +1769,14 @@ body.search-open {
   -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
 }
+.light-background .content-formatted .form_field_textfield, .light-background
+.content-formatted .form_field_textarea, .light-background
+.content-formatted .form_field_select, .light-background
+.content-formatted .form_submit input {
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
+  -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
+}
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select {
@@ -1783,9 +1799,20 @@ body.search-open {
 .content-formatted .form_field_select:focus {
   outline: none;
 }
+.light-background .content-formatted .form_field_textfield, .light-background
+.content-formatted .form_field_textarea, .light-background
+.content-formatted .form_field_select {
+  background-color: #1b2124;
+}
+.footer .content-formatted .form_field_textfield, .footer
+.content-formatted .form_field_textarea, .footer
+.content-formatted .form_field_select {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .content-formatted .form_field_select {
   padding: 7px 9px 6px 9px;
-  text-indent: 0.01px;
+  text-indent: .01px;
   text-overflow: '';
   background-position: 97.5% 13px;
   background-repeat: no-repeat;
