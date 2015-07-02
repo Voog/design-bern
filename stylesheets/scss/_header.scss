@@ -33,6 +33,7 @@
 .header-left {
   position: relative;
   max-width: 100%;
+  min-width: 1em;
 
   .flexbox & {
     @include flex(1 0 auto);
