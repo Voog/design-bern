@@ -1203,6 +1203,7 @@ body.search-open {
 }
 .front-page .content .content-inner {
   display: table;
+  table-layout: fixed;
   width: 100%;
   max-width: 660px;
   margin: 0 auto;
