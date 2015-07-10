@@ -134,11 +134,17 @@
   code {
     font-size: 14px;
     @include bg($grey-5);
+    line-height: 1.2;
+
+    .front-page & {
+      @include color($black);
+    }
   }
 
   pre {
     overflow: auto;
     padding: 10px;
+
 
     code {
       display: inline;

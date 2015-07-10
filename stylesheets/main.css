@@ -221,6 +221,11 @@ body.search-open {
 .content-formatted code {
   font-size: 14px;
   background-color: #fafafa;
+  line-height: 1.2;
+}
+.front-page .content-formatted pre, .front-page
+.content-formatted code {
+  color: black;
 }
 .content-formatted pre {
   overflow: auto;
