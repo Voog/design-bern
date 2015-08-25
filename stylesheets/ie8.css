@@ -6,7 +6,7 @@
 
 .no-svg .menu-lang-btn:after, .no-svg
 .menu-lang .menu-item .lang-flag:after {
-  background-image: url("../images/ico-flags-small.png");
+  background-image: url("../images/ico-flags.png");
 }
 
 .menu-lang-popover.expanded {
