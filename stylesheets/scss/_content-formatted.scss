@@ -184,7 +184,6 @@
     border: none;
     cursor: pointer;
     @include inputiosreset;
-
     @include box-shadow(4px, 4px, 0, rgba($black, .1));
 
     .light-background & {
