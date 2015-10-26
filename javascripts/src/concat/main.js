@@ -1,5 +1,7 @@
 ;(function($) {
-  var editmode = $('html').hasClass('editmode');
+  var editmode = function () {
+    return $('html').hasClass('editmode');
+  };
 
   // Remove comments if debouncing is used.
   // Function to limit the rate at which a function can fire.
@@ -269,6 +271,11 @@
     }
   };
 
+  var bindCustomTexteditorStyles = function() {
+    window.edy = window.edy || [];
+    edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+  };
+
   // Initiates the functions when window is resized.
   var handleWindowResize = function() {
     // Add functions that should be trgiggered while resizing the window here.
@@ -303,6 +310,10 @@
     handleSearchFocus();
     handleSearchMobilePosition();
     wrapTables();
+
+    if (editmode()) {
+      bindCustomTexteditorStyles();
+    }
 
     if (!Modernizr.flexbox && editmode) {
       bindFallbackHeaderLeftWidthCalculation();

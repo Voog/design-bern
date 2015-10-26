@@ -91,6 +91,7 @@ body.search-open {
 .content-formatted ol:first-child,
 .content-formatted pre:first-child,
 .content-formatted code:first-child,
+.content-formatted .custom-btn:first-child,
 .content-formatted .edy-positionable-container-center:first-child,
 .content-formatted .edy-positionable-container-left-block:first-child,
 .content-formatted .edy-positionable-container-right-block:first-child,
@@ -110,6 +111,7 @@ body.search-open {
 .content-formatted ol:last-child,
 .content-formatted pre:last-child,
 .content-formatted code:last-child,
+.content-formatted .custom-btn:last-child,
 .content-formatted .edy-positionable-container-center:last-child,
 .content-formatted .edy-positionable-container-left-block:last-child,
 .content-formatted .edy-positionable-container-right-block:last-child,
@@ -254,6 +256,35 @@ body.search-open {
 .content-formatted iframe {
   max-width: 100%;
   height: auto;
+}
+.content-formatted .custom-btn {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px 11px;
+  font-size: 14px;
+  line-height: 1em;
+  background-color: #0066bb;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
+  -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1) ;
+}
+.light-background .content-formatted .custom-btn {
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
+  -moz-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
+}
+.content-formatted .custom-btn, .content-formatted .custom-btn:hover {
+  color: white;
+}
+.content-formatted .custom-btn:hover {
+  background-color: #0066bb;
+  background-color: rgba(0, 102, 187, 0.8);
 }
 .content-formatted .edy-positionable-container-left,
 .content-formatted .edy-positionable-container-right {
