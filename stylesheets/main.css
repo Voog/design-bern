@@ -1175,8 +1175,11 @@ body.search-open {
   text-align: left;
 }
 .content .content-inner {
-  padding: 33px 50px 50px;
+  padding: 50px;
   background-color: #eeeeee;
+}
+.content .content-inner.with-submenu {
+  padding-top: 33px;
 }
 @media screen and (max-width: 960px) {
   .content .content-inner {
@@ -1197,6 +1200,14 @@ body.search-open {
 .content .content-left {
   padding: 43px 50px;
 }
+.content .content-left.left-full {
+  float: none;
+  padding: 50px;
+  width: auto;
+}
+.content .content-left.left-full.with-submenu {
+  padding-top: 13px;
+}
 .content .content-right iframe {
   display: block !important;
   width: 100% !important;
@@ -1209,6 +1220,13 @@ body.search-open {
 .content .content-right.with-padding {
   padding-right: 30px;
   padding-bottom: 20px;
+}
+.content .content-right.with-padding.right-full {
+  padding-left: 30px;
+}
+.content .content-right.right-full {
+  float: none;
+  width: auto;
 }
 @media screen and (max-width: 760px) {
   .content .content-left,

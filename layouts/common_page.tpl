@@ -11,7 +11,7 @@
     {% include "menu-level-2" %}
 
     <main class="content" role="main">
-      <div class="content-inner">
+      <div class="content-inner{% if has_children %} with-submenu{% endif %}">
         <section class="content-body content-formatted">{% content %}</section>
       </div>
     </main>
