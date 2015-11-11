@@ -1145,6 +1145,7 @@ body.search-open {
 }
 .header-title .header-link {
   display: inline-block;
+  max-width: 100%;
 }
 .header-title .header-link:hover {
   color: #1B2124;

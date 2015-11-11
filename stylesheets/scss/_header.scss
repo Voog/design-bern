@@ -96,6 +96,7 @@
 
   .header-link {
     display: inline-block;
+    max-width: 100%;
 
     &:hover {
       @include color($secondary-color,.8);
