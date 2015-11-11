@@ -5,17 +5,13 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     // Builds custom modernizr script.
-    modernizr: {
+    modernizr_builder: {
       build: {
-        'devFile' : 'bower_components/modernizr/modernizr.js',
-        'outputFile' : 'javascripts/modernizr.js',
-
-        'tests': [
-          'flexbox',
-          'svg'
-        ],
-
-        'uglify' : false
+        options: {
+          config: 'modernizr-config.json',
+          dest: 'javascripts/modernizr.js',
+          uglify: false
+        }
       }
     },
 
@@ -148,10 +144,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-exec');
-  grunt.loadNpmTasks('grunt-modernizr');
+  grunt.loadNpmTasks('grunt-modernizr-builder');
   grunt.loadNpmTasks('grunt-svgmin');
 
-  grunt.registerTask('default', ['modernizr', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'svgmin']);
+  grunt.registerTask('default', ['modernizr_builder:build', 'concat', 'uglify', 'sass', 'cssmin', 'imagemin', 'svgmin']);
 
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
