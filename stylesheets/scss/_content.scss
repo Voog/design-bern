@@ -63,6 +63,11 @@
         max-height: 262px;
       }
     }
+
+    &.with-padding {
+      padding-right: 30px;
+      padding-bottom: 20px;
+    }
   }
 
   @include query($tablet-4) {

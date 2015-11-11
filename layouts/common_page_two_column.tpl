@@ -17,7 +17,7 @@
           {% content %}
         </section>
       </div>
-      <div class="content-right">
+      <div class="content-right{% if has_children %} with-padding{% endif %}">
         <section class="content-formatted">
           {% content name="content_right" %}
         </section>

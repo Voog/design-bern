@@ -1,5 +1,6 @@
 {% for item in site.menuitems %}
   {% if item.selected? and item.children? or editmode %}
+    {% assign has_children = true %}
     <section class="content-topbar">
       <nav class="menu-sub">
         <ul class="menu">

@@ -1208,6 +1208,10 @@ body.search-open {
     max-height: 262px;
   }
 }
+.content .content-right.with-padding {
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
 @media screen and (max-width: 760px) {
   .content .content-left,
   .content .content-right {
