@@ -464,9 +464,6 @@ body.search-open {
     border-bottom: 1px solid rgba(27, 33, 36, 0.2);
     background-color: white;
   }
-  .menu-main .menu .menu-item:first-child .menu-link {
-    font-weight: 600;
-  }
   .menu-main .menu .menu-item .menu-link {
     display: block;
     padding: 5px 25px 3px;
@@ -475,6 +472,7 @@ body.search-open {
   .menu-main .menu .menu-item .menu-link.active, .menu-main .menu .menu-item .menu-link.active:hover {
     color: #838586;
     background-color: #c7e5ff;
+    font-weight: 600;
   }
   .menu-main .menu .menu-item .menu-link:hover {
     color: #838586;

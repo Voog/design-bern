@@ -148,12 +148,6 @@
         @include border(bottom, 1px, solid, $secondary-color, 0.2);
         @include bg($white);
 
-        &:first-child {
-          .menu-link {
-            font-weight: 600;
-          }
-        }
-
         .menu-link {
           display: block;
           padding: 5px 25px 3px;
@@ -163,6 +157,7 @@
           &.active:hover {
             @include color($grey-1);
             @include bg($blue-2);
+            font-weight: 600;
           }
 
           &:hover {
