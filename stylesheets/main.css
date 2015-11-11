@@ -1183,7 +1183,7 @@ body.search-open {
 }
 @media screen and (max-width: 960px) {
   .content .content-inner {
-    padding: 33px 20px 50px;
+    padding: 33px 20px;
   }
 }
 .content .content-left,
@@ -1204,6 +1204,14 @@ body.search-open {
   float: none;
   padding: 50px;
   width: auto;
+}
+.content .content-left.left-full.with-submenu {
+  padding-top: 13px;
+}
+@media screen and (max-width: 960px) {
+  .content .content-left.left-full.with-submenu {
+    padding-top: 33px;
+  }
 }
 @media screen and (max-width: 960px) {
   .content .content-left.left-full {
