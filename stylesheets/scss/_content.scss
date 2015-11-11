@@ -61,8 +61,8 @@
       padding: 50px;
       width: auto;
 
-      &.with-submenu {
-        padding-top: 13px;
+      @include query($tablet-2) {
+        padding: 33px 20px;
       }
     }
   }
