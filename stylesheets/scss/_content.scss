@@ -83,15 +83,20 @@
     }
 
     &.with-padding {
-      padding-right: 30px;
+      padding-right: 50px;
       padding-bottom: 20px;
 
-      @include query($tablet-2) {
+      @include query($tablet-4) {
+        padding-right: 20px;
         padding-bottom: 33px;
       }
 
       &.right-full {
-        padding-left: 30px;
+        padding-left: 50px;
+
+        @include query($tablet-4) {
+          padding-left: 20px;
+        }
       }
     }
 
