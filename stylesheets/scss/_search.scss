@@ -12,7 +12,7 @@
   vertical-align: middle;
   margin-left: 15px;
   height: $search-height-1;
-  line-height: 1em;
+  line-height: 1;
   @include bg($white);
 
   @include query($tablet-3) {
@@ -97,7 +97,7 @@
   padding: 6px 30px 5px 7px;
   font-family: inherit;
   font-size: 14px;
-  line-height: 1em;
+  line-height: 1;
   @include color($secondary-color, 0.67);
   @include bg($white);
   box-sizing: border-box;
@@ -110,7 +110,7 @@
 
   &::-webkit-input-placeholder {
     padding: 3px 0 4px 0;
-    line-height: 1em;
+    line-height: 1;
   }
 
   @include query($mobile-1) {
@@ -213,7 +213,7 @@
   padding: 20px;
   text-align: left;
   font-size: 14px;
-  line-height: 1.5em;
+  line-height: 1.5;
   @include bg($white);
   @include box-shadow(0, 0, 30px, rgba($black, 0.3));
   overflow-x: hidden;
@@ -309,6 +309,6 @@
     font-style: normal;
     @include bg($yellow, 0.5);
     border-radius: 2px;
-    padding: 0 0.2em;
+    padding: 0 0.2;
   }
 }
