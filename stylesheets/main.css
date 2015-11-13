@@ -493,16 +493,11 @@ body.search-open {
     position: static;
     display: block;
     margin-left: 0;
-    padding: 1px 25px 6px;
+    padding: 5px 25px 10px;
+    line-height: 1;
     background-color: white;
     border-bottom: 1px solid #696B6C;
     border-bottom: 1px solid rgba(105, 107, 108, 0.2);
-  }
-  .menu-main .menu .edit-btn .edy-menu-menuadd {
-    display: inline-block;
-  }
-  .menu-main .menu .edit-btn .edy-menu-menuadd:hover {
-    background: none;
   }
 }
 .menu-main .menu-lang {
@@ -675,6 +670,12 @@ body.search-open {
 }
 .flags-disabled .menu-lang-popover.expanded {
   min-width: 123px;
+}
+.menu-lang-popover .menu-link {
+  display: block;
+}
+.menu-lang-popover .edit-btn {
+  padding: 0 17px 10px;
 }
 
 .menu-lang {
@@ -926,15 +927,13 @@ body.search-open {
   background-color: rgba(105, 107, 108, 0.09);
 }
 .lang-options .menu .menu-item {
-  margin-top: 8px;
   padding: 5px 10px;
   font-size: 13px;
   background-color: transparent;
 }
 @media screen and (max-width: 840px) {
   .lang-options .menu .menu-item {
-    margin-top: 0;
-    padding: 4px 25px;
+    padding: 8px 25px 7px;
     font-size: 15px;
   }
 }

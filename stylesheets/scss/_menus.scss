@@ -181,17 +181,10 @@
         position: static;
         display: block;
         margin-left: 0;
-        padding: 1px 25px 6px;
+        padding: 5px 25px 10px;
+        line-height: 1;
         @include bg($white);
         @include border(bottom,1px,solid,$primary-color, 0.2);
-
-        .edy-menu-menuadd {
-          display: inline-block;
-
-          &:hover {
-            background: none;
-          }
-        }
       }
     }
   }
@@ -401,6 +394,14 @@
       min-width: 123px;
     }
   }
+
+  .menu-link {
+    display: block;
+  }
+
+  .edit-btn {
+    padding: 0 17px 10px
+  }
 }
 
 .menu-lang {
@@ -599,14 +600,13 @@ $flags:
 
   .menu {
     .menu-item {
-      margin-top: 8px;
+      display: block;
       padding: 5px 10px;
       font-size: 13px;
       background-color: transparent;
 
       @include query($tablet-3) {
-        margin-top: 0;
-        padding: 4px 25px;
+        padding: 8px 25px 7px;
         font-size: 15px;
       }
     }
