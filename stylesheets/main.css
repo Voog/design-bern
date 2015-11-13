@@ -405,8 +405,8 @@ body.search-open {
   .menu-main.expanded {
     position: absolute;
     z-index: 10001;
-    top: 60px;
-    right: 20px;
+    top: 79px;
+    right: 0;
     display: block;
     min-width: 350px;
     margin-bottom: 60px;
@@ -432,7 +432,7 @@ body.search-open {
   }
 }
 .menu-main .menu {
-  line-height: 1.4;
+  line-height: 1.6;
 }
 .menu-main .menu .menu-item {
   margin-left: 13px;
@@ -520,7 +520,7 @@ body.search-open {
     border-top: none;
   }
   .menu-main .menu-lang .menu .menu-item .menu-link {
-    padding: 5px 30px 3px 53px;
+    padding: 9px 30px 9px 53px;
     font-weight: 400;
     font-size: 14px;
   }
