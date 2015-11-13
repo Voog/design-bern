@@ -140,6 +140,11 @@
       height: 15px;
       @include bg($white);
       @include box-shadow(2px, 2px, 0, rgba($black, .1));
+
+      .footer & {
+        @include bg($black, .1);
+        @include box-shadow(2px, 2px, 0, rgba($black, .2));
+      }
     }
   }
 

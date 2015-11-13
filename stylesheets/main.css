@@ -927,6 +927,7 @@ body.search-open {
   background-color: rgba(105, 107, 108, 0.09);
 }
 .lang-options .menu .menu-item {
+  display: block;
   padding: 5px 10px;
   font-size: 13px;
   background-color: transparent;
@@ -1912,6 +1913,14 @@ body.search-open {
   -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1) ;
   -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1) ;
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1) ;
+}
+.footer .content-formatted .form_field_checkbox + .form_control_indicator, .footer
+.content-formatted .form_field_radio + .form_control_indicator {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2) ;
+  -moz-box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2) ;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2) ;
 }
 .content-formatted .form_field_checkbox:checked + .form_control_indicator:before {
   position: absolute;
