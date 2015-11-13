@@ -1503,7 +1503,7 @@ body.search-open {
 @media screen and (max-width: 480px) {
   .search-form {
     position: absolute;
-    top: 46px;
+    top: 64px;
     left: 0;
     right: 0;
   }
@@ -1580,6 +1580,9 @@ body.search-open {
   padding: 1px 0 0 1px;
 }
 .search-btn svg {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
   fill: rgba(27, 33, 36, 0.67);
 }
 .search-open-btn .search-btn svg, .search-close-btn .search-btn svg {
@@ -1651,7 +1654,7 @@ body.search-open {
 }
 @media screen and (max-width: 480px) {
   .voog-search-modal {
-    top: 86px;
+    top: 104px;
     left: 0;
     right: 0;
     bottom: 0;
