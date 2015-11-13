@@ -68,6 +68,10 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
+
+    .menu-link {
+      @include hyphenate(true);
+    }
   }
 }
 
@@ -122,7 +126,6 @@
       }
 
       .menu-link {
-        @include hyphenate(true);
         font-weight: 600;
         @include color($secondary-color, 0.67);
 
