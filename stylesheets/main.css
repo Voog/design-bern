@@ -690,7 +690,7 @@ body.search-open {
   }
 }
 .menu-lang .menu-item {
-  display: list-it;
+  display: list-item;
   text-align: right;
   font-size: 12px;
 }
