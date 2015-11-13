@@ -1889,6 +1889,7 @@ body.search-open {
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  -moz-appearance: none;
 }
 .no-svg .content-formatted .form_field_select {
   background-image: url("../images/ico-arrow-down.png");
