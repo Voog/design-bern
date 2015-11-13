@@ -1640,6 +1640,12 @@ body.search-open {
 }
 
 .voog-search-modal {
+  word-break: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   position: absolute;
   top: 50px;
   left: -200px;

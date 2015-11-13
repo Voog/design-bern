@@ -191,6 +191,7 @@
 }
 
 .voog-search-modal {
+  @include hyphenate(true);
   position: absolute;
   top: 50px;
   left: -200px;
