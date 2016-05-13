@@ -11,7 +11,13 @@
   {% if fallback_cover_image != nil and fallback_cover_image != '' and front_page_content_cover_image_sizes == nil %}
     {% assign og_image = fallback_cover_image %}
   {% elsif front_page_content_cover_image_sizes != nil and front_page_content_cover_image_sizes != '' %}
-    {% assign og_image = front_page_content_cover_image_sizes[2] %}
+    {% for size in front_page_content_cover_image_sizes reversed %}
+      {% if size.width <= 1280 %}
+        {% assign og_image = size %}
+      {% else %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 {% else %}
   {% if article %}
@@ -24,7 +30,8 @@
 {% endif %}
 
 {% if og_image %}
-  {% if og_image.url %}<meta property="og:image" content="{{ og_image.url }}">{% endif %}
+  {% comment %}"http:" and "https:" strings are removed and readded to ensure that older bg-picker images will have protocol.{% endcomment %}
+  {% if og_image.url %}<meta property="og:image" content="{{ og_image.url | replace_first: "http:", "" | replace_first: "https:", "" | prepend: "https:" }}">{% endif %}
   {% if og_image.content_type %}<meta property="og:image:type" content="{{ og_image.content_type }}">{% endif %}
   {% if og_image.width %}<meta property="og:image:width" content="{{ og_image.width }}">{% endif %}
   {% if og_image.height %}<meta property="og:image:height" content="{{ og_image.height }}">{% endif %}
