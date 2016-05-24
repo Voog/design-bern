@@ -270,9 +270,9 @@
     }
   };
 
-  var bindCustomTexteditorStyles = function() {
+  var bindCustomTexteditorStyles = function(buttonTranslation) {
     window.edy = window.edy || [];
-    edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+    edy.push(['texteditorStyles', {name: buttonTranslation, tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
   };
 
   // Initiates the functions when window is resized.
@@ -310,10 +310,6 @@
     handleSearchMobilePosition();
     wrapTables();
 
-    if (editmode()) {
-      bindCustomTexteditorStyles();
-    }
-
     if (!Modernizr.flexbox && editmode) {
       bindFallbackHeaderLeftWidthCalculation();
     };
@@ -328,7 +324,8 @@
     toggleFlags: toggleFlags,
     frontPageContentCoverBgPreview: frontPageContentCoverBgPreview,
     frontPageContentCoverBgCommit: frontPageContentCoverBgCommit,
-    handleFrontPageContentCoverColorScheme: handleFrontPageContentCoverColorScheme
+    handleFrontPageContentCoverColorScheme: handleFrontPageContentCoverColorScheme,
+    bindCustomTexteditorStyles: bindCustomTexteditorStyles
   });
 
   // Initiates site wide functions.
