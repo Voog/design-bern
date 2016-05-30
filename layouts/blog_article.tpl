@@ -2,7 +2,7 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "edicy-tools-variables" %}
-  {% include "html-head" %}
+  {% include "html-head" content_page: true %}
 </head>
 
 <body class="post-page js-bgpicker-body-image">

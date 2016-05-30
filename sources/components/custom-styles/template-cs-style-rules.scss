@@ -1,0 +1,415 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/modules/mixins';
+@import '../../stylesheets/modules/variables';
+
+// =============================================================================
+// DEFAULT STYLESHEET OVERRIDE STYLES
+// =============================================================================
+body {
+  font-family: var(--main-font-family);
+  color: var(--content-body-text-color);
+}
+
+// =============================================================================
+// NAVIGATION MENUS
+// =============================================================================
+@include querymin($tablet-2) {
+  .menu-front {
+    .menu-main-item {
+      .menu-link {
+        .dark-background & {
+          &,
+          &.active {
+            color: var(--main-color-front);
+          }
+
+          &.active {
+            border-color: var(--main-color-front);
+          }
+
+          &:hover {
+            border-color: var(--main-color-front);
+            background: var(--main-color-front);
+            color: var(--secondary-color-front);
+          }
+        }
+
+        .light-background & {
+          &,
+          &.active {
+            color: var(--secondary-color-front);
+          }
+
+          &.active {
+            border-color: var(--secondary-color-front);
+          }
+
+          &:hover {
+            border-color: var(--secondary-color-front);
+            background: var(--secondary-color-front);
+            color: var(--main-color-front);
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
+// SITE HEADER
+// =============================================================================
+.header-title {
+  &, & .header-link {
+    font-size: var(--header-body-font-size);
+    font-style: var(--header-body-font-style);
+    font-weight: var(--header-body-font-weight);
+    color: var(--header-body-text-color);
+    text-decoration: var(--header-body-text-decoration);
+    text-transform: var(--header-body-text-transform);
+  }
+
+  .header-link {
+    &:hover {
+      color: var(--header-body-text-color);
+    }
+  }
+}
+
+// =============================================================================
+// CONTENT
+// =============================================================================
+.content-topbar,
+.content,
+.content.two-columns {
+  background-color: var(--content-background-color);
+}
+
+// =============================================================================
+// SITE'S MAIN MENU
+// =============================================================================
+.menu-main {
+  .menu-link {
+    font-size: var(--menu-main-font-size);
+    font-style: var(--menu-main-font-style);
+    font-weight: var(--menu-main-font-weight);
+    color: var(--menu-main-color);
+    text-decoration: var(--menu-main-text-decoration);
+    text-transform: var(--menu-main-text-transform);
+
+    &.active {
+      font-style: var(--menu-main-active-font-style);
+      font-weight: var(--menu-main-active-font-weight);
+      color: var(--menu-main-active-color);
+      text-decoration: var(--menu-main-active-text-decoration);
+      text-transform: var(--menu-main-active-text-transform);
+    }
+
+    &:hover {
+      font-style: var(--menu-main-hover-font-style);
+      font-weight: var(--menu-main-hover-font-weight);
+      color: var(--menu-main-hover-color);
+      text-decoration: var(--menu-main-hover-text-decoration);
+      text-transform: var(--menu-main-hover-text-transform);
+    }
+  }
+}
+
+// =============================================================================
+// SITE'S SUB MENU
+// =============================================================================
+.menu-sub {
+  .menu-link {
+    font-size: var(--menu-sub-font-size);
+    font-style: var(--menu-sub-font-style);
+    font-weight: var(--menu-sub-font-weight);
+    color: var(--menu-sub-color);
+    text-decoration: var(--menu-sub-text-decoration);
+    text-transform: var(--menu-sub-text-transform);
+
+    &.active {
+      font-style: var(--menu-sub-active-font-style);
+      font-weight: var(--menu-sub-active-font-weight);
+      color: var(--menu-sub-active-color);
+      text-decoration: var(--menu-sub-active-text-decoration);
+      text-transform: var(--menu-sub-active-text-transform);
+    }
+
+    &:hover {
+      font-style: var(--menu-sub-hover-font-style);
+      font-weight: var(--menu-sub-hover-font-weight);
+      color: var(--menu-sub-hover-color);
+      text-decoration: var(--menu-sub-hover-text-decoration);
+      text-transform: var(--menu-sub-hover-text-transform);
+    }
+  }
+}
+
+// =============================================================================
+// BLOG LISTING AND ARTICLE
+// =============================================================================
+.post-page .post post-title,
+.post .post-title a,
+.blog-pate .post-date,
+.post-page .post .post-header-inner,
+.comments .comments-title {
+  color: var(--secondary-color-content);
+}
+
+// =============================================================================
+// TEXT TYPE CONTENT AREA
+// =============================================================================
+.content-formatted {
+  .content & {
+    font-size: var(--content-body-font-size);
+    line-height: var(--content-body-line-height);
+  }
+
+  .footer & {
+    font-size: var(--footer-body-font-size);
+    font-style: var(--footer-body-font-style);
+    font-weight: var(--footer-body-font-weight);
+    color: var(--footer-body-color);
+    text-decoration: var(--footer-body-text-decoration);
+    text-transform: var(--footer-body-text-transform);
+  }
+
+  // Colors for editable content area elements with editable background.
+  &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
+    .light-background & {
+      color: var(--secondary-color-front);
+    }
+
+    .dark-background & {
+      color: var(--main-color-front);
+    }
+  }
+
+  h1 {
+    color: var(--headings-title-color);
+
+    // scss-lint:disable NestingDepth
+    // scss-lint:disable SelectorDepth
+    &,
+    a,
+    a:hover {
+      font-size: var(--headings-title-font-size);
+      font-style: var(--headings-title-font-style);
+      font-weight: var(--headings-title-font-weight);
+      line-height: var(--headings-title-line-height);
+      text-align: var(--headings-title-text-alignment);
+      text-decoration: var(--headings-title-text-decoration);
+      text-transform: var(--headings-title-text-transform);
+    }
+    // scss-lint:enable NestingDepth
+    // scss-lint:enable SelectorDepth
+  }
+
+  h2:not(.comments-title) {
+    color: var(--headings-heading-color);
+
+    // scss-lint:disable NestingDepth
+    // scss-lint:disable SelectorDepth
+    &,
+    a,
+    a:hover {
+      font-size: var(--headings-heading-font-size);
+      font-style: var(--headings-heading-font-style);
+      font-weight: var(--headings-heading-font-weight);
+      line-height: var(--headings-heading-line-height);
+      text-align: var(--headings-heading-text-alignment);
+      text-decoration: var(--headings-heading-text-decoration);
+      text-transform: var(--headings-heading-text-transform);
+    }
+    // scss-lint:enable NestingDepth
+    // scss-lint:enable SelectorDepth
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--headings-subheading-color);
+
+    // scss-lint:disable NestingDepth
+    // scss-lint:disable SelectorDepth
+    &,
+    a,
+    a:hover {
+      font-size: var(--headings-subheading-font-size);
+      font-style: var(--headings-subheading-font-style);
+      font-weight: var(--headings-subheading-font-weight);
+      line-height: var(--headings-subheading-line-height);
+      text-align: var(--headings-subheading-text-alignment);
+      text-decoration: var(--headings-subheading-text-decoration);
+      text-transform: var(--headings-subheading-text-transform);
+    }
+    // scss-lint:enable NestingDepth
+    // scss-lint:enable SelectorDepth
+  }
+
+  // Editable content area links.
+  a {
+    font-weight: var(--content-link-font-weight);
+    font-style: var(--content-link-font-style);
+    text-decoration: var(--content-link-text-decoration);
+    text-transform: var(--content-link-text-transform);
+    color: var(--content-link-color);
+
+    &:hover {
+      font-weight: var(--content-link-hover-font-weight);
+      font-style: var(--content-link-hover-font-style);
+      text-decoration: var(--content-link-hover-text-decoration);
+      text-transform: var(--content-link-hover-text-transform);
+      color: var(--content-link-hover-color);
+    }
+  }
+
+  // Code blocks and preformatted content.
+  pre,
+  code {
+    .front-page & {
+      color: var(--secondary-color-front);
+    }
+  }
+
+  table {
+    th,
+    td {
+      padding: var(--table-padding);
+      font-size: var(--table-font-size);
+      border-top-style: var(--table-border-style);
+      border-bottom-style: var(--table-border-style);
+    }
+  }
+
+  .custom-btn {
+    padding: calc(var(--content-button-padding) - 12px) var(--content-button-padding);
+    font-size: var(--content-button-font-size);
+    font-style: var(--content-button-font-style);
+    font-weight: var(--content-button-font-weight);
+    color: var(--content-button-color);
+    text-decoration: var(--content-button-text-decoration);
+    text-transform: var(--content-button-text-transform);
+    background-color: var(--content-button-background-color);
+    border-color: var(--content-button-color);
+
+    &:hover {
+      font-style: var(--content-button-hover-font-style);
+      font-weight: var(--content-button-hover-font-weight);
+      color: var(--content-button-hover-color);
+      text-decoration: var(--content-button-hover-text-decoration);
+      text-transform: var(--content-button-hover-text-transform);
+      background-color: var(--content-button-hover-background-color);
+      border-color: var(--content-button-hover-color);
+    }
+
+    .dark-background & {
+      border-color: var(--main-color-front);
+      color: var(--main-color-front);
+    }
+
+    .light-background & {
+      border-color: var(--secondary-color-front);
+      color: var(--secondary-color-front);
+    }
+
+    .front-page & {
+      &:hover {
+        .dark-background & {
+          color: var(--secondary-color-front);
+          border-color: var(--main-color-front);
+          background-color: var(--main-color-front);
+        }
+
+        .light-background & {
+          color: var(--main-color-front);
+          border-color: var(--secondary-color-front);
+          background-color: var(--secondary-color-front);
+        }
+      }
+    }
+  }
+}
+
+.front-page {
+  // .content .content-inner,
+  .content {
+    .content-inner {
+      .content-formatted {
+        font-size: var(--focus-area-body-font-size);
+        line-height: var(--focus-area-body-line-height);
+        font-weight: var(--focus-area-body-font-weight);
+        font-style: var(--focus-area-body-font-style);
+        text-decoration: var(--focus-area-body-text-decoration);
+        text-transform: var(--focus-area-body-text-transform);
+
+        h1 {
+          font-size: var(--focus-area-title-font-size);
+          line-height: var(--focus-area-title-line-height);
+          font-weight: var(--focus-area-title-font-weight);
+          font-style: var(--focus-area-title-font-style);
+          text-decoration: var(--focus-area-title-text-decoration);
+          text-transform: var(--focus-area-title-text-transform);
+        }
+      }
+    }
+  }
+  .feature-section {
+    .content-formatted {
+      font-size: var(--content-body-font-size);
+    }
+  }
+
+  .feature-section {
+    .content-formatted {
+      line-height: var(--content-body-line-height);
+    }
+  }
+}
+
+//==============================================================================
+// "FORM" TYPE CONTENT AREA
+//==============================================================================
+.content-formatted {
+  .form_field_textfield,
+  .form_field_textarea,
+  .form_field_select {
+    font-size: var(--form-field-font-size);
+    color: var(--form-field-color);
+    border-color: var(--form-field-color);
+    border-width: var(--form-field-border-width);
+
+    .dark-background & {
+      border-color: var(--main-color-front);
+    }
+
+    .light-background & {
+      border-color: var(--secondary-color-front);
+    }
+  }
+
+  .form_field,
+  .edy-fe-label {
+    color: var(--form-field-color);
+  }
+
+  .form_submit {
+    input {
+      padding: calc(var(--form-button-padding) - 3px) var(--form-button-padding);
+      color: var(--form-button-color);
+      background-color: var(--form-button-background-color);
+    }
+  }
+}
