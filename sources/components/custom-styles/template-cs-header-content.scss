@@ -329,7 +329,7 @@
           "--menu-main-active-color"
         ]
       */
-      --menu-main-hover-color: rgba($secondary-color, 1);
+      --menu-main-hover-color: rgba($primary-color, 1);
 
       /* VoogStyle
         "pathI18n": ["header", "main_menu", "active"],
@@ -338,7 +338,7 @@
         "editor": "colorPicker",
         "scope": "global"
       */
-      --menu-main-active-color: rgba($secondary-color, 1);
+      --menu-main-active-color: rgba($primary-color, 1);
 
   // scss-lint:enable Comment, Indentation
 }

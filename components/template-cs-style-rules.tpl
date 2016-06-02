@@ -3,30 +3,6 @@ body {
   color: var(--content-body-text-color);
 }
 
-@media screen and (min-width: 961px) {
-  .dark-background .menu-front .menu-main-item .menu-link, .dark-background .menu-front .menu-main-item .menu-link.active {
-    color: var(--main-color-front);
-  }
-  .dark-background .menu-front .menu-main-item .menu-link.active {
-    border-color: var(--main-color-front);
-  }
-  .dark-background .menu-front .menu-main-item .menu-link:hover {
-    border-color: var(--main-color-front);
-    background: var(--main-color-front);
-    color: var(--secondary-color-front);
-  }
-  .light-background .menu-front .menu-main-item .menu-link, .light-background .menu-front .menu-main-item .menu-link.active {
-    color: var(--secondary-color-front);
-  }
-  .light-background .menu-front .menu-main-item .menu-link.active {
-    border-color: var(--secondary-color-front);
-  }
-  .light-background .menu-front .menu-main-item .menu-link:hover {
-    border-color: var(--secondary-color-front);
-    background: var(--secondary-color-front);
-    color: var(--main-color-front);
-  }
-}
 .header-title, .header-title .header-link {
   font-size: var(--header-body-font-size);
   font-style: var(--header-body-font-style);
@@ -41,11 +17,12 @@ body {
 
 .content-topbar,
 .content,
-.content.two-columns {
+.content.two-columns,
+.content .content-inner {
   background-color: var(--content-background-color);
 }
 
-.menu-main .menu-link {
+.menu-main .menu .menu-item .menu-link {
   font-size: var(--menu-main-font-size);
   font-style: var(--menu-main-font-style);
   font-weight: var(--menu-main-font-weight);
@@ -53,14 +30,14 @@ body {
   text-decoration: var(--menu-main-text-decoration);
   text-transform: var(--menu-main-text-transform);
 }
-.menu-main .menu-link.active {
+.menu-main .menu .menu-item .menu-link.active {
   font-style: var(--menu-main-active-font-style);
   font-weight: var(--menu-main-active-font-weight);
   color: var(--menu-main-active-color);
   text-decoration: var(--menu-main-active-text-decoration);
   text-transform: var(--menu-main-active-text-transform);
 }
-.menu-main .menu-link:hover {
+.menu-main .menu .menu-item .menu-link:hover {
   font-style: var(--menu-main-hover-font-style);
   font-weight: var(--menu-main-hover-font-weight);
   color: var(--menu-main-hover-color);
@@ -68,7 +45,7 @@ body {
   text-transform: var(--menu-main-hover-text-transform);
 }
 
-.menu-sub .menu-link {
+.menu-sub .menu .menu-item .menu-link {
   font-size: var(--menu-sub-font-size);
   font-style: var(--menu-sub-font-style);
   font-weight: var(--menu-sub-font-weight);
@@ -76,14 +53,14 @@ body {
   text-decoration: var(--menu-sub-text-decoration);
   text-transform: var(--menu-sub-text-transform);
 }
-.menu-sub .menu-link.active {
+.menu-sub .menu .menu-item .menu-link.active {
   font-style: var(--menu-sub-active-font-style);
   font-weight: var(--menu-sub-active-font-weight);
   color: var(--menu-sub-active-color);
   text-decoration: var(--menu-sub-active-text-decoration);
   text-transform: var(--menu-sub-active-text-transform);
 }
-.menu-sub .menu-link:hover {
+.menu-sub .menu .menu-item .menu-link:hover {
   font-style: var(--menu-sub-hover-font-style);
   font-weight: var(--menu-sub-hover-font-weight);
   color: var(--menu-sub-hover-color);
@@ -112,10 +89,10 @@ body {
   text-transform: var(--footer-body-text-transform);
 }
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
-  color: var(--secondary-color-front);
+  color: var(--secondary-color-content);
 }
 .dark-background .content-formatted, .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background .content-formatted p, .dark-background .content-formatted ul, .dark-background .content-formatted ol, .dark-background .content-formatted table {
-  color: var(--main-color-front);
+  color: var(--third-color);
 }
 .content-formatted h1 {
   color: var(--headings-title-color);
@@ -131,12 +108,12 @@ body {
   text-decoration: var(--headings-title-text-decoration);
   text-transform: var(--headings-title-text-transform);
 }
-.content-formatted h2:not(.comments-title) {
+.content-formatted h2 {
   color: var(--headings-heading-color);
 }
-.content-formatted h2:not(.comments-title),
-.content-formatted h2:not(.comments-title) a,
-.content-formatted h2:not(.comments-title) a:hover {
+.content-formatted h2,
+.content-formatted h2 a,
+.content-formatted h2 a:hover {
   font-size: var(--headings-heading-font-size);
   font-style: var(--headings-heading-font-style);
   font-weight: var(--headings-heading-font-weight);
@@ -187,7 +164,7 @@ body {
 }
 .front-page .content-formatted pre, .front-page
 .content-formatted code {
-  color: var(--secondary-color-front);
+  color: var(--secondary-color-content);
 }
 .content-formatted table th,
 .content-formatted table td {
@@ -216,47 +193,6 @@ body {
   background-color: var(--content-button-hover-background-color);
   border-color: var(--content-button-hover-color);
 }
-.dark-background .content-formatted .custom-btn {
-  border-color: var(--main-color-front);
-  color: var(--main-color-front);
-}
-.light-background .content-formatted .custom-btn {
-  border-color: var(--secondary-color-front);
-  color: var(--secondary-color-front);
-}
-.dark-background .front-page .content-formatted .custom-btn:hover {
-  color: var(--secondary-color-front);
-  border-color: var(--main-color-front);
-  background-color: var(--main-color-front);
-}
-.light-background .front-page .content-formatted .custom-btn:hover {
-  color: var(--main-color-front);
-  border-color: var(--secondary-color-front);
-  background-color: var(--secondary-color-front);
-}
-
-.front-page .content .content-inner .content-formatted {
-  font-size: var(--focus-area-body-font-size);
-  line-height: var(--focus-area-body-line-height);
-  font-weight: var(--focus-area-body-font-weight);
-  font-style: var(--focus-area-body-font-style);
-  text-decoration: var(--focus-area-body-text-decoration);
-  text-transform: var(--focus-area-body-text-transform);
-}
-.front-page .content .content-inner .content-formatted h1 {
-  font-size: var(--focus-area-title-font-size);
-  line-height: var(--focus-area-title-line-height);
-  font-weight: var(--focus-area-title-font-weight);
-  font-style: var(--focus-area-title-font-style);
-  text-decoration: var(--focus-area-title-text-decoration);
-  text-transform: var(--focus-area-title-text-transform);
-}
-.front-page .feature-section .content-formatted {
-  font-size: var(--content-body-font-size);
-}
-.front-page .feature-section .content-formatted {
-  line-height: var(--content-body-line-height);
-}
 
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
@@ -269,12 +205,12 @@ body {
 .dark-background .content-formatted .form_field_textfield, .dark-background
 .content-formatted .form_field_textarea, .dark-background
 .content-formatted .form_field_select {
-  border-color: var(--main-color-front);
+  border-color: var(--main-color-content);
 }
 .light-background .content-formatted .form_field_textfield, .light-background
 .content-formatted .form_field_textarea, .light-background
 .content-formatted .form_field_select {
-  border-color: var(--secondary-color-front);
+  border-color: var(--secondary-color-content);
 }
 .content-formatted .form_field,
 .content-formatted .edy-fe-label {

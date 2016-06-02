@@ -9,7 +9,7 @@
     "featured": true,
     "scope": "global"
   */
-  --focus-area-title-font-size: 150px;
+  --focus-area-title-font-size: 36px;
   /* VoogStyle
     "pathI18n": ["focus_area", "title"],
     "titleI18n": "line_height",
@@ -20,7 +20,7 @@
     "unit": "",
     "scope": "global"
   */
-  --focus-area-title-line-height: 1.2;
+  --focus-area-title-line-height: 1.16;
   /* VoogStyle
     "pathI18n": ["focus_area", "title"],
     "titleI18n": "font_size",

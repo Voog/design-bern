@@ -289,7 +289,7 @@
       "--menu-main-active-color"
     ]
   */
-  --menu-main-hover-color: #1b2124;
+  --menu-main-hover-color: #696b6c;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "active"],
     "titleI18n": "color",
@@ -297,5 +297,5 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --menu-main-active-color: #1b2124;
+  --menu-main-active-color: #696b6c;
 }

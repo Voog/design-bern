@@ -23,51 +23,6 @@ body {
 }
 
 // =============================================================================
-// NAVIGATION MENUS
-// =============================================================================
-@include querymin($tablet-2) {
-  .menu-front {
-    .menu-main-item {
-      .menu-link {
-        .dark-background & {
-          &,
-          &.active {
-            color: var(--main-color-front);
-          }
-
-          &.active {
-            border-color: var(--main-color-front);
-          }
-
-          &:hover {
-            border-color: var(--main-color-front);
-            background: var(--main-color-front);
-            color: var(--secondary-color-front);
-          }
-        }
-
-        .light-background & {
-          &,
-          &.active {
-            color: var(--secondary-color-front);
-          }
-
-          &.active {
-            border-color: var(--secondary-color-front);
-          }
-
-          &:hover {
-            border-color: var(--secondary-color-front);
-            background: var(--secondary-color-front);
-            color: var(--main-color-front);
-          }
-        }
-      }
-    }
-  }
-}
-
-// =============================================================================
 // SITE HEADER
 // =============================================================================
 .header-title {
@@ -92,7 +47,8 @@ body {
 // =============================================================================
 .content-topbar,
 .content,
-.content.two-columns {
+.content.two-columns,
+.content .content-inner {
   background-color: var(--content-background-color);
 }
 
@@ -100,7 +56,7 @@ body {
 // SITE'S MAIN MENU
 // =============================================================================
 .menu-main {
-  .menu-link {
+  .menu .menu-item .menu-link {
     font-size: var(--menu-main-font-size);
     font-style: var(--menu-main-font-style);
     font-weight: var(--menu-main-font-weight);
@@ -130,7 +86,7 @@ body {
 // SITE'S SUB MENU
 // =============================================================================
 .menu-sub {
-  .menu-link {
+  .menu .menu-item .menu-link {
     font-size: var(--menu-sub-font-size);
     font-style: var(--menu-sub-font-style);
     font-weight: var(--menu-sub-font-weight);
@@ -188,11 +144,11 @@ body {
   // Colors for editable content area elements with editable background.
   &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
     .light-background & {
-      color: var(--secondary-color-front);
+      color: var(--secondary-color-content);
     }
 
     .dark-background & {
-      color: var(--main-color-front);
+      color: var(--third-color);
     }
   }
 
@@ -216,7 +172,7 @@ body {
     // scss-lint:enable SelectorDepth
   }
 
-  h2:not(.comments-title) {
+  h2 {
     color: var(--headings-heading-color);
 
     // scss-lint:disable NestingDepth
@@ -280,7 +236,7 @@ body {
   pre,
   code {
     .front-page & {
-      color: var(--secondary-color-front);
+      color: var(--secondary-color-content);
     }
   }
 
@@ -314,68 +270,6 @@ body {
       background-color: var(--content-button-hover-background-color);
       border-color: var(--content-button-hover-color);
     }
-
-    .dark-background & {
-      border-color: var(--main-color-front);
-      color: var(--main-color-front);
-    }
-
-    .light-background & {
-      border-color: var(--secondary-color-front);
-      color: var(--secondary-color-front);
-    }
-
-    .front-page & {
-      &:hover {
-        .dark-background & {
-          color: var(--secondary-color-front);
-          border-color: var(--main-color-front);
-          background-color: var(--main-color-front);
-        }
-
-        .light-background & {
-          color: var(--main-color-front);
-          border-color: var(--secondary-color-front);
-          background-color: var(--secondary-color-front);
-        }
-      }
-    }
-  }
-}
-
-.front-page {
-  // .content .content-inner,
-  .content {
-    .content-inner {
-      .content-formatted {
-        font-size: var(--focus-area-body-font-size);
-        line-height: var(--focus-area-body-line-height);
-        font-weight: var(--focus-area-body-font-weight);
-        font-style: var(--focus-area-body-font-style);
-        text-decoration: var(--focus-area-body-text-decoration);
-        text-transform: var(--focus-area-body-text-transform);
-
-        h1 {
-          font-size: var(--focus-area-title-font-size);
-          line-height: var(--focus-area-title-line-height);
-          font-weight: var(--focus-area-title-font-weight);
-          font-style: var(--focus-area-title-font-style);
-          text-decoration: var(--focus-area-title-text-decoration);
-          text-transform: var(--focus-area-title-text-transform);
-        }
-      }
-    }
-  }
-  .feature-section {
-    .content-formatted {
-      font-size: var(--content-body-font-size);
-    }
-  }
-
-  .feature-section {
-    .content-formatted {
-      line-height: var(--content-body-line-height);
-    }
   }
 }
 
@@ -392,11 +286,11 @@ body {
     border-width: var(--form-field-border-width);
 
     .dark-background & {
-      border-color: var(--main-color-front);
+      border-color: var(--main-color-content);
     }
 
     .light-background & {
-      border-color: var(--secondary-color-front);
+      border-color: var(--secondary-color-content);
     }
   }
 
