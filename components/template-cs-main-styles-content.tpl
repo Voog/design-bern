@@ -32,6 +32,7 @@
     "boundVariables": [
       "--header-body-text-color",
       "--menu-main-color",
+      "--menu-main-active-color",
       "--menu-sub-color",
       "--form-field-color"
     ]

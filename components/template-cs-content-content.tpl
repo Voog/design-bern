@@ -225,7 +225,6 @@
     "editor": "colorPicker",
     "scope": "global",
     "boundVariables": [
-      "--menu-sub-active-color"
     ]
   */
   --menu-sub-hover-color: #1b2124;

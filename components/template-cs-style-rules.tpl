@@ -29,6 +29,7 @@ body {
   color: var(--menu-main-color);
   text-decoration: var(--menu-main-text-decoration);
   text-transform: var(--menu-main-text-transform);
+  opacity: .7;
 }
 .menu-main .menu .menu-item .menu-link.active {
   font-style: var(--menu-main-active-font-style);
@@ -36,6 +37,10 @@ body {
   color: var(--menu-main-active-color);
   text-decoration: var(--menu-main-active-text-decoration);
   text-transform: var(--menu-main-active-text-transform);
+  opacity: .5;
+}
+.menu-main .menu .menu-item .menu-link.active:hover {
+  color: var(--menu-main-active-color);
 }
 .menu-main .menu .menu-item .menu-link:hover {
   font-style: var(--menu-main-hover-font-style);
@@ -43,6 +48,7 @@ body {
   color: var(--menu-main-hover-color);
   text-decoration: var(--menu-main-hover-text-decoration);
   text-transform: var(--menu-main-hover-text-transform);
+  opacity: .5;
 }
 
 .menu-sub .menu .menu-item .menu-link {
@@ -52,6 +58,7 @@ body {
   color: var(--menu-sub-color);
   text-decoration: var(--menu-sub-text-decoration);
   text-transform: var(--menu-sub-text-transform);
+  opacity: .5;
 }
 .menu-sub .menu .menu-item .menu-link.active {
   font-style: var(--menu-sub-active-font-style);
@@ -59,6 +66,10 @@ body {
   color: var(--menu-sub-active-color);
   text-decoration: var(--menu-sub-active-text-decoration);
   text-transform: var(--menu-sub-active-text-transform);
+  opacity: 1;
+}
+.menu-sub .menu .menu-item .menu-link.active:hover {
+  color: var(--menu-sub-active-color);
 }
 .menu-sub .menu .menu-item .menu-link:hover {
   font-style: var(--menu-sub-hover-font-style);
@@ -66,6 +77,7 @@ body {
   color: var(--menu-sub-hover-color);
   text-decoration: var(--menu-sub-hover-text-decoration);
   text-transform: var(--menu-sub-hover-text-transform);
+  opacity: 1;
 }
 
 .post-page .post post-title,

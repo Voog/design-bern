@@ -63,6 +63,7 @@ body {
     color: var(--menu-main-color);
     text-decoration: var(--menu-main-text-decoration);
     text-transform: var(--menu-main-text-transform);
+    opacity: .7;
 
     &.active {
       font-style: var(--menu-main-active-font-style);
@@ -70,6 +71,11 @@ body {
       color: var(--menu-main-active-color);
       text-decoration: var(--menu-main-active-text-decoration);
       text-transform: var(--menu-main-active-text-transform);
+      opacity: .5;
+
+      &:hover {
+        color: var(--menu-main-active-color);
+      }
     }
 
     &:hover {
@@ -78,6 +84,7 @@ body {
       color: var(--menu-main-hover-color);
       text-decoration: var(--menu-main-hover-text-decoration);
       text-transform: var(--menu-main-hover-text-transform);
+      opacity: .5;
     }
   }
 }
@@ -93,6 +100,7 @@ body {
     color: var(--menu-sub-color);
     text-decoration: var(--menu-sub-text-decoration);
     text-transform: var(--menu-sub-text-transform);
+    opacity: .5;
 
     &.active {
       font-style: var(--menu-sub-active-font-style);
@@ -100,6 +108,11 @@ body {
       color: var(--menu-sub-active-color);
       text-decoration: var(--menu-sub-active-text-decoration);
       text-transform: var(--menu-sub-active-text-transform);
+      opacity: 1;
+
+      &:hover {
+        color: var(--menu-sub-active-color);
+      }
     }
 
     &:hover {
@@ -108,6 +121,7 @@ body {
       color: var(--menu-sub-hover-color);
       text-decoration: var(--menu-sub-hover-text-decoration);
       text-transform: var(--menu-sub-hover-text-transform);
+      opacity: 1;
     }
   }
 }
