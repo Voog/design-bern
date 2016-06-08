@@ -281,7 +281,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-modernizr-builder');
   grunt.loadNpmTasks('grunt-postcss');
 
-  grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'copy:assets', 'copy:images', 'copy:javascripts', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove']);
+  grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss:main_styles', 'cssmin', 'imagemin', 'postcss:custom_styles', 'copy', 'clean:remove']);
 
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
