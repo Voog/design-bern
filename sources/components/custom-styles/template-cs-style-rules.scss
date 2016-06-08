@@ -62,13 +62,16 @@ body {
 // =============================================================================
 .menu-main {
   .menu .menu-item .menu-link {
-    font-size: var(--menu-main-font-size);
     font-style: var(--menu-main-font-style);
     font-weight: var(--menu-main-font-weight);
     color: var(--menu-main-color);
     text-decoration: var(--menu-main-text-decoration);
     text-transform: var(--menu-main-text-transform);
     opacity: .7;
+
+    @include querymin($tablet-3) {
+      font-size: var(--menu-main-font-size);
+    };
 
     &.active {
       font-style: var(--menu-main-active-font-style);

@@ -28,7 +28,6 @@ body {
 }
 
 .menu-main .menu .menu-item .menu-link {
-  font-size: var(--menu-main-font-size);
   font-style: var(--menu-main-font-style);
   font-weight: var(--menu-main-font-weight);
   color: var(--menu-main-color);
@@ -54,6 +53,11 @@ body {
   text-decoration: var(--menu-main-hover-text-decoration);
   text-transform: var(--menu-main-hover-text-transform);
   opacity: .5;
+}
+@media screen and (min-width: 841px) {
+  .menu-main .menu .menu-item .menu-link {
+    font-size: var(--menu-main-font-size);
+  }
 }
 
 .menu-sub .menu .menu-item .menu-link {
