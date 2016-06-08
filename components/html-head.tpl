@@ -28,10 +28,10 @@
     {% include "template-cs-main-styles-front" %}
     {% include "template-cs-header-content" %}
     {% include "template-cs-headings-content" %}
-    {% include "template-cs-content-content" %}
+    {% include "template-cs-content-front" %}
     {% include "template-cs-button-content" %}
     {% include "template-cs-table-content" %}
-    {% include "template-cs-form-content" %}
+    {% include "template-cs-form-front" %}
     {% include "template-cs-footer-content" %}
   {% endif %}
 

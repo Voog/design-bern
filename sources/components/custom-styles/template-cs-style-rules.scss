@@ -158,7 +158,7 @@ body {
   // Colors for editable content area elements with editable background.
   &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
     .light-background & {
-      color: var(--secondary-color-content);
+      color: var(--main-color-content);
     }
 
     .dark-background & {
@@ -274,6 +274,7 @@ body {
     text-transform: var(--content-button-text-transform);
     background-color: var(--content-button-background-color);
     border-color: var(--content-button-color);
+    box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba($black, .2);
 
     &:hover {
       font-style: var(--content-button-hover-font-style);
@@ -284,6 +285,14 @@ body {
       background-color: var(--content-button-hover-background-color);
       border-color: var(--content-button-hover-color);
     }
+
+    .dark-background & {
+      box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba($white, .1);
+    }
+
+    .light-background & {
+      box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba($black, .2);
+    }
   }
 }
 
@@ -291,20 +300,19 @@ body {
 // "FORM" TYPE CONTENT AREA
 //==============================================================================
 .content-formatted {
-  .form_field_textfield,
-  .form_field_textarea,
-  .form_field_select {
+  .form_field_textfield, .form_field_textarea, .form_field_select {
     font-size: var(--form-field-font-size);
     color: var(--form-field-color);
-    border-color: var(--form-field-color);
-    border-width: var(--form-field-border-width);
+    box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--form-field-border-color);
 
     .dark-background & {
-      border-color: var(--main-color-content);
+      color: var(--secondary-color-content);
+      box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--secondary-color-content);
     }
 
     .light-background & {
-      border-color: var(--secondary-color-content);
+      color: var(--main-color-content);
+      box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--main-color-content);
     }
   }
 
@@ -313,11 +321,43 @@ body {
     color: var(--form-field-color);
   }
 
+  .form_field {
+    .form_field_label,
+    .edy-fe-label {
+      font-size: var(--form-label-font-size);
+    }
+  }
+
   .form_submit {
     input {
-      padding: calc(var(--form-button-padding) - 3px) var(--form-button-padding);
+      font-size: var(--form-button-font-size);
+      padding: calc(var(--form-button-padding) - 13px) calc(var(--form-button-padding) - 10px);
       color: var(--form-button-color);
       background-color: var(--form-button-background-color);
+      box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
+
+      .dark-background & {
+        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($white, .1);
+      }
+
+      .light-background & {
+        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
+      }
+    }
+  }
+
+  .form_area {
+
+    .feedback-error, .feedback-success, .form_error, .form_notice {
+      box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
+
+      .dark-background & {
+        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($white, .1);
+      }
+
+      .light-background & {
+        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
+      }
     }
   }
 }

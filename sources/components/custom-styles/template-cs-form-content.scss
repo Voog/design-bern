@@ -21,13 +21,15 @@
 
   /* VoogStyle
     "pathI18n": ["form"],
-    "titleI18n": "field_border",
-    "editor": "listPicker",
-    "list": {{ base_toggle_set }},
-    "featured": true,
-    "scope": "global"
+    "titleI18n": "label_size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
   */
-  --form-field-border-width: 0px;
+  --form-label-font-size: 14px;
 
   /* VoogStyle
     "pathI18n": ["form"],
@@ -43,6 +45,16 @@
 
   /* VoogStyle
     "pathI18n": ["form"],
+    "titleI18n": "border",
+    "editor": "listPicker",
+    "list": {{ base_toggle_set }},
+    "featured": true,
+    "scope": "global"
+  */
+  --form-field-border-width: 4px;
+
+  /* VoogStyle
+    "pathI18n": ["form"],
     "titleI18n": "field_color",
     "editor": "colorPicker",
     "scope": "global",
@@ -51,8 +63,19 @@
   --form-field-color: rgba($secondary-color, 1);
 
   /* VoogStyle
-    "pathI18n": ["form"],
-    "titleI18n": "button_padding",
+    "pathI18n": ["form", "button"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "scope": "global"
+  */
+  --form-button-font-size: 14px;
+
+  /* VoogStyle
+    "pathI18n": ["form", "button"],
+    "titleI18n": "padding",
     "editor": "rangePicker",
     "min": 0,
     "max": 50,
@@ -60,11 +83,11 @@
     "unit": "px",
     "scope": "global"
   */
-  --form-button-padding: 11px;
+  --form-button-padding: 21px;
 
   /* VoogStyle
-    "pathI18n": ["form"],
-    "titleI18n": "button_color",
+    "pathI18n": ["form", "button"],
+    "titleI18n": "color",
     "editor": "colorPicker",
     "featured": true,
     "scope": "global"
@@ -72,9 +95,10 @@
   --form-button-color: rgba($color-white, 1);
 
   /* VoogStyle
-    "pathI18n": ["form"],
-    "titleI18n": "button_bg_color",
+    "pathI18n": ["form", "button"],
+    "titleI18n": "background_color",
     "editor": "colorPicker",
+    "featured": true,
     "scope": "global"
   */
   --form-button-background-color: rgba($blue-1, 1);

@@ -217,7 +217,7 @@
       },
       {
         "titleI18n": "on",
-        "value": "1px"
+        "value": "4px"
       }
     ]
   {% endcapture %}

@@ -31,14 +31,6 @@
   */
   --form-field-border-width: 4px;
   /* VoogStyle
-    "pathI18n": ["form"],
-    "titleI18n": "field_color",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --form-field-color: #1b2124;
-  /* VoogStyle
     "pathI18n": ["form", "button"],
     "titleI18n": "size",
     "editor": "rangePicker",

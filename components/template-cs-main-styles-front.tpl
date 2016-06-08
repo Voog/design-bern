@@ -42,7 +42,11 @@
     "titleI18n": "third_color",
     "editor": "colorPicker",
     "featured": true,
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+      "--content-button-color",
+      "--form-button-color"
+    ]
   */
   --third-color: white;
 }

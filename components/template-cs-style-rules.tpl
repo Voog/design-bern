@@ -101,7 +101,7 @@ body {
   text-transform: var(--footer-body-text-transform);
 }
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
-  color: var(--secondary-color-content);
+  color: var(--main-color-content);
 }
 .dark-background .content-formatted, .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background .content-formatted p, .dark-background .content-formatted ul, .dark-background .content-formatted ol, .dark-background .content-formatted table {
   color: var(--third-color);
@@ -195,6 +195,7 @@ body {
   text-transform: var(--content-button-text-transform);
   background-color: var(--content-button-background-color);
   border-color: var(--content-button-color);
+  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
 }
 .content-formatted .custom-btn:hover {
   font-style: var(--content-button-hover-font-style);
@@ -205,31 +206,53 @@ body {
   background-color: var(--content-button-hover-background-color);
   border-color: var(--content-button-hover-color);
 }
+.dark-background .content-formatted .custom-btn {
+  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(255, 255, 255, 0.1);
+}
+.light-background .content-formatted .custom-btn {
+  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
+}
 
-.content-formatted .form_field_textfield,
-.content-formatted .form_field_textarea,
-.content-formatted .form_field_select {
+.content-formatted .form_field_textfield, .content-formatted .form_field_textarea, .content-formatted .form_field_select {
   font-size: var(--form-field-font-size);
   color: var(--form-field-color);
-  border-color: var(--form-field-color);
-  border-width: var(--form-field-border-width);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--form-field-border-color);
 }
-.dark-background .content-formatted .form_field_textfield, .dark-background
-.content-formatted .form_field_textarea, .dark-background
-.content-formatted .form_field_select {
-  border-color: var(--main-color-content);
+.dark-background .content-formatted .form_field_textfield, .dark-background .content-formatted .form_field_textarea, .dark-background .content-formatted .form_field_select {
+  color: var(--secondary-color-content);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--secondary-color-content);
 }
-.light-background .content-formatted .form_field_textfield, .light-background
-.content-formatted .form_field_textarea, .light-background
-.content-formatted .form_field_select {
-  border-color: var(--secondary-color-content);
+.light-background .content-formatted .form_field_textfield, .light-background .content-formatted .form_field_textarea, .light-background .content-formatted .form_field_select {
+  color: var(--main-color-content);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--main-color-content);
 }
 .content-formatted .form_field,
 .content-formatted .edy-fe-label {
   color: var(--form-field-color);
 }
+.content-formatted .form_field .form_field_label,
+.content-formatted .form_field .edy-fe-label {
+  font-size: var(--form-label-font-size);
+}
 .content-formatted .form_submit input {
-  padding: calc(var(--form-button-padding) - 3px) var(--form-button-padding);
+  font-size: var(--form-button-font-size);
+  padding: calc(var(--form-button-padding) - 13px) calc(var(--form-button-padding) - 10px);
   color: var(--form-button-color);
   background-color: var(--form-button-background-color);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+}
+.dark-background .content-formatted .form_submit input {
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(255, 255, 255, 0.1);
+}
+.light-background .content-formatted .form_submit input {
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+}
+.content-formatted .form_area .feedback-error, .content-formatted .form_area .feedback-success, .content-formatted .form_area .form_error, .content-formatted .form_area .form_notice {
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+}
+.dark-background .content-formatted .form_area .feedback-error, .dark-background .content-formatted .form_area .feedback-success, .dark-background .content-formatted .form_area .form_error, .dark-background .content-formatted .form_area .form_notice {
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(255, 255, 255, 0.1);
+}
+.light-background .content-formatted .form_area .feedback-error, .light-background .content-formatted .form_area .feedback-success, .light-background .content-formatted .form_area .form_error, .light-background .content-formatted .form_area .form_notice {
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
