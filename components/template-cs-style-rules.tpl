@@ -11,8 +11,13 @@ body {
   text-decoration: var(--header-body-text-decoration);
   text-transform: var(--header-body-text-transform);
 }
-.header-title .header-link:hover {
-  color: var(--header-body-text-color);
+.header-title:hover, .header-title .header-link:hover {
+  font-size: var(--header-body-font-size);
+  font-style: var(--header-body-hover-font-style);
+  font-weight: var(--header-body-hover-font-weight);
+  color: var(--header-body-hover-text-color);
+  text-decoration: var(--header-body-hover-text-decoration);
+  text-transform: var(--header-body-hover-text-transform);
 }
 
 .content-topbar,
