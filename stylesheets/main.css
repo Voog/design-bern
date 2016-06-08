@@ -2137,6 +2137,13 @@ body.search-open {
   margin-bottom: 22px;
   font-size: 24px;
   color: #1b2124;
+  text-align: left;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
 }
 .comments .comment {
   margin-bottom: 31px;
