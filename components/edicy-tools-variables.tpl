@@ -195,15 +195,15 @@
   {% capture base_alignment_set %}
     [
       {
-        "titleI18n": "Left",
+        "titleI18n": "left",
         "value": "left"
       },
       {
-        "titleI18n": "Center",
+        "titleI18n": "center",
         "value": "center"
       },
       {
-        "titleI18n": "Right",
+        "titleI18n": "right",
         "value": "right"
       }
     ]
@@ -212,11 +212,11 @@
   {% capture base_toggle_set %}
     [
       {
-        "titleI18n": "Off",
+        "titleI18n": "off",
         "value": "0px"
       },
       {
-        "titleI18n": "On",
+        "titleI18n": "on",
         "value": "4px"
       }
     ]

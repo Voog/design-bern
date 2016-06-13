@@ -235,13 +235,15 @@ body {
   color: var(--third-color);
   box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
-.content-formatted .form_field,
-.content-formatted .edy-fe-label {
+.content-formatted .form_field, .content-formatted .form_field .form_field_label, .content-formatted .form_field .edy-fe-label {
+  font-size: var(--form-label-font-size);
   color: var(--form-field-color);
 }
-.content-formatted .form_field .form_field_label,
-.content-formatted .form_field .edy-fe-label {
-  font-size: var(--form-label-font-size);
+.dark-background .content-formatted .form_field, .dark-background .content-formatted .form_field .form_field_label, .dark-background .content-formatted .form_field .edy-fe-label {
+  color: var(--third-color);
+}
+.light-background .content-formatted .form_field, .light-background .content-formatted .form_field .form_field_label, .light-background .content-formatted .form_field .edy-fe-label {
+  color: var(--secondary-color-content);
 }
 .content-formatted .form_submit input {
   font-size: var(--content-button-font-size);
