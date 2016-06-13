@@ -15,14 +15,11 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--headings-title-color",
-      "--headings-heading-color",
-      "--headings-subheading-color",
-      "--content-body-text-color",
-      "--footer-body-color"
+      "--content-button-color",
+      "--form-button-color"
     ]
   */
-  --main-color-content: #696b6c;
+  --third-color: white;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "secondary_color",
@@ -44,9 +41,12 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--content-button-color",
-      "--form-button-color"
+      "--headings-title-color",
+      "--headings-heading-color",
+      "--headings-subheading-color",
+      "--content-body-text-color",
+      "--footer-body-color"
     ]
   */
-  --third-color: white;
+  --main-color-content: #696b6c;
 }

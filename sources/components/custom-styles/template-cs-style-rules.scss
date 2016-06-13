@@ -166,7 +166,7 @@ body {
   // Colors for editable content area elements with editable background.
   &, h1, h2, h3, h4, h5, h6, p, ul, ol, table {
     .light-background & {
-      color: var(--main-color-content);
+      color: var(--secondary-color-content);
     }
 
     .dark-background & {
@@ -319,7 +319,7 @@ body {
     }
 
     .light-background & {
-      color: var(--main-color-content);
+      color: var(--third-color);
       box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .2);
     }
   }

@@ -110,7 +110,7 @@ body {
   text-transform: var(--footer-body-text-transform);
 }
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
-  color: var(--main-color-content);
+  color: var(--secondary-color-content);
 }
 .dark-background .content-formatted, .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background .content-formatted p, .dark-background .content-formatted ul, .dark-background .content-formatted ol, .dark-background .content-formatted table {
   color: var(--third-color);
@@ -232,7 +232,7 @@ body {
   box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .form_field_textfield, .light-background .content-formatted .form_field_textarea, .light-background .content-formatted .form_field_select {
-  color: var(--main-color-content);
+  color: var(--third-color);
   box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
 .content-formatted .form_field,

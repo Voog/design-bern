@@ -36,14 +36,11 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--headings-title-color",
-      "--headings-heading-color",
-      "--headings-subheading-color",
-      "--content-body-text-color",
-      "--footer-body-color"
+      "--content-button-color",
+      "--form-button-color"
     ]
   */
-  --main-color-content: rgba($primary-color, 1);
+  --third-color: rgba($color-white, 1);
 
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
@@ -67,11 +64,14 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--content-button-color",
-      "--form-button-color"
+      "--headings-title-color",
+      "--headings-heading-color",
+      "--headings-subheading-color",
+      "--content-body-text-color",
+      "--footer-body-color"
     ]
   */
-  --third-color: rgba($color-white, 1);
+  --main-color-content: rgba($primary-color, 1);
 
   // scss-lint:enable Comment, Indentation
 }
