@@ -1,7 +1,7 @@
 :root {
   /* VoogStyle
     "pathI18n": ["form"],
-    "titleI18n": "label_size",
+    "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
     "max": 100,

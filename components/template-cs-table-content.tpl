@@ -1,6 +1,16 @@
 :root {
   /* VoogStyle
     "pathI18n": ["table"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 100,
+    "unit": "px",
+    "scope": "global"
+  */
+  --table-font-size: 16px;
+  /* VoogStyle
+    "pathI18n": ["table"],
     "titleI18n": "padding",
     "editor": "rangePicker",
     "min": 0,
@@ -10,16 +20,6 @@
     "scope": "global"
   */
   --table-padding: 10px;
-  /* VoogStyle
-    "pathI18n": ["table"],
-    "titleI18n": "size",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 100,
-    "unit": "px",
-    "scope": "global"
-  */
-  --table-font-size: 16px;
   /* VoogStyle
     "pathI18n": ["table"],
     "titleI18n": "border_style",
