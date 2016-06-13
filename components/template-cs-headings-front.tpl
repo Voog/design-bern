@@ -1,24 +1,4 @@
-// =============================================================================
-// TEMPLATE CUSTOM STYLES.
-// This file sets the configuration for design editor tool.
-//
-// This file will be converted to CSS, copied under "/components" and renamed to
-// "*.tpl".
-//
-// The output component can be included in any "layout" or "component".
-// =============================================================================
-
-// =============================================================================
-// Modules
-// =============================================================================
-@import '../../stylesheets/modules/variables';
-
-// =============================================================================
-// Design editor configuration.
-// =============================================================================
 :root {
-  // scss-lint:disable Comment, Indentation
-
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "alignment",
@@ -27,7 +7,6 @@
     "scope": "global"
   */
   --headings-title-text-alignment: center;
-
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "size",
@@ -39,7 +18,6 @@
     "scope": "global"
   */
   --headings-title-font-size: 36px;
-
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "line_height",
@@ -51,7 +29,6 @@
     "scope": "global"
   */
   --headings-title-line-height: 1.4;
-
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "font_size",
@@ -65,7 +42,6 @@
     "scope": "global"
   */
   --headings-title-font-weight: 600;
-
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "font_style",
@@ -79,7 +55,6 @@
     "scope": "global"
   */
   --headings-title-font-style: normal;
-
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "text_decoration",
@@ -93,7 +68,6 @@
     "scope": "global"
   */
   --headings-title-text-decoration: none;
-
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "text_transform",
@@ -107,17 +81,6 @@
     "scope": "global"
   */
   --headings-title-text-transform: none;
-
-  /* VoogStyle
-    "pathI18n": ["headings", "title"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --headings-title-color: rgba($primary-color, 1);
-
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "alignment",
@@ -126,7 +89,6 @@
     "scope": "global"
   */
   --headings-heading-text-alignment: left;
-
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "size",
@@ -138,7 +100,6 @@
     "scope": "global"
   */
   --headings-heading-font-size: 24px;
-
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "line_height",
@@ -150,7 +111,6 @@
     "scope": "global"
   */
   --headings-heading-line-height: 1.4;
-
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "font_size",
@@ -164,7 +124,6 @@
     "scope": "global"
   */
   --headings-heading-font-weight: 600;
-
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "font_style",
@@ -178,7 +137,6 @@
     "scope": "global"
   */
   --headings-heading-font-style: normal;
-
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "text_decoration",
@@ -192,7 +150,6 @@
     "scope": "global"
   */
   --headings-heading-text-decoration: none;
-
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "text_transform",
@@ -206,17 +163,6 @@
     "scope": "global"
   */
   --headings-heading-text-transform: none;
-
-  /* VoogStyle
-    "pathI18n": ["headings", "heading"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --headings-heading-color: rgba($primary-color, 1);
-
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "alignment",
@@ -225,7 +171,6 @@
     "scope": "global"
   */
   --headings-subheading-text-alignment: left;
-
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "size",
@@ -237,7 +182,6 @@
     "scope": "global"
   */
   --headings-subheading-font-size: 20px;
-
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "line_height",
@@ -249,7 +193,6 @@
     "scope": "global"
   */
   --headings-subheading-line-height: 1.4;
-
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "font_size",
@@ -263,7 +206,6 @@
     "scope": "global"
   */
   --headings-subheading-font-weight: 600;
-
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "font_style",
@@ -277,7 +219,6 @@
     "scope": "global"
   */
   --headings-subheading-font-style: normal;
-
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "text_decoration",
@@ -291,7 +232,6 @@
     "scope": "global"
   */
   --headings-subheading-text-decoration: none;
-
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "text_transform",
@@ -305,16 +245,4 @@
     "scope": "global"
   */
   --headings-subheading-text-transform: none;
-
-  /* VoogStyle
-    "pathI18n": ["headings", "subheading"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --headings-subheading-color: rgba($primary-color, 1);
-
-  // scss-lint:enable Comment, Indentation
 }

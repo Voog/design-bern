@@ -9,6 +9,17 @@
   --headings-title-text-alignment: center;
   /* VoogStyle
     "pathI18n": ["headings", "title"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "featured": true,
+    "scope": "global"
+  */
+  --headings-title-font-size: 36px;
+  /* VoogStyle
+    "pathI18n": ["headings", "title"],
     "titleI18n": "line_height",
     "editor": "rangePicker",
     "min": 1,
@@ -18,17 +29,6 @@
     "scope": "global"
   */
   --headings-title-line-height: 1.4;
-  /* VoogStyle
-    "pathI18n": ["headings", "title"],
-    "titleI18n": "size",
-    "type": "button",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global"
-  */
-  --headings-title-font-size: 36px;
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "font_size",
@@ -100,6 +100,17 @@
   --headings-heading-text-alignment: left;
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "featured": true,
+    "scope": "global"
+  */
+  --headings-heading-font-size: 24px;
+  /* VoogStyle
+    "pathI18n": ["headings", "heading"],
     "titleI18n": "line_height",
     "editor": "rangePicker",
     "min": 1,
@@ -109,17 +120,6 @@
     "scope": "global"
   */
   --headings-heading-line-height: 1.4;
-  /* VoogStyle
-    "pathI18n": ["headings", "heading"],
-    "titleI18n": "size",
-    "type": "button",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global"
-  */
-  --headings-heading-font-size: 24px;
   /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "font_size",
@@ -191,6 +191,17 @@
   --headings-subheading-text-alignment: left;
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "featured": true,
+    "scope": "global"
+  */
+  --headings-subheading-font-size: 20px;
+  /* VoogStyle
+    "pathI18n": ["headings", "subheading"],
     "titleI18n": "line_height",
     "editor": "rangePicker",
     "min": 1,
@@ -200,17 +211,6 @@
     "scope": "global"
   */
   --headings-subheading-line-height: 1.4;
-  /* VoogStyle
-    "pathI18n": ["headings", "subheading"],
-    "titleI18n": "size",
-    "type": "button",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global"
-  */
-  --headings-subheading-font-size: 20px;
   /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "font_size",

@@ -27,7 +27,7 @@
   {% if front_page %}
     {% include "template-cs-main-styles-front" %}
     {% include "template-cs-header-content" %}
-    {% include "template-cs-headings-content" %}
+    {% include "template-cs-headings-front" %}
     {% include "template-cs-content-front" %}
     {% include "template-cs-button-content" %}
     {% include "template-cs-table-content" %}
