@@ -53,46 +53,5 @@
   */
   --form-field-border-width: 4px;
 
-  /* VoogStyle
-    "pathI18n": ["form", "button"],
-    "titleI18n": "size",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 100,
-    "unit": "px",
-    "scope": "global"
-  */
-  --form-button-font-size: 14px;
-
-  /* VoogStyle
-    "pathI18n": ["form", "button"],
-    "titleI18n": "padding",
-    "editor": "rangePicker",
-    "min": 0,
-    "max": 50,
-    "step": 1,
-    "unit": "px",
-    "scope": "global"
-  */
-  --form-button-padding: 21px;
-
-  /* VoogStyle
-    "pathI18n": ["form", "button"],
-    "titleI18n": "color",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --form-button-color: rgba($color-white, 1);
-
-  /* VoogStyle
-    "pathI18n": ["form", "button"],
-    "titleI18n": "background_color",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --form-button-background-color: rgba($blue-1, 1);
-
   // scss-lint:enable Comment, Indentation
 }

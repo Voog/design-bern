@@ -9,8 +9,7 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--content-button-hover-font-size",
-      "--form-button-font-size"
+      "--content-button-hover-font-size"
     ]
   */
   --content-button-font-size: 14px;
@@ -22,10 +21,7 @@
     "max": 200,
     "step": 1,
     "unit": "px",
-    "scope": "global",
-    "boundVariables": [
-      "--form-button-padding"
-    ]
+    "scope": "global"
   */
   --content-button-padding: 21px;
   /* VoogStyle
@@ -48,8 +44,7 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--content-button-hover-color",
-      "--form-button-color"
+      "--content-button-hover-color"
     ]
   */
   --content-button-color: white;
@@ -69,8 +64,7 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
-      "--content-button-hover-background-color",
-      "--form-button-background-color"
+      "--content-button-hover-background-color"
     ]
   */
   --content-button-background-color: #0066bb;

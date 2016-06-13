@@ -282,7 +282,7 @@ body {
     text-transform: var(--content-button-text-transform);
     background-color: var(--content-button-background-color);
     border-color: var(--content-button-color);
-    box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba($black, .2);
+    box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba($black, .1);
 
     &:hover {
       font-style: var(--content-button-hover-font-style);
@@ -295,7 +295,7 @@ body {
     }
 
     .dark-background & {
-      box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba($white, .1);
+      box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba($black, .1);
     }
 
     .light-background & {
@@ -311,16 +311,16 @@ body {
   .form_field_textfield, .form_field_textarea, .form_field_select {
     font-size: var(--form-field-font-size);
     color: var(--form-field-color);
-    box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--form-field-border-color);
+    box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
 
     .dark-background & {
       color: var(--secondary-color-content);
-      box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--secondary-color-content);
+      box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
     }
 
     .light-background & {
       color: var(--main-color-content);
-      box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--main-color-content);
+      box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .2);
     }
   }
 
@@ -338,18 +338,32 @@ body {
 
   .form_submit {
     input {
-      font-size: var(--form-button-font-size);
-      padding: calc(var(--form-button-padding) - 13px) calc(var(--form-button-padding) - 10px);
-      color: var(--form-button-color);
-      background-color: var(--form-button-background-color);
+      font-size: var(--content-button-font-size);
+      padding: calc(var(--content-button-padding) - 13px) calc(var(--content-button-padding) - 10px);
+      color: var(--content-button-color);
+      background-color: var(--content-button-background-color);
       box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
 
+      font-style: var(--content-button-font-style);
+      font-weight: var(--content-button-font-weight);
+      text-decoration: var(--content-button-text-decoration);
+      text-transform: var(--content-button-text-transform);
+
+      &:hover {
+        font-style: var(--content-button-hover-font-style);
+        font-weight: var(--content-button-hover-font-weight);
+        color: var(--content-button-hover-color);
+        text-decoration: var(--content-button-hover-text-decoration);
+        text-transform: var(--content-button-hover-text-transform);
+        background-color: var(--content-button-hover-background-color);
+      }
+
       .dark-background & {
-        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($white, .1);
+        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
       }
 
       .light-background & {
-        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
+        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .2);
       }
     }
   }
@@ -360,11 +374,11 @@ body {
       box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
 
       .dark-background & {
-        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($white, .1);
+        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
       }
 
       .light-background & {
-        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .1);
+        box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba($black, .2);
       }
     }
   }

@@ -35,6 +35,11 @@ body {
   text-transform: var(--menu-main-text-transform);
   opacity: .7;
 }
+@media screen and (min-width: 841px) {
+  .menu-main .menu .menu-item .menu-link {
+    font-size: var(--menu-main-font-size);
+  }
+}
 .menu-main .menu .menu-item .menu-link.active {
   font-style: var(--menu-main-active-font-style);
   font-weight: var(--menu-main-active-font-weight);
@@ -53,11 +58,6 @@ body {
   text-decoration: var(--menu-main-hover-text-decoration);
   text-transform: var(--menu-main-hover-text-transform);
   opacity: .5;
-}
-@media screen and (min-width: 841px) {
-  .menu-main .menu .menu-item .menu-link {
-    font-size: var(--menu-main-font-size);
-  }
 }
 
 .menu-sub .menu .menu-item .menu-link {
@@ -204,7 +204,7 @@ body {
   text-transform: var(--content-button-text-transform);
   background-color: var(--content-button-background-color);
   border-color: var(--content-button-color);
-  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
+  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .content-formatted .custom-btn:hover {
   font-style: var(--content-button-hover-font-style);
@@ -216,7 +216,7 @@ body {
   border-color: var(--content-button-hover-color);
 }
 .dark-background .content-formatted .custom-btn {
-  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(255, 255, 255, 0.1);
+  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .custom-btn {
   box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
@@ -225,15 +225,15 @@ body {
 .content-formatted .form_field_textfield, .content-formatted .form_field_textarea, .content-formatted .form_field_select {
   font-size: var(--form-field-font-size);
   color: var(--form-field-color);
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--form-field-border-color);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .dark-background .content-formatted .form_field_textfield, .dark-background .content-formatted .form_field_textarea, .dark-background .content-formatted .form_field_select {
   color: var(--secondary-color-content);
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--secondary-color-content);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .form_field_textfield, .light-background .content-formatted .form_field_textarea, .light-background .content-formatted .form_field_select {
   color: var(--main-color-content);
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 var(--main-color-content);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
 .content-formatted .form_field,
 .content-formatted .edy-fe-label {
@@ -244,24 +244,36 @@ body {
   font-size: var(--form-label-font-size);
 }
 .content-formatted .form_submit input {
-  font-size: var(--form-button-font-size);
-  padding: calc(var(--form-button-padding) - 13px) calc(var(--form-button-padding) - 10px);
-  color: var(--form-button-color);
-  background-color: var(--form-button-background-color);
+  font-size: var(--content-button-font-size);
+  padding: calc(var(--content-button-padding) - 13px) calc(var(--content-button-padding) - 10px);
+  color: var(--content-button-color);
+  background-color: var(--content-button-background-color);
   box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  font-style: var(--content-button-font-style);
+  font-weight: var(--content-button-font-weight);
+  text-decoration: var(--content-button-text-decoration);
+  text-transform: var(--content-button-text-transform);
+}
+.content-formatted .form_submit input:hover {
+  font-style: var(--content-button-hover-font-style);
+  font-weight: var(--content-button-hover-font-weight);
+  color: var(--content-button-hover-color);
+  text-decoration: var(--content-button-hover-text-decoration);
+  text-transform: var(--content-button-hover-text-transform);
+  background-color: var(--content-button-hover-background-color);
 }
 .dark-background .content-formatted .form_submit input {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(255, 255, 255, 0.1);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .form_submit input {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
 .content-formatted .form_area .feedback-error, .content-formatted .form_area .feedback-success, .content-formatted .form_area .form_error, .content-formatted .form_area .form_notice {
   box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .dark-background .content-formatted .form_area .feedback-error, .dark-background .content-formatted .form_area .feedback-success, .dark-background .content-formatted .form_area .form_error, .dark-background .content-formatted .form_area .form_notice {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(255, 255, 255, 0.1);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .form_area .feedback-error, .light-background .content-formatted .form_area .feedback-success, .light-background .content-formatted .form_area .form_error, .light-background .content-formatted .form_area .form_notice {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
