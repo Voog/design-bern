@@ -37,7 +37,7 @@
     {% include "search" %}
 
     {% if editmode or site.has_many_languages? %}
-      <nav class="menu-lang js-menu-lang {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
+      <nav class="menu-lang js-menu-lang {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}" {{ edy_intro_add_lang }}>
         <button class="menu-lang-btn js-menu-lang-btn lang-flag lang-flag-{{ page.language_code }}" data-lang-code="{{ page.language_code }}">
           {% if editmode or flags_state == false %}
             <span class="lang-title">
