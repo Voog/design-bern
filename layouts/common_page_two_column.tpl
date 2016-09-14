@@ -26,7 +26,7 @@
     <main class="content two-columns" role="main">
       {% if editmode or content_default_has_content %}
         <div class="content-left{% if has_children and editmode != true %} with-submenu{% endif %}{% unless editmode or content_right_has_content %} left-full{% endunless %}">
-          <section class="content-formatted">
+          <section class="content-formatted" {{ edy_intro_edit_text }}>
             {% content %}
           </section>
         </div>
