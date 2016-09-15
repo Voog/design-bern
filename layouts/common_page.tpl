@@ -12,7 +12,7 @@
 
     <main class="content" role="main">
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">
-        <section class="content-body content-formatted">{% content %}</section>
+        <section class="content-body content-formatted" {{ edy_intro_edit_text }}>{% content %}</section>
       </div>
     </main>
 
