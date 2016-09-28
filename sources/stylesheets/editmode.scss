@@ -4,29 +4,6 @@
 @import 'modules/mixins';
 @import 'modules/variables';
 
-.dark-background {
-  .edy-empty-bordered {
-    border-color: $white;
-    border-color: rgba($white, .63);
-
-    .edy-empty-header {
-      @include color($white, .63);
-    }
-  }
-
-  .edy-content-element-hover {
-    @include border(all, 1px, solid, $white, .2);
-  }
-
-  .edy-texteditor-active {
-    outline: 1px solid rgba($white, .4);
-
-    &:hover {
-      outline: 1px solid rgba($white, .63);
-    }
-  }
-}
-
 // Minimum height of the text content areas.
 .edy-texteditor-view {
   min-height: 36px;
