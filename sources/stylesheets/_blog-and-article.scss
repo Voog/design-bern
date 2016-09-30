@@ -39,6 +39,108 @@
   }
 }
 
+.post-nav {
+  &::before {
+    display: block;
+    margin-top: 33px;
+    border-top: 1px solid currentColor;
+    content: '';
+    opacity: .2;
+  }
+}
+
+.post-nav-inner {
+  @include querymin($mobile-1) {
+    display: flex;
+  }
+}
+
+.post-nav-link {
+  position: relative;
+  display: block;
+  flex: 1;
+  padding-top: 33px;
+  color: currentColor;
+
+  &:first-child {
+    @include querymin($mobile-1) {
+      padding-right: 20px;
+    }
+  }
+
+  &:last-child {
+    @include querymin($mobile-1) {
+      padding-left: 20px;
+    }
+  }
+
+  &:hover {
+    .post-nav-direction {
+      opacity: 1;
+    }
+
+    .post-nav-title {
+      opacity: 1;
+    }
+  }
+}
+
+.post-nav-link-half {
+  @include query($mobile-1) {
+    text-align: center;
+  }
+
+  @include querymin($mobile-1) {
+    padding-bottom: 33px;
+  }
+
+  &:first-child {
+    @include query($mobile-1) {
+      padding-bottom: 33px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: '';
+      opacity: .2;
+
+      @include query($mobile-1) {
+        border-bottom: 1px solid currentColor;
+      }
+
+      @include querymin($mobile-1) {
+        border-right: 1px solid currentColor;
+      }
+    }
+  }
+
+  &:last-child {
+    @include querymin($mobile-1) {
+      text-align: right;
+    }
+  }
+}
+
+.post-nav-link-full {
+  text-align: center;
+}
+
+.post-nav-direction {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+.post-nav-title {
+  font-size: 20px;
+  opacity: .7;
+}
+
 .blog-page {
   .edy-site-menu-add {
     margin-left: 10px;
