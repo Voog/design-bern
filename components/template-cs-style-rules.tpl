@@ -97,9 +97,11 @@ body {
   color: var(--secondary-color-content);
 }
 
-.content .content-formatted {
-  font-size: var(--content-body-font-size);
-  line-height: var(--content-body-line-height);
+@media screen and (min-width: 1021px) {
+  .content .content-formatted {
+    font-size: var(--content-body-font-size);
+    line-height: var(--content-body-line-height);
+  }
 }
 .footer .content-formatted {
   font-size: var(--footer-body-font-size);
