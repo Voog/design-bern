@@ -100,21 +100,16 @@
     }
 
     &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      content: '';
-      opacity: .2;
-
       @include query($mobile-1) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
         border-bottom: 1px solid currentColor;
-      }
-
-      @include querymin($mobile-1) {
-        border-right: 1px solid currentColor;
+        content: '';
+        opacity: .2;
       }
     }
   }

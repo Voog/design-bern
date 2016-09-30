@@ -1461,24 +1461,17 @@ body.search-open {
     padding-bottom: 33px;
   }
 }
-.post-nav-link-half:first-child::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  content: '';
-  opacity: .2;
-}
 @media screen and (max-width: 480px) {
   .post-nav-link-half:first-child::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
     border-bottom: 1px solid currentColor;
-  }
-}
-@media screen and (min-width: 481px) {
-  .post-nav-link-half:first-child::before {
-    border-right: 1px solid currentColor;
+    content: '';
+    opacity: .2;
   }
 }
 @media screen and (min-width: 481px) {
