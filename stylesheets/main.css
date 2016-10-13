@@ -2200,3 +2200,47 @@ body.search-open {
   border: 1px solid #000000;
   border: 1px solid rgba(0, 0, 0, 0.75);
 }
+
+.public .edy-ecommerce-shopping-cart-button {
+  background-color: #0066bb;
+  -webkit-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  padding: 8px 11px;
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  border: 0;
+}
+@media screen and (max-width: 480px) {
+  .public .edy-ecommerce-shopping-cart-button {
+    top: 18px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 840px) {
+  .public .edy-ecommerce-shopping-cart-button {
+    top: 26px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .public .edy-ecommerce-shopping-cart-button {
+    right: 63px;
+  }
+}
+@media screen and (min-width: 841px) {
+  .public .edy-ecommerce-shopping-cart-button {
+    top: 53px;
+    right: 19px;
+  }
+}
+.public .edy-ecommerce-shopping-cart-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.public .edy-ecommerce-shopping-cart-button, .public .edy-ecommerce-shopping-cart-button:hover {
+  color: white;
+}
+.public .edy-ecommerce-shopping-cart-button:hover {
+  background-color: #0066bb;
+  background-color: rgba(0, 102, 187, 0.8);
+}
