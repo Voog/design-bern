@@ -279,3 +279,20 @@ body {
 .light-background .content-formatted .form_area .feedback-error, .light-background .content-formatted .form_area .feedback-success, .light-background .content-formatted .form_area .form_error, .light-background .content-formatted .form_area .form_notice {
   box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
+
+.public .edy-ecommerce-shopping-cart-button {
+  font-style: var(--content-button-font-style);
+  font-weight: var(--content-button-font-weight);
+  color: var(--content-button-color);
+  text-decoration: var(--content-button-text-decoration);
+  text-transform: var(--content-button-text-transform);
+  background-color: var(--content-button-background-color);
+}
+.public .edy-ecommerce-shopping-cart-button:hover {
+  font-style: var(--content-button-hover-font-style);
+  font-weight: var(--content-button-hover-font-weight);
+  color: var(--content-button-hover-color);
+  text-decoration: var(--content-button-hover-text-decoration);
+  text-transform: var(--content-button-hover-text-transform);
+  background-color: var(--content-button-hover-background-color);
+}
