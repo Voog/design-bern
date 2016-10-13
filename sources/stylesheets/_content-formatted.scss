@@ -190,6 +190,11 @@
       @include box-shadow(4px, 4px, 0, rgba($black, .2));
     }
 
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
     &,
     &:hover {
       @include color($white);

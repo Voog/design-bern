@@ -272,6 +272,10 @@ body.search-open {
 .light-background .content-formatted .custom-btn {
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2) ;
 }
+.content-formatted .custom-btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 .content-formatted .custom-btn, .content-formatted .custom-btn:hover {
   color: white;
 }
