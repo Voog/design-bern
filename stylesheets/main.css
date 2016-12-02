@@ -420,6 +420,9 @@ body.search-open {
     min-width: 0;
     margin-bottom: 40px;
   }
+  .edy-checkout-button-visible .menu-main.expanded {
+    margin-top: 91px;
+  }
 }
 .menu-main .menu {
   line-height: 1.6;
@@ -1642,6 +1645,9 @@ body.search-open {
     margin: 0 auto;
     border: none;
   }
+  .edy-checkout-button-visible .search-form {
+    top: 105px;
+  }
 }
 
 .search-input:focus,
@@ -1794,6 +1800,9 @@ body.search-open {
     right: 0;
     bottom: 0;
     background-color: white;
+  }
+  .edy-checkout-button-visible .voog-search-modal {
+    top: 145px;
   }
 }
 

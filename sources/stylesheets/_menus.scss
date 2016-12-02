@@ -112,6 +112,9 @@
       min-width: 0;
       margin-bottom: 40px;
 
+      .edy-checkout-button-visible & {
+        margin-top: 50px + 41px; // 41 is the height of the checkout button.
+      }
     }
   }
 
