@@ -79,6 +79,9 @@ body.search-open {
   -ms-hyphens: auto;
   hyphens: auto;
 }
+.content-formatted:empty {
+  display: none;
+}
 .content-formatted h1:first-child,
 .content-formatted h2:first-child,
 .content-formatted h3:first-child,
