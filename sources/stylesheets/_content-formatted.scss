@@ -185,14 +185,11 @@
 
   .custom-btn {
     display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding: 8px 11px;
     font-size: 14px;
     line-height: 1;
     @include bg($blue-1);
     border: none;
-    cursor: pointer;
     @include inputiosreset;
     @include box-shadow(4px, 4px, 0, rgba($black, .1));
 
@@ -207,6 +204,19 @@
 
     &:hover {
       @include bg($blue-1, .8);
+    }
+
+    .public & {
+      cursor: pointer;
+    }
+
+    &-disabled {
+      // scss-lint:disable NestingDepth
+      .public & {
+        cursor: default;
+        background-color: rgba($grey-2, 1);
+      }
+      // scss-lint:enable NestingDepth
     }
   }
 

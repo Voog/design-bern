@@ -201,21 +201,25 @@ body {
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
   font-weight: var(--content-button-font-weight);
-  color: var(--content-button-color);
   text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
-  background-color: var(--content-button-background-color);
   border-color: var(--content-button-color);
   box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .content-formatted .custom-btn:hover {
   font-style: var(--content-button-hover-font-style);
   font-weight: var(--content-button-hover-font-weight);
-  color: var(--content-button-hover-color);
   text-decoration: var(--content-button-hover-text-decoration);
   text-transform: var(--content-button-hover-text-transform);
-  background-color: var(--content-button-hover-background-color);
   border-color: var(--content-button-hover-color);
+}
+.content-formatted .custom-btn:not(.custom-btn-disabled) {
+  color: var(--content-button-color);
+  background-color: var(--content-button-background-color);
+}
+.content-formatted .custom-btn:not(.custom-btn-disabled):hover {
+  color: var(--content-button-hover-color);
+  background-color: var(--content-button-hover-background-color);
 }
 .dark-background .content-formatted .custom-btn {
   box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
