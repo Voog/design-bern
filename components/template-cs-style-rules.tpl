@@ -197,7 +197,7 @@ body {
   border-bottom-style: var(--table-border-style);
 }
 .content-formatted .custom-btn {
-  padding: calc(var(--content-button-padding) - 12px) var(--content-button-padding);
+  padding: calc(var(--content-button-padding) - 13px) calc(var(--content-button-padding) - 10px);
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
   font-weight: var(--content-button-font-weight);
