@@ -239,6 +239,54 @@
   ],
   "assets": [
     {
+      "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/2FC187_0_0.eot",
+      "kind": "assets",
+      "filename": "2FC187_0_0.eot"
+    },
+    {
+      "content_type": "application/font-sfnt",
+      "file": "assets/2FC187_0_0.ttf",
+      "kind": "assets",
+      "filename": "2FC187_0_0.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/2FC187_0_0.woff",
+      "kind": "assets",
+      "filename": "2FC187_0_0.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/2FC187_0_0.woff2",
+      "kind": "assets",
+      "filename": "2FC187_0_0.woff2"
+    },
+    {
+      "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/2FC187_1_0.eot",
+      "kind": "assets",
+      "filename": "2FC187_1_0.eot"
+    },
+    {
+      "content_type": "application/font-sfnt",
+      "file": "assets/2FC187_1_0.ttf",
+      "kind": "assets",
+      "filename": "2FC187_1_0.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/2FC187_1_0.woff",
+      "kind": "assets",
+      "filename": "2FC187_1_0.woff"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/2FC187_1_0.woff2",
+      "kind": "assets",
+      "filename": "2FC187_1_0.woff2"
+    },
+    {
       "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-down.svg",
       "kind": "assets",
