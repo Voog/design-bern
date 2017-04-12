@@ -371,6 +371,9 @@ body.search-open {
   border-bottom: 1px solid #9c9e9e;
 }
 
+.content-formatted .edy-buy-button-container .form_field {
+  padding-top: 15px;
+}
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1162,15 +1165,12 @@ body.search-open {
   display: -webkit-box;
   display: -moz-box;
   display: box;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-pack: end;
-  -webkit-justify-content: flex-end;
   -moz-justify-content: flex-end;
   justify-content: flex-end;
 }
@@ -1200,7 +1200,6 @@ body.search-open {
   min-width: 1;
 }
 .flexbox .header-left {
-  -webkit-flex: 1 0 auto;
   -moz-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -1483,7 +1482,6 @@ body.search-open {
 
 @media screen and (min-width: 481px) {
   .post-nav-inner {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1492,9 +1490,8 @@ body.search-open {
 .post-nav-link {
   position: relative;
   display: block;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+      flex: 1;
   padding-top: 33px;
   color: currentColor;
 }
@@ -1582,7 +1579,6 @@ body.search-open {
   display: -webkit-box;
   display: -moz-box;
   display: box;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1618,7 +1614,6 @@ body.search-open {
   }
 }
 .blog-page .post-right {
-  -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2226,30 +2221,16 @@ body.search-open {
   margin: 0 3px 5px 0;
   background: transparent;
   border-radius: 50%;
-  -webkit-animation: feedback-loading 0.8s linear infinite;
   animation: feedback-loading 0.8s linear infinite;
 }
 .content-formatted .feedback-loading span:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 .content-formatted .feedback-loading span:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
 .content-formatted .feedback-loading span:last-child {
   margin-right: 0;
-}
-@-webkit-keyframes feedback-loading {
-  0% {
-    background: transparent;
-  }
-  50% {
-    background: #FFFFFF;
-  }
-  100% {
-    background: transparent;
-  }
 }
 @keyframes feedback-loading {
   0% {
