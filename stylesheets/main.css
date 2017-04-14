@@ -371,6 +371,9 @@ body.search-open {
   border-bottom: 1px solid #9c9e9e;
 }
 
+.content-formatted .edy-buy-button-container .form_field {
+  padding-top: 15px;
+}
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
