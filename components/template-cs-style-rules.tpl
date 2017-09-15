@@ -8,7 +8,8 @@ body {
   font-style: var(--header-body-font-style);
   font-weight: var(--header-body-font-weight);
   color: var(--header-body-text-color);
-  text-decoration: var(--header-body-text-decoration);
+  -webkit-text-decoration: var(--header-body-text-decoration);
+          text-decoration: var(--header-body-text-decoration);
   text-transform: var(--header-body-text-transform);
 }
 .header-title:hover, .header-title .header-link:hover {
@@ -16,7 +17,8 @@ body {
   font-style: var(--header-body-hover-font-style);
   font-weight: var(--header-body-hover-font-weight);
   color: var(--header-body-hover-text-color);
-  text-decoration: var(--header-body-hover-text-decoration);
+  -webkit-text-decoration: var(--header-body-hover-text-decoration);
+          text-decoration: var(--header-body-hover-text-decoration);
   text-transform: var(--header-body-hover-text-transform);
 }
 
@@ -31,7 +33,8 @@ body {
   font-style: var(--menu-main-font-style);
   font-weight: var(--menu-main-font-weight);
   color: var(--menu-main-color);
-  text-decoration: var(--menu-main-text-decoration);
+  -webkit-text-decoration: var(--menu-main-text-decoration);
+          text-decoration: var(--menu-main-text-decoration);
   text-transform: var(--menu-main-text-transform);
   opacity: .7;
 }
@@ -44,7 +47,8 @@ body {
   font-style: var(--menu-main-active-font-style);
   font-weight: var(--menu-main-active-font-weight);
   color: var(--menu-main-active-color);
-  text-decoration: var(--menu-main-active-text-decoration);
+  -webkit-text-decoration: var(--menu-main-active-text-decoration);
+          text-decoration: var(--menu-main-active-text-decoration);
   text-transform: var(--menu-main-active-text-transform);
   opacity: .5;
 }
@@ -55,7 +59,8 @@ body {
   font-style: var(--menu-main-hover-font-style);
   font-weight: var(--menu-main-hover-font-weight);
   color: var(--menu-main-hover-color);
-  text-decoration: var(--menu-main-hover-text-decoration);
+  -webkit-text-decoration: var(--menu-main-hover-text-decoration);
+          text-decoration: var(--menu-main-hover-text-decoration);
   text-transform: var(--menu-main-hover-text-transform);
   opacity: .5;
 }
@@ -65,7 +70,8 @@ body {
   font-style: var(--menu-sub-font-style);
   font-weight: var(--menu-sub-font-weight);
   color: var(--menu-sub-color);
-  text-decoration: var(--menu-sub-text-decoration);
+  -webkit-text-decoration: var(--menu-sub-text-decoration);
+          text-decoration: var(--menu-sub-text-decoration);
   text-transform: var(--menu-sub-text-transform);
   opacity: .5;
 }
@@ -73,7 +79,8 @@ body {
   font-style: var(--menu-sub-active-font-style);
   font-weight: var(--menu-sub-active-font-weight);
   color: var(--menu-sub-active-color);
-  text-decoration: var(--menu-sub-active-text-decoration);
+  -webkit-text-decoration: var(--menu-sub-active-text-decoration);
+          text-decoration: var(--menu-sub-active-text-decoration);
   text-transform: var(--menu-sub-active-text-transform);
   opacity: 1;
 }
@@ -84,7 +91,8 @@ body {
   font-style: var(--menu-sub-hover-font-style);
   font-weight: var(--menu-sub-hover-font-weight);
   color: var(--menu-sub-hover-color);
-  text-decoration: var(--menu-sub-hover-text-decoration);
+  -webkit-text-decoration: var(--menu-sub-hover-text-decoration);
+          text-decoration: var(--menu-sub-hover-text-decoration);
   text-transform: var(--menu-sub-hover-text-transform);
   opacity: 1;
 }
@@ -108,7 +116,8 @@ body {
   font-style: var(--footer-body-font-style);
   font-weight: var(--footer-body-font-weight);
   color: var(--footer-body-color);
-  text-decoration: var(--footer-body-text-decoration);
+  -webkit-text-decoration: var(--footer-body-text-decoration);
+          text-decoration: var(--footer-body-text-decoration);
   text-transform: var(--footer-body-text-transform);
 }
 .light-background .content-formatted, .light-background .content-formatted h1, .light-background .content-formatted h2, .light-background .content-formatted h3, .light-background .content-formatted h4, .light-background .content-formatted h5, .light-background .content-formatted h6, .light-background .content-formatted p, .light-background .content-formatted ul, .light-background .content-formatted ol, .light-background .content-formatted table {
@@ -128,7 +137,8 @@ body {
   font-weight: var(--headings-title-font-weight);
   line-height: var(--headings-title-line-height);
   text-align: var(--headings-title-text-alignment);
-  text-decoration: var(--headings-title-text-decoration);
+  -webkit-text-decoration: var(--headings-title-text-decoration);
+          text-decoration: var(--headings-title-text-decoration);
   text-transform: var(--headings-title-text-transform);
 }
 .content-formatted h2 {
@@ -142,7 +152,8 @@ body {
   font-weight: var(--headings-heading-font-weight);
   line-height: var(--headings-heading-line-height);
   text-align: var(--headings-heading-text-alignment);
-  text-decoration: var(--headings-heading-text-decoration);
+  -webkit-text-decoration: var(--headings-heading-text-decoration);
+          text-decoration: var(--headings-heading-text-decoration);
   text-transform: var(--headings-heading-text-transform);
 }
 .content-formatted h3,
@@ -168,25 +179,28 @@ body {
   font-weight: var(--headings-subheading-font-weight);
   line-height: var(--headings-subheading-line-height);
   text-align: var(--headings-subheading-text-alignment);
-  text-decoration: var(--headings-subheading-text-decoration);
+  -webkit-text-decoration: var(--headings-subheading-text-decoration);
+          text-decoration: var(--headings-subheading-text-decoration);
   text-transform: var(--headings-subheading-text-transform);
 }
 .content-formatted a {
   font-weight: var(--content-link-font-weight);
   font-style: var(--content-link-font-style);
-  text-decoration: var(--content-link-text-decoration);
+  -webkit-text-decoration: var(--content-link-text-decoration);
+          text-decoration: var(--content-link-text-decoration);
   text-transform: var(--content-link-text-transform);
   color: var(--content-link-color);
 }
 .content-formatted a:hover {
   font-weight: var(--content-link-hover-font-weight);
   font-style: var(--content-link-hover-font-style);
-  text-decoration: var(--content-link-hover-text-decoration);
+  -webkit-text-decoration: var(--content-link-hover-text-decoration);
+          text-decoration: var(--content-link-hover-text-decoration);
   text-transform: var(--content-link-hover-text-transform);
   color: var(--content-link-hover-color);
 }
-.front-page .content-formatted pre, .front-page
-.content-formatted code {
+.front-page .content-formatted pre,
+.front-page .content-formatted code {
   color: var(--secondary-color-content);
 }
 .content-formatted table th,
@@ -201,15 +215,18 @@ body {
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
   font-weight: var(--content-button-font-weight);
-  text-decoration: var(--content-button-text-decoration);
+  -webkit-text-decoration: var(--content-button-text-decoration);
+          text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
   border-color: var(--content-button-color);
-  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
+          box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .content-formatted .custom-btn:hover {
   font-style: var(--content-button-hover-font-style);
   font-weight: var(--content-button-hover-font-weight);
-  text-decoration: var(--content-button-hover-text-decoration);
+  -webkit-text-decoration: var(--content-button-hover-text-decoration);
+          text-decoration: var(--content-button-hover-text-decoration);
   text-transform: var(--content-button-hover-text-transform);
   border-color: var(--content-button-hover-color);
 }
@@ -222,24 +239,29 @@ body {
   background-color: var(--content-button-hover-background-color);
 }
 .dark-background .content-formatted .custom-btn {
-  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
+          box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .custom-btn {
-  box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
+          box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
 }
 
 .content-formatted .form_field_textfield, .content-formatted .form_field_textarea, .content-formatted .form_field_select {
   font-size: var(--form-field-font-size);
   color: var(--form-field-color);
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .dark-background .content-formatted .form_field_textfield, .dark-background .content-formatted .form_field_textarea, .dark-background .content-formatted .form_field_select {
   color: var(--secondary-color-content);
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .form_field_textfield, .light-background .content-formatted .form_field_textarea, .light-background .content-formatted .form_field_select {
   color: var(--third-color);
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
 .content-formatted .form_field, .content-formatted .form_field .form_field_label, .content-formatted .form_field .edy-fe-label {
   font-size: var(--form-label-font-size);
@@ -256,32 +278,40 @@ body {
   padding: calc(var(--content-button-padding) - 13px) calc(var(--content-button-padding) - 10px);
   color: var(--content-button-color);
   background-color: var(--content-button-background-color);
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
   font-style: var(--content-button-font-style);
   font-weight: var(--content-button-font-weight);
-  text-decoration: var(--content-button-text-decoration);
+  -webkit-text-decoration: var(--content-button-text-decoration);
+          text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
 }
 .content-formatted .form_submit input:hover {
   font-style: var(--content-button-hover-font-style);
   font-weight: var(--content-button-hover-font-weight);
   color: var(--content-button-hover-color);
-  text-decoration: var(--content-button-hover-text-decoration);
+  -webkit-text-decoration: var(--content-button-hover-text-decoration);
+          text-decoration: var(--content-button-hover-text-decoration);
   text-transform: var(--content-button-hover-text-transform);
   background-color: var(--content-button-hover-background-color);
 }
 .dark-background .content-formatted .form_submit input {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .form_submit input {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
 .content-formatted .form_area .feedback-error, .content-formatted .form_area .feedback-success, .content-formatted .form_area .form_error, .content-formatted .form_area .form_notice {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .dark-background .content-formatted .form_area .feedback-error, .dark-background .content-formatted .form_area .feedback-success, .dark-background .content-formatted .form_area .form_error, .dark-background .content-formatted .form_area .form_notice {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.1);
 }
 .light-background .content-formatted .form_area .feedback-error, .light-background .content-formatted .form_area .feedback-success, .light-background .content-formatted .form_area .form_error, .light-background .content-formatted .form_area .form_notice {
-  box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
+          box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
