@@ -155,7 +155,7 @@
     }
 
     .flexbox & {
-      @include display(flex);
+      display: flex;
     }
 
     &:first-child,

@@ -289,19 +289,19 @@
       margin: 0 3px 5px 0;
       background: transparent;
       border-radius: 50%;
-      @include animation(feedback-loading .8s linear infinite);
+      animation: feedback-loading .8s linear infinite;
     }
   }
 
   .feedback-loading {
     span:nth-child(2) {
-      @include animation-delay(.2s);
+      animation-delay: .2s;
     }
   }
 
   .feedback-loading {
     span:nth-child(3) {
-      @include animation-delay(.4s);
+      animation-delay: .4s;
     }
   }
 
@@ -311,7 +311,7 @@
     }
   }
 
-  @include keyframes(feedback-loading) {
+  @keyframes feedback-loading {
     0% {
       background: transparent;
     }
