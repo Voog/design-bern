@@ -1429,6 +1429,10 @@ body.search-open {
 }
 
 /* BLOG & BLOG ARTICLE */
+.post-intro-content {
+  padding-bottom: 25px;
+}
+
 .post .post-link {
   display: inline-block;
   margin-top: 12px;
