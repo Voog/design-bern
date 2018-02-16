@@ -2335,7 +2335,6 @@ body.search-open {
 }
 .footer .voog-reference {
   margin-top: 15px;
-  margin-bottom: 20px;
 }
 .footer .voog-reference a {
   display: inline-block;
@@ -2397,4 +2396,8 @@ body.search-open {
 }
 .signout-btn-wrap .signout-svg {
   margin-top: 3px;
+}
+
+.signout-btn-pad {
+  padding-top: 10px;
 }
