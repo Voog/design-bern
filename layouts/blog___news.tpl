@@ -13,7 +13,10 @@
 
     <main class="content" role="main">
       <div class="content-inner">
+        <section class="content-body content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
+       
         {% addbutton %}
+        
         {% for article in articles %}
           <article class="post">
             <div class="post-left">
