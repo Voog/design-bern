@@ -2333,6 +2333,9 @@ body.search-open {
     padding: 20px 15px;
   }
 }
+.footer .signout-btn-margin {
+  margin-bottom: 25px;
+}
 .footer .voog-reference {
   margin-top: 15px;
 }
