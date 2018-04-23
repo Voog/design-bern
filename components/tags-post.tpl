@@ -14,7 +14,7 @@
       <nav class="menu-tags">
         <ul class="menu">
           {% for tag in article.tags %}
-            <li class="menu-item"><a class="menu-link" href="{{ site.url }}{{ site.blogs.first.page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %},{% endunless %}</li>
+            <li class="menu-item"><a class="menu-link" href="/{{ article.page.path_with_lang }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %},{% endunless %}</li>
           {% endfor %}
         </ul>
       </nav>
