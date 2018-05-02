@@ -43,6 +43,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/edicy-tools-styles.tpl",
       "layout_name": "edicy-tools-styles",
       "title": "edicy-tools-styles"
@@ -60,6 +67,13 @@
       "file": "components/menu-level-2.tpl",
       "layout_name": "menu-level-2",
       "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-signout.tpl",
+      "layout_name": "site-signout",
+      "title": "site-signout"
     },
     {
       "content_type": "component",
@@ -116,13 +130,6 @@
       "file": "components/template-cs-header-content.tpl",
       "layout_name": "template-cs-header-content",
       "title": "template-cs-header-content"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/search.tpl",
-      "layout_name": "search",
-      "title": "search"
     },
     {
       "content_type": "component",
