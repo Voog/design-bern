@@ -2078,6 +2078,9 @@ body.search-open {
   cursor: pointer;
   -moz-appearance: none;
 }
+.content-formatted .form_field_select::-ms-expand {
+  display: none;
+}
 .no-svg .content-formatted .form_field_select {
   background-image: url("../images/ico-arrow-down.png");
 }
