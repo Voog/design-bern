@@ -17,8 +17,6 @@
               .content .background-image {
                 background-image: url("{{ imageSize.url }}");
               }
-            {% elsif forloop.last %}
-              {% break %}
             {% else %}
               @media screen and (max-width: {{ imageSize.width }}px) {
                 .content .background-image {
