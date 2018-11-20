@@ -50,13 +50,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/edicy-tools-styles.tpl",
-      "layout_name": "edicy-tools-styles",
-      "title": "edicy-tools-styles"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/template-meta.tpl",
       "layout_name": "template-meta",
       "title": "template-meta"
@@ -137,6 +130,13 @@
       "file": "components/template-cs-footer-content.tpl",
       "layout_name": "template-cs-footer-content",
       "title": "template-cs-footer-content"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-styles.tpl",
+      "layout_name": "edicy-tools-styles",
+      "title": "edicy-tools-styles"
     },
     {
       "content_type": "component",
