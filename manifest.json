@@ -334,6 +334,12 @@
       "filename": "2FC187_1_0.eot"
     },
     {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-expand.svg",
+      "kind": "assets",
+      "filename": "ico-expand.svg"
+    },
+    {
       "content_type": "application/font-sfnt",
       "file": "assets/2FC187_0_0.ttf",
       "kind": "assets",
@@ -344,6 +350,12 @@
       "file": "assets/2FC187_1_0.woff",
       "kind": "assets",
       "filename": "2FC187_1_0.woff"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-settings.svg",
+      "kind": "assets",
+      "filename": "ico-settings.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -377,9 +389,21 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-delete.svg",
+      "kind": "assets",
+      "filename": "ico-delete.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-close.svg",
       "kind": "assets",
       "filename": "ico-close.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-placeholder.svg",
+      "kind": "assets",
+      "filename": "ico-placeholder.svg"
     },
     {
       "content_type": "image/svg+xml",

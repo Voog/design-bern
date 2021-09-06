@@ -7,6 +7,10 @@
     {% assign flags_state = site.data.flags_state %}
   {% endif %}
 
+  {%- comment -%}Assign variables for ecommerce layouts{%- endcomment -%}
+  {% assign product_list_layout = "Product list" %}
+  {% assign product_layout = "Product" %}
+
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign fallback_cover_image = page.data.cover_image %}
   {% assign fallback_cover_color = page.data.cover_color %}
