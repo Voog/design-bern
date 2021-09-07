@@ -540,6 +540,9 @@ body.search-open {
   vertical-align: middle;
   font-size: 14px;
 }
+.menu .menu-item.is-hidden {
+  display: none;
+}
 .menu .menu-item .menu-link {
   word-break: break-word;
   word-wrap: break-word;
@@ -1300,7 +1303,7 @@ body.search-open {
 }
 .menu-horizontal.menu-breadcrumbs {
   line-height: 16px;
-  margin-top: 36px;
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 .item-list-page .menu-horizontal.menu-breadcrumbs {

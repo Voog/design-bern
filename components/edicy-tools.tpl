@@ -43,6 +43,7 @@
         rootItemValuesObj = {};
       {% endif %}
 
+      template.bindRootItemSettings(rootItemValuesObj);
     {%- endif -%}
 
     site.bindContentItemImgDropAreas('{{ dropAreaPlaceholder }}', "item_image", "image_crop_state");

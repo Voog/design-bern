@@ -11,6 +11,9 @@
   {% assign product_list_layout = "Product list" %}
   {% assign product_layout = "Product" %}
 
+  {%- comment -%}Sets product related pages in main menu{%- endcomment -%}
+  {% assign show_product_related_pages_in_main_menu = site.data.settings_root_item.show_product_related_pages_in_main_menu %}
+
   {% comment %}Assign variables based on page type.{% endcomment %}
   {% assign fallback_cover_image = page.data.cover_image %}
   {% assign fallback_cover_color = page.data.cover_color %}
