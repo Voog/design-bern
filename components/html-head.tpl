@@ -42,10 +42,10 @@
     {% include "template-cs-content-content" %}
     {% include "template-cs-button-content" %}
     {% include "template-cs-table-content" %}
+    {% include "template-cs-product-list" %}
     {% include "template-cs-form-content" %}
     {% include "template-cs-footer-content" %}
   {% endif %}
-
 
   {% include "template-cs-style-rules" %}
 {% endcustomstyle %}
