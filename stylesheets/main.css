@@ -1297,6 +1297,8 @@ body.search-open {
 .menu-horizontal .menu-separator {
   opacity: 0.36;
   font-size: 12px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 .menu-horizontal .menu-separator:first-child {
   display: none;
