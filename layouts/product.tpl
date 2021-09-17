@@ -13,7 +13,7 @@
     <main class="content" role="main">
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">
 
-        {% include 'menu-breadcrumbs' %}
+        {% include "menu-breadcrumbs" %}
 
           <div class="flex_row flex_row-2 reverse-col-tablet mar_0-32-neg" data-search-indexing-allowed="true">
             <div class="flex_row-2--item-50">
@@ -37,8 +37,8 @@
 
                 {%- if productImage != blank or editmode -%}
                   <div class="js-product-page-image mar_b-32">
-                    {% include 'content-item', _isProductImage: isProductImage, _imageData: productImage, _entityData:
-                    page, _itemType: 'page', _id: page.id, _targetWidth: '1280' %}
+                    {% include "content-item", _isProductImage: isProductImage, _imageData: productImage, _entityData:
+                    page, _itemType: "page", _id: page.id, _targetWidth: "1280" %}
                   </div>
                 {%- endif -%}
               </div>
