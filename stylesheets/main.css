@@ -2983,6 +2983,9 @@ body.search-open {
 .product_item-btn:hover {
   opacity: 0.7;
 }
+.product_item-box--label {
+  font-size: 16px;
+}
 .product_alt-attr {
   display: none;
 }
