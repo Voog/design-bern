@@ -1296,9 +1296,10 @@ body.search-open {
 }
 .menu-horizontal .menu-separator {
   opacity: 0.36;
-  font-size: 12px;
+  font-size: 11px;
   margin-left: 4px;
   margin-right: 4px;
+  vertical-align: middle;
 }
 .menu-horizontal .menu-separator:first-child {
   display: none;
@@ -1313,6 +1314,18 @@ body.search-open {
 }
 .menu-horizontal.menu-breadcrumbs .menu-item {
   padding-left: 0;
+}
+.menu-horizontal.menu-breadcrumbs .menu-item .menu-link {
+  color: var(--menu-sub-color);
+}
+.menu-horizontal.menu-breadcrumbs .menu-item .menu-link.active {
+  color: var(--menu-sub-active-color);
+}
+.menu-horizontal.menu-breadcrumbs .menu-item .menu-link.active:hover {
+  color: var(--menu-sub-active-color);
+}
+.menu-horizontal.menu-breadcrumbs .menu-item .menu-link:hover {
+  color: var(--menu-sub-hover-color);
 }
 .menu-horizontal .menu-item {
   display: inline-block;

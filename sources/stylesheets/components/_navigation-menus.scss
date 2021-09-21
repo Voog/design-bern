@@ -5,9 +5,10 @@
 
   .menu-separator {
     opacity: .36;
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 4px;
     margin-right: 4px;
+    vertical-align: middle;
 
     &:first-child {
       display: none;
@@ -25,6 +26,22 @@
 
     .menu-item {
       padding-left: 0;
+
+      .menu-link {
+        color: var(--menu-sub-color);
+
+        &.active {
+          color: var(--menu-sub-active-color);
+
+          &:hover {
+            color: var(--menu-sub-active-color);
+          }
+        }
+
+        &:hover {
+          color: var(--menu-sub-hover-color);
+        }
+      }
     }
   }
 

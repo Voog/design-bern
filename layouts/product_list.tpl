@@ -14,7 +14,9 @@
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">
         {% include "menu-breadcrumbs" %}
         {% include "product-list-block" %}
-        <section class="content-body content-formatted" {{ edy_intro_edit_text }}>{% content %}</section>
+        <section class="content-body content-formatted" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>
+          {% content %}
+        </section>
       </div>
     </main>
 
