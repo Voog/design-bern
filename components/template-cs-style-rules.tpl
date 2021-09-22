@@ -36,7 +36,7 @@ body {
   -webkit-text-decoration: var(--menu-main-text-decoration);
           text-decoration: var(--menu-main-text-decoration);
   text-transform: var(--menu-main-text-transform);
-  opacity: .7;
+  opacity: 0.7;
 }
 @media screen and (min-width: 841px) {
   .menu-main .menu .menu-item .menu-link {
@@ -50,7 +50,7 @@ body {
   -webkit-text-decoration: var(--menu-main-active-text-decoration);
           text-decoration: var(--menu-main-active-text-decoration);
   text-transform: var(--menu-main-active-text-transform);
-  opacity: .5;
+  opacity: 0.5;
 }
 .menu-main .menu .menu-item .menu-link.active:hover {
   color: var(--menu-main-active-color);
@@ -62,7 +62,7 @@ body {
   -webkit-text-decoration: var(--menu-main-hover-text-decoration);
           text-decoration: var(--menu-main-hover-text-decoration);
   text-transform: var(--menu-main-hover-text-transform);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .menu-sub .menu .menu-item .menu-link {
@@ -73,7 +73,7 @@ body {
   -webkit-text-decoration: var(--menu-sub-text-decoration);
           text-decoration: var(--menu-sub-text-decoration);
   text-transform: var(--menu-sub-text-transform);
-  opacity: .5;
+  opacity: 0.5;
 }
 .menu-sub .menu .menu-item .menu-link.active {
   font-style: var(--menu-sub-active-font-style);
