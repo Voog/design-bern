@@ -6,7 +6,9 @@
         <ul class="menu">
           {% if editmode or item.children? %}
             {% for subitem in item.visible_children %}
-              <li class="menu-item"><a class="menu-link{% if subitem.selected? %} active{% endif %}{% unless subitem.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+              {% if subitem.layout_title != product_layout and subitem.layout_title != product_list_layout %}
+                <li class="menu-item"><a class="menu-link{% if subitem.selected? %} active{% endif %}{% unless subitem.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+              {% endif %}
             {% endfor %}
           {% endif %}
           {% if item.hidden_children.size > 0 %}<li>{% menubtn item.hidden_children %}</li>{% endif %}

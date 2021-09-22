@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: $base-font-family;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.4;
@@ -81,4 +81,14 @@ body {
       border: none;
     }
   }
+}
+
+.btn-no-style {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }

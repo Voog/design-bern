@@ -69,6 +69,10 @@
     vertical-align: middle;
     font-size: 14px;
 
+    &.is-hidden {
+      display: none;
+    }
+
     .menu-link {
       @include hyphenate(true);
     }
