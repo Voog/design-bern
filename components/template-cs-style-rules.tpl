@@ -315,3 +315,28 @@ body {
   -webkit-box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
           box-shadow: var(--form-field-border-width) var(--form-field-border-width) 0 rgba(0, 0, 0, 0.2);
 }
+
+.product-content .product-price {
+  color: var(--content-area-product-price__color);
+  font-size: var(--content-area-product-price__font-size);
+  font-weight: var(--content-area-product-price__font-weight);
+  font-style: var(--content-area-product-price__font-style);
+  -webkit-text-decoration: var(--content-area-product-price__text-decoration);
+          text-decoration: var(--content-area-product-price__text-decoration);
+}
+.product-content .product-description {
+  color: var(--content-area-product-description__color);
+  font-size: var(--content-area-product-description__font-size);
+  font-weight: var(--content-area-product-description__font-weight);
+  font-style: var(--content-area-product-description__font-style);
+  -webkit-text-decoration: var(--content-area-product-description__text-decoration);
+          text-decoration: var(--content-area-product-description__text-decoration);
+}
+.product-content .content-item-title h1 {
+  color: var(--content-area-product-title__color);
+  font-size: var(--content-area-product-title__font-size);
+  font-weight: var(--content-area-product-title__font-weight);
+  font-style: var(--content-area-product-title__font-style);
+  -webkit-text-decoration: var(--content-area-product-title__text-decoration);
+          text-decoration: var(--content-area-product-title__text-decoration);
+}
