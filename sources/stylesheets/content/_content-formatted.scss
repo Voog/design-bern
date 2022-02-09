@@ -190,6 +190,7 @@
     line-height: 1;
     @include bg($blue-1);
     border: none;
+    cursor: pointer;
     @include inputiosreset;
     @include box-shadow(4px, 4px, 0, rgba($black, .1));
 
@@ -206,17 +207,16 @@
       @include bg($blue-1, .8);
     }
 
-    .public & {
-      cursor: pointer;
-    }
-
-    &-disabled {
+    &-disabled,
+    .edy-buy-button-disabled {
       // scss-lint:disable NestingDepth
-      .public & {
-        cursor: default;
-        background-color: rgba($grey-2, 1);
-      }
+      cursor: default;
+      background-color: rgba($grey-2, 1);
       // scss-lint:enable NestingDepth
+
+      &:hover {
+        background-color:rgba($grey-2, 1);
+      }
     }
   }
 

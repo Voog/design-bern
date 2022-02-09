@@ -2097,6 +2097,7 @@ body.search-open {
   line-height: 1;
   background-color: #0066bb;
   border: none;
+  cursor: pointer;
   -webkit-appearance: none;
   border-radius: 0;
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
@@ -2113,11 +2114,13 @@ body.search-open {
   background-color: #0066bb;
   background-color: rgba(0, 102, 187, 0.8);
 }
-.public .content-formatted .custom-btn {
-  cursor: pointer;
-}
-.public .content-formatted .custom-btn-disabled {
+.content-formatted .custom-btn-disabled,
+.content-formatted .custom-btn .edy-buy-button-disabled {
   cursor: default;
+  background-color: #cccccc;
+}
+.content-formatted .custom-btn-disabled:hover,
+.content-formatted .custom-btn .edy-buy-button-disabled:hover {
   background-color: #cccccc;
 }
 .content-formatted .edy-positionable-container-left,
@@ -2660,6 +2663,13 @@ body.search-open {
   background: url("../assets/ico-close.svg") center center no-repeat;
 }
 
+.product-content .edy-buy-button-container {
+  margin: 24px 0;
+}
+.product-content .content-gallery {
+  margin: 24px 32px;
+}
+
 /* BLOG & BLOG ARTICLE */
 .post-intro-content {
   padding-bottom: 25px;
@@ -3120,8 +3130,10 @@ body.search-open {
   position: relative;
 }
 
-.t-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 32px;
+@media screen and (min-width: 1024px) {
+  .t-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 32px;
+  }
 }
