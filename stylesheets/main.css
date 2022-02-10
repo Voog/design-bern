@@ -345,7 +345,7 @@ body.search-open {
   bottom: 0;
   left: 0;
 }
-[data-view-state=editmode] .item-top {
+.editmode .item-top {
   cursor: pointer;
 }
 .item-top:hover .btn,
@@ -1899,6 +1899,7 @@ body.search-open {
 
 .content-formatted .edy-buy-button-container .form_field {
   padding-top: 15px;
+  word-break: normal;
 }
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;

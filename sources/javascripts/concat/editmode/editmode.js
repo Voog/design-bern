@@ -545,19 +545,19 @@
 
   // Enables the usage of the initiations outside this file
   window.template = $.extend(window.template || {}, {
-    bindRootItemSettings: bindRootItemSettings,
-    handleProductImageClick: handleProductImageClick
+    bindRootItemSettings: bindRootItemSettings
   });
 
   window.site = $.extend(window.site || {}, {
-    frontPageContentCoverBgPreview: frontPageContentCoverBgPreview,
-    frontPageContentCoverBgCommit: frontPageContentCoverBgCommit,
-    handleFrontPageContentCoverColorScheme: handleFrontPageContentCoverColorScheme,
-    bindCustomTexteditorStyles: bindCustomTexteditorStyles,
-    toggleFlags:toggleFlags,
-    bindContentItemImgDropAreas: bindContentItemImgDropAreas,
     bindContentItemImageCropToggle: bindContentItemImageCropToggle,
-    bindProductListeners: bindProductListeners
+    bindContentItemImgDropAreas: bindContentItemImgDropAreas,
+    bindCustomTexteditorStyles: bindCustomTexteditorStyles,
+    bindProductListeners: bindProductListeners,
+    frontPageContentCoverBgCommit: frontPageContentCoverBgCommit,
+    frontPageContentCoverBgPreview: frontPageContentCoverBgPreview,
+    handleFrontPageContentCoverColorScheme: handleFrontPageContentCoverColorScheme,
+    handleProductImageClick: handleProductImageClick,
+    toggleFlags: toggleFlags
   });
 
   init();

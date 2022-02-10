@@ -255,39 +255,6 @@
     }
   };
 
-
-  // ===========================================================================
-  // Change product image position on narrower screens (mobile devices)
-  // ===========================================================================
-
-  var handleProductPageContent = function () {
-    $(document).ready(function () {
-      changeProductImagePos();
-    });
-
-    $(window).resize(debounce(function () {
-      changeProductImagePos();
-    }, 25));
-
-    var changeProductImagePos = function () {
-      var productGallery = $('.js-product-gallery');
-      var productImageContentBox = $('.js-content-item-box');
-      var productContentRight = $('.js-product-content-right');
-
-      if ($('.js-buy-btn-content .edy-buy-button-container').length >= 1) {
-        if ($(window).width() < 1020) {
-          if ($('.js-buy-btn-content + .js-product-gallery').length === 0) {
-            productContentRight.append(productGallery);
-          }
-        } else {
-          if ($('.js-content-item-box + .js-product-gallery').length === 0) {
-            productImageContentBox.append(productGallery);
-          }
-        }
-      }
-    }
-  };
-
   // Enables the usage of the initiations outside this file.
   // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
   window.site = $.extend(window.site || {}, {
@@ -297,10 +264,6 @@
     bindSiteSearch: bindSiteSearch,
     handleProductPageContent:handleProductPageContent
   });
-
-  window.template = $.extend(window.template || {}, {
-    handleProductPageContent: handleProductPageContent
-  })
 
   // Initiates site wide functions.
   init();
