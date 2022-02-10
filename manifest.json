@@ -15,6 +15,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/buy-button.tpl",
+      "layout_name": "buy-button",
+      "title": "buy-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/comment-form.tpl",
       "layout_name": "comment-form",
       "title": "comment-form"
@@ -88,6 +95,13 @@
       "file": "components/lazy-image.tpl",
       "layout_name": "lazy-image",
       "title": "lazy-image"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs-sd.tpl",
+      "layout_name": "menu-breadcrumbs-sd",
+      "title": "menu-breadcrumbs-sd"
     },
     {
       "content_type": "component",
@@ -279,6 +293,13 @@
       "title": "template-meta"
     },
     {
+      "content_type": "product",
+      "component": false,
+      "file": "layouts/auto_generated_product.tpl",
+      "layout_name": "auto_generated_product",
+      "title": "Auto-generated product"
+    },
+    {
       "content_type": "blog",
       "component": false,
       "file": "layouts/blog___news.tpl",
@@ -330,10 +351,22 @@
   ],
   "assets": [
     {
-      "content_type": "application/font-woff",
-      "file": "assets/2FC187_1_0.woff2",
+      "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/2FC187_0_0.eot",
       "kind": "assets",
-      "filename": "2FC187_1_0.woff2"
+      "filename": "2FC187_0_0.eot"
+    },
+    {
+      "content_type": "application/font-sfnt",
+      "file": "assets/2FC187_0_0.ttf",
+      "kind": "assets",
+      "filename": "2FC187_0_0.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/2FC187_0_0.woff",
+      "kind": "assets",
+      "filename": "2FC187_0_0.woff"
     },
     {
       "content_type": "application/font-woff",
@@ -348,16 +381,10 @@
       "filename": "2FC187_1_0.eot"
     },
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-expand.svg",
-      "kind": "assets",
-      "filename": "ico-expand.svg"
-    },
-    {
       "content_type": "application/font-sfnt",
-      "file": "assets/2FC187_0_0.ttf",
+      "file": "assets/2FC187_1_0.ttf",
       "kind": "assets",
-      "filename": "2FC187_0_0.ttf"
+      "filename": "2FC187_1_0.ttf"
     },
     {
       "content_type": "application/font-woff",
@@ -366,46 +393,16 @@
       "filename": "2FC187_1_0.woff"
     },
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-settings.svg",
+      "content_type": "application/font-woff",
+      "file": "assets/2FC187_1_0.woff2",
       "kind": "assets",
-      "filename": "ico-settings.svg"
+      "filename": "2FC187_1_0.woff2"
     },
     {
       "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-down.svg",
       "kind": "assets",
       "filename": "ico-arrow-down.svg"
-    },
-    {
-      "content_type": "application/font-sfnt",
-      "file": "assets/2FC187_1_0.ttf",
-      "kind": "assets",
-      "filename": "2FC187_1_0.ttf"
-    },
-    {
-      "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/2FC187_0_0.eot",
-      "kind": "assets",
-      "filename": "2FC187_0_0.eot"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-flags.svg",
-      "kind": "assets",
-      "filename": "ico-flags.svg"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/2FC187_0_0.woff",
-      "kind": "assets",
-      "filename": "2FC187_0_0.woff"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-delete.svg",
-      "kind": "assets",
-      "filename": "ico-delete.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -415,9 +412,33 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-delete.svg",
+      "kind": "assets",
+      "filename": "ico-delete.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-expand.svg",
+      "kind": "assets",
+      "filename": "ico-expand.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-flags.svg",
+      "kind": "assets",
+      "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-placeholder.svg",
       "kind": "assets",
       "filename": "ico-placeholder.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-settings.svg",
+      "kind": "assets",
+      "filename": "ico-settings.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -426,40 +447,28 @@
       "filename": "ico-tick.svg"
     },
     {
-      "content_type": "image/png",
-      "file": "images/ico-search.png",
-      "kind": "images",
-      "filename": "ico-search.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-arrow-down.png",
-      "kind": "images",
-      "filename": "ico-arrow-down.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-tags.png",
-      "kind": "images",
-      "filename": "ico-tags.png"
-    },
-    {
       "content_type": "image/jpeg",
       "file": "images/front-page-bg.jpg",
       "kind": "images",
       "filename": "front-page-bg.jpg"
     },
     {
-      "content_type": "image/png",
-      "file": "images/ico-tick.png",
+      "content_type": "image/jpeg",
+      "file": "images/front-page-bg_block.jpg",
       "kind": "images",
-      "filename": "ico-tick.png"
+      "filename": "front-page-bg_block.jpg"
     },
     {
       "content_type": "image/jpeg",
       "file": "images/front-page-bg_large.jpg",
       "kind": "images",
       "filename": "front-page-bg_large.jpg"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-arrow-down.png",
+      "kind": "images",
+      "filename": "ico-arrow-down.png"
     },
     {
       "content_type": "image/png",
@@ -474,28 +483,22 @@
       "filename": "ico-flags.png"
     },
     {
-      "content_type": "image/jpeg",
-      "file": "images/front-page-bg_block.jpg",
+      "content_type": "image/png",
+      "file": "images/ico-search.png",
       "kind": "images",
-      "filename": "front-page-bg_block.jpg"
+      "filename": "ico-search.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/editmode.js",
-      "kind": "javascripts",
-      "filename": "editmode.js"
+      "content_type": "image/png",
+      "file": "images/ico-tags.png",
+      "kind": "images",
+      "filename": "ico-tags.png"
     },
     {
-      "content_type": "application/javascript",
-      "file": "javascripts/application.min.js",
-      "kind": "javascripts",
-      "filename": "application.min.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/editmode.min.js",
-      "kind": "javascripts",
-      "filename": "editmode.min.js"
+      "content_type": "image/png",
+      "file": "images/ico-tick.png",
+      "kind": "images",
+      "filename": "ico-tick.png"
     },
     {
       "content_type": "application/javascript",
@@ -505,21 +508,27 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/application.min.js",
+      "kind": "javascripts",
+      "filename": "application.min.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/editmode.js",
+      "kind": "javascripts",
+      "filename": "editmode.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/editmode.min.js",
+      "kind": "javascripts",
+      "filename": "editmode.min.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr-custom.min.js",
       "kind": "javascripts",
       "filename": "modernizr-custom.min.js"
-    },
-    {
-      "content_type": "text/css",
-      "file": "stylesheets/editmode.min.css",
-      "kind": "stylesheets",
-      "filename": "editmode.min.css"
-    },
-    {
-      "content_type": "text/css",
-      "file": "stylesheets/main.min.css",
-      "kind": "stylesheets",
-      "filename": "main.min.css"
     },
     {
       "content_type": "text/css",
@@ -529,9 +538,21 @@
     },
     {
       "content_type": "text/css",
+      "file": "stylesheets/editmode.min.css",
+      "kind": "stylesheets",
+      "filename": "editmode.min.css"
+    },
+    {
+      "content_type": "text/css",
       "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
       "filename": "ie8.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/ie8.min.css",
+      "kind": "stylesheets",
+      "filename": "ie8.min.css"
     },
     {
       "content_type": "text/css",
@@ -541,9 +562,9 @@
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/ie8.min.css",
+      "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
-      "filename": "ie8.min.css"
+      "filename": "main.min.css"
     }
   ]
 }

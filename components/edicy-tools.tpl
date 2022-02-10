@@ -13,21 +13,23 @@
     // Initiates language flag toggleing functionality.
     site.toggleFlags();
 
+    {%- if front_page %}
     // Front page left content area background picker.
-    var frontPageContentBg = new Edicy.BgPicker($('.js-front-page-content-cover-settings'), {
-        picture: true,
-        target_width: 600,
-        color: true,
-        showAlpha: true,
+      var frontPageContentBg = new Edicy.BgPicker($('.js-front-page-content-cover-settings'), {
+          picture: true,
+          target_width: 600,
+          color: true,
+          showAlpha: true,
 
-      preview: function(data) {
-        site.frontPageContentCoverBgPreview(data, '.js-front-page-content');
-      },
+        preview: function(data) {
+          site.frontPageContentCoverBgPreview(data, '.js-front-page-content');
+        },
 
-      commit: function(data) {
-        site.frontPageContentCoverBgCommit(data, 'front_page_content_cover');
-      }
-    });
+        commit: function(data) {
+          site.frontPageContentCoverBgCommit(data, 'front_page_content_cover');
+        }
+      });
+    {% endif -%}
 
     site.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
 

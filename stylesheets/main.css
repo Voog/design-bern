@@ -1,5 +1,18 @@
 @charset "UTF-8";
 @import url("//hello.myfonts.net/count/2fc187");
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  img {
+    image-rendering: -webkit-optimize-contrast !important;
+  }
+}
+/* Unset for Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    img {
+      image-rendering: unset !important;
+    }
+  }
+}
 /* GENERAL */
 body {
   margin: 0;
@@ -331,6 +344,9 @@ body.search-open {
   right: 0;
   bottom: 0;
   left: 0;
+}
+.editmode .item-top {
+  cursor: pointer;
 }
 .item-top:hover .btn,
 .item-top:hover .custom-btn {
@@ -1883,6 +1899,7 @@ body.search-open {
 
 .content-formatted .edy-buy-button-container .form_field {
   padding-top: 15px;
+  word-break: normal;
 }
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;
@@ -2097,6 +2114,7 @@ body.search-open {
   line-height: 1;
   background-color: #0066bb;
   border: none;
+  cursor: pointer;
   -webkit-appearance: none;
   border-radius: 0;
   -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
@@ -2113,11 +2131,13 @@ body.search-open {
   background-color: #0066bb;
   background-color: rgba(0, 102, 187, 0.8);
 }
-.public .content-formatted .custom-btn {
-  cursor: pointer;
-}
-.public .content-formatted .custom-btn-disabled {
+.content-formatted .custom-btn-disabled,
+.content-formatted .custom-btn .edy-buy-button-disabled {
   cursor: default;
+  background-color: #cccccc;
+}
+.content-formatted .custom-btn-disabled:hover,
+.content-formatted .custom-btn .edy-buy-button-disabled:hover {
   background-color: #cccccc;
 }
 .content-formatted .edy-positionable-container-left,
@@ -2660,6 +2680,19 @@ body.search-open {
   background: url("../assets/ico-close.svg") center center no-repeat;
 }
 
+.product-content .edy-buy-button-container {
+  margin: 24px 0;
+}
+.product-content .content-gallery {
+  margin: 24px 32px;
+}
+.product-content .product-price {
+  padding: 12px 0 24px 0;
+}
+.product-content .product-price-divider {
+  margin: 0 4px;
+}
+
 /* BLOG & BLOG ARTICLE */
 .post-intro-content {
   padding-bottom: 25px;
@@ -3120,8 +3153,10 @@ body.search-open {
   position: relative;
 }
 
-.t-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 32px;
+@media screen and (min-width: 1024px) {
+  .t-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 32px;
+  }
 }

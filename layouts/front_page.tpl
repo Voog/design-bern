@@ -26,6 +26,6 @@
 
   {% include "site-signout" %}
   {% include "javascripts" %}
-  {% include "edicy-tools" %}
+  {% include "edicy-tools" front_page: true %}
 </body>
 </html>
