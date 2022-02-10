@@ -2682,6 +2682,12 @@ body.search-open {
 .product-content .content-gallery {
   margin: 24px 32px;
 }
+.product-content .product-price {
+  padding: 12px 0 24px 0;
+}
+.product-content .product-price-divider {
+  margin: 0 4px;
+}
 
 /* BLOG & BLOG ARTICLE */
 .post-intro-content {

@@ -29,7 +29,7 @@
     <main class="content product-content" role="main">
       <div class="content-inner{% if has_children %} with-submenu{% endif %}">
 
-        {% include "menu-breadcrumbs" %}
+        {% include "menu-breadcrumbs-sd" %}
 
         <div class="flex_row flex_row-2 mar_0-32-neg" data-search-indexing-allowed="true">
           <div class="flex_row-2--item-50">
