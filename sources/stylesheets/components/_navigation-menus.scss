@@ -27,6 +27,12 @@
     .menu-item {
       padding-left: 0;
 
+      &.current-page {
+        a {
+          color: var(--content-body-text-color);
+        }
+      }
+
       .menu-link {
         color: var(--menu-sub-color);
 
