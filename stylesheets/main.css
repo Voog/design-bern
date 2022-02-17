@@ -1331,6 +1331,9 @@ body.search-open {
 .menu-horizontal.menu-breadcrumbs .menu-item {
   padding-left: 0;
 }
+.menu-horizontal.menu-breadcrumbs .menu-item.current-page a {
+  color: var(--content-body-text-color);
+}
 .menu-horizontal.menu-breadcrumbs .menu-item .menu-link {
   color: var(--menu-sub-color);
 }
@@ -3158,5 +3161,6 @@ body.search-open {
     position: -webkit-sticky;
     position: sticky;
     top: 32px;
+    z-index: 10601;
   }
 }
