@@ -210,7 +210,8 @@ body {
   border-top-style: var(--table-border-style);
   border-bottom-style: var(--table-border-style);
 }
-.content-formatted .custom-btn {
+.content-formatted .custom-btn,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   padding: calc(var(--content-button-padding) - 13px) calc(var(--content-button-padding) - 10px);
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
@@ -222,7 +223,8 @@ body {
   -webkit-box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
           box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
 }
-.content-formatted .custom-btn:hover {
+.content-formatted .custom-btn:hover,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   font-style: var(--content-button-hover-font-style);
   font-weight: var(--content-button-hover-font-weight);
   -webkit-text-decoration: var(--content-button-hover-text-decoration);
@@ -230,19 +232,23 @@ body {
   text-transform: var(--content-button-hover-text-transform);
   border-color: var(--content-button-hover-color);
 }
-.content-formatted .custom-btn:not(.custom-btn-disabled) {
+.content-formatted .custom-btn:not(.custom-btn-disabled),
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:not(.custom-btn-disabled) {
   color: var(--content-button-color);
   background-color: var(--content-button-background-color);
 }
-.content-formatted .custom-btn:not(.custom-btn-disabled):hover {
+.content-formatted .custom-btn:not(.custom-btn-disabled):hover,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:not(.custom-btn-disabled):hover {
   color: var(--content-button-hover-color);
   background-color: var(--content-button-hover-background-color);
 }
-.dark-background .content-formatted .custom-btn {
+.dark-background .content-formatted .custom-btn,
+.dark-background .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   -webkit-box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
           box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.1);
 }
-.light-background .content-formatted .custom-btn {
+.light-background .content-formatted .custom-btn,
+.light-background .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   -webkit-box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
           box-shadow: var(--content-button-border-width) var(--content-button-border-width) 0 rgba(0, 0, 0, 0.2);
 }
