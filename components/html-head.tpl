@@ -16,9 +16,11 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}STYLESHEETS{% endcomment %}
-{% stylesheet_link "main.min.css?v=bern-2.3.1" %}
-{% if editmode %}{% stylesheet_link "editmode.min.css?v=bern-2.3.1" %}{% endif %}
-<!--[if lt IE 9]>{% stylesheet_link "ie8.min.css?v=bern-2.3.1" %}<![endif]-->
+<link href="{{ stylesheets_path }}/main.min.css?v={{ template_settings.version }}" media="screen" rel="stylesheet" type="text/css"/>
+{% if editmode %}
+  <link href="{{ stylesheets_path }}/editmode.min.css?v={{ template_settings.version }}" media="screen" rel="stylesheet" type="text/css"/>
+{% endif %}
+<!--[if lt IE 9]><link href="{{ stylesheets_path }}/ie8.min.css?v={{ template_settings.version }}" media="screen" rel="stylesheet" type="text/css"/><![endif]-->
 
 {% comment %}Google fonts for Design Editor{% endcomment %}
 <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|Arvo:400,400i,700,700i|Cousine:400,400i,700,700i|Crimson+Text:400,400i,700,700i|Fira+Sans:400,400i,700,700i|Lato:400,400i,700,700i|Lora:400,400i,700,700i|Montserrat:400,400i,700,700i|Noto+Serif:400,400i,700,700i|Open+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i|Playfair+Display:400,400i,700,700i|Raleway:400,400i,700,700i|Roboto+Mono:400,400i,700,700i|Roboto+Slab:400,700|Roboto:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i|Ubuntu+Mono:400,400i,700,700i|Ubuntu:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,hebrew,latin-ext,vietnamese" rel="stylesheet">
