@@ -2251,6 +2251,9 @@ body.search-open {
     padding: 33px 20px;
   }
 }
+.content .content-right {
+  padding: 43px 50px;
+}
 .content .content-right iframe {
   display: block !important;
   width: 100% !important;
@@ -2703,6 +2706,9 @@ body.search-open {
 }
 .product-content .product-price-divider {
   margin: 0 4px;
+}
+.product-content .product-cross-page-info {
+  margin-bottom: 32px;
 }
 
 .dark-background .edy-product-widget-filter-sort,

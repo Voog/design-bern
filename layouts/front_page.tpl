@@ -19,7 +19,11 @@
       {% if cover_image != '' or editmode %}<div class="background-image stretch js-bgpicker-cover-image"{{ cover_image_style }}></div>{% endif %}
       {% if cover_color != '' or editmode %}<div class="background-color stretch js-bgpicker-cover-color"{{ cover_color_style }}></div>{% endif %}
       <div class="content-inner js-content-inner js-background-type {{ front_page_content_cover_type }}">
-        <section class="content-body content-formatted" {{ edy_intro_edit_text }}>{% content %}</section>
+        <section class="content-body content-formatted">
+          {%- assign content_default_title = "content" | lce -%}
+          {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+          {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+        </section>
       </div>
     </main>
     {% include "footer" %}

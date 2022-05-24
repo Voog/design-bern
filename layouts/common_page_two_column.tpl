@@ -25,10 +25,13 @@
     {% endunless %}
 
     <main class="content two-columns" role="main">
+      {%- assign content_default_title = "content" | lce -%}
+      {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+
       {% if editmode or content_default_has_content %}
         <div class="content-left{% if has_children and editmode != true %} with-submenu{% endif %}{% unless editmode or content_right_has_content %} left-full{% endunless %}">
-          <section class="content-formatted" {{ edy_intro_edit_text }}>
-            {% content %}
+          <section class="content-formatted">
+            {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
           </section>
         </div>
       {% endif %}
@@ -36,7 +39,7 @@
       {% if editmode or content_right_has_content %}
         <div class="content-right{% if has_children %} with-padding{% endif %}{% unless editmode or content_default_has_content %} right-full{% endunless %}">
           <section class="content-formatted">
-            {% content name="content_right" %}
+            {% content name="content_right" title=content_default_title title_tooltip=content_default_title_tooltip %}
           </section>
         </div>
       {% endif %}

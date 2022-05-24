@@ -14,10 +14,14 @@
 
     <main class="content" role="main">
       <div class="content-inner">
-        <section class="content-body content-formatted post-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
-       
+        <section class="content-body content-formatted post-intro-content" data-search-indexing-allowed="true">
+          {%- assign content_default_title = "content" | lce -%}
+          {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+          {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+        </section>
+
         {% addbutton %}
-        
+
         {% for article in articles %}
           <article class="post">
             <div class="post-left">
