@@ -2251,6 +2251,9 @@ body.search-open {
     padding: 33px 20px;
   }
 }
+.content .content-right {
+  padding: 43px 50px;
+}
 .content .content-right iframe {
   display: block !important;
   width: 100% !important;
