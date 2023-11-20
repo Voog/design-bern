@@ -10,8 +10,14 @@
   .product-price {
     padding: 12px 0 24px 0;
 
-    &-divider {
-      margin: 0 4px;
+    .product-price-original {
+      display: inline-block;
+      padding-right: 4px;
+      opacity: .4;
+    }
+
+    .product-price-final {
+      display: inline-block;
     }
   }
 
