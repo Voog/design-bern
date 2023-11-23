@@ -1904,6 +1904,9 @@ body.search-open {
   padding-top: 15px;
   word-break: normal;
 }
+.content-formatted .edy-buy-button-container .edy-buy-button-price-container .edy-buy-button-price-original {
+  opacity: 0.4;
+}
 .content-formatted .edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -2704,8 +2707,13 @@ body.search-open {
 .product-content .product-price {
   padding: 12px 0 24px 0;
 }
-.product-content .product-price-divider {
-  margin: 0 4px;
+.product-content .product-price .product-price-original {
+  display: inline-block;
+  padding-right: 4px;
+  opacity: 0.4;
+}
+.product-content .product-price .product-price-final {
+  display: inline-block;
 }
 .product-content .product-cross-page-info {
   margin-bottom: 32px;
@@ -2939,7 +2947,7 @@ body.search-open {
 .product_item-wrap .product_item-title,
 .product_item-wrap .product_item-btn,
 .product_item-wrap .product_item-price {
-  color: var(--color-main);
+  color: var(--main-color-content);
   font-family: var(--font-primary);
   font-size: 16px;
   line-height: 1.3;
@@ -2948,12 +2956,12 @@ body.search-open {
 .dark-background .product_item-wrap .product_item-title,
 .dark-background .product_item-wrap .product_item-btn,
 .dark-background .product_item-wrap .product_item-price {
-  color: #FFFFFF;
+  color: var(--third-color);
 }
 .product_item-wrap .product_item-title a,
 .product_item-wrap .product_item-btn a,
 .product_item-wrap .product_item-price a {
-  color: var(--color-main);
+  color: var(--main-color-content);
 }
 .product_item-wrap .product_item-btn {
   white-space: nowrap;
@@ -2983,7 +2991,9 @@ body.search-open {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: var(--secondary-color);
+}
+.product_item-wrap .product_item-price .product-price-original {
+  opacity: 0.4;
 }
 .product_item-wrap:hover .product_image,
 .product_item-wrap:hover .item-top,
@@ -3014,14 +3024,14 @@ body.search-open {
   transition: all 300ms;
 }
 .product_item-list a {
-  color: var(--color-main);
+  color: var(--main-color-content);
 }
 .product_item-details {
   position: relative;
   overflow: hidden;
 }
 .product_item-details a {
-  color: var(--color-main);
+  color: var(--main-color-content);
 }
 .product_item-details--wrap {
   display: -webkit-box;
