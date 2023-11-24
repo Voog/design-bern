@@ -1,3 +1,3 @@
 {
-  "version": "bern-2.3.4"
+  "version": "bern-2.4.0"
 }
