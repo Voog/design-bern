@@ -345,7 +345,7 @@ body.search-open {
   bottom: 0;
   left: 0;
 }
-.editmode .item-top {
+.editmode .item-top:not(.without-pointer) {
   cursor: pointer;
 }
 .item-top:hover .btn,
@@ -389,7 +389,7 @@ body.search-open {
 .item-top .bg-crop-btn.is-hidden, .without-image .editmode .item-top .bg-crop-btn {
   display: none;
 }
-.without-image .item-top {
+.without-image .item-top, .without-images .item-top {
   background-color: #FFFFFF;
   background-image: url("../assets/ico-placeholder.svg");
   background-size: 40px;

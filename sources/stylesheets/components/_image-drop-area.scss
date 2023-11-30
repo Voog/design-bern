@@ -7,8 +7,10 @@
   overflow: hidden;
   margin-top: 10px;
 
-  .editmode & {
-    cursor: pointer;
+  &:not(.without-pointer) {
+    .editmode & {
+      cursor: pointer;
+    }
   }
 
   &:hover {
@@ -57,7 +59,8 @@
     }
   }
 
-  .without-image & {
+  .without-image &,
+  .without-images & {
     background-color: $white;
     background-image: url('../assets/ico-placeholder.svg');
     background-size: 40px;
