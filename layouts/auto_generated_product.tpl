@@ -45,22 +45,20 @@
         <div class="flex_row flex_row-2 mar_0-32-neg" data-search-indexing-allowed="true">
           <div class="flex_row-2--item-50">
             <div class="mar_0-32 p-rel js-product-page-image-wrap">
-              {%- if product.image != blank -%}
-                {%- assign item_image_state = "with-image" -%}
+
+              {%- if product.photos != blank -%}
+                {%- assign item_image_state = "with-images" -%}
               {%- else -%}
-                {%- assign item_image_state = "without-image" -%}
+                {%- assign item_image_state = "without-images" -%}
               {%- endif -%}
 
               <div class="content-illustrations">
                 <div class="content-item-box {{ item_image_state }} mar_b-32 js-content-item-box" data-item-type="page">
-                  <div class="item-top product-image">
-                    {%- if product.image != blank- %}
-                      <div class="top-inner aspect-ratio-inner">
-                        {%- assign image_class = "item-image not-cropped" -%}
-                        {% image product.image target_width: "600" class: image_class loading: "lazy" %}
-                      </div>
-                    {%- endif -%}
-                  </div>
+                  {%- if product.photos == blank -%}
+                    <div class="item-top without-pointer"></div>
+                  {%- else -%}
+                    {% gallery product layout="product_slider" %}
+                  {%- endif -%}
                 </div>
               </div>
             </div>
@@ -173,9 +171,6 @@
   <script>
     if (site) {
       site.handleProductPageContent();
-      {%- if product and editmode %}
-        site.handleProductImageClick({{ product.id }});
-      {% endif -%}
     }
   </script>
 </body>
